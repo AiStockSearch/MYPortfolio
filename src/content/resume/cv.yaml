@@ -1,0 +1,233 @@
+# Резюме: правки только здесь — страница /resume подхватывает через import.meta.glob.
+i18n:
+  en:
+    secLabel: curriculum vitae
+    title: Resume
+    printBtn: Print / Save as PDF
+    downloadCv: Download CV (PDF)
+    printHint: 'Print opens your browser dialog — choose "Save as PDF" to export. The download button uses /cv.pdf when you host that file.'
+    contactBtn: Contact Me
+    cvTitle: Senior React Native & Frontend Engineer · Web3 · Fintech
+    location: Ufa, Russia · Remote / Relocation
+    profileTitle: Profile
+    profileBody: |
+      Senior React Native & Frontend Engineer with 11+ years of professional experience building high-load cross-platform systems.
+      Specialised in complex interface architecture for Web, iOS and Android with deep Blockchain ecosystem integration.
+      Led teams of up to 5 engineers, shipped apps from MVP to App Store/Google Play multiple times.
+      2nd place Web3 Hackathon 2023. Active contributor to react-hook-form and zustand.
+    expTitle: Experience
+    skillsTitle: Technical Skills
+    eduTitle: Education & Certifications
+    referenceLinks:
+      sectionTitle: Links & writing
+      items:
+        - label: Blog & notes (articles)
+          href: /blog
+          note: Long-form posts, same content pipeline as this CV
+        - label: Project cases
+          href: /projects
+        - label: GitHub
+          href: https://github.com/Js-Nanodegree
+        - label: Habr Career
+          href: https://career.habr.com/emil-reacted
+        - label: Telegram
+          href: https://t.me/mustreets
+    contactLinks:
+      - label: "Telegram: @mustreets"
+        href: https://t.me/mustreets
+      - label: js-nanodegree@outlook.com
+        href: mailto:js-nanodegree@outlook.com
+      - label: github.com/Js-Nanodegree
+        href: https://github.com/Js-Nanodegree
+      - label: career.habr.com/emil-reacted
+        href: https://career.habr.com/emil-reacted
+    skillGroups:
+      - title: Mobile
+        list: "React Native, Expo, CLI, TypeScript, Redux, RTK-Query, Socket.io, Offline-first, Reanimated, Navigation"
+      - title: Frontend
+        list: "React 18, Next.js 14, TypeScript, GraphQL, Apollo, Tailwind CSS, Next.js SSR/SSG"
+      - title: Blockchain / Web3
+        list: "Ethereum, Solana, Cardano, Web3.js, Ethers.js, Hardhat, DeFi protocols"
+      - title: Backend
+        list: "Node.js 20, GoLang, Julia, Express, NestJS, Apollo Server, WebSockets"
+      - title: Data & Infra
+        list: "PostgreSQL, MongoDB, Firebase, Docker, GitLab CI/CD, AWS EC2/Lambda"
+      - title: Testing & QA
+        list: "Jest, Cypress, Detox, unit/integration/E2E, Sentry, observability-minded releases"
+      - title: Tools & AI workflow
+        list: "Figma, Storybook, Cursor AI, GitHub Copilot, [NotebookLM](https://notebooklm.google/), Amplitude, Firebase Analytics"
+    education:
+      - deg: Bachelor's, Economics & Management
+        inst: Ufa State Aviation Technical University
+        year: 2007 – 2015
+      - deg: Full-Stack JavaScript Developer
+        inst: Innopolis University
+        year: 2021 – 2022
+      - deg: "Nanodegree: iOS Developer"
+        inst: Udacity
+        year: 2018 – 2019
+      - deg: "Nanodegree: Professional React Developer"
+        inst: Udacity
+        year: "2017"
+      - deg: "Nanodegree: Full Stack Web Developer"
+        inst: Udacity
+        year: "2017"
+    experience:
+      - role: Senior React Native Engineer
+        company: HAQQEX (haqqex.com)
+        period: Mar 2023 — Dec 2025
+        desc: Islamic finance digital asset exchange for MENA. Led mobile architecture from MVP to App Store / Google Play.
+        ach:
+          - Stable 60 FPS on complex trading charts and transaction lists
+          - Reduced Time-to-Market by 25% via cross-team coordination
+          - Biometric auth, encrypted storage, real-time orderbook via Socket.io
+        tags: [React Native, TypeScript, Socket.io, WebSockets, Redux, Web3]
+      - role: Senior Mobile Developer
+        company: Mirapolis (mirapolis.ru)
+        period: Jul 2024 — Sep 2025
+        desc: HCM/LMS mobile ecosystem for 100k+ corporate users.
+        ach:
+          - DAU +15% via offline-mode overhaul
+          - Memory usage -40% with Virtual Lists optimisation
+          - Dynamic module system for white-label enterprise clients
+        tags: [React Native, TypeScript, React 18, SQLite, Offline-first]
+      - role: Senior Mobile Developer
+        company: Flowwow (flowwow.com)
+        period: Nov 2022 — Jan 2024
+        desc: Offline-first mobile ERP for retail warehouse with barcode/printer integrations.
+        ach:
+          - Sync time -40% for 50 000+ SKU stores
+          - Receiving errors -20% via client-side validation
+        tags: [React Native, Firebase, Android SDK, REST]
+      - role: Senior Mobile Developer
+        company: DeFi Team (hawex.com)
+        period: Apr 2022 — Nov 2022
+        desc: HAWEX Wallet — cross-platform crypto wallet. 🥈 Web3 Hackathon 2023.
+        ach:
+          - Performance +40% via state management redesign
+          - Full CI/CD pipeline, pixel-perfect UI
+        tags: [React Native, TypeScript, Blockchain, Bitcoin]
+      - role: Senior Frontend Engineer
+        company: DV Group (dvgroup.com)
+        period: May 2021 — Apr 2022
+        desc: Led frontend team. Built modular social analytics platform with real-time dashboards.
+        ach:
+          - Scalable React component library with full test coverage
+          - GitLab CI/CD + Docker pipeline
+        tags: [React, Next.js, TypeScript, GraphQL, Docker]
+
+  ru:
+    secLabel: резюме
+    title: Резюме
+    printBtn: Печать / PDF
+    downloadCv: Скачать CV (PDF)
+    printHint: Печать открывает диалог браузера — выберите «Сохранить как PDF». Кнопка скачивания ведёт на /cv.pdf, если файл лежит в public.
+    contactBtn: Написать
+    cvTitle: Senior React Native и фронтенд · Web3 · Финтех
+    location: Уфа, Россия · Удалённо / Релокация
+    profileTitle: Профиль
+    profileBody: |
+      Senior React Native и фронтенд-инженер с 11+ годами опыта в высоконагруженных кроссплатформенных системах.
+      Специализация — сложная архитектура интерфейсов для Web, iOS и Android и интеграции с блокчейн-экосистемой.
+      Руководил командами до 5 инженеров, многократно выводил приложения от MVP до App Store и Google Play.
+      2 место Web3 Hackathon 2023. Контрибьютор react-hook-form и zustand.
+    expTitle: Опыт
+    skillsTitle: Навыки
+    eduTitle: Образование и сертификаты
+    referenceLinks:
+      sectionTitle: Ссылки и материалы
+      items:
+        - label: Блог и заметки
+          href: /blog
+          note: Статьи в том же контент-пайплайне, что и это резюме
+        - label: Кейсы проектов
+          href: /projects
+        - label: GitHub
+          href: https://github.com/Js-Nanodegree
+        - label: Habr Career
+          href: https://career.habr.com/emil-reacted
+        - label: Telegram
+          href: https://t.me/mustreets
+    contactLinks:
+      - label: "Telegram: @mustreets"
+        href: https://t.me/mustreets
+      - label: js-nanodegree@outlook.com
+        href: mailto:js-nanodegree@outlook.com
+      - label: github.com/Js-Nanodegree
+        href: https://github.com/Js-Nanodegree
+      - label: career.habr.com/emil-reacted
+        href: https://career.habr.com/emil-reacted
+    skillGroups:
+      - title: Mobile
+        list: "React Native, Expo, CLI, TypeScript, Redux, RTK-Query, Socket.io, Offline-first, Reanimated, Navigation"
+      - title: Фронтенд
+        list: "React 18, Next.js 14, TypeScript, GraphQL, Apollo, Tailwind CSS, SSR/SSG"
+      - title: Блокчейн / Web3
+        list: "Ethereum, Solana, Cardano, Web3.js, Ethers.js, Hardhat, DeFi"
+      - title: Бэкенд
+        list: "Node.js 20, GoLang, Julia, Express, NestJS, Apollo Server, WebSockets"
+      - title: Данные и инфра
+        list: "PostgreSQL, MongoDB, Firebase, Docker, GitLab CI/CD, AWS EC2/Lambda"
+      - title: Тестирование и QA
+        list: "Jest, Cypress, Detox, unit/integration/E2E, Sentry, релизы с учётом наблюдаемости"
+      - title: Инструменты и AI
+        list: "Figma, Storybook, Cursor AI, GitHub Copilot, [NotebookLM](https://notebooklm.google/), Amplitude, Firebase Analytics"
+    education:
+      - deg: Специалист, экономика и управление
+        inst: УГАТУ
+        year: 2007 – 2015
+      - deg: Full-Stack JavaScript Developer
+        inst: Университет Иннополис
+        year: 2021 – 2022
+      - deg: "Nanodegree: iOS Developer"
+        inst: Udacity
+        year: 2018 – 2019
+      - deg: "Nanodegree: Professional React Developer"
+        inst: Udacity
+        year: "2017"
+      - deg: "Nanodegree: Full Stack Web Developer"
+        inst: Udacity
+        year: "2017"
+    experience:
+      - role: Senior React Native Engineer
+        company: HAQQEX (haqqex.com)
+        period: мар 2023 — дек 2025
+        desc: Исламский финтех и биржа цифровых активов для MENA. Мобильная архитектура от MVP до сторов.
+        ach:
+          - Стабильные 60 FPS на графиках и списках сделок
+          - Сокращение time-to-market на 25% за счёт кросс-командной работы
+          - Биометрия, шифрование, стакан в реальном времени (Socket.io)
+        tags: [React Native, TypeScript, Socket.io, WebSockets, Redux, Web3]
+      - role: Senior Mobile Developer
+        company: Mirapolis (mirapolis.ru)
+        period: июл 2024 — сен 2025
+        desc: Мобильная HCM/LMS-экосистема для 100k+ корпоративных пользователей.
+        ach:
+          - DAU +15% после переработки offline-режима
+          - Память -40% за счёт Virtual Lists
+          - Динамические модули для enterprise white-label
+        tags: [React Native, TypeScript, React 18, SQLite, Offline-first]
+      - role: Senior Mobile Developer
+        company: Flowwow (flowwow.com)
+        period: ноя 2022 — янв 2024
+        desc: Offline-first мобильный ERP для склада с сканерами и принтерами.
+        ach:
+          - Время синка -40% для магазинов 50 000+ SKU
+          - Ошибки приёмки -20% за счёт валидации на клиенте
+        tags: [React Native, Firebase, Android SDK, REST]
+      - role: Senior Mobile Developer
+        company: DeFi Team (hawex.com)
+        period: апр 2022 — ноя 2022
+        desc: HAWEX Wallet — кроссплатформенный криптокошелёк. 🥈 Web3 Hackathon 2023.
+        ach:
+          - Производительность +40% за счёт state management
+          - Полный CI/CD, pixel-perfect UI
+        tags: [React Native, TypeScript, Blockchain, Bitcoin]
+      - role: Senior Frontend Engineer
+        company: DV Group (dvgroup.com)
+        period: май 2021 — апр 2022
+        desc: Руководство фронтенд-командой. Модульная платформа соцаналитики с real-time дашбордами.
+        ach:
+          - Масштабируемая библиотека React с тестами
+          - GitLab CI/CD + Docker
+        tags: [React, Next.js, TypeScript, GraphQL, Docker]

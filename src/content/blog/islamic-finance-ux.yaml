@@ -1,0 +1,59 @@
+id: islamic-finance-ux
+date: "2024-11-15"
+category: UX/Product
+draft: false
+tags:
+  - UX
+  - Fintech
+  - MENA
+  - HAQQEX
+  - Product
+i18n:
+  ru:
+    title: "Islamic Finance UX: как мы строили HAQQEX"
+    subtitle: "Проектирование финансового приложения по стандартам шариата"
+    readTime: "7 мин"
+    excerpt: "Разрабатывать финтех для исламского рынка — это не просто убрать слово 'процент'. Рассказываю, как мы проектировали HAQQEX для региона MENA с учётом культурных и религиозных требований."
+    body: |
+      ## Что такое Riba и почему это важно для UX
+
+      Riba (риба) — запрет на ростовщичество в исламском праве. Это влияет на каждый экран:
+
+      - Нельзя показывать % доходности напрямую
+      - Комиссии должны быть чётко обозначены как фиксированные
+      - Прозрачность транзакций — обязательное требование
+
+      ## Как это повлияло на дизайн
+
+      **Вместо:** «Доходность 8.5% годовых»
+      **Пишем:** «Ожидаемая прибыль: 850 AED / год»
+
+      Каждый инвестиционный продукт имеет экран с полным описанием структуры сделки.
+
+      ## Работа с арабской типографикой
+
+      RTL layout — это не просто `direction: rtl`. Это переосмысление всей навигации, иконографики и flow экранов.
+  en:
+    title: "Islamic Finance UX: how we built HAQQEX"
+    subtitle: "Designing a finance app that respects Sharia standards"
+    readTime: "7 min"
+    excerpt: "Islamic fintech isn’t “remove the word interest”. Here’s how we shaped HAQQEX for MENA with cultural and religious constraints in mind."
+    body: |
+      ## What Riba is — and why UX must care
+
+      Riba forbids usury in Islamic law. That changes almost every screen:
+
+      - Don’t show yield as a plain “%” without context
+      - Fees must read as fixed, transparent charges
+      - Transaction clarity is non‑negotiable
+
+      ## How it changed the product UI
+
+      **Instead of:** “8.5% APY”
+      **We show:** “Expected profit: 850 AED / year”
+
+      Every investment flow includes a deal-structure explainer.
+
+      ## Arabic typography & RTL
+
+      RTL isn’t just `direction: rtl` — it’s navigation, iconography, and entire flows rethought.

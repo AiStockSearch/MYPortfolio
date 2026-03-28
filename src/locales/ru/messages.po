@@ -1,0 +1,312 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2026-03-28 12:52+0500\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: ru\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: src/pages/Blog.jsx:114
+msgid "— min"
+msgstr "— мин"
+
+#: src/pages/Blog.jsx:84
+msgid "{published} published · {drafts} drafts"
+msgstr "{published} опубликовано · {drafts} черновиков"
+
+#: src/components/Layout.jsx:137
+msgid "© 2026 Vyacheslav Yakimov · Senior RN Engineer"
+msgstr "© 2026 Вячеслав Якимов · Senior RN Engineer"
+
+#: src/pages/ProjectDetail.jsx:76
+#~ msgid "← All Projects"
+#~ msgstr "← Все проекты"
+
+#: src/pages/BlogPost.jsx:107
+msgid "← Back to blog"
+msgstr "← Назад к блогу"
+
+#: src/pages/ProjectDetail.jsx:66
+#~ msgid "← Back to projects"
+#~ msgstr "← К проектам"
+
+#: src/pages/BlogPost.jsx:118
+msgid "← Blog"
+msgstr "← Блог"
+
+#: src/pages/Contact.jsx:131
+#~ msgid "<0>Available from March 2026.</0><1/>Open to remote work worldwide and relocation to EU / UAE / other. Work permit available for Russia, Armenia, Belarus, Kazakhstan, Uzbekistan."
+#~ msgstr "<0>Доступен с марта 2026.</0><1/>Удалёнка по всему миру и релокация в ЕС / ОАЭ и др. Разрешение на работу: Россия, Армения, Беларусь, Казахстан, Узбекистан."
+
+#: src/pages/BlogPost.jsx:123
+msgid "⚠ Draft — this article is not yet published"
+msgstr "⚠ Черновик — статья ещё не опубликована"
+
+#: src/pages/ProjectDetail.jsx:126
+#~ msgid "🔵 In development"
+#~ msgstr "🔵 В разработке"
+
+#: src/pages/ProjectDetail.jsx:124
+#~ msgid "🟢 Live in production"
+#~ msgstr "🟢 В продакшене"
+
+#: src/pages/Contact.jsx:156
+#~ msgid "Alex Ivanov"
+#~ msgstr "Алексей Иванов"
+
+#: src/pages/Contact.jsx:161
+#~ msgid "alex@company.com"
+#~ msgstr "alex@company.com"
+
+#: src/pages/Blog.jsx:47
+msgid "All"
+msgstr "Все"
+
+#: src/pages/ProjectDetail.jsx:149
+#: src/pages/ProjectsPage.jsx:82
+#~ msgid "All Projects"
+#~ msgstr "Все проекты"
+
+#: src/pages/Blog.jsx:48
+msgid "Architecture"
+msgstr "Архитектура"
+
+#: src/pages/BlogPost.jsx:168
+msgid "Article in progress…"
+msgstr "Статья в процессе написания…"
+
+#: src/pages/BlogPost.jsx:104
+msgid "Article not found"
+msgstr "Статья не найдена"
+
+#: src/pages/Contact.jsx:61
+#~ msgid "At least 20 characters"
+#~ msgstr "Не менее 20 символов"
+
+#: src/components/Layout.jsx:59
+msgid "Blog"
+msgstr "Блог"
+
+#: src/pages/Blog.jsx:81
+msgid "Blog & Notes"
+msgstr "Блог и заметки"
+
+#: src/pages/ProjectDetail.jsx:131
+#~ msgid "Category"
+#~ msgstr "Категория"
+
+#: src/pages/Contact.jsx:171
+#~ msgid "Collaboration"
+#~ msgstr "Сотрудничество"
+
+#: src/pages/Contact.jsx:106
+#~ msgid "contact"
+#~ msgstr "контакты"
+
+#: src/components/Layout.jsx:61
+msgid "Contact"
+msgstr "Контакты"
+
+#: src/components/Layout.jsx:60
+msgid "CV"
+msgstr "Резюме"
+
+#: src/pages/Blog.jsx:130
+msgid "Draft"
+msgstr "Черновик"
+
+#: src/pages/Contact.jsx:53
+#: src/pages/Contact.jsx:160
+#~ msgid "Email"
+#~ msgstr "Email"
+
+#: src/pages/ProjectsPage.jsx:47
+#~ msgid "Enterprise"
+#~ msgstr "Enterprise"
+
+#: src/pages/ProjectsPage.jsx:46
+#~ msgid "Fintech"
+#~ msgstr "Финтех"
+
+#: src/pages/Contact.jsx:170
+#~ msgid "Freelance project"
+#~ msgstr "Фриланс-проект"
+
+#: src/pages/Contact.jsx:54
+#~ msgid "GitHub"
+#~ msgstr "GitHub"
+
+#: src/pages/Contact.jsx:55
+#~ msgid "Habr Career"
+#~ msgstr "Habr Career"
+
+#: src/components/Layout.jsx:128
+msgid "Hire me"
+msgstr "Нанять меня"
+
+#: src/components/Layout.jsx:57
+msgid "Home"
+msgstr "Главная"
+
+#: src/pages/Contact.jsx:109
+#~ msgid "I'm currently open to <0>senior / lead positions</0> in React Native or Frontend — remote or relocation. Response time is usually within 24 hours via Telegram."
+#~ msgstr "Открыт к <0>senior / lead</0> позициям в React Native или на фронтенде — удалённо или релокация. Обычно отвечаю в Telegram в течение 24 часов."
+
+#: src/pages/Contact.jsx:169
+#~ msgid "Job opportunity"
+#~ msgstr "Вакансия"
+
+#: src/pages/ProjectDetail.jsx:93
+#~ msgid "Key Results"
+#~ msgstr "Ключевые результаты"
+
+#: src/pages/Contact.jsx:107
+#~ msgid "Let's talk."
+#~ msgstr "Давайте поговорим."
+
+#: src/pages/ProjectsPage.jsx:98
+#~ msgid "Live"
+#~ msgstr "В продакшене"
+
+#: src/pages/Contact.jsx:177
+#~ msgid "Message"
+#~ msgstr "Сообщение"
+
+#: src/pages/Contact.jsx:148
+#~ msgid "Message sent!"
+#~ msgstr "Сообщение отправлено!"
+
+#: src/pages/ProjectsPage.jsx:44
+#~ msgid "Mobile"
+#~ msgstr "Mobile"
+
+#: src/pages/ProjectDetail.jsx:144
+#~ msgid "Next Project"
+#~ msgstr "Следующий проект"
+
+#: src/pages/Contact.jsx:143
+#~ msgid "Or reach out directly via Telegram for a faster response."
+#~ msgstr "Или напишите в Telegram — так быстрее."
+
+#: src/pages/Contact.jsx:172
+#~ msgid "Other"
+#~ msgstr "Другое"
+
+#: src/pages/ProjectDetail.jsx:114
+#~ msgid "Overview"
+#~ msgstr "Обзор"
+
+#: src/pages/Blog.jsx:49
+msgid "Performance"
+msgstr "Производительность"
+
+#: src/pages/ProjectsPage.jsx:48
+#~ msgid "Personal"
+#~ msgstr "Личные"
+
+#: src/pages/ProjectsPage.jsx:81
+#~ msgid "portfolio"
+#~ msgstr "портфолио"
+
+#: src/pages/Blog.jsx:145
+msgid "Preview draft →"
+msgstr "Предпросмотр черновика →"
+
+#: src/pages/Blog.jsx:51
+msgid "Productivity"
+msgstr "Продуктивность"
+
+#: src/pages/ProjectDetail.jsx:63
+#~ msgid "Project not found"
+#~ msgstr "Проект не найден"
+
+#: src/components/Layout.jsx:58
+msgid "Projects"
+msgstr "Проекты"
+
+#: src/pages/Blog.jsx:147
+msgid "Read article →"
+msgstr "Читать статью →"
+
+#: src/pages/Contact.jsx:59
+#~ msgid "Required"
+#~ msgstr "Обязательно"
+
+#: src/pages/ProjectDetail.jsx:135
+#~ msgid "Role"
+#~ msgstr "Роль"
+
+#: src/pages/Contact.jsx:142
+#~ msgid "Send a message"
+#~ msgstr "Отправить сообщение"
+
+#: src/pages/Contact.jsx:183
+#~ msgid "Send Message →"
+#~ msgstr "Отправить →"
+
+#: src/pages/Contact.jsx:183
+#~ msgid "Sending..."
+#~ msgstr "Отправка…"
+
+#: src/pages/ProjectDetail.jsx:136
+#~ msgid "Senior Mobile Engineer / Lead"
+#~ msgstr "Senior Mobile / Lead"
+
+#: src/pages/ProjectDetail.jsx:121
+#~ msgid "Status"
+#~ msgstr "Статус"
+
+#: src/pages/Contact.jsx:167
+#~ msgid "Subject"
+#~ msgstr "Тема"
+
+#: src/pages/ProjectDetail.jsx:102
+#~ msgid "Tech Stack"
+#~ msgstr "Стек"
+
+#: src/pages/ProjectDetail.jsx:116
+#~ msgid "Technical Deep-Dive"
+#~ msgstr "Технически подробно"
+
+#: src/pages/Contact.jsx:52
+#~ msgid "Telegram (preferred)"
+#~ msgstr "Telegram (предпочтительно)"
+
+#: src/pages/Contact.jsx:178
+#~ msgid "Tell me about your project or position..."
+#~ msgstr "Расскажите о проекте или позиции…"
+
+#: src/pages/Contact.jsx:149
+#~ msgid "Thanks for reaching out. I'll get back to you within 24 hours."
+#~ msgstr "Спасибо за обращение. Отвечу в течение 24 часов."
+
+#: src/pages/Blog.jsx:52
+msgid "UX/Product"
+msgstr "UX/Продукт"
+
+#: src/pages/Contact.jsx:60
+#~ msgid "Valid email required"
+#~ msgstr "Нужен корректный email"
+
+#: src/pages/ProjectsPage.jsx:112
+#~ msgid "View case study →"
+#~ msgstr "Кейс →"
+
+#: src/pages/Blog.jsx:50
+msgid "Web3"
+msgstr "Web3"
+
+#: src/pages/Blog.jsx:78
+msgid "writing"
+msgstr "тексты"
+
+#: src/pages/Contact.jsx:155
+#~ msgid "Your name"
+#~ msgstr "Ваше имя"

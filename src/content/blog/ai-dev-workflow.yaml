@@ -1,0 +1,64 @@
+id: ai-dev-workflow
+date: "2024-09-01"
+category: Productivity
+draft: false
+tags:
+  - AI
+  - Cursor
+  - Productivity
+  - Tools
+i18n:
+  ru:
+    title: "AI в ежедневной разработке: мой workflow"
+    subtitle: "Cursor, Grok, ChatGPT — как я использую AI-инструменты каждый день"
+    readTime: "5 мин"
+    excerpt: "Год назад я скептически относился к AI-инструментам. Сейчас они экономят мне 2-3 часа в день. Рассказываю конкретно: что делает Cursor, что Grok, и где ChatGPT всё ещё лучше."
+    body: |
+      ## Мой текущий стек
+
+      - **Cursor** — основной редактор, autocomplete + чат прямо в коде
+      - **Grok** — быстрые вопросы по API, debugging
+      - **ChatGPT o1** — архитектурные обсуждения, сложные алгоритмы
+      - <a href="https://notebooklm.google/" target="_blank" rel="noopener noreferrer">NotebookLM</a> — анализ технической документации
+
+      ## Где AI экономит больше всего времени
+
+      **1. Написание тестов** (~40% экономии)
+      Cursor отлично генерирует Jest/RTL тесты по существующему коду.
+
+      **2. Boilerplate** (~30%)
+      Redux slice, API интеграции, типы TypeScript.
+
+      **3. Рефакторинг** (~20%)
+      «Переведи этот класс на хуки» — работает отлично.
+
+      ## Где AI не справляется
+
+      Архитектурные решения, domain-specific логика (исламский банкинг, например), производительность.
+  en:
+    title: "AI in my daily engineering workflow"
+    subtitle: "Cursor, Grok, ChatGPT — how I actually use AI tools every day"
+    readTime: "5 min"
+    excerpt: "A year ago I was skeptical about AI tooling. Now it saves me 2–3 hours a day. Here’s what Cursor does well, where Grok fits, and when ChatGPT still wins."
+    body: |
+      ## My current stack
+
+      - **Cursor** — primary editor, autocomplete + in-editor chat
+      - **Grok** — quick API questions and debugging
+      - **ChatGPT o1** — architecture discussions and harder algorithms
+      - <a href="https://notebooklm.google/" target="_blank" rel="noopener noreferrer">NotebookLM</a> — digesting long technical docs
+
+      ## Where AI saves the most time
+
+      **1. Writing tests** (~40%)
+      Cursor is great at generating Jest/RTL tests from existing code.
+
+      **2. Boilerplate** (~30%)
+      Redux slices, API wiring, TypeScript types.
+
+      **3. Refactors** (~20%)
+      “Convert this class to hooks” works surprisingly well.
+
+      ## Where AI still struggles
+
+      Architecture calls, domain-specific rules (e.g. Islamic finance), and real performance work.
