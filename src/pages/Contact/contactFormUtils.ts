@@ -1,6 +1,13 @@
-import { CONTACT_EMAIL, GITHUB_URL, TELEGRAM_URL } from "../../constants/links";
+import { CONTACT_EMAIL, GITHUB_URL, GITHUB_URL_AISTOCKSEARCH, TELEGRAM_URL } from "../../constants/links";
 
-export const CHANNEL_ORDER = ["tg", "email", "gh"];
+export const CHANNEL_ORDER = [
+  "tg",
+  "email",
+  "gh",
+  "ghAistocksearch",
+  "phone",
+  "whatsapp",
+];
 
 export function validateContactForm(
   form: { name: string; email: string; message: string },
@@ -30,34 +37,76 @@ export function buildContactMailto(
 export function buildContactChannels(ui: {
   channels: Record<string, { label: string; val: string }>;
 }) {
-  return CHANNEL_ORDER.map((key) => {
+  return CHANNEL_ORDER.flatMap((key) => {
     const ch = ui.channels[key];
+    if (!ch) return [];
     if (key === "tg") {
-      return {
-        icon: "✈",
-        label: ch.label,
-        val: ch.val,
-        href: TELEGRAM_URL,
-        external: true,
-      };
+      return [
+        {
+          icon: "✈",
+          label: ch.label,
+          val: ch.val,
+          href: TELEGRAM_URL,
+          external: true,
+        },
+      ];
     }
     if (key === "email") {
-      return {
-        icon: "✉",
-        label: ch.label,
-        val: CONTACT_EMAIL,
-        href: `mailto:${CONTACT_EMAIL}`,
-        external: false,
-      };
+      return [
+        {
+          icon: "✉",
+          label: ch.label,
+          val: CONTACT_EMAIL,
+          href: `mailto:${CONTACT_EMAIL}`,
+          external: false,
+        },
+      ];
     }
     if (key === "gh") {
-      return {
-        icon: "⬡",
-        label: ch.label,
-        val: ch.val,
-        href: GITHUB_URL,
-        external: true,
-      };
+      return [
+        {
+          icon: "⬡",
+          label: ch.label,
+          val: ch.val,
+          href: GITHUB_URL,
+          external: true,
+        },
+      ];
+    }
+    if (key === "ghAistocksearch") {
+      return [
+        {
+          icon: "⬡",
+          label: ch.label,
+          val: ch.val,
+          href: GITHUB_URL_AISTOCKSEARCH,
+          external: true,
+        },
+      ];
+    }
+    if (key === "phone") {
+      return [
+        {
+          icon: "📞",
+          label: ch.label,
+          val: ch.val,
+          href: `tel:${ch.val.replace(/\s/g, "")}`,
+          external: false,
+        },
+      ];
+    }
+    if (key === "whatsapp") {
+      const wa = ch.val.replace(/\D/g, "");
+      if (!wa) return [];
+      return [
+        {
+          icon: "💬",
+          label: ch.label,
+          val: ch.val,
+          href: `https://wa.me/${wa}`,
+          external: true,
+        },
+      ];
     }
     throw new Error(`Unknown contact channel: ${key}`);
   });

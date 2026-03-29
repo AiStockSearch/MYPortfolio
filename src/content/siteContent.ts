@@ -251,7 +251,10 @@ export const contactContent = {
     channels: {
       tg: { label: "Telegram (preferred)", val: "@mustreets" },
       email: { label: "Email" },
-      gh: { label: "GitHub", val: "Js-Nanodegree" },
+      gh: { label: "GitHub Personal", val: "Js-Nanodegree" },
+      ghAistocksearch: { label: "GitHub Main", val: "AiStockSearch" },
+      phone: { label: "Phone", val: "+7-(996)-104-93-57" },
+      whatsapp: { label: "WhatsApp", val: "+7-(996)-104-93-57" },
     },
     availTitle: "Available from March 2026.",
     availBody:
@@ -285,7 +288,10 @@ export const contactContent = {
     channels: {
       tg: { label: "Telegram (предпочтительно)", val: "@mustreets" },
       email: { label: "Почта", val: "fintechmustreets@gmail.com" },
-      gh: { label: "GitHub", val: "Js-Nanodegree" },
+      gh: { label: "GitHub Personal", val: "Js-Nanodegree" },
+      ghAistocksearch: { label: "GitHub Main", val: "AiStockSearch" },
+      phone: { label: "Телефон", val: "+7-(996)-104-93-57" },
+      whatsapp: { label: "WhatsApp", val: "+7-(996)-104-93-57" },
     },
     availTitle: "Доступен с марта 2026.",
     availBody:

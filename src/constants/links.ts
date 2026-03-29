@@ -1,10 +1,12 @@
 /** Shared profile & project links (single source of truth for UI). */
 
-export const CONTACT_EMAIL = "js-nanodegree@outlook.com";
+export const CONTACT_EMAIL = "fintechmustreets@gmail.com";
 export const TELEGRAM_URL = "https://t.me/mustreets";
+export const GITHUB_URL_AISTOCKSEARCH = "https://github.com/AiStockSearch";
 export const GITHUB_URL = "https://github.com/Js-Nanodegree";
 export const HABR_CAREER_URL = "https://career.habr.com/emil-reacted";
-
+export const PHONE_NUMBER = "+79961049357";
+export const WHATSAPP_NUMBER = "+79961049357";
 /** CosmoFusion DAO — публичный лендинг, блог и сообщество (синхронизируйте URL с `projects/cosmo-fusion-dao/project.js`). */
 export const COSMOFUSION_DAO = {
   site: "https://cosmofusiondao.onrender.com/",

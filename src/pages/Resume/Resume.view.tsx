@@ -276,8 +276,8 @@ export default function ResumeView({
           <div className="cv-section">
             <p className="cv-sec-title">{cv.skillsTitle}</p>
             <div className="cv-skills-grid">
-              {cv.skillGroups.map((g) => (
-                <div className="cv-skill-group" key={g.title}>
+              {cv.skillGroups.map((g, i) => (
+                <div className="cv-skill-group" key={`${g.title}-${i}`}>
                   <p className="cv-sg-title">{g.title}</p>
                   <div
                     className="cv-sg-list"

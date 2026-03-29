@@ -8,13 +8,17 @@ export default function HomeSkillsSection({ skills, addRev }) {
         {skills.title}
       </h2>
       <div className="sk-grid">
-        {skills.blocks.map((s) => (
-          <div className="sk-card reveal" key={s.name} ref={addRev}>
+        {skills.blocks.map((s, i) => (
+          <div
+            className="sk-card reveal"
+            key={`${s.cat}-${s.name}-${i}`}
+            ref={addRev}
+          >
             <p className="sk-cat">{s.cat}</p>
             <p className="sk-name">{s.name}</p>
             <div className="sk-tags">
-              {s.tags.map((t) => (
-                <span className="sk-tag" key={t}>
+              {s.tags.map((t, j) => (
+                <span className="sk-tag" key={`${t}-${j}`}>
                   {t}
                 </span>
               ))}
