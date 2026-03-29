@@ -13,40 +13,88 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/pages/Blog.jsx:114
-msgid "— min"
+#: src/components/editor/plate-initial-value.ts:203
+#~ msgid " — style may vary with your mention plugin."
+#~ msgstr " — style may vary with your mention plugin."
+
+#: src/components/editor/plate-initial-value.ts:203
+msgid " — вид может отличаться в вашем плагине упоминаний."
+msgstr " — style may vary with your mention plugin."
+
+#: src/components/editor/plate-initial-value.ts:195
+#~ msgid " for deeper guides."
+#~ msgstr " for deeper guides."
+
+#: src/components/editor/plate-initial-value.ts:63
+#~ msgid " toggles bold when the editor has focus."
+#~ msgstr " toggles bold when the editor has focus."
+
+#: src/components/editor/plate-initial-value.ts:195
+msgid " для подробных руководств."
+msgstr " for deeper guides."
+
+#: src/components/editor/plate-initial-value.ts:63
+msgid " переключает жирный, когда фокус в редакторе."
+msgstr " toggles bold when the editor has focus."
+
+#: src/pages/Blog/Blog.view.jsx:60
+#~ msgid "— min"
+#~ msgstr "— min"
+
+#: src/pages/Blog/Blog.view.jsx:60
+msgid "— мин"
 msgstr "— min"
 
-#: src/pages/Blog.jsx:84
-msgid "{published} published · {drafts} drafts"
+#: src/pages/Blog/Blog.view.jsx:30
+#~ msgid "{published} published · {drafts} drafts"
+#~ msgstr "{published} published · {drafts} drafts"
+
+#: src/pages/Blog/Blog.view.jsx:30
+msgid "{published} опубликовано · {drafts} черновиков"
 msgstr "{published} published · {drafts} drafts"
 
-#: src/components/Layout.jsx:137
-msgid "© 2026 Vyacheslav Yakimov · Senior RN Engineer"
+#: src/components/organisms/SiteFooter.jsx:8
+#~ msgid "© 2026 Vyacheslav Yakimov · Senior RN Engineer"
+#~ msgstr "© 2026 Vyacheslav Yakimov · Senior RN Engineer"
+
+#: src/components/organisms/SiteFooter.jsx:8
+msgid "© 2026 Вячеслав Якимов · Senior RN инженер"
 msgstr "© 2026 Vyacheslav Yakimov · Senior RN Engineer"
 
 #: src/pages/ProjectDetail.jsx:76
 #~ msgid "← All Projects"
 #~ msgstr "← All Projects"
 
-#: src/pages/BlogPost.jsx:107
-msgid "← Back to blog"
-msgstr "← Back to blog"
+#: src/pages/BlogPost/BlogPostNotFound.view.jsx:11
+#~ msgid "← Back to blog"
+#~ msgstr "← Back to blog"
 
 #: src/pages/ProjectDetail.jsx:66
 #~ msgid "← Back to projects"
 #~ msgstr "← Back to projects"
 
-#: src/pages/BlogPost.jsx:118
-msgid "← Blog"
+#: src/pages/BlogPost/BlogPost.view.jsx:12
+#~ msgid "← Blog"
+#~ msgstr "← Blog"
+
+#: src/pages/BlogPost/BlogPost.view.jsx:12
+msgid "← Блог"
 msgstr "← Blog"
+
+#: src/pages/BlogPost/BlogPostNotFound.view.jsx:11
+msgid "← Назад к блогу"
+msgstr "← Back to blog"
 
 #: src/pages/Contact.jsx:131
 #~ msgid "<0>Available from March 2026.</0><1/>Open to remote work worldwide and relocation to EU / UAE / other. Work permit available for Russia, Armenia, Belarus, Kazakhstan, Uzbekistan."
 #~ msgstr "<0>Available from March 2026.</0><1/>Open to remote work worldwide and relocation to EU / UAE / other. Work permit available for Russia, Armenia, Belarus, Kazakhstan, Uzbekistan."
 
-#: src/pages/BlogPost.jsx:123
-msgid "⚠ Draft — this article is not yet published"
+#: src/pages/BlogPost/BlogPost.view.jsx:17
+#~ msgid "⚠ Draft — this article is not yet published"
+#~ msgstr "⚠ Draft — this article is not yet published"
+
+#: src/pages/BlogPost/BlogPost.view.jsx:17
+msgid "⚠ Черновик — статья ещё не опубликована"
 msgstr "⚠ Draft — this article is not yet published"
 
 #: src/pages/ProjectDetail.jsx:126
@@ -57,6 +105,10 @@ msgstr "⚠ Draft — this article is not yet published"
 #~ msgid "🟢 Live in production"
 #~ msgstr "🟢 Live in production"
 
+#: src/components/editor/plate-initial-value.ts:296
+msgid "AI"
+msgstr "AI"
+
 #: src/pages/Contact.jsx:156
 #~ msgid "Alex Ivanov"
 #~ msgstr "Alex Ivanov"
@@ -65,62 +117,123 @@ msgstr "⚠ Draft — this article is not yet published"
 #~ msgid "alex@company.com"
 #~ msgstr "alex@company.com"
 
-#: src/pages/Blog.jsx:47
-msgid "All"
-msgstr "All"
+#: src/pages/Blog/blogConstants.js:13
+#~ msgid "All"
+#~ msgstr "All"
 
 #: src/pages/ProjectDetail.jsx:149
 #: src/pages/ProjectsPage.jsx:82
 #~ msgid "All Projects"
 #~ msgstr "All Projects"
 
-#: src/pages/Blog.jsx:48
-msgid "Architecture"
-msgstr "Architecture"
+#: src/pages/Blog/blogConstants.js:14
+#~ msgid "Architecture"
+#~ msgstr "Architecture"
 
-#: src/pages/BlogPost.jsx:168
-msgid "Article in progress…"
-msgstr "Article in progress…"
+#: src/pages/BlogPost/BlogPost.view.jsx:60
+#~ msgid "Article in progress…"
+#~ msgstr "Article in progress…"
 
-#: src/pages/BlogPost.jsx:104
-msgid "Article not found"
-msgstr "Article not found"
+#: src/pages/BlogPost/BlogPostNotFound.view.jsx:8
+#~ msgid "Article not found"
+#~ msgstr "Article not found"
 
 #: src/pages/Contact.jsx:61
 #~ msgid "At least 20 characters"
 #~ msgstr "At least 20 characters"
 
-#: src/components/Layout.jsx:59
-msgid "Blog"
-msgstr "Blog"
+#: src/components/editor/plate-initial-value.ts:320
+#~ msgid "Below: responsive image with caption, then an auto-generated TOC from headings."
+#~ msgstr "Below: responsive image with caption, then an auto-generated TOC from headings."
 
-#: src/pages/Blog.jsx:81
-msgid "Blog & Notes"
-msgstr "Blog & Notes"
+#: src/components/Layout/Layout.connected.jsx:13
+#~ msgid "Blog"
+#~ msgstr "Blog"
+
+#: src/pages/Blog/Blog.view.jsx:27
+#~ msgid "Blog & Notes"
+#~ msgstr "Blog & Notes"
+
+#: src/components/editor/plate-initial-value.ts:38
+#~ msgid "bold"
+#~ msgstr "bold"
+
+#: src/components/editor/plate-initial-value.ts:76
+#~ msgid "Bullet: plan sections, then write."
+#~ msgstr "Bullet: plan sections, then write."
+
+#: src/components/editor/plate-initial-value.ts:114
+#~ msgid "Callout, toggle, and columns"
+#~ msgstr "Callout, toggle, and columns"
+
+#: src/components/editor/plate-initial-value.ts:125
+#~ msgid "Callouts draw attention. Change the emoji from the callout toolbar."
+#~ msgstr "Callouts draw attention. Change the emoji from the callout toolbar."
+
+#: src/components/editor/plate-initial-value.ts:262
+#~ msgid "Capability"
+#~ msgstr "Capability"
+
+#: src/components/editor/plate-initial-value.ts:333
+#~ msgid "Caption: workspace photo (Unsplash)."
+#~ msgstr "Caption: workspace photo (Unsplash)."
 
 #: src/pages/ProjectDetail.jsx:131
 #~ msgid "Category"
 #~ msgstr "Category"
 
+#: src/components/editor/plate-initial-value.ts:46
+#~ msgid "code"
+#~ msgstr "code"
+
+#: src/components/editor/plate-initial-value.ts:222
+#~ msgid "Code and block equation"
+#~ msgstr "Code and block equation"
+
 #: src/pages/Contact.jsx:171
 #~ msgid "Collaboration"
 #~ msgstr "Collaboration"
+
+#: src/components/editor/plate-initial-value.ts:161
+#~ msgid "Column A: side-by-side layout for comparison."
+#~ msgstr "Column A: side-by-side layout for comparison."
+
+#: src/components/editor/plate-initial-value.ts:173
+#~ msgid "Column B: resize columns from the group handle."
+#~ msgstr "Column B: resize columns from the group handle."
 
 #: src/pages/Contact.jsx:106
 #~ msgid "contact"
 #~ msgstr "contact"
 
-#: src/components/Layout.jsx:61
-msgid "Contact"
-msgstr "Contact"
+#: src/components/Layout/Layout.connected.jsx:15
+#~ msgid "Contact"
+#~ msgstr "Contact"
 
-#: src/components/Layout.jsx:60
-msgid "CV"
-msgstr "CV"
+#: src/components/Layout/Layout.connected.jsx:18
+#: src/pages/ContentCreator/ContentCreatorPage.jsx:15
+#~ msgid "Content creator"
+#~ msgstr "Content creator"
 
-#: src/pages/Blog.jsx:130
-msgid "Draft"
-msgstr "Draft"
+#: src/components/Layout/Layout.connected.jsx:14
+#~ msgid "CV"
+#~ msgstr "CV"
+
+#: src/components/editor/plate-initial-value.ts:209
+#~ msgid "Deadline chip: "
+#~ msgstr "Deadline chip: "
+
+#: src/components/editor/plate-initial-value.ts:108
+#~ msgid "Done: you opened this template."
+#~ msgstr "Done: you opened this template."
+
+#: src/pages/Blog/Blog.view.jsx:76
+#~ msgid "Draft"
+#~ msgstr "Draft"
+
+#: src/pages/ContentCreator/EditorErrorBoundary.jsx:20
+#~ msgid "Editor failed to load"
+#~ msgstr "Editor failed to load"
 
 #: src/pages/Contact.jsx:53
 #: src/pages/Contact.jsx:160
@@ -147,17 +260,46 @@ msgstr "Draft"
 #~ msgid "Habr Career"
 #~ msgstr "Habr Career"
 
-#: src/components/Layout.jsx:128
-msgid "Hire me"
-msgstr "Hire me"
+#: src/components/editor/plate-initial-value.ts:144
+#~ msgid "Hidden details live here until the toggle is expanded — good for FAQs or long notes."
+#~ msgstr "Hidden details live here until the toggle is expanded — good for FAQs or long notes."
 
-#: src/components/Layout.jsx:57
-msgid "Home"
-msgstr "Home"
+#: src/components/editor/plate-initial-value.ts:48
+#~ msgid "highlight"
+#~ msgstr "highlight"
+
+#: src/components/organisms/SiteHeader.jsx:48
+#~ msgid "Hire me"
+#~ msgstr "Hire me"
+
+#: src/components/Layout/Layout.connected.jsx:11
+#: src/components/organisms/SiteHeader.fixture.jsx:6
+#~ msgid "Home"
+#~ msgstr "Home"
 
 #: src/pages/Contact.jsx:109
 #~ msgid "I'm currently open to <0>senior / lead positions</0> in React Native or Frontend — remote or relocation. Response time is usually within 24 hours via Telegram."
 #~ msgstr "I'm currently open to <0>senior / lead positions</0> in React Native or Frontend — remote or relocation. Response time is usually within 24 hours via Telegram."
+
+#: src/components/editor/plate-initial-value.ts:313
+#~ msgid "Image and table of contents"
+#~ msgstr "Image and table of contents"
+
+#: src/components/editor/plate-initial-value.ts:268
+#~ msgid "In this editor"
+#~ msgstr "In this editor"
+
+#: src/components/editor/plate-initial-value.ts:55
+#~ msgid "Inline math: "
+#~ msgstr "Inline math: "
+
+#: src/components/editor/plate-initial-value.ts:37
+#~ msgid "Inline styles: "
+#~ msgstr "Inline styles: "
+
+#: src/components/editor/plate-initial-value.ts:40
+#~ msgid "italic"
+#~ msgstr "italic"
 
 #: src/pages/Contact.jsx:169
 #~ msgid "Job opportunity"
@@ -171,9 +313,37 @@ msgstr "Home"
 #~ msgid "Let's talk."
 #~ msgstr "Let's talk."
 
+#: src/components/editor/plate-initial-value.ts:184
+#~ msgid "Links, mentions, and date"
+#~ msgstr "Links, mentions, and date"
+
+#: src/components/editor/plate-initial-value.ts:70
+#~ msgid "Lists"
+#~ msgstr "Lists"
+
 #: src/pages/ProjectsPage.jsx:98
 #~ msgid "Live"
 #~ msgstr "Live"
+
+#: src/pages/ContentCreator/ContentCreatorPage.jsx:10
+#~ msgid "Loading editor…"
+#~ msgstr "Loading editor…"
+
+#: src/App.jsx:40
+#~ msgid "Loading studio…"
+#~ msgstr "Loading studio…"
+
+#: src/components/editor/plate-initial-value.ts:279
+msgid "Markdown"
+msgstr "Markdown"
+
+#: src/components/editor/plate-initial-value.ts:201
+#~ msgid "Mention example: "
+#~ msgstr "Mention example: "
+
+#: src/components/editor/plate-initial-value.ts:251
+#~ msgid "Merge cells, add rows, and set alignment from the table toolbar."
+#~ msgstr "Merge cells, add rows, and set alignment from the table toolbar."
 
 #: src/pages/Contact.jsx:177
 #~ msgid "Message"
@@ -187,9 +357,21 @@ msgstr "Home"
 #~ msgid "Mobile"
 #~ msgstr "Mobile"
 
+#: src/components/editor/plate-initial-value.ts:82
+#~ msgid "Nested ideas stay readable with indent."
+#~ msgstr "Nested ideas stay readable with indent."
+
 #: src/pages/ProjectDetail.jsx:144
 #~ msgid "Next Project"
 #~ msgstr "Next Project"
+
+#: src/components/editor/plate-initial-value.ts:88
+#~ msgid "Numbered: first step in a tutorial."
+#~ msgstr "Numbered: first step in a tutorial."
+
+#: src/components/editor/plate-initial-value.ts:340
+#~ msgid "On this page"
+#~ msgstr "On this page"
 
 #: src/pages/Contact.jsx:143
 #~ msgid "Or reach out directly via Telegram for a faster response."
@@ -203,37 +385,50 @@ msgstr "Home"
 #~ msgid "Overview"
 #~ msgstr "Overview"
 
-#: src/pages/Blog.jsx:49
-msgid "Performance"
-msgstr "Performance"
+#: src/pages/Blog/blogConstants.js:15
+#~ msgid "Performance"
+#~ msgstr "Performance"
 
 #: src/pages/ProjectsPage.jsx:48
 #~ msgid "Personal"
 #~ msgstr "Personal"
 
+#: src/components/editor/plate-initial-value.ts:193
+#~ msgid "Plate documentation"
+#~ msgstr "Plate documentation"
+
 #: src/pages/ProjectsPage.jsx:81
 #~ msgid "portfolio"
 #~ msgstr "portfolio"
 
-#: src/pages/Blog.jsx:145
-msgid "Preview draft →"
-msgstr "Preview draft →"
+#: src/pages/Blog/Blog.view.jsx:91
+#~ msgid "Preview draft →"
+#~ msgstr "Preview draft →"
 
-#: src/pages/Blog.jsx:51
-msgid "Productivity"
-msgstr "Productivity"
+#: src/pages/Blog/blogConstants.js:17
+#~ msgid "Productivity"
+#~ msgstr "Productivity"
 
 #: src/pages/ProjectDetail.jsx:63
 #~ msgid "Project not found"
 #~ msgstr "Project not found"
 
-#: src/components/Layout.jsx:58
-msgid "Projects"
-msgstr "Projects"
+#: src/components/Layout/Layout.connected.jsx:12
+#: src/components/organisms/SiteHeader.fixture.jsx:7
+#~ msgid "Projects"
+#~ msgstr "Projects"
 
-#: src/pages/Blog.jsx:147
-msgid "Read article →"
-msgstr "Read article →"
+#: src/components/editor/plate-initial-value.ts:24
+#~ msgid "Quick tips"
+#~ msgstr "Quick tips"
+
+#: src/pages/Blog/Blog.view.jsx:93
+#~ msgid "Read article →"
+#~ msgstr "Read article →"
+
+#: src/components/editor/plate-initial-value.ts:189
+#~ msgid "Read the "
+#~ msgstr "Read the "
 
 #: src/pages/Contact.jsx:59
 #~ msgid "Required"
@@ -242,6 +437,14 @@ msgstr "Read article →"
 #: src/pages/ProjectDetail.jsx:135
 #~ msgid "Role"
 #~ msgstr "Role"
+
+#: src/components/editor/plate-initial-value.ts:94
+#~ msgid "Second step: publish or export."
+#~ msgstr "Second step: publish or export."
+
+#: src/components/editor/plate-initial-value.ts:31
+#~ msgid "Select text to apply bold, italic, or code. On an empty line, press Space to open the AI menu where it is enabled."
+#~ msgstr "Select text to apply bold, italic, or code. On an empty line, press Space to open the AI menu where it is enabled."
 
 #: src/pages/Contact.jsx:142
 #~ msgid "Send a message"
@@ -259,13 +462,45 @@ msgstr "Read article →"
 #~ msgid "Senior Mobile Engineer / Lead"
 #~ msgstr "Senior Mobile Engineer / Lead"
 
+#: src/components/editor/plate-initial-value.ts:285
+#~ msgid "Shortcuts & paste"
+#~ msgstr "Shortcuts & paste"
+
 #: src/pages/ProjectDetail.jsx:121
 #~ msgid "Status"
 #~ msgstr "Status"
 
+#: src/components/editor/plate-initial-value.ts:44
+#~ msgid "strikethrough"
+#~ msgstr "strikethrough"
+
+#: src/pages/ContentCreator/ContentCreatorPage.jsx:12
+#~ msgid "Studio"
+#~ msgstr "Studio"
+
+#: src/components/editor/plate-initial-value.ts:16
+#~ msgid "Studio template: feature tour"
+#~ msgstr "Studio template: feature tour"
+
 #: src/pages/Contact.jsx:167
 #~ msgid "Subject"
 #~ msgstr "Subject"
+
+#: src/components/editor/plate-initial-value.ts:357
+#~ msgid "Switch the site language in the header — this whole document is translated for Russian."
+#~ msgstr "Switch the site language in the header — this whole document is translated for Russian."
+
+#: src/components/editor/plate-initial-value.ts:44
+#~ msgid "Switch the site language in the header to read this introduction in Russian."
+#~ msgstr "Switch the site language in the header to read this introduction in Russian."
+
+#: src/components/editor/plate-initial-value.ts:230
+#~ msgid "Syntax highlighting in code blocks"
+#~ msgstr "Syntax highlighting in code blocks"
+
+#: src/components/editor/plate-initial-value.ts:247
+#~ msgid "Table"
+#~ msgstr "Table"
 
 #: src/pages/ProjectDetail.jsx:102
 #~ msgid "Tech Stack"
@@ -287,9 +522,37 @@ msgstr "Read article →"
 #~ msgid "Thanks for reaching out. I'll get back to you within 24 hours."
 #~ msgstr "Thanks for reaching out. I'll get back to you within 24 hours."
 
-#: src/pages/Blog.jsx:52
-msgid "UX/Product"
+#: src/components/editor/plate-initial-value.ts:17
+#~ msgid "This space is for notes and posts. Use the toolbar above or type / to insert blocks — headings, lists, quotes, and code."
+#~ msgstr "This space is for notes and posts. Use the toolbar above or type / to insert blocks — headings, lists, quotes, and code."
+
+#: src/components/editor/plate-initial-value.ts:23
+#~ msgid "This template shows what the editor can do. Use the fixed toolbar, the floating bar on selection, drag handles on blocks, / for the slash menu, and Markdown-style shortcuts (e.g. * list, # heading)."
+#~ msgstr "This template shows what the editor can do. Use the fixed toolbar, the floating bar on selection, drag handles on blocks, / for the slash menu, and Markdown-style shortcuts (e.g. * list, # heading)."
+
+#: src/components/editor/plate-initial-value.ts:101
+#~ msgid "To-do: try export / import in the toolbar."
+#~ msgstr "To-do: try export / import in the toolbar."
+
+#: src/components/editor/plate-initial-value.ts:137
+#~ msgid "Toggle heading (click the chevron)"
+#~ msgstr "Toggle heading (click the chevron)"
+
+#: src/components/editor/plate-initial-value.ts:32
+#~ msgid "Typography and marks"
+#~ msgstr "Typography and marks"
+
+#: src/components/editor/plate-initial-value.ts:42
+#~ msgid "underline"
+#~ msgstr "underline"
+
+#: src/pages/Blog/blogConstants.js:18
+msgid "UX / продукт"
 msgstr "UX/Product"
+
+#: src/pages/Blog/blogConstants.js:18
+#~ msgid "UX/Product"
+#~ msgstr "UX/Product"
 
 #: src/pages/Contact.jsx:60
 #~ msgid "Valid email required"
@@ -299,14 +562,273 @@ msgstr "UX/Product"
 #~ msgid "View case study →"
 #~ msgstr "View case study →"
 
-#: src/pages/Blog.jsx:50
+#: src/pages/Blog/blogConstants.js:16
 msgid "Web3"
 msgstr "Web3"
 
-#: src/pages/Blog.jsx:78
-msgid "writing"
-msgstr "writing"
+#: src/components/editor/plate-initial-value.ts:302
+#~ msgid "Where configured"
+#~ msgstr "Where configured"
+
+#: src/pages/Blog/Blog.view.jsx:24
+#~ msgid "writing"
+#~ msgstr "writing"
+
+#: src/components/editor/plate-initial-value.ts:10
+#~ msgid "Your draft"
+#~ msgstr "Your draft"
 
 #: src/pages/Contact.jsx:155
 #~ msgid "Your name"
 #~ msgstr "Your name"
+
+#: src/pages/Blog/blogConstants.js:14
+msgid "Архитектура"
+msgstr "Architecture"
+
+#: src/components/Layout/Layout.connected.jsx:13
+msgid "Блог"
+msgstr "Blog"
+
+#: src/pages/Blog/Blog.view.jsx:27
+msgid "Блог и заметки"
+msgstr "Blog & Notes"
+
+#: src/components/editor/plate-initial-value.ts:268
+msgid "В этом редакторе"
+msgstr "In this editor"
+
+#: src/components/editor/plate-initial-value.ts:82
+msgid "Вложенные мысли читаются за счёт отступа."
+msgstr "Nested ideas stay readable with indent."
+
+#: src/components/editor/plate-initial-value.ts:262
+msgid "Возможность"
+msgstr "Capability"
+
+#: src/pages/Blog/blogConstants.js:13
+msgid "Все"
+msgstr "All"
+
+#: src/components/editor/plate-initial-value.ts:55
+msgid "Встроенная формула: "
+msgstr "Inline math: "
+
+#: src/components/editor/plate-initial-value.ts:37
+msgid "Встроенные стили: "
+msgstr "Inline styles: "
+
+#: src/components/editor/plate-initial-value.ts:94
+msgid "Второй шаг: опубликовать или экспортировать."
+msgstr "Second step: publish or export."
+
+#: src/components/editor/plate-initial-value.ts:114
+msgid "Выноска, раскрывающийся блок и колонки"
+msgstr "Callout, toggle, and columns"
+
+#: src/components/editor/plate-initial-value.ts:125
+msgid "Выноски привлекают внимание. Смените эмодзи на панели выноски."
+msgstr "Callouts draw attention. Change the emoji from the callout toolbar."
+
+#: src/components/editor/plate-initial-value.ts:302
+msgid "Где задаётся"
+msgstr "Where configured"
+
+#: src/components/Layout/Layout.connected.jsx:11
+#: src/components/organisms/SiteHeader.fixture.jsx:6
+msgid "Главная"
+msgstr "Home"
+
+#: src/components/editor/plate-initial-value.ts:108
+msgid "Готово: вы открыли этот шаблон."
+msgstr "Done: you opened this template."
+
+#: src/components/editor/plate-initial-value.ts:193
+msgid "документацию Plate"
+msgstr "Plate documentation"
+
+#: src/components/editor/plate-initial-value.ts:38
+msgid "жирный"
+msgstr "bold"
+
+#: src/components/editor/plate-initial-value.ts:137
+msgid "Заголовок раскрывающегося блока (клик по шеврону)"
+msgstr "Toggle heading (click the chevron)"
+
+#: src/pages/Blog/Blog.view.jsx:24
+msgid "заметки"
+msgstr "writing"
+
+#: src/components/editor/plate-initial-value.ts:44
+msgid "зачёркнутый"
+msgstr "strikethrough"
+
+#: src/components/editor/plate-initial-value.ts:313
+msgid "Изображение и оглавление"
+msgstr "Image and table of contents"
+
+#: src/components/editor/plate-initial-value.ts:46
+msgid "код"
+msgstr "code"
+
+#: src/components/editor/plate-initial-value.ts:222
+msgid "Код и блочное уравнение"
+msgstr "Code and block equation"
+
+#: src/components/editor/plate-initial-value.ts:161
+msgid "Колонка A: сравнение рядом."
+msgstr "Column A: side-by-side layout for comparison."
+
+#: src/components/editor/plate-initial-value.ts:173
+msgid "Колонка B: тяните за общую ручку."
+msgstr "Column B: resize columns from the group handle."
+
+#: src/components/Layout/Layout.connected.jsx:15
+msgid "Контакты"
+msgstr "Contact"
+
+#: src/components/editor/plate-initial-value.ts:40
+msgid "курсив"
+msgstr "italic"
+
+#: src/components/editor/plate-initial-value.ts:48
+msgid "маркер"
+msgstr "highlight"
+
+#: src/components/editor/plate-initial-value.ts:76
+msgid "Маркер: наметьте разделы, затем пишите."
+msgstr "Bullet: plan sections, then write."
+
+#: src/components/editor/plate-initial-value.ts:340
+msgid "На этой странице"
+msgstr "On this page"
+
+#: src/pages/ContentCreator/EditorErrorBoundary.jsx:20
+msgid "Не удалось загрузить редактор"
+msgstr "Editor failed to load"
+
+#: src/components/editor/plate-initial-value.ts:320
+msgid "Ниже: адаптивное изображение с подписью и авто-оглавление по заголовкам."
+msgstr "Below: responsive image with caption, then an auto-generated TOC from headings."
+
+#: src/components/editor/plate-initial-value.ts:88
+msgid "Нумерация: первый шаг в туториале."
+msgstr "Numbered: first step in a tutorial."
+
+#: src/components/editor/plate-initial-value.ts:251
+msgid "Объединяйте ячейки, добавляйте строки и выравнивание с панели таблицы."
+msgstr "Merge cells, add rows, and set alignment from the table toolbar."
+
+#: src/components/editor/plate-initial-value.ts:357
+msgid "Переключите язык в шапке — документ также доступен на английском."
+msgstr "Switch the site language in the header — this whole document is translated for Russian."
+
+#: src/components/editor/plate-initial-value.ts:333
+msgid "Подпись: фото рабочего места (Unsplash)."
+msgstr "Caption: workspace photo (Unsplash)."
+
+#: src/components/editor/plate-initial-value.ts:230
+msgid "Подсветка синтаксиса в блоках кода"
+msgstr "Syntax highlighting in code blocks"
+
+#: src/components/editor/plate-initial-value.ts:42
+msgid "подчёркнутый"
+msgstr "underline"
+
+#: src/pages/Blog/Blog.view.jsx:91
+msgid "Препросмотр черновика →"
+msgstr "Preview draft →"
+
+#: src/components/editor/plate-initial-value.ts:201
+msgid "Пример упоминания: "
+msgstr "Mention example: "
+
+#: src/pages/Blog/blogConstants.js:17
+msgid "Продуктивность"
+msgstr "Productivity"
+
+#: src/components/Layout/Layout.connected.jsx:12
+#: src/components/organisms/SiteHeader.fixture.jsx:7
+msgid "Проекты"
+msgstr "Projects"
+
+#: src/pages/Blog/blogConstants.js:15
+msgid "Производительность"
+msgstr "Performance"
+
+#: src/components/Layout/Layout.connected.jsx:18
+#: src/pages/ContentCreator/ContentCreatorPage.jsx:15
+msgid "Редактор контента"
+msgstr "Content creator"
+
+#: src/components/Layout/Layout.connected.jsx:14
+msgid "Резюме"
+msgstr "CV"
+
+#: src/components/organisms/SiteHeader.jsx:48
+msgid "Связаться"
+msgstr "Hire me"
+
+#: src/components/editor/plate-initial-value.ts:101
+msgid "Сделать: попробуйте экспорт / импорт на панели."
+msgstr "To-do: try export / import in the toolbar."
+
+#: src/components/editor/plate-initial-value.ts:144
+msgid "Скрытые детали здесь, пока блок не раскрыт — удобно для FAQ и длинных заметок."
+msgstr "Hidden details live here until the toggle is expanded — good for FAQs or long notes."
+
+#: src/components/editor/plate-initial-value.ts:285
+msgid "Сочетания и вставка"
+msgstr "Shortcuts & paste"
+
+#: src/components/editor/plate-initial-value.ts:70
+msgid "Списки"
+msgstr "Lists"
+
+#: src/components/editor/plate-initial-value.ts:184
+msgid "Ссылки, упоминания и дата"
+msgstr "Links, mentions, and date"
+
+#: src/pages/BlogPost/BlogPost.view.jsx:60
+msgid "Статья в работе…"
+msgstr "Article in progress…"
+
+#: src/pages/BlogPost/BlogPostNotFound.view.jsx:8
+msgid "Статья не найдена"
+msgstr "Article not found"
+
+#: src/pages/ContentCreator/ContentCreatorPage.jsx:12
+msgid "Студия"
+msgstr "Studio"
+
+#: src/components/editor/plate-initial-value.ts:247
+msgid "Таблица"
+msgstr "Table"
+
+#: src/components/editor/plate-initial-value.ts:32
+msgid "Типографика и начертания"
+msgstr "Typography and marks"
+
+#: src/pages/Blog/Blog.view.jsx:76
+msgid "Черновик"
+msgstr "Draft"
+
+#: src/components/editor/plate-initial-value.ts:209
+msgid "Чип дедлайна: "
+msgstr "Deadline chip: "
+
+#: src/components/editor/plate-initial-value.ts:189
+msgid "Читайте "
+msgstr "Read the "
+
+#: src/pages/Blog/Blog.view.jsx:93
+msgid "Читать статью →"
+msgstr "Read article →"
+
+#: src/components/editor/plate-initial-value.ts:16
+msgid "Шаблон студии: обзор возможностей"
+msgstr "Studio template: feature tour"
+
+#: src/components/editor/plate-initial-value.ts:23
+msgid "Этот шаблон показывает возможности редактора. Используйте фиксированную панель, всплывающую при выделении, ручки перетаскивания блоков, / для slash-меню и сочетания в стиле Markdown (например * список, # заголовок)."
+msgstr "This template shows what the editor can do. Use the fixed toolbar, the floating bar on selection, drag handles on blocks, / for the slash menu, and Markdown-style shortcuts (e.g. * list, # heading)."

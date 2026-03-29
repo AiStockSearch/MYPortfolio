@@ -1,6 +1,6 @@
-import { clsx, type ClassValue } from "clsx"
-import { twMerge } from "tailwind-merge"
+/** Утилита для классов (совместимость с shadcn CLI / `components.json`). */
+export type ClassValue = string | number | boolean | null | undefined;
 
 export function cn(...inputs: ClassValue[]) {
-  return twMerge(clsx(inputs))
+  return inputs.flat().filter(Boolean).join(" ");
 }
