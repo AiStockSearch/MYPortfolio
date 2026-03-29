@@ -38,7 +38,6 @@ const ui = {
     tg: { label: "Telegram", val: "@user" },
     email: { label: "Email", val: "a@b.co" },
     gh: { label: "GitHub", val: "gh" },
-    habr: { label: "Habr", val: "habr" },
   },
 };
 

@@ -1,0 +1,216 @@
+"id": "mobility-top"
+"homeTag": "MOBILITY"
+"period":
+  "en": "Mar 2024 — Sep 2024"
+  "ru": "мар 2024 — сен 2024"
+"homeCompany":
+  "en": "Mobility Топ · Dom Edy client (Kostroma)"
+  "ru": "Mobility Топ · клиент «Дом Еды» (Кострома)"
+"cvCompany":
+  "en": "Mobility Топ (Dom Edy mobile client — Kostroma)"
+  "ru": "Mobility Топ (мобильный клиент «Дом Еды», Кострома)"
+"role":
+  "en": "Middle Mobile Developer"
+  "ru": "Middle Mobile Developer"
+"shortDesc":
+  "en": "**Mobility Топ** · **React Native** client **Dom Edy** (**Kostroma**): **pixel-perfect** UI, **cart → checkout**
+    (order, payment, purchase)."
+  "ru": "**Mobility Топ** · клиент **«Дом Еды»** на **React Native** (**Кострома**): **pixel-perfect**, **корзина → чекаут**
+    (заказ, оплата, покупка)."
+"cvShortDesc":
+  "en": "Dom Edy RN (Kostroma): Navigation, RTK Query/REST, WebSocket, MMKV, Pushy; SectionList, themes, biometrics."
+  "ru": "«Дом Еда» на RN (Кострома): Navigation, RTK Query/REST, WebSocket, MMKV, Pushy; SectionList, темы, биометрия."
+"achByArea":
+  "en":
+    "front":
+      - "<span class='m'>Pixel-perfect</span> **Dom Edy** screens: dense **catalog**, **SectionList** sections (headers, row
+        recycling), promotional strips / cards"
+      - "<span class='m'>Complex UI</span>: layered layouts, badges, controlled **Animated** timings for micro-motions —
+        clarity on budget Android in Kostroma rollout"
+      - "**Theming**: light/dark **theme** tokens wired through navigation + lists so commerce surfaces stay consistent"
+    "mobile":
+      - "**Production React Native** app: **Mobility Топ** contract on **Dom Edy** consumer client; store-track mindset"
+      - "**Navigation**: **React Navigation** stacks & tabs; guarded flows for **auth**, **registration**, profile & **order
+        history** (read-heavy)"
+      - "**State & API**: **RTK Query** over **RESTful** services (catalog, cart, checkout, profile); cache policies, invalidation,
+        optimistic-friendly patterns where safe"
+      - "**Realtime**: **WebSocket** channel for price/stock/ops signals the UI subscribed to alongside REST snapshots"
+      - "**Persistence**: **react-native-mmkv** for fast key-value (tokens, flags, lightweight prefs) next to RTK cache strategy"
+      - "**Push**: **Pushy** for reliable notification delivery in the project’s transport choice"
+      - "**Analytics**: **Amplitude** + complementary funnel/crash tooling (**Firebase Analytics**, **Crashlytics**,
+        **Sentry**) in a production observability bundle"
+      - "**Biometrics**: quick return-to-session after idle; falls back to credential form per policy"
+      - "**Shopping journey**: **cart** assembly from Dom Edy assortment, **order placement**, **payment**, **purchase**
+        confirmation — error UX tuned for flaky networks"
+      - "**GitLab**: MR workflow, reviews, CI hooks aligned with partner team"
+    "backend":
+      - "**REST**: RESTful contracts catalog/basket/order/payment; idiomatic errors mapped for RTK Query layers"
+      - "**WebSocket**: server push / streaming endpoints consumed with reconnect hygiene"
+  "ru":
+    "front":
+      - "<span class='m'>Pixel-perfect</span> экраны **«Дом Еды»**: плотный **каталог**, **SectionList** с секциями и
+        переиспользованием строк, промо-блоки и карточки"
+      - "<span class='m'>Сложный UI</span>: многослойная вёрстка, бейджи, отточенные **Animated**-анимации без «лишнего шума»"
+      - "**Темы**: светлая и тёмная **тема**, общие токены в навигации и списках"
+    "mobile":
+      - "**React Native** уровня продакшена; контракт **Mobility Топ**, клиент **«Дом Еды»**, ориентир на **Кострому**"
+      - "**Навигация**: **React Navigation** (стеки, табы); сценарии **авторизации**, **регистрации**, профиль и **история
+        заказов** (много read-only просмотров)"
+      - "**Данные**: **RTK Query** поверх **REST** (каталог, корзина, чекаут, профиль); кэш, инвалидация, аккуратные
+        оптимистичные обновления где уместно"
+      - "**WebSocket** для живых сигналов (остатки, цены, операционные события) параллельно REST"
+      - "**react-native-mmkv**: быстрые KV (токены, флаги, настройки) рядом с политикой кэша RTK"
+      - "**Pushy** как транспорт **push**-уведомлений в этом проекте"
+      - "**Аналитика**: **Amplitude** + **Firebase Analytics**, **Crashlytics**, **Sentry** — полный контур наблюдаемости"
+      - "**Биометрия** для быстрого возврата в сессию с fallback на форму входа"
+      - "**Путь покупки**: сбор **корзины** из ассортимента Дом Еды, **заказ**, **оплата**, **подтверждение покупки**;
+        UX на плохой сети"
+      - "**GitLab**: MR, ревью, CI совместно с командой заказчика"
+    "backend":
+      - "**RESTful API**: каталог, корзина, заказ, оплата — ошибки и коды согласованы со слоем RTK Query"
+      - "**WebSocket**-контур с нормальной обработкой переподключений"
+"stackByArea":
+  "front":
+    - "Figma"
+    - "Pixel-perfect"
+    - "React Native Animated"
+    - "SectionList"
+    - "Light & dark themes"
+  "mobile":
+    - "React Native"
+    - "React Navigation"
+    - "RTK Query"
+    - "Redux Toolkit"
+    - "REST"
+    - "WebSocket"
+    - "react-native-mmkv"
+    - "Pushy"
+    - "Amplitude"
+    - "Firebase Analytics"
+    - "Crashlytics"
+    - "Sentry"
+    - "Biometrics"
+    - "Push notifications"
+    - "SectionList"
+    - "React Native Animated"
+    - "Git"
+    - "GitLab"
+    - "Cypress"
+    - "E2E"
+    - "Jest"
+    - "Maestro"
+    - "React Cosmos"
+    - "Storybook"
+  "backend":
+    - "REST"
+    - "WebSocket"
+    - "Amplitude"
+"cvAchievements":
+  "en":
+    - "Dom Edy RN (Kostroma, Mobility Топ): production consumer app — Navigation, RTK Query/REST, WebSocket, MMKV, Pushy,
+      Amplitude + crash analytics"
+    - "Pixel-perfect commerce UI: SectionList-heavy catalog/cart, RN Animated, themes, auth + registration + biometrics"
+    - "End-to-end cart → order → payment → purchase; GitLab delivery with partner team"
+  "ru":
+    - "Клиент «Дом Еды» на RN (Кострома, Mobility Топ): продакшен — Navigation, RTK Query/REST, WebSocket, MMKV, Pushy,
+      Amplitude и связанная аналитика/краши"
+    - "Pixel-perfect UI: SectionList Catalog/корзина, RN Animated, темы, авторизация, регистрация, биометрия"
+    - "Полный путь корзина → заказ → оплата → покупка; поставка через GitLab с командой партнёра"
+"cvTags":
+  - "React Native"
+  - "React Navigation"
+  - "Redux Toolkit"
+  - "RTK Query"
+  - "REST"
+  - "WebSocket"
+  - "react-native-mmkv"
+  - "MMKV"
+  - "Pushy"
+  - "Amplitude"
+  - "Firebase Analytics"
+  - "Crashlytics"
+  - "Sentry"
+  - "SectionList"
+  - "React Native Animated"
+  - "Biometrics"
+  - "Push notifications"
+  - "Git"
+  - "GitLab"
+  - "Cypress"
+  - "E2E"
+  - "Jest"
+  - "Maestro"
+  - "React Cosmos"
+  - "Storybook"
+  - "Pixel-perfect"
+  - "Figma"
+  - "Theming"
+"portfolio":
+  "catalogOrderKey": "mobilityTop"
+  "variant": "stub"
+  "catalogFilters":
+    - "Mobile"
+  "stack":
+    - "React Native"
+    - "React Navigation"
+    - "RTK Query"
+    - "Redux Toolkit"
+    - "REST"
+    - "WebSocket"
+    - "react-native-mmkv"
+    - "Pushy"
+    - "Amplitude"
+    - "Firebase Analytics"
+    - "Crashlytics"
+    - "Sentry"
+    - "SectionList"
+    - "React Native Animated"
+    - "Biometrics"
+    - "GitLab"
+  "catalogCardType":
+    "ru": "Дом Еда · клиент · Кострома"
+    "en": "Dom Edy · client · Kostroma"
+  "stubMetrics":
+    "ru":
+      - "val": "Кострома"
+        "lbl": "Регион"
+      - "val": "RN"
+        "lbl": "Клиент"
+      - "val": "Prod"
+        "lbl": "Уровень"
+      - "val": "GitLab"
+        "lbl": "Процесс"
+    "en":
+      - "val": "Kostroma"
+        "lbl": "Region"
+      - "val": "RN"
+        "lbl": "Client"
+      - "val": "Prod"
+        "lbl": "Level"
+      - "val": "GitLab"
+        "lbl": "Delivery"
+  "stubOverviewProse":
+    "en": "**Production-ready** consumer app: **React Navigation** (stacks & tabs), **RTK Query** on **RESTful**
+      catalog / cart / checkout / profile APIs with cache and invalidation; **WebSocket** for live price, stock and ops
+      signals next to REST snapshots. **react-native-mmkv** for fast KV — tokens, feature flags, lightweight prefs
+      alongside the RTK cache strategy. **Pushy** for push delivery; **Amplitude**, **Firebase Analytics**,
+      **Crashlytics** and **Sentry** for funnels and stability.
+
+      **UI:** dense **SectionList** layouts (grouped catalog, promos, row recycling), **React Native Animated** for
+      controlled motion, **light/dark themes** across navigation and lists. **Auth**, **registration**, **biometrics** with
+      credential fallback; read-heavy **profile** and **order history**.
+
+      **Shopping path:** assemble the **cart** from the Dom Edy assortment, place **orders**, complete **payment** and
+      **purchase** confirmation — error states tuned for flaky networks. **GitLab** MRs, reviews and CI with the partner team."
+    "ru": "**Production-ready** приложение: **React Navigation** (стеки и табы), **RTK Query** поверх **REST**
+      (каталог, корзина, чекаут, профиль) с кэшем и инвалидацией; **WebSocket** для живых цен, остатков и операционных
+      событий параллельно REST. **react-native-mmkv** для быстрых KV — токены, флаги, лёгкие настройки рядом с политикой
+      кэша RTK. **Pushy** для push; **Amplitude**, **Firebase Analytics**, **Crashlytics**, **Sentry** для воронок и стабильности.
+
+      **UI:** плотные **SectionList** (сгруппированный каталог, промо, переиспользование строк), **React Native Animated**,
+      **светлая и тёмная тема** в навигации и списках. **Авторизация**, **регистрация**, **биометрия** с fallback на форму;
+      много экранов **профиля** и **истории заказов** в режиме чтения.
+
+      **Путь покупки:** **корзина** из ассортимента Дом Еды, **заказ**, **оплата**, **подтверждение покупки** — UX при
+      слабой сети. **GitLab**: MR, ревью, CI с командой партнёра."
+"timelineIndex": 0

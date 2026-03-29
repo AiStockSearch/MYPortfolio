@@ -1,7 +1,8 @@
 /**
- * Унифицированный каталог проектов: project.ts в подпапках + import.meta.glob.
+ * Каталог проектов: единая сборка из `entities/careerPortfolioSource.ts`
+ * (engagement + `portfolio` + Cosmo / Carelink / WLS).
  *
- * Схема корня (экспорт default из project.ts):
+ * Схема документа:
  * - id, order, live, featured, stack[]
  * - i18n.en | i18n.ru: name, type, tagline, role?, links[], metrics[], blocks[]
  *
@@ -16,10 +17,9 @@
  * - image: { src, alt?, caption? }
  */
 
-const modules = import.meta.glob("./**/project.ts", {
-  eager: true,
-  import: "default",
-});
+import { getAllRawPortfolioDocuments } from "../entities/careerPortfolioSource";
+
+const modules = getAllRawPortfolioDocuments();
 
 function pickLocale(
   doc: Record<string, unknown>,
@@ -44,12 +44,17 @@ export function normalizeProjectDoc(doc: Record<string, unknown>, locale: "en" |
     return null;
   }
 
+  const catalogFilters = Array.isArray(doc.catalogFilters)
+    ? doc.catalogFilters.map((t) => String(t))
+    : undefined;
+
   return {
     id: doc.id,
     order: typeof doc.order === "number" ? doc.order : 999,
     live: Boolean(doc.live),
     featured: Boolean(doc.featured),
     stack: Array.isArray(doc.stack) ? doc.stack : [],
+    catalogFilters,
     name: String(loc.name ?? ""),
     type: String(loc.type ?? ""),
     tagline: typeof loc.tagline === "string" ? loc.tagline : "",
@@ -60,15 +65,73 @@ export function normalizeProjectDoc(doc: Record<string, unknown>, locale: "en" |
   };
 }
 
-export function getAllProjects(locale: "en" | "ru") {
-  const list = Object.values(modules)
+type NormalizedProject = NonNullable<ReturnType<typeof normalizeProjectDoc>>;
+
+const projectsByLocale: Partial<Record<"en" | "ru", NormalizedProject[]>> = {};
+
+/**
+ * Список проектов статичен в рантайме — кэшируем, чтобы не пересобирать на каждом рендере
+ * (например главная с typewriter ~36ms тиками).
+ */
+export function getAllProjects(locale: "en" | "ru"): NormalizedProject[] {
+  const hit = projectsByLocale[locale];
+  if (hit) return hit;
+  const list = modules
     .map((doc) => normalizeProjectDoc(doc as Record<string, unknown>, locale))
-    .filter((p): p is NonNullable<typeof p> => p != null);
-  return list.sort((a, b) => a.order - b.order || a.id.localeCompare(b.id));
+    .filter((p): p is NormalizedProject => p != null)
+    .sort((a, b) => a.order - b.order || a.id.localeCompare(b.id));
+  projectsByLocale[locale] = list;
+  return list;
 }
 
 export function getProjectById(id: string, locale: "en" | "ru") {
   return getAllProjects(locale).find((p) => p.id === id) ?? null;
+}
+
+function techStackTagsFromBlocks(blocks: unknown[]): string[] {
+  const out: string[] = [];
+  for (const b of blocks) {
+    if (!b || typeof b !== "object") continue;
+    const block = b as Record<string, unknown>;
+    if (block.type !== "techStack") continue;
+    const tags = block.tags;
+    if (!Array.isArray(tags)) continue;
+    for (const t of tags) out.push(String(t));
+  }
+  return out;
+}
+
+/** Склеивает списки тегов; порядок — как в аргументах; дубликаты по lower-case убираются. */
+export function mergeUniqueTagStrings(...lists: Array<string[] | undefined | null>): string[] {
+  const seen = new Set<string>();
+  const out: string[] = [];
+  for (const list of lists) {
+    if (!list?.length) continue;
+    for (const raw of list) {
+      const s = String(raw).trim();
+      if (!s) continue;
+      const k = s.toLowerCase();
+      if (seen.has(k)) continue;
+      seen.add(k);
+      out.push(s);
+    }
+  }
+  return out;
+}
+
+/**
+ * Один кейс: `stack` + `catalogFilters` + теги из блоков `techStack`, без дублей.
+ */
+export function getCombinedPortfolioTagsForSlug(slug: string, locale: "en" | "ru"): string[] {
+  const p = getProjectById(slug, locale);
+  if (!p) return [];
+  const collected: string[] = [];
+  for (const t of p.stack) collected.push(String(t));
+  if (p.catalogFilters?.length) {
+    for (const t of p.catalogFilters) collected.push(String(t));
+  }
+  collected.push(...techStackTagsFromBlocks(p.blocks));
+  return mergeUniqueTagStrings(collected);
 }
 
 /** Порядок для next/prev (стабильно по `order`). */

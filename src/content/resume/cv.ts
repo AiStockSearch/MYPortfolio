@@ -1,3 +1,4 @@
+import { cvResumeExperienceTimeline } from "../entities/experienceTimeline";
 import { homeSkillsBlocks } from "../siteContent";
 const contacts={
   "telegram": {
@@ -10,7 +11,7 @@ const contacts={
   },
   "github": {
     name:"GitHub",
-    val:"https://github.com/AiStockSearch"
+    val:"https://github.com/Js-Nanodegree"
   },
   "habr": {
     name:"Habr",
@@ -29,25 +30,17 @@ const contactLinks=[
   },
   {
     "label": contacts.email.val,
-    "href": contacts.email.val
+    "href": `mailto:${contacts.email.val}`
   },
   {
     "label": "github.com/Js-Nanodegree",
     "href": contacts.github.val
-  },
-  {
-    "label": "career.habr.com/emil-reacted",
-    "href": contacts.habr.val
   }
 ]
 
+/** Новее сверху (как в таймлайне опыта). */
 const education={
   ru:[
-    {
-      "deg": "Специалист, экономика и управление",
-      "inst": "УГАТУ",
-      "year": "2007 – 2015"
-    },
     {
       "deg": "Full-Stack JavaScript Developer",
       "inst": "Университет Иннополис",
@@ -67,14 +60,14 @@ const education={
       "deg": "Nanodegree: Full Stack Web Developer",
       "inst": "Udacity",
       "year": "2017"
+    },
+    {
+      "deg": "Специалист, экономика и управление",
+      "inst": "УГАТУ",
+      "year": "2007 – 2015"
     }
   ],
   en:[
-    {
-      "deg": "Bachelor's, Economics & Management",
-      "inst": "Ufa State Aviation Technical University",
-      "year": "2007 – 2015"
-    },
     {
       "deg": "Full-Stack JavaScript Developer",
       "inst": "Innopolis University",
@@ -94,6 +87,11 @@ const education={
       "deg": "Nanodegree: Full Stack Web Developer",
       "inst": "Udacity",
       "year": "2017"
+    },
+    {
+      "deg": "Bachelor's, Economics & Management",
+      "inst": "Ufa State Aviation Technical University",
+      "year": "2007 – 2015"
     }
   ]
 }
@@ -123,11 +121,22 @@ export default {
       "downloadCv": "Скачать CV (PDF)",
       "printHint": "Печать открывает диалог браузера — выберите «Сохранить как PDF». Кнопка скачивания ведёт на /cv.pdf, если файл лежит в public.",
       "contactBtn": "Написать",
-      "cvTitle": "Senior React Native и фронтенд · Web3 · Финтех",
+      "cvTitle": "Senior React Native Developer · Финтех и Enterprise",
       "location": "Уфа, Россия · Удалённо / Релокация",
       "profileTitle": "Профиль",
-      "profileBody": "Senior React Native и фронтенд-инженер с 11+ годами опыта в высоконагруженных кроссплатформенных системах.\nСпециализация — сложная архитектура интерфейсов для Web, iOS и Android и интеграции с блокчейн-экосистемой.\nРуководил командами до 5 инженеров, многократно выводил приложения от MVP до App Store и Google Play.\n2 место Web3 Hackathon 2023. Контрибьютор react-hook-form и zustand.\n",
+      "profileBody": "Senior React Native Developer с 11+ годами опыта: продакшен-приложения под нагрузкой — финтех, enterprise (LMS, HCM, ERP), retail и витрины на React.\nФокус на архитектуре клиентов для iOS, Android и Web, офлайн-first и real-time. Руководил командами до 5 инженеров, многократно доводил продукты от MVP до App Store и Google Play.\nОтдельный опыт — крипто- и биржевые мобильные клиенты. 2 место Web3 Hackathon 2023. Контрибьютор react-hook-form и zustand.\n",
       "expTitle": "Опыт",
+      "expArea": {
+        "front": "Frontend",
+        "mobile": "Мобильная",
+        "backend": "Бэкенд",
+        "selfHosted": "Self-hosted",
+        "aria": "Фильтр опыта по направлению",
+        "noMatches":
+          "Нет записей для этого направления — переключите вкладку (например, «Мобильная» или «Self-hosted»).",
+        "caseStudy": "Кейс →",
+        "selfHostedHeading": "Собственные продукты (self-hosted)",
+      },
       "skillsTitle": "Навыки",
       "eduTitle": "Образование и сертификаты",
       "referenceLinks": {
@@ -147,10 +156,6 @@ export default {
             "href": contacts.github.val
           },
           {
-            "label": "Habr Career",
-            "href": contacts.habr.val
-          },
-          {
             "label": "Telegram",
             "href": contacts.telegram.val
           }
@@ -159,94 +164,7 @@ export default {
       "contactLinks": contactLinks,
       "skillGroups": skillGroups().ru,
       "education": education.ru,
-      "experience": [
-        {
-          "role": "Senior React Native Engineer",
-          "company": "HAQQEX (haqqex.com)",
-          "period": "мар 2023 — дек 2025",
-          "desc": "Исламский финтех и биржа цифровых активов для MENA. Мобильная архитектура от MVP до сторов.",
-          "ach": [
-            "Стабильные 60 FPS на графиках и списках сделок",
-            "Сокращение time-to-market на 25% за счёт кросс-командной работы",
-            "Биометрия, шифрование, стакан в реальном времени (Socket.io)"
-          ],
-          "tags": [
-            "React Native",
-            "TypeScript",
-            "Socket.io",
-            "WebSockets",
-            "Redux",
-            "Web3"
-          ]
-        },
-        {
-          "role": "Senior Mobile Developer",
-          "company": "Mirapolis (mirapolis.ru)",
-          "period": "июл 2024 — сен 2025",
-          "desc": "Мобильная HCM/LMS-экосистема для 100k+ корпоративных пользователей.",
-          "ach": [
-            "DAU +15% после переработки offline-режима",
-            "Память -40% за счёт Virtual Lists",
-            "Динамические модули для enterprise white-label"
-          ],
-          "tags": [
-            "React Native",
-            "TypeScript",
-            "React 18",
-            "SQLite",
-            "Offline-first"
-          ]
-        },
-        {
-          "role": "Senior Mobile Developer",
-          "company": "Flowwow (flowwow.com)",
-          "period": "ноя 2022 — янв 2024",
-          "desc": "Offline-first мобильный ERP для склада с сканерами и принтерами.",
-          "ach": [
-            "Время синка -40% для магазинов 50 000+ SKU",
-            "Ошибки приёмки -20% за счёт валидации на клиенте"
-          ],
-          "tags": [
-            "React Native",
-            "Firebase",
-            "Android SDK",
-            "REST"
-          ]
-        },
-        {
-          "role": "Senior Mobile Developer",
-          "company": "DeFi Team (hawex.com)",
-          "period": "апр 2022 — ноя 2022",
-          "desc": "HAWEX Wallet — кроссплатформенный криптокошелёк. 🥈 Web3 Hackathon 2023.",
-          "ach": [
-            "Производительность +40% за счёт state management",
-            "Полный CI/CD, pixel-perfect UI"
-          ],
-          "tags": [
-            "React Native",
-            "TypeScript",
-            "Blockchain",
-            "Bitcoin"
-          ]
-        },
-        {
-          "role": "Senior Frontend Engineer",
-          "company": "DV Group (dvgroup.com)",
-          "period": "май 2021 — апр 2022",
-          "desc": "Руководство фронтенд-командой. Модульная платформа соцаналитики с real-time дашбордами.",
-          "ach": [
-            "Масштабируемая библиотека React с тестами",
-            "GitLab CI/CD + Docker"
-          ],
-          "tags": [
-            "React",
-            "Next.js",
-            "TypeScript",
-            "GraphQL",
-            "Docker"
-          ]
-        }
-      ]
+      "experience": cvResumeExperienceTimeline("ru")
     },
     "en": {
       "secLabel": "curriculum vitae",
@@ -255,11 +173,22 @@ export default {
       "downloadCv": "Download CV (PDF)",
       "printHint": "Print opens your browser dialog — choose \"Save as PDF\" to export. The download button uses /cv.pdf when you host that file.",
       "contactBtn": "Contact Me",
-      "cvTitle": "Senior React Native & Frontend Engineer · Web3 · Fintech",
+      "cvTitle": "Senior React Native Developer | Fintech & Enterprise",
       "location": "Ufa, Russia · Remote / Relocation",
       "profileTitle": "Profile",
-      "profileBody": "Senior React Native & Frontend Engineer with 11+ years of professional experience building high-load cross-platform systems.\nSpecialised in complex interface architecture for Web, iOS and Android with deep Blockchain ecosystem integration.\nLed teams of up to 5 engineers, shipped apps from MVP to App Store/Google Play multiple times.\n2nd place Web3 Hackathon 2023. Active contributor to react-hook-form and zustand.\n",
+      "profileBody": "Senior React Native Developer with 11+ years shipping production apps under load — fintech, enterprise (LMS, HCM, ERP), retail and React-powered web surfaces.\nStrong in client architecture for iOS, Android and Web, offline-first and real-time. Led teams of up to 5 engineers; repeated releases from MVP to App Store and Google Play.\nSeparate track: crypto and exchange mobile clients. 2nd place Web3 Hackathon 2023. Contributor to react-hook-form and zustand.\n",
       "expTitle": "Experience",
+      "expArea": {
+        "front": "Front",
+        "mobile": "Mobile",
+        "backend": "Backend",
+        "selfHosted": "Self-hosted",
+        "aria": "Filter experience by track",
+        "noMatches":
+          "No entries for this track — try Mobile, Self-hosted, or another tab.",
+        "caseStudy": "Case study →",
+        "selfHostedHeading": "Own products (self-hosted)",
+      },
       "skillsTitle": "Technical Skills",
       "eduTitle": "Education & Certifications",
       "referenceLinks": {
@@ -276,109 +205,18 @@ export default {
           },
           {
             "label": "GitHub",
-            "href": "https://github.com/Js-Nanodegree"
-          },
-          {
-            "label": "Habr Career",
-            "href": "https://career.habr.com/emil-reacted"
+            "href": contacts.github.val
           },
           {
             "label": "Telegram",
-            "href": "https://t.me/mustreets"
+            "href": contacts.telegram.val
           }
         ]
       },
       "contactLinks": contactLinks,
       "skillGroups": skillGroups().en,
       "education": education.en,
-      "experience": [
-        {
-          "role": "Senior React Native Engineer",
-          "company": "HAQQEX (haqqex.com)",
-          "period": "Mar 2023 — Dec 2025",
-          "desc": "Islamic finance digital asset exchange for MENA. Led mobile architecture from MVP to App Store / Google Play.",
-          "ach": [
-            "Stable 60 FPS on complex trading charts and transaction lists",
-            "Reduced Time-to-Market by 25% via cross-team coordination",
-            "Biometric auth, encrypted storage, real-time orderbook via Socket.io"
-          ],
-          "tags": [
-            "React Native",
-            "TypeScript",
-            "Socket.io",
-            "WebSockets",
-            "Redux",
-            "Web3"
-          ]
-        },
-        {
-          "role": "Senior Mobile Developer",
-          "company": "Mirapolis (mirapolis.ru)",
-          "period": "Jul 2024 — Sep 2025",
-          "desc": "HCM/LMS mobile ecosystem for 100k+ corporate users.",
-          "ach": [
-            "DAU +15% via offline-mode overhaul",
-            "Memory usage -40% with Virtual Lists optimisation",
-            "Dynamic module system for white-label enterprise clients"
-          ],
-          "tags": [
-            "React Native",
-            "TypeScript",
-            "React 18",
-            "SQLite",
-            "Offline-first"
-          ]
-        },
-        {
-          "role": "Senior Mobile Developer",
-          "company": "Flowwow (flowwow.com)",
-          "period": "Nov 2022 — Jan 2024",
-          "desc": "Offline-first mobile ERP for retail warehouse with barcode/printer integrations.",
-          "ach": [
-            "Sync time -40% for 50 000+ SKU stores",
-            "Receiving errors -20% via client-side validation"
-          ],
-          "tags": [
-            "React Native",
-            "Firebase",
-            "Android SDK",
-            "REST"
-          ]
-        },
-        {
-          "role": "Senior Mobile Developer",
-          "company": "DeFi Team (hawex.com)",
-          "period": "Apr 2022 — Nov 2022",
-          "desc": "HAWEX Wallet — cross-platform crypto wallet. 🥈 Web3 Hackathon 2023.",
-          "ach": [
-            "Performance +40% via state management redesign",
-            "Full CI/CD pipeline, pixel-perfect UI"
-          ],
-          "tags": [
-            "React Native",
-            "TypeScript",
-            "Blockchain",
-            "Bitcoin"
-          ]
-        },
-        {
-          "role": "Senior Frontend Engineer",
-          "company": "DV Group (dvgroup.com)",
-          "period": "May 2021 — Apr 2022",
-          "desc": "Led frontend team. Built modular social analytics platform with real-time dashboards.",
-          "ach": [
-            "Scalable React component library with full test coverage",
-            "GitLab CI/CD + Docker pipeline"
-          ],
-          "tags": [
-            "React",
-            "Next.js",
-            "TypeScript",
-            "GraphQL",
-            "Docker"
-          ]
-        }
-      ]
+      "experience": cvResumeExperienceTimeline("en")
     }
   }
 };

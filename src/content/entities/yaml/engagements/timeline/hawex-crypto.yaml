@@ -1,0 +1,274 @@
+"id": "hawex-crypto"
+"homeTag": "DEFI TEAM"
+"period":
+  "en": "Apr 2022 — Nov 2022"
+  "ru": "апр 2022 — ноя 2022"
+"homeCompany":
+  "en": "hawex.com"
+  "ru": "hawex.com"
+"cvCompany":
+  "en": "Hawex Group (hawex.com)"
+  "ru": "Hawex Group (hawex.com)"
+"role":
+  "en": "Senior Mobile Developer"
+  "ru": "Senior Mobile Developer"
+"shortDesc":
+  "en": "HAWEX Wallet (React Native) — crypto wallet rails for cross-border settlements with foreign contractors inside Hawex’s fintech / payments ecosystem; pixel-perfect UI, +40% perf, 🥈 Web3 Hackathon 2023."
+  "ru": "HAWEX Wallet на React Native — мобильный криптокошелёк для **международных расчётов с зарубежными контрагентами** в экосистеме финтех/платежей Hawex; pixel-perfect UI, +40% perf, 🥈 Web3 Hackathon 2023."
+"achByArea":
+  "en":
+    "front":
+      - "<span class='m'>+40%</span> UI performance via RTK-Query + render discipline"
+      - "Pixel-perfect UI from Figma; adaptive components"
+    "mobile":
+      - "React Native iOS/Android; navigation, crypto-safe state for **cross-border payout** flows"
+      - "<span class='m'>Fastlane</span> CI/CD, release & QA workflow"
+    "backend":
+      - "Blockchain & Bitcoin: keys, send/receive, balances, history — aligned with **contractor settlement** use cases"
+      - "Documented architecture & code review for consistency"
+  "ru":
+    "front":
+      - "<span class='m'>+40%</span> производительности UI за счёт RTK-Query и дисциплины рендера"
+      - "Pixel-perfect по Figma; адаптивные компоненты"
+    "mobile":
+      - "React Native iOS/Android; безопасное состояние для сценариев **трансграничных выплат** контрагентам"
+      - "<span class='m'>Fastlane</span> CI/CD, релизы и QA"
+    "backend":
+      - "Blockchain / Bitcoin: ключи, отправка/приём, балансы, история — под **расчёты с иностранными контрагентами**"
+      - "Документирование архитектуры и code review"
+"stackByArea":
+  "front":
+    - "TypeScript"
+    - "Figma"
+    - "RTK-Query"
+  "mobile":
+    - "React Native"
+    - "Redux"
+    - "Amplitude"
+    - "Crashlytics"
+    - "Cypress"
+    - "E2E"
+    - "Firebase Analytics"
+    - "Jest"
+    - "Maestro"
+    - "Push notifications"
+    - "React Cosmos"
+    - "Sentry"
+    - "Storybook"
+  "backend":
+    - "Blockchain"
+    - "Bitcoin"
+"cvAchievements":
+  "en":
+    - "HAWEX Wallet: crypto rails for cross-border contractor settlements inside Hawex fintech / payments context"
+    - "Performance +40% via state management; pixel-perfect UI from Figma"
+    - "Blockchain/Bitcoin: keys, transactions, balances; Fastlane CI/CD"
+  "ru":
+    - "HAWEX Wallet: крипто-слой для **трансграничных расчётов с контрагентами** в контексте финтех/платежей Hawex"
+    - "Производительность +40% за счёт state management; pixel-perfect UI из Figma"
+    - "Blockchain/Bitcoin: ключи, транзакции, балансы; Fastlane CI/CD"
+"cvTags":
+  - "React Native"
+  - "TypeScript"
+  - "Redux"
+  - "RTK-Query"
+  - "Blockchain"
+  - "Bitcoin"
+  - "Amplitude"
+  - "Crashlytics"
+  - "Cypress"
+  - "E2E"
+  - "Firebase Analytics"
+  - "Jest"
+  - "Maestro"
+  - "Push notifications"
+  - "React Cosmos"
+  - "Sentry"
+  - "Storybook"
+"portfolio":
+  "catalogOrderKey": "hawexCrypto"
+  "live": false
+  "variant": "rich"
+  "catalogFilters":
+    - "Mobile"
+    - "Fintech"
+    - "Crypto"
+    - "Web3"
+  "stack":
+    - "React Native"
+    - "TypeScript"
+    - "Blockchain"
+    - "Bitcoin"
+    - "RTK-Query"
+    - "Fastlane"
+    - "CI/CD"
+    - "Amplitude"
+    - "Crashlytics"
+    - "Cypress"
+    - "E2E"
+    - "Firebase Analytics"
+    - "Jest"
+    - "Maestro"
+    - "Push notifications"
+    - "React Cosmos"
+    - "Sentry"
+    - "Storybook"
+  "i18n":
+    "ru":
+      "name": "HAWEX Crypto Wallet"
+      "type": "Финтех · расчёты · крипто"
+      "tagline": "Криптокошелёк для международных расчётов с контрагентами (Hawex)"
+      "role": "Senior Mobile Developer"
+      "links":
+        - "label": "hawex.com"
+          "href": "https://hawex.com/hawexwallet"
+          "primary": true
+        - "label": "Hawex (LinkedIn)"
+          "href": "https://ru.linkedin.com/company/hawex?trk=ppro_cprof"
+      "metrics":
+        - "val": "+40%"
+          "lbl": "Perf"
+        - "val": "🥈"
+          "lbl": "Хакатон 2023"
+      "blocks":
+        - "type": "heroImage"
+          "src": "/projects/hawex-crypto.svg"
+          "alt": "HAWEX Crypto Wallet"
+        - "type": "section"
+          "sectionKey": "overview"
+        - "type": "prose"
+          "text": "**[HAWEX Wallet](https://hawex.com/hawexwallet)** — мобильный клиент на **React Native** в экосистеме **[Hawex Group](https://ru.linkedin.com/company/hawex?trk=ppro_cprof)**:
+            финтех и **платёжная инфраструктура** (счета, обработка платежей, KYC/AML в портфеле компании). Приложение закрывает практический
+            сценарий **расчётов с зарубежными контрагентами через криптокошелёк**: управление ключами, **real-time** история операций,
+            мультисетевые интеграции, отправка и контроль балансов в UX, пригодном для бизнес-пользователя. **Pixel-perfect** по **Figma**,
+            упор на перф на тяжёлых списках. **🥈 Web3 Hackathon 2023**.\n"
+        - "type": "keyResults"
+          "items":
+            - "val": "+40%"
+              "lbl": "UI perf"
+            - "val": "🥈"
+              "lbl": "Хакатон"
+            - "val": "RN"
+              "lbl": "iOS + Android"
+        - "type": "prose"
+          "text": "### Идея и контекст\n\n**Hawex** позиционируется как финансовая/платёжная компания: обработка платежей, счета, KYC/AML,
+            сопровождение финансового бизнеса — в том числе **крипто-обработка** в линейке услуг (см.
+            [профиль компании на LinkedIn](https://ru.linkedin.com/company/hawex?trk=ppro_cprof)). **HAWEX Wallet** — мобильный слой,
+            который переводит этот контекст в конкретный пользовательский сценарий: **расчёты с иностранными контрагентами** и сопутствующие
+            операции **через криптокошелёк**, с понятной историей, статусами и безопасной работой с ключами.\n\nИнженерная задача — не «игрушечный
+            кошелёк», а **production-ready** клиент: HD/BIP39, подпись, мультисеть, перф и **релизы в сторах**. Внешняя валидация — **🥈 Web3
+            Hackathon 2023**.\n"
+        - "type": "prose"
+          "text": "### Итог и эффект\n\n- **Продуктовый фокус:** клиент заточен под **трансграничные расчёты и работу с контрагентами** на
+            крипто-рейсах внутри бренда Hawex, а не как абстрактный «демо-кошелёк».\n- **Перфоманс:** **RTK Query** и дисциплина рендера — ориентир
+            **+40%** отклика тяжёлого UI.\n- **Дизайн:** **pixel-perfect** **Figma** на **iOS и Android**.\n- **Крипто-слой:** **HD**, **BIP39**,
+            подпись и **broadcast**, балансы и история в **нескольких сетях**.\n- **Доставка:** **Fastlane** + **CI/CD** для **App Store / Google Play**.\n- **Команда:** архитектурная документация и **code review**.\n- **Признание:** **🥈 Web3 Hackathon 2023**.\n"
+        - "type": "section"
+          "sectionKey": "technical"
+        - "type": "prose"
+          "text": "### Техническая реализация\n\n**Кошелёк и сценарии расчётов:** **HD Wallet**, **BIP39**, подпись и **broadcast** в
+            нескольких сетях; балансы и **история операций**, критичные для **прозрачности** трансграничных выплат и сверок с контрагентами.\n\n**Клиент:**
+            **React Native**, **TypeScript**, **Redux** + **RTK Query**; анимации балансов и дисциплина списков под нагрузкой.\n\n**Релизы:**
+            **CI/CD** и **Fastlane**. Продукт: [hawex.com/hawexwallet](https://hawex.com/hawexwallet); о компании см.
+            [LinkedIn — Hawex Group LTD](https://ru.linkedin.com/company/hawex?trk=ppro_cprof).\n"
+        - "type": "techStack"
+          "tags":
+            - "React Native"
+            - "TypeScript"
+            - "Redux"
+            - "RTK Query"
+            - "Bitcoin"
+            - "Blockchain"
+            - "BIP39"
+            - "HD Wallet"
+            - "Fastlane"
+            - "CI/CD"
+            - "Figma"
+            - "Amplitude"
+            - "Crashlytics"
+            - "Cypress"
+            - "E2E"
+            - "Firebase Analytics"
+            - "Jest"
+            - "Maestro"
+            - "Push notifications"
+            - "React Cosmos"
+            - "Sentry"
+            - "Storybook"
+    "en":
+      "name": "HAWEX Crypto Wallet"
+      "type": "FinTech · settlements · crypto"
+      "tagline": "Crypto wallet for cross-border contractor settlements (Hawex)"
+      "role": "Senior Mobile Developer"
+      "links":
+        - "label": "hawex.com"
+          "href": "https://hawex.com/hawexwallet"
+          "primary": true
+        - "label": "Hawex (LinkedIn)"
+          "href": "https://ru.linkedin.com/company/hawex?trk=ppro_cprof"
+      "metrics":
+        - "val": "+40%"
+          "lbl": "Performance"
+        - "val": "🥈"
+          "lbl": "Hackathon 2023"
+      "blocks":
+        - "type": "heroImage"
+          "src": "/projects/hawex-crypto.svg"
+          "alt": "HAWEX Crypto Wallet"
+        - "type": "section"
+          "sectionKey": "overview"
+        - "type": "prose"
+          "text": "**[HAWEX Wallet](https://hawex.com/hawexwallet)** is the **React Native** mobile client in the **[Hawex Group](https://ru.linkedin.com/company/hawex?trk=ppro_cprof)**
+            ecosystem: **finTech / payment infrastructure** (accounts, payment processing, KYC/AML in the company’s portfolio). The app
+            targets **settlements with foreign contractors via a crypto wallet** — key handling, **real-time** history, multi-chain integrations,
+            and balance/send flows appropriate for business users. **Pixel-perfect** **Figma** UI with strong perf on heavy lists. **🥈 Web3 Hackathon 2023**.\n"
+        - "type": "keyResults"
+          "items":
+            - "val": "+40%"
+              "lbl": "UI perf"
+            - "val": "🥈"
+              "lbl": "Hackathon"
+            - "val": "RN"
+              "lbl": "iOS + Android"
+        - "type": "prose"
+          "text": "### Idea & context\n\n**Hawex** is positioned as a financial / payments company: payment processing, accounts, KYC/AML,
+            and operational support for finance teams — including **crypto processing** among their offerings (see
+            [the LinkedIn company profile](https://ru.linkedin.com/company/hawex?trk=ppro_cprof)). **HAWEX Wallet** is the mobile layer that turns that
+            positioning into a concrete journey: **paying international contractors and related crypto-native operations**, with clear history,
+            statuses, and secure key handling.\n\nThe engineering challenge was a **production-grade** client: HD/BIP39, signing, multi-chain,
+            performance, and **App Store / Play** cadence. External validation: **🥈 Web3 Hackathon 2023**.\n"
+        - "type": "prose"
+          "text": "### Outcomes\n\n- **Product focus:** the client serves **cross-border settlements and contractor payout** scenarios on crypto rails under the Hawex brand — not a disposable demo wallet.\n- **Performance:** **RTK Query** + render discipline delivered roughly **+40%** UI responsiveness vs the prior state approach on demanding screens.\n- **Design:** **pixel-perfect** Figma execution with adaptive components across **iOS & Android**.\n- **Crypto layer:** **HD wallet**, **BIP39** handling, signing & broadcasting, balances/history across **multiple chains**.\n- **Delivery:** **Fastlane** + **CI/CD** for repeatable builds and automated **App Store / Play Store** releases.\n- **Team:** documented architecture and **code review** for consistent patterns.\n- **Recognition:** **🥈 Web3 Hackathon 2023**.\n"
+        - "type": "section"
+          "sectionKey": "technical"
+        - "type": "prose"
+          "text": "### Engineering notes\n\n**Wallet & settlement flows:** **HD wallet**, **BIP39**, signing & broadcasting across networks;
+            balances and **transaction history** matter for transparency of cross-border payouts and counterparty reconciliation.\n\n**Client:**
+            **React Native** + **TypeScript**, **Redux** + **RTK Query**, balance-motion animations and list hygiene under load.\n\n**Shipping:**
+            **CI/CD** + **Fastlane**. Product: [hawex.com/hawexwallet](https://hawex.com/hawexwallet); company context:
+            [Hawex Group LTD on LinkedIn](https://ru.linkedin.com/company/hawex?trk=ppro_cprof).\n"
+        - "type": "techStack"
+          "tags":
+            - "React Native"
+            - "TypeScript"
+            - "Redux"
+            - "RTK Query"
+            - "Bitcoin"
+            - "Blockchain"
+            - "BIP39"
+            - "HD Wallet"
+            - "Fastlane"
+            - "CI/CD"
+            - "Figma"
+            - "Amplitude"
+            - "Crashlytics"
+            - "Cypress"
+            - "E2E"
+            - "Firebase Analytics"
+            - "Jest"
+            - "Maestro"
+            - "Push notifications"
+            - "React Cosmos"
+            - "Sentry"
+            - "Storybook"
+"timelineIndex": 3

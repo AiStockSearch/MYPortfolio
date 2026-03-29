@@ -1,10 +1,17 @@
 import { Link } from "react-router-dom";
-import * as React from "react";
-import type { RefObject } from "react";
+import { useMemo, useState, type ReactNode, type Ref, type RefObject } from "react";
 import MediaImage from "../../components/atoms/MediaImage";
 import { CONTACT_EMAIL } from "../../constants/links";
+import { mergeUniqueTagStrings } from "../../content/projects/index";
+import {
+  entryHasCvArea,
+  mergeAchBuckets,
+  mergeStackBuckets,
+} from "../../utils/cvExpAreaFilter";
 import { renderMarkdown } from "../../utils/renderMarkdown";
 import { RESUME_PAGE_STYLES } from "../../styles/resumePageStyles";
+
+type CvExpAreaTab = "front" | "mobile" | "backend" | "selfHosted";
 
 function CvLink({
   href,
@@ -13,7 +20,7 @@ function CvLink({
 }: {
   href: string;
   className?: string;
-  children: React.ReactNode;
+  children: ReactNode;
 }) {
   if (href.startsWith("/")) {
     return (
@@ -54,6 +61,38 @@ export default function ResumeView({
   }
 
   const { referenceLinks } = cv;
+  const expArea = (cv.expArea ?? {}) as Record<string, string>;
+  const [expTab, setExpTab] = useState<CvExpAreaTab>("mobile");
+
+  const filteredExperience = useMemo(() => {
+    const list = cv.experience as Array<Record<string, unknown>>;
+    if (expTab === "selfHosted") {
+      return list.filter((e) => e.kind === "self-hosted");
+    }
+    return list.filter((e) => {
+      if (e.kind === "self-hosted") return false;
+      const ach = e.achByArea as
+        | Partial<Record<"front" | "mobile" | "backend", string[]>>
+        | undefined;
+      const stack = e.stackByArea as
+        | Partial<Record<"front" | "mobile" | "backend", string[]>>
+        | undefined;
+      if (!ach || !stack) return true;
+      return entryHasCvArea(
+        {
+          front: ach.front ?? [],
+          mobile: ach.mobile ?? [],
+          backend: ach.backend ?? [],
+        },
+        {
+          front: stack.front ?? [],
+          mobile: stack.mobile ?? [],
+          backend: stack.backend ?? [],
+        },
+        expTab
+      );
+    });
+  }, [cv.experience, expTab]);
 
   return (
     <>
@@ -96,7 +135,7 @@ export default function ResumeView({
           </p>
         </div>
 
-        <div className="cv" ref={cvRef as React.Ref<HTMLDivElement>}>
+        <div className="cv" ref={cvRef as Ref<HTMLDivElement>}>
           <div className="cv-top">
             <div>
               <h1 className="cv-name">Vyacheslav Yakimov</h1>
@@ -128,28 +167,110 @@ export default function ResumeView({
 
           <div className="cv-section">
             <p className="cv-sec-title">{cv.expTitle}</p>
-            {cv.experience.map((e, i) => (
-              <div className="cv-exp-item" key={i}>
-                <div className="cv-exp-header">
-                  <span className="cv-exp-role">{e.role}</span>
-                  <span className="cv-exp-period">{e.period}</span>
+            <div
+              className="cv-stack-switch"
+              role="tablist"
+              aria-label={expArea.aria ?? ""}
+            >
+              {(
+                [
+                  ["front", expArea.front ?? "Front"],
+                  ["mobile", expArea.mobile ?? "Mobile"],
+                  ["backend", expArea.backend ?? "Backend"],
+                  ["selfHosted", expArea.selfHosted ?? "Self-hosted"],
+                ] as const
+              ).map(([key, label]) => (
+                <button
+                  key={key}
+                  type="button"
+                  role="tab"
+                  aria-selected={expTab === key}
+                  className={`cv-stack-sw${expTab === key ? " on" : ""}`}
+                  onClick={() => setExpTab(key)}
+                >
+                  {label}
+                </button>
+              ))}
+            </div>
+            {expTab === "selfHosted" ? (
+              <p className="cv-exp-sh">{expArea.selfHostedHeading}</p>
+            ) : null}
+            {filteredExperience.length === 0 ? (
+              <p className="cv-exp-empty">{expArea.noMatches}</p>
+            ) : null}
+            {filteredExperience.map((row, i) => {
+              const e = row as {
+                role: string;
+                company: string;
+                period: string;
+                desc: string;
+                ach: string[];
+                tags: string[];
+                projectSlug?: string | null;
+                achByArea?: {
+                  front: string[];
+                  mobile: string[];
+                  backend: string[];
+                };
+                stackByArea?: {
+                  front: string[];
+                  mobile: string[];
+                  backend: string[];
+                };
+                kind?: string;
+              };
+              let bullets: string[] = e.ach;
+              let areaTags: string[] = [];
+              if (expTab === "selfHosted" && e.achByArea) {
+                bullets = mergeAchBuckets(e.achByArea);
+              } else if (expTab !== "selfHosted" && e.achByArea) {
+                bullets = e.achByArea[expTab] ?? [];
+                if (bullets.length === 0) bullets = e.ach;
+              }
+              if (expTab === "selfHosted" && e.stackByArea) {
+                areaTags = mergeStackBuckets(e.stackByArea);
+              } else if (expTab !== "selfHosted" && e.stackByArea) {
+                areaTags = e.stackByArea[expTab] ?? [];
+              }
+              const displayTags = mergeUniqueTagStrings(e.tags, areaTags);
+              return (
+                <div className="cv-exp-item" key={`${e.period}-${e.company}-${i}`}>
+                  <div className="cv-exp-header">
+                    <span className="cv-exp-role">{e.role}</span>
+                    <span className="cv-exp-period">{e.period}</span>
+                  </div>
+                  <p className="cv-exp-company">{e.company}</p>
+                  <p
+                    className="cv-exp-desc"
+                    dangerouslySetInnerHTML={{
+                      __html: renderMarkdown(e.desc || ""),
+                    }}
+                  />
+                  {e.projectSlug ? (
+                    <p className="cv-exp-case-wrap">
+                      <CvLink
+                        href={`/projects/${e.projectSlug}`}
+                        className="cv-exp-case"
+                      >
+                        {expArea.caseStudy ?? "Case →"}
+                      </CvLink>
+                    </p>
+                  ) : null}
+                  <ul className="cv-exp-ach">
+                    {bullets.map((a, j) => (
+                      <li key={j} dangerouslySetInnerHTML={{ __html: a }} />
+                    ))}
+                  </ul>
+                  <div className="cv-exp-tags">
+                    {displayTags.map((t, k) => (
+                      <span className="cv-etag" key={`${t}-${k}`}>
+                        {t}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-                <p className="cv-exp-company">{e.company}</p>
-                <p className="cv-exp-desc">{e.desc}</p>
-                <ul className="cv-exp-ach">
-                  {e.ach.map((a, j) => (
-                    <li key={j}>{a}</li>
-                  ))}
-                </ul>
-                <div className="cv-exp-tags">
-                  {e.tags.map((t) => (
-                    <span className="cv-etag" key={t}>
-                      {t}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
 
           <div className="cv-section">

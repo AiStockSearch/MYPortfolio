@@ -2,15 +2,28 @@ import { useLayoutEffect, useRef, useState } from "react";
 import type { AppLocale } from "../../i18n";
 import { getAllProjects } from "../../content/projects/index";
 
+function projectMatchesFilter(
+  p: {
+    catalogFilters?: string[];
+    type: string;
+    stack: string[];
+  },
+  active: string
+) {
+  const q = active.toLowerCase();
+  if (p.catalogFilters?.length) {
+    return p.catalogFilters.some((f) => f.toLowerCase() === q);
+  }
+  return (
+    p.type.toLowerCase().includes(q) ||
+    p.stack.some((s) => s.toLowerCase().includes(q))
+  );
+}
+
 export function filterSourceIds(active: string) {
   if (active === "All") return null;
-  const q = active.toLowerCase();
   return getAllProjects("en")
-    .filter(
-      (p) =>
-        p.type.toLowerCase().includes(q) ||
-        p.stack.some((s) => s.toLowerCase().includes(q))
-    )
+    .filter((p) => projectMatchesFilter(p, active))
     .map((p) => p.id);
 }
 

@@ -1,0 +1,60 @@
+"id": "wls-trading"
+"homeTag": "WLS TRADING"
+"period":
+  "en": "2023 — present (side project)"
+  "ru": "2023 — н.в. (пет-проект)"
+"homeCompany":
+  "en": "WLS Trading Desktop"
+  "ru": "WLS Trading Desktop"
+"cvCompany":
+  "en": "WLS Trading Desktop (personal)"
+  "ru": "WLS Trading Desktop (личный проект)"
+"role":
+  "en": "Author — desktop & server backend"
+  "ru": "Автор — десктоп и серверный бэкенд"
+"shortDesc":
+  "en": "Personal **desktop** for Cardano: **Julia** server / numerics, **Go** + **Wails** host, **React Native Web** shell — **backend-heavy** architecture."
+  "ru": "Личный **десктоп** под Cardano: сервер и численность на **Julia**, хост **Go** + **Wails**, оболочка **RN Web** — упор на **бэкенд**."
+"achByArea":
+  "en":
+    "front": []
+    "mobile": []
+    "backend":
+      - "**Julia** layer: numerical experiments, backtesting hooks, service-style endpoints for analytics"
+      - "**Go** + **Wails**: desktop runtime, OS integration, packaging builds across targets"
+      - "**Cardano** connectivity from the desktop client — keys, queries, trading & social flows"
+      - "**Apollo** / GraphQL or REST touchpoints where the UI aggregates server state (per evolving architecture)"
+      - "AI tooling (Cursor, Grok, etc.) embedded in TDD/architecture review loops"
+  "ru":
+    "front": []
+    "mobile": []
+    "backend":
+      - "Слой **Julia**: численные эксперименты, бэктесты, сервисные точки для аналитики"
+      - "**Go** + **Wails**: рантайм десктопа, интеграция с ОС, сборки под цели"
+      - "Связь с **Cardano** из десктопа — ключи, запросы, торговые и соц-сценарии"
+      - "Контур **Apollo**/GraphQL или REST, где UI агрегирует состояние сервера (по эволюции архитектуры)"
+      - "AI-инструменты (Cursor, Grok и др.) в TDD и архитектурном ревью"
+"stackByArea":
+  "front": []
+  "mobile": []
+  "backend":
+    - "Julia"
+    - "Go"
+    - "Wails"
+    - "Cardano"
+    - "Apollo"
+    - "GraphQL"
+    - "AI Tools"
+"cvAchievements":
+  "en":
+    - "WLS Trading Desktop: Julia server layer, Go/Wails desktop, Cardano; RN Web UI; AI-augmented dev loop"
+  "ru":
+    - "WLS Trading Desktop: Julia на сервере, Go/Wails десктоп, Cardano; RN Web; ИИ в разработке"
+"cvTags":
+  - "Julia"
+  - "Go"
+  - "Wails"
+  - "Cardano"
+  - "Apollo"
+  - "GraphQL"
+"timelineIndex": 13

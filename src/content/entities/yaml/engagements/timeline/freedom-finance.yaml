@@ -1,0 +1,79 @@
+"id": "freedom-finance"
+"homeTag": "FREEDOM"
+"period":
+  "en": "Oct 2021 — Aug 2022"
+  "ru": "окт 2021 — авг 2022"
+"homeCompany":
+  "en": "Freedom Finance Global"
+  "ru": "Freedom Finance Global"
+"cvCompany":
+  "en": "Freedom Finance Global"
+  "ru": "Freedom Finance Global"
+"role":
+  "en": "Mobile Developer"
+  "ru": "Mobile Developer"
+"shortDesc":
+  "en": "Brokerage: mobile apps for securities & trading-related flows (Moscow)."
+  "ru": "Брокеридж: мобильные приложения для ценных бумаг и смежных сценариев (Москва)."
+"cvShortDesc":
+  "en": "Brokerage mobile apps for securities markets."
+  "ru": "Брокеридж: мобильные приложения для рынка ценных бумаг."
+"achByArea":
+  "en":
+    "front":
+      - "Trading & portfolio UI patterns on RN"
+    "mobile":
+      - "React Native features in a regulated finance context"
+    "backend":
+      - "Integration with brokerage APIs & secure transport"
+  "ru":
+    "front":
+      - "Торговые и портфельные паттерны UI на RN"
+    "mobile":
+      - "Функциональность на React Native в регулируемом финтехе"
+    "backend":
+      - "Интеграция с API брокера и защищённый транспорт"
+"stackByArea":
+  "front":
+    - "React Native UI"
+  "mobile":
+    - "React Native"
+    - "Amplitude"
+    - "Crashlytics"
+    - "Cypress"
+    - "E2E"
+    - "Firebase Analytics"
+    - "Jest"
+    - "Maestro"
+    - "React Cosmos"
+    - "Sentry"
+    - "Storybook"
+  "backend":
+    - "REST"
+"cvAchievements":
+  "en":
+    - "React Native development in a regulated fintech environment"
+  "ru":
+    - "Разработка на React Native в регулируемом финтех-контуре"
+"cvTags":
+  - "React Native"
+  - "Amplitude"
+  - "Crashlytics"
+  - "Cypress"
+  - "E2E"
+  - "Firebase Analytics"
+  - "Jest"
+  - "Maestro"
+  - "React Cosmos"
+  - "Sentry"
+  - "Storybook"
+"portfolio":
+  "catalogOrderKey": "freedomFinance"
+  "variant": "stub"
+  "catalogFilters":
+    - "Mobile"
+    - "Fintech"
+  "catalogCardType":
+    "ru": "Финтех · брокеридж"
+    "en": "FinTech · brokerage"
+"timelineIndex": 4

@@ -1,9 +1,11 @@
+import { useMemo } from "react";
 import { getAllProjects } from "../../content/projects/index";
 import {
   homeAbout,
   homeCareer,
   homeExp,
   homeHero,
+  homeSelfHostedExp,
   homeSkills,
   homeTypewriter,
   homeWork,
@@ -21,9 +23,12 @@ export default function HomeConnected() {
   const skills = homeSkills[locale];
   const career = homeCareer[locale];
   const exp = homeExp[locale];
-  const allLoc = getAllProjects(locale);
-  const featFeatured = allLoc.filter((p) => p.featured).slice(0, 3);
-  const featList = featFeatured.length ? featFeatured : allLoc.slice(0, 3);
+  const selfHostedExp = homeSelfHostedExp[locale];
+  const featList = useMemo(() => {
+    const allLoc = getAllProjects(locale);
+    const featFeatured = allLoc.filter((p) => p.featured).slice(0, 3);
+    return featFeatured.length ? featFeatured : allLoc.slice(0, 3);
+  }, [locale]);
 
   const { typewriterText, typewriterDone, addExp, addRev } = useHomePage(
     lines,
@@ -42,6 +47,7 @@ export default function HomeConnected() {
       skills={skills}
       career={career}
       exp={exp}
+      selfHostedExp={selfHostedExp}
       featList={featList}
     />
   );

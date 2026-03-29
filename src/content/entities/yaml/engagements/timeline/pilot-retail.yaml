@@ -1,0 +1,281 @@
+"id": "pilot-retail"
+"homeTag":
+  "en": "PILOT"
+  "ru": "ПИЛОТ"
+"period":
+  "en": "Jul 2019 — Jan 2020"
+  "ru": "июл 2019 — янв 2020"
+"homeCompany":
+  "en": "Bike sharing · Crimea"
+  "ru": "Велошеринг · Крым"
+"cvCompany":
+  "en": "Bike sharing (Crimea) · GPC / sole proprietor, independent delivery"
+  "ru": "Велошеринг (Крым) — ГПХ и ИП, самостоятельная разработка приложения"
+"role":
+  "en": "Independent mobile developer (React Native)"
+  "ru": "Независимый мобильный разработчик (React Native)"
+"shortDesc":
+  "en": "Solo **React Native** bike-sharing client in **Crimea** (GPC + sole proprietor): push, **BLE** locks,
+    **GPS** + maps, in-app **payments**; tours & schedules. **RN ~0.69 / 0.74**, **two** store releases."
+  "ru": "Соло **React Native**: велошеринг в **Крыму** (ГПХ/ИП) — push, **Bluetooth**-замки, **GPS** и карты,
+    **оплаты**; туры и расписание. Ветки **RN ~0.69 / 0.74**, **два** релиза в сторы."
+"cvShortDesc":
+  "en": "Crimea bike-sharing RN (GPC/IP): push, BLE locks, GPS, payments, Maps; RN 0.69/0.74, 2 store releases."
+  "ru": "Велошеринг Крым, RN (ГПХ/ИП): push, Bluetooth-замки, GPS, оплаты, карты; RN 0.69/0.74, 2 релиза."
+"achByArea":
+  "en":
+    "front":
+      - "Flows for <span class='m'>unlocking / locking</span> shared bikes and confirming session state in the
+        UI"
+      - "Screens for <span class='m'>tours</span> and <span class='m'>schedule</span> so routes and time slots
+        were understandable on a phone"
+    "mobile":
+      - "<span class='m'>Full ownership</span> of the React Native app on <span class='m'>RN 0.69 / 0.74</span>
+        tracks (CLI-era upgrades); <span class='m'>two production releases</span> for iOS and Android"
+      - "<span class='m'>Push</span>: delivery and handling of booking / fleet / payment-related notifications"
+      - "<span class='m'>Bluetooth</span> for smart-lock open/close, pairing states, and resilient UX on flaky
+        radio"
+      - "<span class='m'>GPS & geolocation</span> with Maps — stations, routes, tour context, permission flows"
+      - "<span class='m'>Payments</span>: mobile checkout hooks to the operator’s acquiring / wallet model"
+      - "<span class='m'>Google Maps</span> for Crimea coverage; tour builder and schedule tied to backend"
+    "backend":
+      - "REST/GraphQL consumption for locks, tours, timetables, push tokens, and payment status from the
+        operator’s services"
+  "ru":
+    "front":
+      - "Сценарии <span class='m'>открытия и закрытия</span> замков общего велотранспорта и отображение
+        состояния аренды"
+      - "Экраны <span class='m'>туров</span> и <span class='m'>расписания</span> — маршруты и слоты на телефоне"
+    "mobile":
+      - "<span class='m'>Полная ответственность</span> за приложение на <span class='m'>React Native 0.69 /
+        0.74</span> (апгрейды CLI); <span class='m'>два production-релиза</span> под iOS и Android"
+      - "<span class='m'>Push</span>: доставка и обработка уведомлений (аренда, парк, оплаты)"
+      - "<span class='m'>Bluetooth</span> для умных замков: открытие/закрытие, сопряжение, устойчивость при слабом
+        сигнале"
+      - "<span class='m'>GPS и геолокация</span> вместе с картами — станции, маршруты, туры, разрешения ОС"
+      - "<span class='m'>Платежи</span>: интеграция мобильной оплаты с моделью оператора (эквайринг / кошелёк)"
+      - "<span class='m'>Google Maps</span>, туры и <span class='m'>расписание</span> по данным бэкенда"
+    "backend":
+      - "REST/GraphQL — замки, туры, расписание, токены push, статусы оплат"
+"stackByArea":
+  "front":
+    - "UX flows"
+    - "Maps UI"
+  "mobile":
+    - "React Native 0.69"
+    - "React Native 0.74"
+    - "Push notifications"
+    - "Bluetooth / BLE"
+    - "GPS / Geolocation"
+    - "Google Maps API"
+    - "In-app payments"
+    - "iOS & Android"
+    - "Native bridges"
+    - "Amplitude"
+    - "Crashlytics"
+    - "Cypress"
+    - "E2E"
+    - "Firebase Analytics"
+    - "Jest"
+    - "Maestro"
+    - "React Cosmos"
+    - "Sentry"
+    - "Storybook"
+  "backend":
+    - "REST / GraphQL"
+    - "Payments API"
+    - "Push tokens"
+"cvAchievements":
+  "en":
+    - "Crimea bike-sharing RN (GPC/IP): push, BLE locks, GPS+Maps, payments; tours & schedule"
+    - "React Native 0.69 → 0.74 evolution; two production store releases (iOS/Android)"
+  "ru":
+    - "Велошеринг Крым (ГПХ/ИП): push, Bluetooth-замки, GPS и карты, оплаты; туры и расписание"
+    - "Эволюция на React Native 0.69–0.74; два релиза в продакшен (iOS и Android)"
+"cvTags":
+  - "React Native 0.74"
+  - "React Native 0.69"
+  - "Push notifications"
+  - "Bluetooth"
+  - "GPS"
+  - "Google Maps API"
+  - "Payments"
+  - "iOS"
+  - "Android"
+  - "Swift"
+  - "Objective-C"
+  - "Amplitude"
+  - "Crashlytics"
+  - "Cypress"
+  - "E2E"
+  - "Firebase Analytics"
+  - "Jest"
+  - "Maestro"
+  - "React Cosmos"
+  - "Sentry"
+  - "Storybook"
+"portfolio":
+  "catalogOrderKey": "pilotRetail"
+  "variant": "rich"
+  "catalogFilters":
+    - "Mobile"
+    - "Personal"
+  "stack":
+    - "React Native 0.74"
+    - "React Native 0.69"
+    - "Push notifications"
+    - "Bluetooth"
+    - "GPS"
+    - "Google Maps API"
+    - "In-app payments"
+    - "REST"
+    - "GraphQL"
+    - "Swift"
+    - "Objective-C"
+    - "Gradle"
+    - "Amplitude"
+    - "Crashlytics"
+    - "Cypress"
+    - "E2E"
+    - "Firebase Analytics"
+    - "Jest"
+    - "Maestro"
+    - "React Cosmos"
+    - "Sentry"
+    - "Storybook"
+  "i18n":
+    "ru":
+      "name": "Велошеринг · Крым"
+      "type": "Мобильный клиент · ГПХ / ИП"
+      "tagline": "Push, Bluetooth, GPS, оплаты; RN 0.69/0.74; два релиза — велошеринг соло"
+      "role": "Независимый мобильный разработчик (React Native)"
+      "links": []
+      "metrics":
+        - "val": "2"
+          "lbl": "Релиза"
+        - "val": "0.69–0.74"
+          "lbl": "RN CLI"
+        - "val": "iOS+And"
+          "lbl": "Сторы"
+        - "val": "Крым"
+          "lbl": "Регион"
+        - "val": "Соло"
+          "lbl": "Роль"
+      "blocks":
+        - "type": "heroImage"
+          "alt": "Велошеринг · Крым"
+        - "type": "section"
+          "sectionKey": "overview"
+        - "type": "prose"
+          "text": "Мобильный клиент велошеринга в Крыму: ГПХ и ИП, полная самостоятельная разработка на React
+            Native. Помимо замков и парка — push-уведомления, Bluetooth к замкам, GPS/геолокация с картами,
+            платежи в приложении, туры и расписание. Два релиза в продакшен; эволюция проекта на ветках RN
+            около 0.69 и 0.74 (в общем контуре команды — актуальные версии CLI, вплоть до линейки 0.76).\n"
+        - "type": "keyResults"
+          "items":
+            - "val": "2"
+              "lbl": "Релиза в прод"
+            - "val": "0.69–0.74"
+              "lbl": "React Native"
+            - "val": "iOS+And"
+              "lbl": "Сторы"
+            - "val": "Push+BLE+GPS"
+              "lbl": "Устройства"
+        - "type": "section"
+          "sectionKey": "technical"
+        - "type": "prose"
+          "text": "Push (FCM/APNs по схеме оператора), Bluetooth для замков, GPS и Google Maps, платёжный SDK /
+            эквайринг, REST/GraphQL бэкенда; нативные мосты (Swift, Objective-C, Gradle / Android Studio).\n"
+        - "type": "techStack"
+          "tags":
+            - "React Native 0.74"
+            - "React Native 0.69"
+            - "Push notifications"
+            - "Bluetooth"
+            - "GPS"
+            - "Google Maps API"
+            - "Payments"
+            - "REST"
+            - "GraphQL"
+            - "Swift"
+            - "Objective-C"
+            - "Android"
+            - "iOS"
+            - "Amplitude"
+            - "Crashlytics"
+            - "Cypress"
+            - "E2E"
+            - "Firebase Analytics"
+            - "Jest"
+            - "Maestro"
+            - "React Cosmos"
+            - "Sentry"
+            - "Storybook"
+    "en":
+      "name": "Bike sharing · Crimea"
+      "type": "Mobile client · GPC / sole proprietor"
+      "tagline": "Push, BLE, GPS, payments; RN 0.69/0.74; two releases — solo bike-sharing app"
+      "role": "Independent mobile developer (React Native)"
+      "links": []
+      "metrics":
+        - "val": "2"
+          "lbl": "Releases"
+        - "val": "0.69–0.74"
+          "lbl": "RN CLI"
+        - "val": "iOS+And"
+          "lbl": "Stores"
+        - "val": "Crimea"
+          "lbl": "Region"
+        - "val": "Solo"
+          "lbl": "Role"
+      "blocks":
+        - "type": "heroImage"
+          "alt": "Bike sharing Crimea"
+        - "type": "section"
+          "sectionKey": "overview"
+        - "type": "prose"
+          "text": "React Native bike-sharing client in Crimea (GPC + sole proprietor), fully owned by me on
+            mobile. Besides smart locks and fleet logic: push notifications, Bluetooth, GPS with maps, in-app
+            payments, tours, and schedules. Two production releases; worked across RN ~0.69 and ~0.74 upgrade
+            paths (team also tracks current CLI lines up to 0.76-class stacks).\n"
+        - "type": "keyResults"
+          "items":
+            - "val": "2"
+              "lbl": "Production releases"
+            - "val": "0.69–0.74"
+              "lbl": "React Native"
+            - "val": "iOS+And"
+              "lbl": "Stores"
+            - "val": "Push+BLE+GPS"
+              "lbl": "Device stack"
+        - "type": "section"
+          "sectionKey": "technical"
+        - "type": "prose"
+          "text": "Push (FCM/APNs per operator setup), BLE lock pairing, GPS + Google Maps, mobile payments,
+            REST/GraphQL; native bridges (Swift, Objective-C, Gradle/Android Studio).\n"
+        - "type": "techStack"
+          "tags":
+            - "React Native 0.74"
+            - "React Native 0.69"
+            - "Push notifications"
+            - "Bluetooth"
+            - "GPS"
+            - "Google Maps API"
+            - "Payments"
+            - "REST"
+            - "GraphQL"
+            - "Swift"
+            - "Objective-C"
+            - "Android"
+            - "iOS"
+            - "Amplitude"
+            - "Crashlytics"
+            - "Cypress"
+            - "E2E"
+            - "Firebase Analytics"
+            - "Jest"
+            - "Maestro"
+            - "React Cosmos"
+            - "Sentry"
+            - "Storybook"
+"timelineIndex": 10

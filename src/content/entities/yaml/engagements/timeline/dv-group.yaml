@@ -1,0 +1,83 @@
+"id": "dv-group"
+"homeTag": "DV GROUP"
+"period":
+  "en": "May 2021 — Apr 2022"
+  "ru": "май 2021 — апр 2022"
+"homeCompany":
+  "en": "DV Group · eRetail"
+  "ru": "DV Group · eRetail"
+"cvCompany":
+  "en": "DV Group (eRetail)"
+  "ru": "DV Group (eRetail)"
+"role":
+  "en": "Senior Frontend Engineer"
+  "ru": "Senior Frontend Engineer"
+"shortDesc":
+  "en": "Led frontend: junior React dev + two QA. Social publishing analytics — modular platform,
+    real-time metrics."
+  "ru": "Руководил фронтендом: junior по React и два QA. Аналитика соцпубликаций — модульная
+    платформа, метрики в реальном времени."
+"cvShortDesc":
+  "en": "Led frontend team. Social publishing analytics: metrics, dashboards, real-time."
+  "ru": "Руководство фронтенд-командой. Платформа аналитики соцпубликаций: метрики, дашборды, real-time."
+"achByArea":
+  "en":
+    "front":
+      - "Tasking, priorities, code review, mentoring; grooming & UX reviews with design"
+      - "React, <span class='m'>Next.js</span>, TypeScript; RSuite, MUI, styled-components, Tailwind"
+      - "RTK Query, Apollo Client; Cypress, Jest, React Testing Library"
+    "mobile": []
+    "backend":
+      - "<span class='m'>GraphQL</span> & <span class='m'>REST</span> integration with analytics platform APIs — typed operations, error & retry policies on the client edge"
+      - "Coordination with **backend** release cadence: env configs, feature flags via API contracts, performance of metric-heavy dashboards"
+      - "<span class='m'>Docker</span> images for preview/review envs; <span class='m'>GitLab CI/CD</span> pipelines touching build & deploy stages alongside the team"
+      - "<span class='m'>Sentry</span> (release health) & <span class='m'>Firebase Analytics</span> wired end-to-end into product observability"
+  "ru":
+    "front":
+      - "Постановка задач, приоритеты, code review, менторство; груминги и UX-с дизайном"
+      - "React, <span class='m'>Next.js</span>, TypeScript; RSuite, MUI, styled-components, Tailwind"
+      - "RTK Query, Apollo Client; Cypress, Jest, React Testing Library"
+    "mobile": []
+    "backend":
+      - "Интеграция <span class='m'>GraphQL</span> и <span class='m'>REST</span> с API аналитической платформы — типизированные операции, политики ошибок и ретраев на границе клиента"
+      - "Согласование с **бэкенд**-релизами: окружения, контракты API, перф тяжёлых дашбордов с метриками"
+      - "<span class='m'>Docker</span> для превью/ревью; пайплайны <span class='m'>GitLab CI/CD</span> на этапах сборки и выкладки вместе с командой"
+      - "<span class='m'>Sentry</span> и <span class='m'>Firebase Analytics</span> в связке с продуктовой наблюдаемостью"
+"stackByArea":
+  "front":
+    - "Next.js"
+    - "TypeScript"
+    - "RTK Query"
+    - "Apollo Client"
+  "mobile": []
+  "backend":
+    - "GraphQL"
+    - "REST"
+    - "Docker"
+    - "GitLab CI"
+    - "Sentry"
+"cvAchievements":
+  "en":
+    - "Led junior dev + two QA; Next.js, RTK Query, Apollo, Cypress/Jest"
+    - "GitLab CI/CD, Docker, Sentry, Firebase Analytics"
+  "ru":
+    - "Лидировал junior и двух QA; Next.js, RTK Query, Apollo, Cypress/Jest"
+    - "GitLab CI/CD, Docker, Sentry, Firebase Analytics"
+"cvTags":
+  - "React"
+  - "Next.js"
+  - "TypeScript"
+  - "Redux Toolkit"
+  - "GraphQL"
+  - "Apollo"
+  - "Docker"
+  - "GitLab CI"
+"portfolio":
+  "catalogOrderKey": "dvGroup"
+  "variant": "stub"
+  "catalogFilters":
+    - "Enterprise"
+  "catalogCardType":
+    "ru": "Web · аналитика"
+    "en": "Web · analytics"
+"timelineIndex": 5

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import AccentTag from "../atoms/AccentTag";
 import MediaImage from "../atoms/MediaImage";
+import { projectCoverSrc } from "../../utils/projectCoverSrc";
 
 /**
  * Карточка проекта в сетке. Стили классов .pc-* задаёт страница (projectsPage.styles.js).
@@ -15,7 +16,7 @@ export default function ProjectCard({ project, liveLabel, cta, index, to }) {
     >
       <div className="pc-img-w">
         <MediaImage
-          src={`/projects/${p.id}.png`}
+          src={projectCoverSrc(p.id)}
           alt={p.name}
           className="pc-img"
           fallback={<div className="pc-ph">⬡</div>}

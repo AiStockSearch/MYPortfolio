@@ -1,11 +1,6 @@
-import {
-  CONTACT_EMAIL,
-  GITHUB_URL,
-  HABR_CAREER_URL,
-  TELEGRAM_URL,
-} from "../../constants/links";
+import { CONTACT_EMAIL, GITHUB_URL, TELEGRAM_URL } from "../../constants/links";
 
-export const CHANNEL_ORDER = ["tg", "email", "gh", "habr"];
+export const CHANNEL_ORDER = ["tg", "email", "gh"];
 
 export function validateContactForm(
   form: { name: string; email: string; message: string },
@@ -64,12 +59,6 @@ export function buildContactChannels(ui: {
         external: true,
       };
     }
-    return {
-      icon: "◈",
-      label: ch.label,
-      val: ch.val,
-      href: HABR_CAREER_URL,
-      external: true,
-    };
+    throw new Error(`Unknown contact channel: ${key}`);
   });
 }

@@ -1,0 +1,403 @@
+"id": "haqqex-wallet"
+"homeTag": "HAQQEX"
+"period":
+  "en": "Feb 2023 — Dec 2025"
+  "ru": "фев 2023 — дек 2025"
+"homeCompany":
+  "en": "haqqex.com"
+  "ru": "haqqex.com"
+"cvCompany":
+  "en": "International Fintech (NDA) · haqqex.com"
+  "ru": "International Fintech (NDA) · haqqex.com"
+"role":
+  "en": "Senior Mobile Engineer / Tech Lead"
+  "ru": "Senior Mobile Engineer / Tech Lead"
+"shortDesc":
+  "en": "Custodial Islamic digital-asset exchange (NDA, MENA): auth/KYC/AML, spot, margin & futures, Earn/vaults,
+    cross-chain & cross-swaps, txs — React Native CLI 0.79.x, RTK Query + REST, WebSocket singleton + Event Emitter,
+    banking-grade key handling & OWASP-oriented hardening; Fastlane/CI; 2–3 App Store drops; later sunsetting Ledger
+    + legacy keystore paths."
+  "ru": "Кастодиальная исламская биржа цифровых активов (NDA, MENA): авторизация, KYC/AML, спот, маржа и фьючерсы,
+    Earn / vault, кросс-чейн и кросс-свапы, транзакции — React Native CLI 0.79.x, RTK Query + REST, singleton WebSocket
+    + Event Emitter, банковский уровень работы с ключами и усиление по OWASP; Fastlane/CI; 2–3 релиза в App Store;
+    затем отключение Ledger и legacy-keystore сценариев."
+"cvShortDesc":
+  "en": "Haqqex custodial exchange app: KYC/AML, spot/margin/futures, cross-chain & swaps; RN 0.79, RTK Query,
+    WebSocket singleton, Event Emitter, Decimal.js, Reanimated 3, Fastlane; OWASP-oriented mobile security."
+  "ru": "Кастодиальная биржа Haqqex: KYC/AML, спот/маржа/фьючи, кросс-чейн и свапы; RN 0.79, RTK Query, WebSocket
+    singleton, Event Emitter, Decimal.js, Reanimated 3, Fastlane; мобильная безопасность в духе OWASP."
+"achByArea":
+  "en":
+    "front":
+      - "<span class='m'>60 FPS</span> trading UI: candles, order book, heavy lists — custom render discipline"
+      - "<span class='m'>Atomic Design</span>, folder-by-feature, <span class='m'>Clean Architecture</span> + SOLID;
+        reusable screens & components"
+      - "<span class='m'>React Cosmos / Storybook</span> for isolated UI iterations and design-system alignment"
+      - "Animations: <span class='m'>Reanimated 3.1</span> + RN Animated; trimmed 3rd-party motion, custom drivers
+        where needed"
+      - "Ethical-finance UX patterns: transparency, fee/riba-sensitive flows"
+    "mobile":
+      - "<span class='m'>React Native CLI 0.79.8</span> stack shipped to App Store / Google Play; prod vs dev via
+        <span class='m'>react-native-config</span> + <span class='m'>.env</span> splits"
+      - "Custodial product surface: <span class='m'>auth, registration, KYC</span>, home, <span class='m'>AML</span>
+        checks in regulatory flow"
+      - "<span class='m'>Spot</span> (fee-aware), <span class='m'>margin</span>, <span class='m'>futures</span>;
+        unified deposit/position models across wallet types"
+      - "<span class='m'>Cross-chain</span>, <span class='m'>cross-swaps</span>, on-chain <span class='m'>transactions</span>;
+        navigation into <span class='m'>Earn / vault</span> experiences"
+      - "Networking: <span class='m'>REST</span> via <span class='m'>RTK Query</span> (caching, retries, store
+        slices); <span class='m'>Event Emitter</span> orchestration for cross-cutting domains"
+      - "<span class='m'>WebSocket singleton</span> for quotes/streaming — single lifecycle, reconnect & fan-out to UI"
+      - "Precision layer: <span class='m'>decimal.js</span>, <span class='m'>BigInt</span> where required — no naive
+        floating math on balances"
+      - "Client state: <span class='m'>React Context</span> + RTK Query cache; <span class='m'>no local DB</span> (no
+        Realm/SQLite in final architecture); ephemeral screen state via <span class='m'>navigation setParams</span> to
+        reset cleanly on exit"
+      - "Connectivity: <span class='m'>NetInfo</span>, guarded retries, resilient streaming on flaky MENA networks"
+      - "Security: <span class='m'>PIN</span>, biometrics, encrypted storage aligned with banking/custodial key practices;
+        audit fixes against <span class='m'>OWASP Mobile Top 10</span> / MAS-style checklist"
+      - "<span class='m'>CI/CD</span> + <span class='m'>Fastlane</span>; <span class='m'>2–3</span> App Store releases in that generation"
+      - "Later migration: <span class='m'>sunset Ledger hardware flows</span> and <span class='m'>legacy keystore</span>
+        paths to reduce attack surface"
+    "backend":
+      - "Real-time quotes / orderbook via managed <span class='m'>WebSocket</span> channel behind singleton client"
+      - "Custodial REST contracts for trading, treasury, compliance hooks (KYC/AML)"
+  "ru":
+    "front":
+      - "<span class='m'>60 FPS</span> на свечах, стакане и тяжёлых списках — дисциплина рендера без лишних библиотек"
+      - "<span class='m'>Atomic Design</span>, структура <span class='m'>по фичам</span>, <span class='m'>Clean Architecture</span>
+        и **SOLID**; переиспользуемые компоненты"
+      - "<span class='m'>React Cosmos / Storybook</span> для изолированной разработки UI и дизайн-системы"
+      - "Анимации: <span class='m'>Reanimated 3.1</span> + Animated API; убраны лишние обёртки, кастомные решения там,
+        где нужен контроль"
+      - "UX под исламские финансы: прозрачность, корректные сценарии комиссий и ограничений"
+    "mobile":
+      - "Стек <span class='m'>React Native CLI 0.79.8</span>; публикации в App Store / Google Play; **prod/dev** через
+        <span class='m'>react-native-config</span> и **.env** (dotenv)"
+      - "Функционал кастодиальной биржи: <span class='m'>авторизация, регистрация, KYC</span>, домашний экран, потоки
+        <span class='m'>AML</span>"
+      - "<span class='m'>Спотовая</span> торговля (учёт комиссий), <span class='m'>маржа</span>, <span class='m'>фьючерсные
+        контракты</span>; модели депозитов/позиций под разные типы кошельков"
+      - "<span class='m'>Кросс-чейн</span>, <span class='m'>кросс-свапы</span>, <span class='m'>транзакции</span>;
+        сценарии <span class='m'>Earn / vault</span>"
+      - "<span class='m'>REST</span> через <span class='m'>RTK Query</span> (кэш, ретраи, слайсы); доменные события —
+        <span class='m'>Event Emitter</span>"
+      - "<span class='m'>Singleton WebSocket</span> — одно соединение, переподключение, раздача котировок в UI"
+      - "Точные расчёты: <span class='m'>decimal.js</span>, <span class='m'>BigInt</span> — без потери точности на балансах"
+      - "Состояние: <span class='m'>React Context</span> + кэш RTK Query; <span class='m'>без локальной БД</span> (Realm/SQLite
+        убраны из финальной схемы); часть экранного стейта через <span class='m'>navigation.setParams</span>, сброс при уходе со
+        страницы без борьбы с глубокой историей стека"
+      - "<span class='m'>NetInfo</span>, политики **retry**, устойчивость стриминга на нестабильных сетях"
+      - "<span class='m'>PIN</span>, биометрия, хранение ключей по практикам банковских / кастодиальных аудитов; закрытие
+        замечаний по <span class='m'>OWASP Mobile Top 10</span> / mobile security assessment"
+      - "<span class='m'>CI/CD</span> и <span class='m'>Fastlane</span>; **2–3** релиза в **App Store** на этом поколении клиента"
+      - "Этап миграции: <span class='m'>отключение интеграции Ledger</span> и <span class='m'>legacy keystore</span> в пользу
+        обновлённой модели хранения"
+    "backend":
+      - "Котировки и стакан через единый <span class='m'>WebSocket</span>-клиент"
+      - "REST-сервисы биржи: торговля, казначейство, комплаенс (KYC/AML)"
+"stackByArea":
+  "front":
+    - "TypeScript"
+    - "Atomic Design"
+    - "React Cosmos"
+    - "Storybook"
+    - "Reanimated 3"
+  "mobile":
+    - "React Native CLI 0.79"
+    - "react-native-config"
+    - "RTK Query"
+    - "Redux Toolkit"
+    - "Event Emitter"
+    - "WebSocket"
+    - "React Navigation"
+    - "Decimal.js"
+    - "NetInfo"
+    - "Fastlane"
+    - "Biometrics"
+    - "Amplitude"
+    - "Crashlytics"
+    - "Cypress"
+    - "E2E"
+    - "Firebase Analytics"
+    - "Jest"
+    - "Maestro"
+    - "Push notifications"
+    - "Sentry"
+  "backend":
+    - "REST"
+    - "WebSocket"
+"cvAchievements":
+  "en":
+    - "Custodial Haqqex RN app: auth/KYC/AML, spot+margin+futures, Earn/vaults, cross-chain & cross-swaps, tx flows"
+    - "Architecture: WebSocket singleton + Event Emitter, RTK Query on REST, Context — no local DB; Decimal.js/BigInt"
+    - "RN CLI 0.79.8, react-native-config/.env, CI/CD + Fastlane; 2–3 App Store releases; OWASP-oriented hardening"
+    - "PIN/biometrics, retries/NetInfo; Storybook/Cosmos; migrated off Ledger + legacy keystore"
+  "ru":
+    - "Кастодиальное приложение Haqqex: авторизация/KYC/AML, спот/маржа/фьючи, Earn, кросс-чейн и свапы, транзакции"
+    - "Singleton WebSocket + Event Emitter, RTK Query на REST, React Context; без локальной БД; Decimal.js/BigInt"
+    - "RN CLI 0.79.8, react-native-config и .env, CI/CD и Fastlane; 2–3 релиза в App Store; усиление по OWASP MAS/Top 10"
+    - "PIN/биометрия, NetInfo и retry; Cosmos/Storybook; миграция с Ledger и legacy keystore"
+"cvTags":
+  - "React Native"
+  - "TypeScript"
+  - "React Native CLI"
+  - "RTK Query"
+  - "Redux Toolkit"
+  - "WebSocket"
+  - "REST"
+  - "react-native-config"
+  - "Fastlane"
+  - "Reanimated"
+  - "Decimal.js"
+  - "Web3"
+  - "Biometrics"
+  - "Amplitude"
+  - "Crashlytics"
+  - "Cypress"
+  - "E2E"
+  - "Firebase Analytics"
+  - "Jest"
+  - "Maestro"
+  - "Push notifications"
+  - "Sentry"
+"portfolio":
+  "catalogOrderKey": "haqqexWallet"
+  "live": true
+  "variant": "rich"
+  "catalogFilters":
+    - "Mobile"
+    - "Enterprise"
+    - "Fintech"
+    - "Crypto"
+    - "Web3"
+  "stack":
+    - "React Native"
+    - "TypeScript"
+    - "RTK Query"
+    - "WebSocket"
+    - "REST"
+    - "Reanimated"
+    - "react-native-config"
+    - "Fastlane"
+    - "Decimal.js"
+    - "Biometrics"
+    - "Web3"
+    - "Amplitude"
+    - "Crashlytics"
+    - "Cypress"
+    - "E2E"
+    - "Firebase Analytics"
+    - "Jest"
+    - "Maestro"
+    - "Push notifications"
+    - "Sentry"
+  "i18n":
+    "ru":
+      "name": "HAQQEX Wallet"
+      "type": "Финтех · MENA · кастодийный продукт"
+      "tagline": "Исламская кастодиальная биржа: KYC/AML, спот, маржа, фьючи, кросс-чейн и свапы."
+      "role": "Senior Mobile / Lead"
+      "links":
+        - "label": "haqqex.com"
+          "href": "https://haqqex.com/en/"
+          "primary": true
+        - "label": "Google Play"
+          "href": "https://play.google.com/store/apps/details?id=com.haqabi.Mobilewallet"
+      "metrics":
+        - "val": "0.79"
+          "lbl": "RN CLI"
+        - "val": "2–3"
+          "lbl": "Релиза iOS"
+        - "val": "60fps"
+          "lbl": "Торговый UI"
+      "blocks":
+        - "type": "heroImage"
+          "src": "/projects/haqqex-wallet.svg"
+          "alt": "HAQQEX Wallet"
+        - "type": "section"
+          "sectionKey": "overview"
+        - "type": "prose"
+          "text": "### Идея и продуктовая задача\n\nПлатформа [HAQQEX](https://haqqex.com/en/) — цифровой активный обмен в
+            рамках исламских финансовых стандартов (MENA, **NDA**): прозрачные операции, акцент на комплаенсе и доверии
+            пользователя. Мобильный клиент должен был дать **один кастодиальный контур** — от первого входа и верификации до
+            торговли, казначейства и сценариев **Earn / vault**, при этом выдерживать **банковский уровень** требований к
+            ключам, сессиям и аудиту.\n\nМоя роль — **ведущая инженерия RN-клиента**: от архитектуры под регуляторику и нагрузку
+            торгового UI до выкладок в **App Store** и последующих волн ужесточения безопасности.\n\n### Реализация\n\n**Продукт
+            и функции.** Закрыт полный контур **авторизации, регистрации, KYC и AML**; **домашний экран** как хаб операций;
+            торговля **спот** (с явной комиссионной логикой), **маржа** и **фьючерсы**; **кросс-чейн** переводы и
+            **кросс-свапы**; детальные **транзакции**; **Earn / vault**. Депозиты и отображение позиций унифицированы под
+            разные **профили кошельков** в рамках одной кастодиальной модели.\n\n**Инженерия.** Клиент на **React Native CLI
+            0.79.8**; разделение **prod/dev** через **react-native-config** и **.env**. Сеть: **REST** + **RTK Query** (кэш,
+            ретраи, инвалидирование); поток котировок — **WebSocket singleton** + **Event Emitter** для межфичевых событий.
+            Локальное состояние без **БД** в финале (**Realm/SQLite/MMKV** убраны из контура после аудита); **React Context**,
+            кэш RTK, точечно **navigation.setParams** для сброса локального стейта при уходе со экрана. Деньги: **decimal.js** /
+            **BigInt**. Навигация и живой UI: **60 FPS**-дисциплина на графиках и стакане; **Reanimated 3.1** + **Animated**;
+            **Atomic Design**, **Clean Architecture**, **SOLID**, витрины в **React Cosmos / Storybook**.\n\n**Безопасность и
+            доставка.** **PIN**, биометрия, хранение секретов по практикам кастодия; закрытие замечаний ревью в духе **OWASP
+            Mobile Top 10**. **CI/CD** + **Fastlane**; **2–3** релиза в **App Store** на этом поколении клиента. Итоговый этап —
+            **отключение Ledger** и **legacy keystore**-путей ради сокращения поверхности атаки и упрощения модели хранения.\n\n###
+            Результат\n\n- Продуктовый **сквозной** опыт: onboarding → комплаенс → торговля и казначейство в одном приложении.\n-
+            **Production-сборки** с предсказуемым pipeline и окружениями.\n- **Устойчивый realtime-слой** (singleton WS + политики
+            reconnect/retry под сети MENA).\n- **Снижение технического долга** по локальному хранилищу и анимациям — меньше точек
+            отказа на кассово-критичных экранах.\n- **Укрепление security posture** перед релизами и в ходе миграций Ledger/keystore.\n"
+        - "type": "keyResults"
+          "items":
+            - "val": "2–3"
+              "lbl": "Релиза iOS"
+            - "val": "60fps"
+              "lbl": "Торговый UI"
+            - "val": "OWASP"
+              "lbl": "Усиление клиента"
+        - "type": "section"
+          "sectionKey": "technical"
+        - "type": "prose"
+          "text": "### Архитектура RN-клиента\n\n**Сборка и окружения:** React Native **CLI 0.79.8**, раздельные конфигурации
+            **prod/dev** через **react-native-config** и **.env**. **CI/CD** и **Fastlane** для выкладок; на этом поколении
+            клиента — **2–3** релиза в **App Store**.\n\n**Данные и сеть:** основной контракт с бэкендом — **REST**;
+            серверное состояние и кэш — **RTK Query** (ретраи, инвалидции, нормализованные сторы). Поток котировок и
+            событий биржи — **WebSocket в паттерне Singleton** (единая точка жизненного цикла, переподключение, fan-out в UI)
+            плюс **Event Emitter** для кросс-модульной сигнализации без жёсткой связности. **NetInfo** и политика **retry**
+            под реалии сетей MENA.\n\n**Состояние на устройстве:** без **локальной БД** (Realm/SQLite в финальном контуре не
+            использовались; ранний **MMKV**-след по проекту сведён к нулю после аудита — в финале без key-value DB на
+            клиенте). Оркестрация через **React Context** и кэш RTK Query. Часть экранного стейта умышленно жила в
+            **navigation.setParams**, чтобы при выходе со страницы **сбрасывать** локальные решения без борьбы с глубокой
+            историей **React Navigation**.\n\n**Точность денег:** **decimal.js** и **BigInt** — без «плавающей» арифметики на
+            балансах и ордерах.\n\n**UI/инженерия:** folder-by-feature, **Atomic Design**, **Clean Architecture**, **SOLID**;
+            **React Cosmos / Storybook**; анимации на **Reanimated 3.1** и **RN Animated** с минимальным набором сторонних
+            обёрток.\n\n**Безопасность:** **PIN**, биометрия, хранение секретов с ориентиром на банковские практики;
+            закрытие замечаний в духе **OWASP Mobile Top 10** / mobile security assessment для кастодиального приложения.\n"
+        - "type": "techStack"
+          "tags":
+            - "React Native CLI 0.79"
+            - "TypeScript"
+            - "RTK Query"
+            - "Redux Toolkit"
+            - "REST"
+            - "WebSocket"
+            - "Event Emitter"
+            - "React Navigation"
+            - "react-native-config"
+            - "Fastlane"
+            - "Reanimated 3"
+            - "Decimal.js"
+            - "BigInt"
+            - "NetInfo"
+            - "Biometrics"
+            - "Storybook"
+            - "React Cosmos"
+            - "Clean Architecture"
+            - "Atomic Design"
+            - "Amplitude"
+            - "Crashlytics"
+            - "Cypress"
+            - "E2E"
+            - "Firebase Analytics"
+            - "Jest"
+            - "Maestro"
+            - "Push notifications"
+            - "Sentry"
+    "en":
+      "name": "HAQQEX Wallet"
+      "type": "FinTech · MENA · custodial"
+      "tagline": "Islamic custodial exchange — KYC/AML, spot, margin, futures, cross-chain & swaps."
+      "role": "Senior Mobile Engineer / Lead"
+      "links":
+        - "label": "haqqex.com"
+          "href": "https://haqqex.com/en/"
+          "primary": true
+        - "label": "Google Play"
+          "href": "https://play.google.com/store/apps/details?id=com.haqabi.Mobilewallet"
+      "metrics":
+        - "val": "0.79"
+          "lbl": "RN CLI"
+        - "val": "2–3"
+          "lbl": "iOS drops"
+        - "val": "60fps"
+          "lbl": "Trading UI"
+      "blocks":
+        - "type": "heroImage"
+          "src": "/projects/haqqex-wallet.svg"
+          "alt": "HAQQEX Wallet"
+        - "type": "section"
+          "sectionKey": "overview"
+        - "type": "prose"
+          "text": "### Product idea & problem\n\n[HAQQEX](https://haqqex.com/en/) targets a **Sharia-aligned** digital asset
+            exchange for MENA (**NDA** context): transparent rails, strong compliance, and custodial trust. The mobile app had
+            to expose **one cohesive custodial journey** — from first login and identity checks through trading, treasury, and
+            **Earn / vault** — while meeting **bank-grade** expectations on keys, sessions, and auditability.\n\nI led the
+            **React Native** side of that bet: architecture for regulation + load, shipping to **production App Store** cycles,
+            then hardening the client as the threat model matured.\n\n### What I built\n\n**Product scope.** End-to-end
+            **authentication, registration, KYC & AML**; a **home** hub; **spot** trading with explicit fee semantics;
+            **margin** and **futures**; **cross-chain** movements and **cross-swaps**; rich **transaction** trails;
+            **Earn / vault** UX. Deposits/positions were modelled across **multiple wallet personas** inside a single custodial
+            platform.\n\n**Engineering.** **React Native CLI 0.79.8**; **react-native-config** + **.env** for **prod vs dev**.
+            **REST** surfaced through **RTK Query** (cache, retries, invalidation). Streaming lived in a **WebSocket singleton**
+            with an **Event Emitter** fabric for cross-feature signalling. Final architecture **removed local databases**
+            (**Realm/SQLite/MMKV** retired after review); orchestration used **React Context**, RTK caches, and selective
+            **navigation.setParams** so sensitive drafts reset when leaving a screen. Monetary correctness via **decimal.js** and
+            **BigInt**. UI discipline for **~60 FPS** charts/order books; **Reanimated 3.1** + core **Animated**; **Atomic Design**,
+            **Clean Architecture**, **SOLID**, previews in **React Cosmos / Storybook**.\n\n**Security & delivery.** **PIN** +
+            biometrics, secrets handling reviewed like a custodial banking app; remediation against **OWASP Mobile Top 10** /
+            MAS-style assessments. **CI/CD** + **Fastlane**; **2–3** App Store drops in that generation. Later, we **sunset Ledger
+            hardware flows** and **legacy keystore** surfaces to shrink attack surface and simplify custody assumptions.\n\n###
+            Outcomes\n\n- A **single end-user narrative**: onboarding → compliance → trading/treasury without context switches.\n-
+            **Repeatable releases** with environment discipline and automation.\n- A **reliable realtime client** (singleton WS +
+            backoff/NetInfo-aware retries tuned for flaky networks).\n- **Lower long-term risk** by shedding local DB/animation
+            debt that fought us on trading-critical screens.\n- **Stronger security posture** across releases and the Ledger/keystore
+            migration window.\n"
+        - "type": "keyResults"
+          "items":
+            - "val": "2–3"
+              "lbl": "iOS releases"
+            - "val": "60fps"
+              "lbl": "Trading UI"
+            - "val": "OWASP"
+              "lbl": "Hardening"
+        - "type": "section"
+          "sectionKey": "technical"
+        - "type": "prose"
+          "text": "### Mobile architecture\n\n**Delivery:** RN **CLI 0.79.8**, **react-native-config** + **.env** for
+            **prod vs dev** splits, **CI/CD** with **Fastlane**, and **2–3** production drops on **iOS** in that generation.\n\n**Networking
+            & state:** **REST** integrations fronted with **RTK Query** (caching, retries, store slices). Streaming used a
+            **WebSocket singleton** to own reconnect/backoff and fan updates into UI, complemented by an **Event Emitter** bus for
+            cross-feature signalling. **NetInfo**-aware retry policies kept flows usable on unstable networks.\n\n**On-device
+            persistence:** deliberately **no local database** (Realm/SQLite removed from the final approach; a short-lived
+            **MMKV** spike was also retired after security review). Lightweight
+            orchestration relied on **React Context** plus RTK caches; some ephemeral UI state rode **navigation.setParams** so
+            navigating away **reset** local decisions without fighting deep stack history.\n\n**Numeric correctness:** **decimal.js**
+            and **BigInt** to avoid floating-point corruption on balances, fees, and quantities.\n\n**UI engineering:** folder-by-feature,
+            **Atomic Design**, **Clean Architecture**, **SOLID**, **React Cosmos / Storybook**, and animation work primarily via
+            **Reanimated 3.1** + core **Animated** APIs with a slim third-party footprint.\n\n**Security:** **PIN**, biometrics, and
+            key-storage flows reviewed against **OWASP Mobile Top 10** / MAS-style banking expectations for custodial wallets.\n"
+        - "type": "techStack"
+          "tags":
+            - "React Native CLI 0.79"
+            - "TypeScript"
+            - "RTK Query"
+            - "Redux Toolkit"
+            - "REST"
+            - "WebSocket"
+            - "Event Emitter"
+            - "React Navigation"
+            - "react-native-config"
+            - "Fastlane"
+            - "Reanimated 3"
+            - "Decimal.js"
+            - "BigInt"
+            - "NetInfo"
+            - "Biometrics"
+            - "Storybook"
+            - "React Cosmos"
+            - "Clean Architecture"
+            - "Atomic Design"
+            - "Amplitude"
+            - "Crashlytics"
+            - "Cypress"
+            - "E2E"
+            - "Firebase Analytics"
+            - "Jest"
+            - "Maestro"
+            - "Push notifications"
+            - "Sentry"
+"timelineIndex": 1

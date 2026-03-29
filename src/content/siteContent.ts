@@ -1,3 +1,8 @@
+import {
+  homeCareerExperienceTimeline,
+  homeSelfHostedExperienceTimeline,
+} from "./entities/experienceTimeline";
+
 /** Локализованный контент для главной и резюме (длинные блоки). */
 
 export const homeHero = {
@@ -5,8 +10,10 @@ export const homeHero = {
     avail: "Available for work · Remote / Relocation",
     subPre: "Senior ",
     subHL: "React Native",
-    subMid: " & Frontend Engineer",
-    subAfterWeb3: " · Fintech · Enterprise · 11 yrs",
+    subMid: " Developer",
+    /** Подсветка в `HomeHeroSection` (раньше фиксировали «Web3»). */
+    subHighlight: "Fintech",
+    subAfterWeb3: " · Enterprise · 11 yrs",
     ctaProjects: "View Projects",
     ctaContact: "Get in touch",
     stats: [
@@ -20,8 +27,9 @@ export const homeHero = {
     avail: "Открыт к работе · Удалённо / Релокация",
     subPre: "",
     subHL: "Senior React Native",
-    subMid: " и фронтенд-инженер",
-    subAfterWeb3: " · Финтех · Enterprise · 11 лет",
+    subMid: " Developer",
+    subHighlight: "Финтех",
+    subAfterWeb3: " · Enterprise · 11 лет",
     ctaProjects: "К проектам",
     ctaContact: "Связаться",
     stats: [
@@ -38,11 +46,11 @@ export const homeAbout = {
     sec: "about",
     title: "Engineer.\nArchitect.\nBuilder.",
     p1Html:
-      "I'm a <span class=\"hl\">Senior React Native &amp; Frontend Engineer</span> with <span class=\"hl\">11+ years</span> building production apps used by hundreds of thousands of people.",
+      "I'm a <span class=\"hl\">Senior React Native Developer</span> (plus web/frontend where the product needs it) with <span class=\"hl\">11+ years</span> building production apps used by hundreds of thousands of people.",
     p2Html:
       "My sweet spot is <span class=\"hl2\">complex real-time systems</span> — trading platforms, offline-first ERPs, LMS ecosystems — where performance, architecture and UX all matter equally.",
     p3Html:
-      "Active in <span class=\"hl2\">Web3 &amp; DeFi</span> (🥈 Web3 Hackathon 2023), contributed to <code>react-hook-form</code> and <code>zustand</code>.",
+      "<span class=\"hl2\">Crypto &amp; exchange</span> mobile work is part of my track record; 🥈 Web3 Hackathon 2023. Contributor to <code>react-hook-form</code> and <code>zustand</code>.",
     badges: ["TDD", "Clean Code", "Agile/Scrum", "Team Lead", "Figma → Code", "AI Tools"],
     photoPh: "photo.jpg",
     tag: "Vyacheslav · Ufa → World",
@@ -51,11 +59,11 @@ export const homeAbout = {
     sec: "обо мне",
     title: "Инженер.\nАрхитектор.\nСоздатель.",
     p1Html:
-      "Я <span class=\"hl\">Senior React Native и фронтенд-инженер</span> с <span class=\"hl\">11+ годами</span> опыта в продакшен-приложениях для сотен тысяч пользователей.",
+      "Я <span class=\"hl\">Senior React Native Developer</span> (и фронтенд там, где продукту это нужно) с <span class=\"hl\">11+ годами</span> в продакшен-приложениях для сотен тысяч пользователей.",
     p2Html:
       "Сильная сторона — <span class=\"hl2\">сложные real-time системы</span>: торговые платформы, offline-first ERP, LMS, где важны и производительность, и архитектура, и UX.",
     p3Html:
-      "В теме <span class=\"hl2\">Web3 и DeFi</span> (🥈 Web3 Hackathon 2023), контрибьютор <code>react-hook-form</code> и <code>zustand</code>.",
+      "В кейсах — <span class=\"hl2\">крипто и биржевые</span> мобильные клиенты; 🥈 Web3 Hackathon 2023. Контрибьютор <code>react-hook-form</code> и <code>zustand</code>.",
     badges: ["TDD", "Чистый код", "Agile/Scrum", "Тимлид", "Figma → код", "AI-инструменты"],
     photoPh: "photo.jpg",
     tag: "Вячеслав · Уфа → Мир",
@@ -93,116 +101,44 @@ export const homeSkills = {
   },
 };
 
+/** Трудовой таймлайн (новее сверху). Self-hosted см. `homeSelfHostedExp`. */
 export const homeExp = {
-  en: [
-    {
-      period: "Mar 2023 — Dec 2025",
-      company: "haqqex.com",
-      tag: "HAQQEX",
-      role: "Senior React Native Engineer",
-      desc: "Islamic finance digital asset exchange for MENA. MVP to App Store / Google Play.",
-      ach: [
-        "Stable <span class='m'>60 FPS</span> on complex trading charts",
-        "Reduced TTM by <span class='m'>25%</span>",
-        "Biometric auth, encrypted storage, real-time orderbook",
-      ],
-      stack: ["React Native", "TypeScript", "Socket.io", "Redux", "Web3"],
-    },
-    {
-      period: "Jul 2024 — Sep 2025",
-      company: "mirapolis.ru",
-      tag: "MIRAPOLIS",
-      role: "Senior Mobile Developer",
-      desc: "HCM/LMS mobile ecosystem for 100k+ corporate users across Russia.",
-      ach: [
-        "<span class='m'>DAU +15%</span> through offline-mode overhaul",
-        "<span class='m'>-40%</span> memory usage with Virtual Lists",
-        "Dynamic module system for white-label clients",
-      ],
-      stack: ["React Native", "TypeScript", "React 18", "SQLite", "Offline-first"],
-    },
-    {
-      period: "Nov 2022 — Jan 2024",
-      company: "flowwow.com",
-      tag: "FLOWWOW",
-      role: "Senior Mobile Developer",
-      desc: "Offline-first mobile ERP for retail warehouse management with hardware integrations.",
-      ach: [
-        "<span class='m'>-40%</span> sync time for 50 000+ SKU stores",
-        "<span class='m'>-20%</span> receiving errors via client validation",
-      ],
-      stack: ["React Native", "Firebase", "Android SDK", "SQLite", "REST"],
-    },
-    {
-      period: "Apr 2022 — Nov 2022",
-      company: "hawex.com",
-      tag: "DEFI TEAM",
-      role: "Senior Mobile Developer",
-      desc: "HAWEX Wallet — cross-platform crypto wallet. 🥈 Web3 Hackathon 2023.",
-      ach: [
-        "<span class='m'>+40%</span> performance via state management redesign",
-        "Full CI/CD with Fastlane, pixel-perfect UI",
-      ],
-      stack: ["React Native", "TypeScript", "Blockchain", "Bitcoin", "RTK-Query"],
-    },
-  ],
-  ru: [
-    {
-      period: "мар 2023 — дек 2025",
-      company: "haqqex.com",
-      tag: "HAQQEX",
-      role: "Senior React Native Engineer",
-      desc: "Исламский финтех и биржа цифровых активов для MENA. От MVP до App Store / Google Play.",
-      ach: [
-        "Стабильные <span class='m'>60 FPS</span> на сложных торговых графиках",
-        "Сокращение TTM на <span class='m'>25%</span>",
-        "Биометрия, шифрование, стакан в реальном времени",
-      ],
-      stack: ["React Native", "TypeScript", "Socket.io", "Redux", "Web3"],
-    },
-    {
-      period: "июл 2024 — сен 2025",
-      company: "mirapolis.ru",
-      tag: "MIRAPOLIS",
-      role: "Senior Mobile Developer",
-      desc: "Мобильная HCM/LMS-экосистема для 100k+ корпоративных пользователей в России.",
-      ach: [
-        "<span class='m'>DAU +15%</span> за счёт переработки offline-режима",
-        "<span class='m'>-40%</span> памяти с Virtual Lists",
-        "Динамические модули для white-label клиентов",
-      ],
-      stack: ["React Native", "TypeScript", "React 18", "SQLite", "Offline-first"],
-    },
-    {
-      period: "ноя 2022 — янв 2024",
-      company: "flowwow.com",
-      tag: "FLOWWOW",
-      role: "Senior Mobile Developer",
-      desc: "Offline-first мобильный ERP для розничных складов с интеграцией оборудования.",
-      ach: [
-        "<span class='m'>-40%</span> времени синка для магазинов 50 000+ SKU",
-        "<span class='m'>-20%</span> ошибок приёмки за счёт валидации на клиенте",
-      ],
-      stack: ["React Native", "Firebase", "Android SDK", "SQLite", "REST"],
-    },
-    {
-      period: "апр 2022 — ноя 2022",
-      company: "hawex.com",
-      tag: "DEFI TEAM",
-      role: "Senior Mobile Developer",
-      desc: "HAWEX Wallet — кроссплатформенный криптокошелёк. 🥈 Web3 Hackathon 2023.",
-      ach: [
-        "<span class='m'>+40%</span> производительности за счёт state management",
-        "Полный CI/CD с Fastlane, pixel-perfect UI",
-      ],
-      stack: ["React Native", "TypeScript", "Blockchain", "Bitcoin", "RTK-Query"],
-    },
-  ],
+  en: homeCareerExperienceTimeline("en"),
+  ru: homeCareerExperienceTimeline("ru"),
+};
+
+export const homeSelfHostedExp = {
+  en: homeSelfHostedExperienceTimeline("en"),
+  ru: homeSelfHostedExperienceTimeline("ru"),
 };
 
 export const homeCareer = {
-  en: { sec: "career", title: "Experience" },
-  ru: { sec: "карьера", title: "Опыт" },
+  en: {
+    sec: "career",
+    title: "Experience",
+    stackFront: "Front",
+    stackMobile: "Mobile",
+    stackBackend: "Backend",
+    stackSelfHosted: "Self-hosted",
+    stackSwitcherAria: "Filter stack by area",
+    stackEmpty: "—",
+    stackNoMatches:
+      "No positions for this track — switch to Mobile, Self-hosted, or another tab.",
+    selfHostedHeading: "Own products (self-hosted)",
+  },
+  ru: {
+    sec: "карьера",
+    title: "Опыт",
+    stackFront: "Frontend",
+    stackMobile: "Мобильная",
+    stackBackend: "Бэкенд",
+    stackSelfHosted: "Self-hosted",
+    stackSwitcherAria: "Фильтр стека по направлению",
+    stackEmpty: "—",
+    stackNoMatches:
+      "Нет записей для этого направления — переключите вкладку (например, «Мобильная» или «Self-hosted»).",
+    selfHostedHeading: "Собственные продукты (self-hosted)",
+  },
 };
 
 export const homeTypewriter = {
@@ -227,9 +163,11 @@ export const projectsPageContent = {
     filters: [
       { id: "All", label: "All" },
       { id: "Mobile", label: "Mobile" },
+      { id: "Enterprise", label: "Enterprise" },
       { id: "Web3", label: "Web3" },
       { id: "Fintech", label: "Fintech" },
-      { id: "Enterprise", label: "Enterprise" },
+      { id: "HR-tech", label: "HR-tech" },
+      { id: "Crypto", label: "Crypto" },
       { id: "Personal", label: "Personal" },
     ],
   },
@@ -241,9 +179,11 @@ export const projectsPageContent = {
     filters: [
       { id: "All", label: "Все" },
       { id: "Mobile", label: "Mobile" },
+      { id: "Enterprise", label: "Enterprise" },
       { id: "Web3", label: "Web3" },
       { id: "Fintech", label: "Финтех" },
-      { id: "Enterprise", label: "Enterprise" },
+      { id: "HR-tech", label: "HR-tech" },
+      { id: "Crypto", label: "Крипто" },
       { id: "Personal", label: "Личные" },
     ],
   },
@@ -278,7 +218,7 @@ export const projectDetailContent = {
     dev: "🔵 В разработке",
     category: "Категория",
     role: "Роль",
-    roleVal: "Senior Mobile / Lead",
+    roleVal: "Senior Mobile Engineer / Lead",
     next: "Следующий проект",
     allProjects: "Все проекты",
     notFound: "Проект не найден",
@@ -312,7 +252,6 @@ export const contactContent = {
       tg: { label: "Telegram (preferred)", val: "@mustreets" },
       email: { label: "Email" },
       gh: { label: "GitHub", val: "Js-Nanodegree" },
-      habr: { label: "Habr Career", val: "emil-reacted" },
     },
     availTitle: "Available from March 2026.",
     availBody:
@@ -346,8 +285,7 @@ export const contactContent = {
     channels: {
       tg: { label: "Telegram (предпочтительно)", val: "@mustreets" },
       email: { label: "Почта", val: "fintechmustreets@gmail.com" },
-      gh: { label: "GitHub", val: "AiStockSearch" },
-      habr: { label: "Habr Career", val: "emil-reacted" },
+      gh: { label: "GitHub", val: "Js-Nanodegree" },
     },
     availTitle: "Доступен с марта 2026.",
     availBody:

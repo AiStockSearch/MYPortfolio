@@ -1,0 +1,213 @@
+"id": "mytradelink"
+"homeTag": "MYTRADELINK"
+"period":
+  "en": "Feb 2021 — Apr 2021"
+  "ru": "фев 2021 — апр 2021"
+"homeCompany":
+  "en": "MyTradeLink · part-time"
+  "ru": "MyTradeLink · part-time"
+"cvCompany":
+  "en": "MyTradeLink (part-time / side project)"
+  "ru": "MyTradeLink (part-time / фриланс)"
+"role":
+  "en": "Full-stack Developer (part-time)"
+  "ru": "Full-stack Developer (part-time)"
+"shortDesc":
+  "en": "Part-time for a small fund (referral commissions): **admin panel** — React **MUI**, **Apollo GraphQL**, **Node.js** + **Express**, **MongoDB** + **PostgreSQL**; trading-volume **crypto contests**, tournaments, stats (day/month/year), winners & PnL share; exchange touchpoints (**Bybit**, **Binance**, **FTX**, **OKX**, **Bitget**)."
+  "ru": "Парт-тайм у небольшого фонда (монетизация через **реферальные комиссии**): **админ-панель** — React **MUI**, **Apollo GraphQL**, **Node.js** + **Express**, **MongoDB** и **PostgreSQL**; **крипто-конкурсы** по торговым оборотам, турниры, статистика (день/месяц/год), победители и доля прибыли; интеграционный контур бирж (**Bybit**, **Binance**, **FTX**, **OKX**, **BitGet**)."
+"cvShortDesc":
+  "en": "MyTradeLink part-time: admin UI (React, MUI) + Apollo GraphQL API (Express), MongoDB/Postgres; contest & tournament analytics; major CEX APIs."
+  "ru": "MyTradeLink парт-тайм: админка (React, MUI) + Apollo GraphQL (Express), MongoDB/PostgreSQL; аналитика конкурсов и турниров; API крупных бирж."
+"achByArea":
+  "en":
+    "front":
+      - "**Admin panel** on **React** + **MUI**: GraphQL-driven screens, aggregated contest & tournament **metrics** and charts"
+      - "Day / month / year breakdowns: contests run, **winners**, volume and **profit / fee share** views for operators"
+    "mobile": []
+    "backend":
+      - "**Apollo Server** (**GraphQL**) on **Node.js** + **Express** — typed operations for admin queries instead of ad-hoc REST sprawl"
+      - "**MongoDB** + **PostgreSQL**: operational and reporting data; queries behind contest stats, participants, leaderboards"
+      - "Flows for **creating contests / tournaments**, tracking participant counts and lifecycle; **promo / contest rules** and operator-facing compliance notes"
+      - "CEX-oriented integration points: **Bybit**, **Binance**, **FTX**, **OKX**, **Bitget** (turnover / competition context)"
+      - "Caching and **aggregation** layer so the admin UI gets consolidated payloads, not N+1 raw calls"
+  "ru":
+    "front":
+      - "**Админ-панель** на **React** + **MUI**: экраны от **Apollo GraphQL**, сводные **метрики** конкурсов и турниров"
+      - "Разрезы **день / месяц / год**: сколько конкурсов проведено, **победители**, обороты и **прибыль / комиссионные** для операторов"
+    "mobile": []
+    "backend":
+      - "**Apollo Server** (**GraphQL**) на **Node.js** + **Express** — админские операции и ответы одним контрактом"
+      - "**MongoDB** + **PostgreSQL**: операционные и отчётные данные; выборки под статистику конкурсов, участников, лидеров"
+      - "Сценарии **создания конкурсов и турниров**, учёт **количества участников** и статусов; **рекламно-конкурсные** правила и условия для операторов"
+      - "Контур бирж: **Bybit**, **Binance**, **FTX**, **OKX**, **Bitget** (обороты / конкурсная логика)"
+      - "**Кеш** и **агрегация** данных для админки — готовые ответы без лишних цепочек запросов"
+"stackByArea":
+  "front":
+    - "React"
+    - "MUI"
+    - "Apollo Client"
+    - "GraphQL"
+  "mobile": []
+  "backend":
+    - "Node.js"
+    - "Express"
+    - "Apollo Server"
+    - "GraphQL"
+    - "MongoDB"
+    - "PostgreSQL"
+"cvAchievements":
+  "en":
+    - "Part-time: fund monetized via **referrals**; built **admin** for crypto **trading contests** (volume, winners, PnL share)"
+    - "Apollo GraphQL + Express; MongoDB + PostgreSQL; React + MUI; CEX APIs: Bybit, Binance, FTX, OKX, Bitget"
+  "ru":
+    - "Парт-тайм: фонд и **реферальные комиссии**; **админка** под крипто-**конкурсы по оборотам**, победители, доля прибыли"
+    - "Apollo GraphQL + Express; MongoDB + PostgreSQL; React + MUI; биржи: Bybit, Binance, FTX, OKX, Bitget"
+"cvTags":
+  - "Apollo"
+  - "GraphQL"
+  - "Node.js"
+  - "Express"
+  - "MongoDB"
+  - "PostgreSQL"
+  - "React"
+  - "MUI"
+"portfolio":
+  "catalogOrderKey": "mytradelink"
+  "variant": "rich"
+  "live": false
+  "catalogFilters":
+    - "Crypto"
+    - "Fintech"
+  "stack":
+    - "React"
+    - "MUI"
+    - "Apollo"
+    - "GraphQL"
+    - "Node.js"
+    - "Express"
+    - "MongoDB"
+    - "PostgreSQL"
+  "i18n":
+    "ru":
+      "name": "MyTradeLink"
+      "type": "Крипто · конкурсы · админка"
+      "tagline": "Парт-тайм: фонд, рефералы и админка под торговые конкурсы"
+      "role": "Full-stack (part-time)"
+      "links":
+        - "label": "mytrades.link"
+          "href": "https://mytrades.link"
+          "primary": true
+      "metrics":
+        - "val": "~3 мес"
+          "lbl": "Формат"
+        - "val": "GQL"
+          "lbl": "Admin API"
+        - "val": "5+"
+          "lbl": "Биржи"
+      "blocks":
+        - "type": "heroImage"
+          "alt": "MyTradeLink"
+        - "type": "section"
+          "sectionKey": "overview"
+        - "type": "prose"
+          "text": "**MyTradeLink** — парт-тайм / **фри-тайм** история: небольшой **фонд**, ориентированный на доход от **реферальных комиссий** с
+            криптовалютных **бирж**. Параллельно команда развивала продуктовую механику **торговых конкурсов** — соревнования по **оборотам** и
+            активности пользователей, **турниры**, создание и ведение кампаний, учёт **участников** и **победителей**. Моя зона — **полный контур
+            администрирования**: развёрнутый **Apollo Server** (GraphQL) на **Node.js** и **Express** для выдачи данных в админку, работа с **MongoDB**
+            и **PostgreSQL**, **кеширование** и **агрегация** метрик, чтобы на фронте отрисовывать понятную картину без «прострела» сырыми запросами.
+            **Админ-панель** на **React** и **MUI** — запросы к GraphQL, визуализация статистики: сколько **конкурсов** проведено, разрезы **по дню, месяцу,
+            году**, доля **прибыли / комиссий**, разбор **выигравших**. В интеграционном периметре — крупные **CEX**: **Bybit**, **Binance**, **FTX**
+            (исторический контекст), **OKX**, **Bitget**.\n"
+        - "type": "keyResults"
+          "items":
+            - "val": "Apollo"
+              "lbl": "Admin API"
+            - "val": "2×DB"
+              "lbl": "Mongo+PG"
+            - "val": "5+"
+              "lbl": "Биржи"
+        - "type": "prose"
+          "text": "### Идея и контекст\n\nЗадача фонда — стабильный **реферальный** поток с бирж, а продуктовый слой конкурсов увеличивал вовлечённость
+            и соревновательный формат вокруг **            торговых оборотов**. Админу нужен был **единый** интерфейс: завести турнир, отследить **жизненный цикл**
+            конкурса, увидеть **участников** и **победителей**, сверить **периоды** (день / месяц / год) и **финансовый** срез (**процент прибыли** /
+            комиссионная доля в логике фонда). **GraphQL** здесь логично ложился на сценарий «много срезов одной сущности» без размножения REST-эндпоинтов.\n"
+        - "type": "prose"
+          "text": "### Итог за ~3 месяца\n\n- **Бэкенд:** **Apollo Server** + **Express**, схема под админские запросы, слой агрегации и кеша.\n- **Данные:** **MongoDB** и **PostgreSQL** — разделение операционного и аналитического контура в рамках задачи.\n- **Фронт:** **React** + **MUI** — панель оператора с опорой на GraphQL.\n- **Домен:** конкурсы по **оборотам**, турниры, учёт победителей; привязка к биржам **Bybit**, **Binance**, **FTX**, **OKX**, **Bitget**.\n- **Формат:** **part-time**, без мобильного контура — только **фронт** и **бэкенд**.\n"
+        - "type": "section"
+          "sectionKey": "technical"
+        - "type": "prose"
+          "text": "### Техническая реализация\n\n**API:** **Apollo Server** на **Node.js** + **Express** — резолверы под сводные запросы админки (конкурсы,
+            турниры, участники, временные окна, финансовые агрегаты). **Хранилища:** **MongoDB** и **PostgreSQL** — по назначению в проекте (операции vs
+            отчётность / нормализованные сущности). **Клиент:** **Apollo Client** + **React** + **MUI**. **Прод:** развёрнутый GraphQL-сервер как единая
+            точка входа для админских данных. Сайт/витрина: [mytrades.link](https://mytrades.link).\n"
+        - "type": "techStack"
+          "tags":
+            - "React"
+            - "MUI"
+            - "Apollo"
+            - "GraphQL"
+            - "Node.js"
+            - "Express"
+            - "MongoDB"
+            - "PostgreSQL"
+    "en":
+      "name": "MyTradeLink"
+      "type": "Crypto · contests · admin"
+      "tagline": "Part-time fund, referrals & admin for trading contests"
+      "role": "Full-stack (part-time)"
+      "links":
+        - "label": "mytrades.link"
+          "href": "https://mytrades.link"
+          "primary": true
+      "metrics":
+        - "val": "~3 mo"
+          "lbl": "Engagement"
+        - "val": "GQL"
+          "lbl": "Admin API"
+        - "val": "5+"
+          "lbl": "CEXs"
+      "blocks":
+        - "type": "heroImage"
+          "alt": "MyTradeLink"
+        - "type": "section"
+          "sectionKey": "overview"
+        - "type": "prose"
+          "text": "A **part-time / side-project** engagement with a small **fund** monetized through **exchange referral commissions**, plus a
+            **trading-contest** layer: volume-based **crypto competitions**, **tournaments**, campaign creation, participant counts and **winner**
+            tracking. I built the **operator admin** end-to-end: **Apollo Server** (GraphQL) on **Node.js** + **Express**, **MongoDB** + **PostgreSQL**,
+            caching/aggregation so the UI gets **consolidated** responses, and a **React** + **MUI** front-end for query-driven dashboards — contests run,
+            **day / month / year** cuts, **profit / fee-share** views, leaderboard-style outcomes. Exchange touchpoints included **Bybit**, **Binance**,
+            **FTX** (historical), **OKX**, and **Bitget**. No mobile scope — **web admin + API only**.\n"
+        - "type": "keyResults"
+          "items":
+            - "val": "Apollo"
+              "lbl": "Admin API"
+            - "val": "2×DB"
+              "lbl": "Mongo+PG"
+            - "val": "5+"
+              "lbl": "Exchanges"
+        - "type": "prose"
+          "text": "### Idea & context\n\nThe fund needed referral economics to work hand-in-hand with **engagement mechanics**: contests centred on
+            **trading turnover**, tournaments, and clear **operator** tooling. Admins had to create and monitor competitions, see **how many** ran in a
+            given **day / month / year**, who **won**, and how **profit / commission share** looked for the period. **GraphQL** fit the “many slices of
+            the same domain” problem better than a growing REST surface.\n"
+        - "type": "prose"
+          "text": "### Outcomes (~3 months)\n\n- **Backend:** **Apollo Server** + **Express**, schema tuned for admin reads/writes, aggregation/caching layer.\n- **Data:** **MongoDB** + **PostgreSQL** for operational vs reporting needs.\n- **Frontend:** **React** + **MUI** admin, **Apollo Client**.\n- **Domain:** turnover contests, tournaments, winners; integrations with **Bybit**, **Binance**, **FTX**, **OKX**, **Bitget**.\n- **Shape:** **part-time**, **full-stack** web only.\n"
+        - "type": "section"
+          "sectionKey": "technical"
+        - "type": "prose"
+          "text": "### Engineering notes\n\n**API:** **Apollo Server** on **Node.js** + **Express** — resolvers for consolidated admin queries (contests,
+            tournaments, participants, time windows, financial aggregates). **Storage:** **MongoDB** and **PostgreSQL** used for their respective roles in the
+            project. **Client:** **Apollo Client** with **React** + **MUI**. **Deployment:** hosted GraphQL endpoint backing the admin UI. Landing:
+            [mytrades.link](https://mytrades.link).\n"
+        - "type": "techStack"
+          "tags":
+            - "React"
+            - "MUI"
+            - "Apollo"
+            - "GraphQL"
+            - "Node.js"
+            - "Express"
+            - "MongoDB"
+            - "PostgreSQL"
+"timelineIndex": 8

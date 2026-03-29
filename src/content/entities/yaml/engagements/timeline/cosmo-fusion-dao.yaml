@@ -1,0 +1,57 @@
+"id": "cosmo-fusion-dao"
+"homeTag": "COSMO FUSION"
+"period":
+  "en": "2024 — present"
+  "ru": "2024 — н.в."
+"homeCompany":
+  "en": "CosmoFusion DAO"
+  "ru": "CosmoFusion DAO"
+"cvCompany":
+  "en": "CosmoFusion DAO (grant / OSS)"
+  "ru": "CosmoFusion DAO (грант / OSS)"
+"role":
+  "en": "Lead — platform & GraphQL backend"
+  "ru": "Lead — платформа и GraphQL-бэкенд"
+"shortDesc":
+  "en": "DAO product **backend**: **Apollo** / **GraphQL**, **Node.js** services, **Cardano** Web3 touchpoints, **AI** in governance & delivery."
+  "ru": "**Бэкенд** продукта DAO: **Apollo** / **GraphQL**, сервисы на **Node.js**, контур **Cardano** / Web3, **ИИ** в управлении и поставке."
+"achByArea":
+  "en":
+    "front": []
+    "mobile": []
+    "backend":
+      - "**Apollo Server** & **GraphQL** — proposals, votes, metadata tied to on-chain accountability"
+      - "**Node.js** services: auth boundaries, validation, persistence around grant-era cloud deploys"
+      - "**Cardano** / **Web3.js** flows: wallets, tx preparation, treasury & governance patterns"
+      - "**AI** tooling for thread review & summarisation — accelerates transparency, not automated verdicts"
+  "ru":
+    "front": []
+    "mobile": []
+    "backend":
+      - "**Apollo Server** и **GraphQL** — предложения, голоса, метаданные с привязкой к on-chain подотчётности"
+      - "Сервисы на **Node.js**: авторизация, валидация, хранение в контуре грантового облака"
+      - "**Cardano** / **Web3.js**: кошельки, подготовка транзакций, казна и паттерны DAO"
+      - "**ИИ** для обзора и суммаризации — ускоряет прозрачность, без «автовердиктов»"
+"stackByArea":
+  "front": []
+  "mobile": []
+  "backend":
+    - "Node.js"
+    - "Apollo"
+    - "GraphQL"
+    - "Web3.js"
+    - "Cardano"
+    - "AI Tools"
+"cvAchievements":
+  "en":
+    - "CosmoFusion DAO: Apollo/GraphQL platform, Node.js, Cardano/Web3, AI-assisted governance workflows"
+  "ru":
+    - "CosmoFusion DAO: Apollo/GraphQL, Node.js, Cardano/Web3, ИИ в контуре управления"
+"cvTags":
+  - "Node.js"
+  - "Apollo"
+  - "GraphQL"
+  - "Web3.js"
+  - "Cardano"
+  - "AI Tools"
+"timelineIndex": 11

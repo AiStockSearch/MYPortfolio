@@ -1,9 +1,11 @@
 import MediaImage from "../../../atoms/MediaImage";
 import { useProjectCatalog } from "../../../../context/ProjectCatalogContext";
+import { projectCoverSrc } from "../../../../utils/projectCoverSrc";
 
 export default function HeroImageBlock({ block }) {
   const { project } = useProjectCatalog();
-  const src = block.src || `/projects/${project.id}.png`;
+  const src =
+    (typeof block.src === "string" && block.src) || projectCoverSrc(String(project.id));
   const alt = block.alt || project.name;
   return (
     <div className="pd-img">

@@ -16,6 +16,7 @@ export default function HomeView({
   skills,
   career,
   exp,
+  selfHostedExp,
   featList,
 }) {
   return (
@@ -36,6 +37,7 @@ export default function HomeView({
       <HomeExperienceSection
         career={career}
         exp={exp}
+        selfHostedExp={selfHostedExp}
         addExp={addExp}
         addRev={addRev}
       />

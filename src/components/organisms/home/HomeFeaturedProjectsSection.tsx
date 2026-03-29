@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import MediaImage from "../../atoms/MediaImage";
+import { projectCoverSrc } from "../../../utils/projectCoverSrc";
 
 export default function HomeFeaturedProjectsSection({ work, featList, addRev }) {
   return (
@@ -20,7 +21,7 @@ export default function HomeFeaturedProjectsSection({ work, featList, addRev }) 
           >
             <div className="fc-img-wrap">
               <MediaImage
-                src={`/projects/${p.id}.png`}
+                src={projectCoverSrc(p.id)}
                 alt={p.name}
                 className="fc-img"
                 fallback={<div className="fc-ph">⬡</div>}

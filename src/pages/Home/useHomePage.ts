@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useCallback, useEffect, useRef } from "react";
 import { useTypewriter } from "./useTypewriter";
 
 function pruneRefs(list: HTMLElement[]) {
@@ -29,12 +29,12 @@ export function useHomePage(lines: string[], locale: string) {
     return () => obs.disconnect();
   }, [locale]);
 
-  const addExp = (el: HTMLElement | null) => {
+  const addExp = useCallback((el: HTMLElement | null) => {
     if (el && !expRefs.current.includes(el)) expRefs.current.push(el);
-  };
-  const addRev = (el: HTMLElement | null) => {
+  }, []);
+  const addRev = useCallback((el: HTMLElement | null) => {
     if (el && !revRefs.current.includes(el)) revRefs.current.push(el);
-  };
+  }, []);
 
   return { typewriterText: text, typewriterDone: done, addExp, addRev };
 }

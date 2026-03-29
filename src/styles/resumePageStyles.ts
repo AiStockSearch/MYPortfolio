@@ -16,7 +16,17 @@ export const RESUME_PAGE_STYLES = `
 .cv-photo{width:100px;height:100px;background:var(--bg3);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:2.5rem;opacity:.2;overflow:hidden;flex-shrink:0}
 .cv-photo img{width:100%;height:100%;object-fit:cover;opacity:1}
 .cv-section{margin-bottom:40px}
-.cv-sec-title{font-family:var(--font-d);font-weight:700;font-size:.85rem;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);margin-bottom:20px;padding-bottom:8px;border-bottom:1px solid var(--border)}
+.cv-sec-title{font-family:var(--font-d);font-weight:700;font-size:.85rem;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);margin-bottom:16px;padding-bottom:8px;border-bottom:1px solid var(--border)}
+.cv-stack-switch{display:inline-flex;flex-wrap:wrap;gap:4px;margin:0 0 18px;padding:4px;border:1px solid var(--border);background:rgba(33,160,56,.03);width:fit-content}
+.cv-stack-sw{font-family:var(--font-m);font-size:.55rem;letter-spacing:.08em;text-transform:uppercase;padding:7px 14px;border:1px solid transparent;background:transparent;color:var(--muted);cursor:pointer;transition:color .2s,border-color .2s,background .2s}
+.cv-stack-sw:hover{color:var(--accent2)}
+.cv-stack-sw.on{color:var(--accent);border-color:rgba(33,160,56,.35);background:rgba(33,160,56,.08)}
+.cv-exp-sh{font-family:var(--font-m);font-size:.55rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent2);margin:0 0 16px;padding-bottom:10px;border-bottom:1px solid rgba(33,160,56,.12)}
+.cv-exp-empty{font-size:.68rem;line-height:1.6;color:var(--muted);margin:0 0 18px}
+.cv-exp-case-wrap{margin:0 0 10px}
+.cv-exp-case{font-size:.62rem;letter-spacing:.06em;color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(33,160,56,.35)}
+.cv-exp-case:hover{color:var(--accent2);border-bottom-color:var(--accent2)}
+.cv-exp-ach .m{color:var(--accent);font-weight:500}
 .cv-summary{font-size:.75rem;line-height:1.85;color:var(--muted)}
 .cv-exp-item{margin-bottom:28px;padding-left:16px;border-left:2px solid var(--border);position:relative}
 .cv-exp-item::before{content:'';position:absolute;left:-5px;top:6px;width:8px;height:8px;background:var(--accent);border-radius:50%;box-shadow:0 0 8px rgba(33,160,56,.6)}

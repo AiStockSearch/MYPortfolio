@@ -1,0 +1,313 @@
+"id": "bizonex"
+"homeTag": "BIZONEX"
+"period":
+  "en": "Jan 2019 — Mar 2020"
+  "ru": "янв 2019 — мар 2020"
+"homeCompany":
+  "en": "Bizonex · Ufa"
+  "ru": "Bizonex · Уфа"
+"cvCompany":
+  "en": "Bizonex (Ufa)"
+  "ru": "Bizonex (Уфа)"
+"role":
+  "en": "Software Engineer (full-time)"
+  "ru": "Software Engineer (full-time)"
+"shortDesc":
+  "en": "Crypto exchange: **SSR** BFF (Express + Apollo), modular **GraphQL**, **WebSocket** real-time;
+    **Python/asyncio** referral in core; **Docker** wallet stacks & **SSH** deploys; API-key auth for MM/API clients."
+  "ru": "Криптобиржа: **SSR** BFF (Express + Apollo), модульный **GraphQL**, **WebSocket** real-time;
+    **Python/asyncio** рефералка в ядре; **Docker** для кошельков, **SSH**-выкладка; API-ключи для MM и клиентов API."
+"cvShortDesc":
+  "en": "Exchange platform: SSR (Webpack 4, React, Redux, Ramda, TypeScript/JavaScript), Apollo + Express,
+    WebSockets; Python/asyncio referral & Dockerized wallet ops; GraphQL modules & API-key auth."
+  "ru": "Биржевой продукт: SSR (Webpack 4, React, Redux, Ramda, TypeScript/JavaScript), Apollo + Express,
+    WebSocket; рефералка на Python/asyncio и Docker для кошельков; graphql-модули и авторизация по ключам."
+"achByArea":
+  "en":
+    "front":
+      - "<span class='m'>SSR</span> on Express; <span class='m'>Webpack 4</span>, React, Redux, Ramda"
+      - "Strong FP + algorithmic expectations; i18n; client GraphQL subscriptions & DOM performance"
+      - "<span class='m'>WebSocket</span> layer on the client for live market & referral UX"
+    "mobile": []
+    "backend":
+      - "<span class='m'>Apollo Server</span> + Express; <span class='m'>graphql-modules</span>, lean &
+        security-focused dependency graph"
+      - "Python/<span class='m'>asyncio</span> work in the existing core: referral network from scratch
+        with real-time propagation"
+      - "<span class='m'>Docker</span> for crypto wallet stacks; automated bring-up & trusted cloud nodes
+        via SSH keys"
+      - "API keys, registration/auth flows with signature verification for market makers & API consumers"
+  "ru":
+    "front":
+      - "<span class='m'>SSR</span> на Express; <span class='m'>Webpack 4</span>, React, Redux, Ramda"
+      - "Требования к ФП и алгоритмической части; i18n; GraphQL subscriptions на клиенте и работа с DOM"
+      - "Слой <span class='m'>WebSocket</span> на клиенте для live-данных (рынок, рефералка)"
+    "mobile": []
+    "backend":
+      - "<span class='m'>Apollo Server</span> + Express; <span class='m'>graphql-modules</span>, безопасность
+        и лёгкий граф зависимостей"
+      - "Доработки ядра на Python/<span class='m'>asyncio</span>: реферальная сеть с нуля с real-time
+        обновлениями"
+      - "<span class='m'>Docker</span> для крипто-кошельков; автоматический подъём и доверенные ноды в облаке
+        по SSH-ключам"
+      - "API-ключи, регистрация/авторизация с проверкой подписи для маркет-мейкеров и потребителей API"
+"stackByArea":
+  "front":
+    - "React"
+    - "Webpack 4"
+    - "TypeScript"
+    - "JavaScript"
+    - "Redux"
+    - "Ramda"
+    - "Apollo Client"
+  "mobile": []
+  "backend":
+    - "Node.js"
+    - "Express"
+    - "Apollo Server"
+    - "GraphQL"
+    - "Python"
+    - "asyncio"
+    - "Docker"
+    - "WebSocket"
+"cvAchievements":
+  "en":
+    - "SSR product rewrite: Webpack 4, React, Redux, Ramda, TypeScript & JavaScript; i18n & performant DOM"
+    - "GraphQL stack (Apollo Server + Express, graphql-modules), client subscriptions & WebSocket transport"
+    - "Python/asyncio: built referral network in the core with real-time updates end-to-end"
+    - "Dockerized wallet environments; cloud deployment to trusted hosts using SSH keys"
+    - "API keys & auth with signature checks for market makers and public API consumers"
+  "ru":
+    - "Перепись продукта под SSR: Webpack 4, React, Redux, Ramda, TypeScript и JavaScript; i18n и DOM"
+    - "GraphQL-стек (Apollo Server + Express, graphql-modules), подписки на клиенте и WebSocket-транспорт"
+    - "Python/asyncio: реферальная сеть в ядре с нуля с real-time обновлениями"
+    - "Docker-окружения для крипто-кошельков; выкладка в облако на доверенные хосты по SSH"
+    - "API-ключи и auth с проверкой подписи для маркет-мейкеров и потребителей публичного API"
+"cvTags":
+  - "React"
+  - "TypeScript"
+  - "Webpack"
+  - "Redux"
+  - "Ramda"
+  - "Express"
+  - "Apollo"
+  - "GraphQL"
+  - "WebSocket"
+  - "Python"
+  - "Docker"
+  - "SSR"
+"portfolio":
+  "catalogOrderKey": "bizonex"
+  "live": true
+  "variant": "rich"
+  "catalogFilters":
+    - "Crypto"
+    - "Web3"
+    - "Fintech"
+  "catalogCardType":
+    "ru": "Крипто · биржа"
+    "en": "Crypto · exchange"
+  "stack":
+    - "React"
+    - "TypeScript"
+    - "Webpack"
+    - "Redux"
+    - "Ramda"
+    - "Express"
+    - "Apollo"
+    - "GraphQL"
+    - "WebSocket"
+    - "Python"
+    - "Docker"
+  "i18n":
+    "ru":
+      "name": "Bizonex"
+      "type": "Крипто · биржа"
+      "tagline": "Крипто и токенизированные активы — SSR, GraphQL, WebSocket real-time."
+      "role": "Software Engineer (full-time)"
+      "links":
+        - "label": "bizonex.com"
+          "href": "https://bizonex.com/"
+          "primary": true
+        - "label": "Хабр Карьера"
+          "href": "https://career.habr.com/companies/bizonex"
+      "metrics":
+        - "val": "2019–20"
+          "lbl": "Период"
+        - "val": "Уфа"
+          "lbl": "Локация"
+        - "val": "SSR"
+          "lbl": "Веб-слой"
+        - "val": "GraphQL + WS"
+          "lbl": "API / live"
+      "blocks":
+        - "type": "heroImage"
+          "src": "/projects/bizonex.svg"
+          "alt": "Bizonex — криптобиржа"
+        - "type": "section"
+          "sectionKey": "overview"
+        - "type": "prose"
+          "text": "Bizonex — площадка для торговли криптовалютами, DeFi-токенами и токенизированными активами
+            ([профиль на Хабр Карьере](https://career.habr.com/companies/bizonex)). Я работал на стыке **SSR/BFF
+            слоя на Node.js** (Express + Apollo) и продуктового клиента с real-time.\n\nМоя зона ответственности
+            включала:\n\n- **SSR и производительность**: перенос веб-продукта на <span class='m'>SSR</span>,
+            настройка инфраструктуры рендера, контроль TTFB/гидратации, дисциплина по состоянию (Redux) и
+            работе с DOM.\n- **GraphQL-слой**: модульная структура схемы (<span class='m'>graphql-modules</span>),
+            безопасная интеграция резолверов и прозрачное разделение доменов в API.\n- **Real-time**: клиентские
+            подписки и транспорт поверх <span class='m'>WebSocket</span> (поддержка авторизации/переподключений,
+            устойчивость к сетевым сбоям, согласованность данных в UI).\n- **Python/<span class='m'>asyncio</span>
+            в ядре**: реализовал реферальную сеть «с нуля» в существующем core, включая live-обновления
+            статистики/событий.\n- **Docker и кошельки**: поднимал crypto-wallet окружения в Docker, автоматизировал
+            подключение/инициализацию кошельков и разворачивание в облаке на доверенных хостах по SSH-ключам.\n- **Доступ
+            и безопасность**: API-ключи и сценарии регистрации/авторизации с проверкой подписи для маркет-мейкеров и внешних
+            потребителей API.\n\nЭтот этап сильно прокачал практику «продуктового real-time»: от транспорта и авторизации до
+            UX-части, где данные должны обновляться быстро и без артефактов.\n"
+        - "type": "keyResults"
+          "items":
+            - "val": "SSR"
+              "lbl": "Миграция и стабильный рендер"
+            - "val": "WS"
+              "lbl": "Клиентский transport для live-данных"
+            - "val": "Docker"
+              "lbl": "Кошельки и окружения"
+        - "type": "prose"
+          "text": "### Идея и контекст\n\n[Площадка Bizonex](https://bizonex.com/) — торговля криптовалютами, DeFi-токенами и
+            токенизированными активами; ординарный пользователь и **профессиональные участники** (маркет-мейкеры, API-клиенты)
+            должны были работать в **одном продуктовом контуре**. Идея веб-части — дать **быструю, предсказуемую** витрину и
+            торговый интерфейс с **живыми котировками**, не жертвуя SEO и первым экраном: отсюда упор на **SSR** и дисциплину
+            состояния на клиенте.\n\nЗадача инженерии на моей стороне — **сшить** Node/BFF (**Express + Apollo**), модульный **GraphQL**,
+            **WebSocket**-транспорт и доработки **Python/asyncio** в ядре так, чтобы реферальная и торговая логика получала **поток
+            событий**, а инфраструктура кошельков оставалась **воспроизводимой**.\n"
+        - "type": "prose"
+          "text": "### Итог и эффект\n\n- **Продукт:** перенос на <span class='m'>SSR</span> и выровненный стек **Webpack 4 / React /
+            Redux / Ramda** — витрина и торговые сценарии с меньшим количеством «дрейфа» между серверным и клиентским рендером.\n-
+            **API и real-time:** <span class='m'>graphql-modules</span> и подписки поверх **WebSocket** — котировки и реферальная
+            статистика обновляются в UI без ручных костылей.\n- **Ядро:** реферальная сеть **с нуля** на **asyncio** с live-обновлениями
+            — отдельный продуктовый рычаг роста.\n- **Инфра:** **Docker** для crypto-wallet окружений и выкладка на доверенные ноды по
+            **SSH** — меньше ручных расхождений между средами.\n- **Доступ:** ключи и **подпись** в потоках MM/API-потребителей —
+            контролируемый периметр для партнёрских интеграций.\n\nВ сумме — **единая** техническая база под биржевой продукт ранней
+            стадии: от публичного сайта до кастомных API-клиентов. Контекст компании — [Хабр Карьера](https://career.habr.com/companies/bizonex).\n"
+        - "type": "section"
+          "sectionKey": "technical"
+        - "type": "prose"
+          "text": "### Архитектура и стек\n\n**Фронт и SSR (Node.js):** Webpack 4, React, классический Redux, Ramda;
+            TypeScript и JavaScript; i18n; внимание к DOM-производительности и предсказуемости состояния при SSR/CSR.\n\n**GraphQL:**
+            Apollo Server + Express; <span class='m'>graphql-modules</span> для модульной схемы и изоляции доменов;
+            подписки; контроль доступа на уровне контекста и резолверов; минимальный и управляемый dependency graph.\n\n**Real-time:**
+            WebSocket-транспорт на клиенте: авторизация канала, обработка переподключений, синхронизация состояния при
+            разрывах, «мягкие» деградации UI и защита от рассинхронизации при burst-обновлениях.\n\n**Python core (asyncio):**
+            доработки в существующем ядре: реферальная сеть, real-time обновления, интеграция событий в общий поток системы.\n\n**Инфраструктура:**
+            Docker для воспроизводимого подъёма кошельков и вспомогательных сервисов; операции на доверенных хостах в облаке
+            через SSH-ключи; ориентация на воспроизводимость окружения и минимизацию ручных шагов.\n\nПубличный сайт продукта:
+            [bizonex.com](https://bizonex.com/).\n"
+        - "type": "techStack"
+          "tags":
+            - "React"
+            - "TypeScript"
+            - "JavaScript"
+            - "Webpack 4"
+            - "Redux"
+            - "Ramda"
+            - "Node.js"
+            - "Express"
+            - "Apollo"
+            - "GraphQL"
+            - "graphql-modules"
+            - "WebSocket"
+            - "Python"
+            - "asyncio"
+            - "Docker"
+    "en":
+      "name": "Bizonex"
+      "type": "Crypto · exchange"
+      "tagline": "Crypto & tokenized assets — SSR, GraphQL, WebSocket real-time."
+      "role": "Software Engineer (full-time)"
+      "links":
+        - "label": "bizonex.com"
+          "href": "https://bizonex.com/"
+          "primary": true
+        - "label": "Habr Career"
+          "href": "https://career.habr.com/companies/bizonex"
+      "metrics":
+        - "val": "2019–20"
+          "lbl": "Period"
+        - "val": "Ufa"
+          "lbl": "Location"
+        - "val": "SSR"
+          "lbl": "Web layer"
+        - "val": "GraphQL + WS"
+          "lbl": "API / live"
+      "blocks":
+        - "type": "heroImage"
+          "src": "/projects/bizonex.svg"
+          "alt": "Bizonex crypto exchange"
+        - "type": "section"
+          "sectionKey": "overview"
+        - "type": "prose"
+          "text": "Bizonex is a venue for trading crypto, DeFi tokens and tokenized assets (see the
+            [company profile on Habr Career](https://career.habr.com/companies/bizonex)). I worked across the
+            **Node.js SSR/BFF layer** (Express + Apollo) and the product client with real-time delivery.\n\nMy scope:\n\n- **SSR & performance**:
+            migrated the product to <span class='m'>SSR</span>, tuned rendering/hydration, and enforced predictable
+            state management (Redux) and DOM performance practices.\n- **GraphQL surface**:
+            built a modular schema with <span class='m'>graphql-modules</span>, kept the API boundary explicit and
+            security-oriented, and supported evolution without a tangled dependency graph.\n- **Real-time**:
+            implemented client-side subscriptions and a <span class='m'>WebSocket</span> transport layer (auth,
+            reconnections, consistency under network flaps, UX-friendly degradation).\n- **Python/<span class='m'>asyncio</span> core**:
+            delivered a referral network from scratch inside the existing core and wired it for live updates.\n- **Docker & wallet ops**:
+            containerized wallet stacks, automated wallet bring-up / connectivity, and rolled out to trusted
+            cloud hosts using SSH keys.\n- **Access control**:
+            API keys plus registration/auth flows with signature verification for market makers and external API consumers.\n"
+        - "type": "keyResults"
+          "items":
+            - "val": "SSR"
+              "lbl": "Migration & stable rendering"
+            - "val": "WS"
+              "lbl": "Live client transport"
+            - "val": "Docker"
+              "lbl": "Wallet environments"
+        - "type": "prose"
+          "text": "### Idea & context\n\n[Bizonex](https://bizonex.com/) is built around trading crypto, DeFi tokens and
+            tokenized assets — retail users and **professional participants** (market makers, API consumers) were meant to live in
+            **one product surface**. The web layer had to stay **fast and predictable** with **live markets** while still winning SEO
+            and first paint — hence the hard bet on **SSR** and disciplined client state.\n\nEngineering-wise my job was to **glue**
+            the Node/BFF (**Express + Apollo**), modular **GraphQL**, **WebSocket** transport, and **Python/asyncio** extensions so
+            referral + trading domains received a **coherent event stream**, while wallet infrastructure stayed **reproducible** across
+            environments.\n"
+        - "type": "prose"
+          "text": "### Outcomes\n\n- **Product:** the <span class='m'>SSR</span> migration and the **Webpack 4 / React / Redux /
+            Ramda** stack reduced SSR/CSR drift across marketing and trading journeys.\n- **API & realtime:** <span class='m'>graphql-modules</span>
+            + subscriptions over **WebSocket** kept quotes and referral stats live without ad-hoc polling hacks.\n- **Core:** a **greenfield**
+            referral mesh on **asyncio** with live propagation became a measurable growth lever.\n- **Infra:** **Docker**-ized wallet stacks
+            and **SSH**-driven rollout to trusted hosts cut one-off server drift.\n- **Access:** API keys + **signature** flows for MM/API
+            consumers tightened the integration perimeter.\n\nNet: a **single** technical backbone for an early-stage exchange spanning
+            public web and partner APIs. Company context: [Habr Career](https://career.habr.com/companies/bizonex).\n"
+        - "type": "section"
+          "sectionKey": "technical"
+        - "type": "prose"
+          "text": "### Architecture & implementation details\n\n**Front & SSR (Node.js):** Webpack 4, React, classic Redux,
+            Ramda; mixed TypeScript & JavaScript; i18n; DOM performance tuning and SSR/CSR correctness.\n\n**GraphQL:**
+            Apollo Server on Express with <span class='m'>graphql-modules</span> for schema modularization and domain isolation;
+            subscriptions; explicit access control at context/resolver layers; a lean dependency graph.\n\n**Real-time:**
+            WebSocket transport on the client: channel auth, reconnection strategy, state reconciliation after disconnects,
+            and UX-oriented fallbacks under burst updates.\n\n**Python core (asyncio):**
+            feature delivery inside the legacy core: referral network + real-time propagation.\n\n**Infrastructure:**
+            Docker for reproducible wallet environments; SSH-based operations for deployments to trusted cloud hosts.\n\nProduct site:
+            [bizonex.com](https://bizonex.com/).\n"
+        - "type": "techStack"
+          "tags":
+            - "React"
+            - "TypeScript"
+            - "JavaScript"
+            - "Webpack 4"
+            - "Redux"
+            - "Ramda"
+            - "Node.js"
+            - "Express"
+            - "Apollo"
+            - "GraphQL"
+            - "graphql-modules"
+            - "WebSocket"
+            - "Python"
+            - "asyncio"
+            - "Docker"
+"timelineIndex": 9

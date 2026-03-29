@@ -26,7 +26,7 @@ export default function HomeHeroSection({
         <span className="hl">{hero.subHL}</span>
         {hero.subMid}
         <br />
-        <span className="hl2">Web3</span>
+        <span className="hl2">{hero.subHighlight}</span>
         {hero.subAfterWeb3}
       </p>
       <div className="h-cta">

@@ -1,0 +1,455 @@
+"id": "flowwow-erp"
+"homeTag": "FLOWWOW"
+"period":
+  "en": "Nov 2022 — Dec 2023"
+  "ru": "ноя 2022 — дек 2023"
+"homeCompany":
+  "en": "flowwow.com"
+  "ru": "flowwow.com"
+"cvCompany":
+  "en": "Flowwow (flowwow.com)"
+  "ru": "Flowwow (flowwow.com)"
+"role":
+  "en": "Middle Mobile Developer (React Native)"
+  "ru": "Middle Mobile Developer (React Native)"
+"shortDesc":
+  "en": "Greenfield React Native ERP for Flowwow florists: flower inventory & stocktaking in stores, POS
+    integration, orders, tablet + phone layouts, chain analytics; offline-first on the floor. Architecture:
+    Clean Architecture boundaries, Atomic Design, feature folders, React Navigation, Redux Toolkit + RTK Query +
+    Axios + Ramda, Firebase & Amplitude, TestFlight; native modals instead of Gorhom sheets. CI/CD, ~3–4 Play
+    releases, landing, store listing & signing keys."
+  "ru": "React Native ERP с нуля для Flowwow: инвентаризация цветов, касса, заказы, планшет/телефон, аналитика
+    сети; offline-first. Архитектура: Clean Architecture, Atomic Design, структура по фичам, React Navigation,
+    Redux Toolkit + RTK Query + Axios + Ramda, доменные модули **k-store** / **k-chain**, Firebase и Amplitude,
+    TestFlight; нативные модалки вместо @gorhom/bottom-sheet. CI/CD, 3–4 релиза, лендинг, стор и ключи подписи."
+"achByArea":
+  "en":
+    "front":
+      - "Tablet & phone layouts for back-office vs sales floor (dense data, minimal taps)"
+      - "<span class='m'>Atomic Design</span> for UI inventory (atoms→organisms) & predictable composition"
+      - "Reduced UI motion: disabled or toned down <span class='m'>animations</span> for POS-grade stability"
+      - "Store network <span class='m'>dashboards</span> & reporting (stock, staff, operations signals)"
+    "mobile":
+      - "Greenfield <span class='m'>React Native</span> app from scratch for florist retail workflows"
+      - "<span class='m'>Flower inventory</span> & stocktaking flows tied to live catalog / SKU reality"
+      - "<span class='m'>POS / cash register</span> integration for in-store sales & receipts"
+      - "Order creation & fulfilment loops aligned with marketplace ops"
+      - "<span class='m'>-40%</span> sync time for stores with 50 000+ SKUs (delta sync, offline queues)"
+      - "Offline-first: local SQLite + sync engine on unstable warehouse / shop Wi‑Fi"
+      - "Barcode scanners, handhelds (ТСД), receipt printers; solid on <span class='m'>budget Android</span>"
+      - "<span class='m'>CI/CD</span> pipeline for React Native Android builds (repeatable artifacts, release path)"
+      - "<span class='m'>~3–4 production releases</span> to Google Play; store listing, graphics & copy"
+      - "<span class='m'>Signing keys</span>, Play Console publishing flow, versioning & rollout discipline"
+      - "Shipped a lightweight <span class='m'>landing</span> for the product / partner story"
+      - "<span class='m'>React Navigation</span> + <span class='m'>react-native-screens</span>; жизненный цикл и
+        навигация без лишних JS-оверлеев"
+      - "<span class='m'>Clean Architecture</span>: границы domain / data / presentation; сценарии как use-case слои"
+      - "Кодовая база <span class='m'>по фичам</span> (folder-by-feature), а не «плоский» общий каталог"
+      - "<span class='m'>Redux Toolkit</span> + <span class='m'>RTK Query</span> для серверного состояния; <span class='m'>Axios</span>
+        для части запросов и интеграций"
+      - "<span class='m'>Ramda</span> для декларативных трансформаций данных (маппинги, нормализация ответов)"
+      - "Продуктовые модули <span class='m'>k-store</span> и <span class='m'>k-chain</span> — композиция стора и цепочек
+        сайд-эффектов / async-пайплайнов"
+      - "<span class='m'>Нативные модалки</span> платформы; отказ от <span class='m'>@gorhom/bottom-sheet</span> ради
+        стабильности и предсказуемого UX на кассе"
+      - "<span class='m'>TestFlight</span> для iOS-дистрибуции бета-сборок; <span class='m'>Firebase</span> + <span class='m'>Amplitude</span>
+        для аналитики событий"
+    "backend":
+      - "Firebase (FCM, analytics) with custom REST to the core"
+      - "Amplitude product analytics in addition to Firebase funnels"
+      - "Idempotent sync, retries, predictable error handling under flaky networks"
+  "ru":
+    "front":
+      - "Планшет и телефон: разные сценарии (зал / подсобка), плотные таблицы и минимум касаний"
+      - "<span class='m'>Atomic Design</span>: атомы → организмы, предсказуемая сборка экранов"
+      - "Анимации <span class='m'>отключены или ослаблены</span> — приоритет стабильности и скорости на кассе"
+      - "<span class='m'>Дашборды</span> и отчётность для сети магазинов (остатки, персонал, операционные метрики)"
+    "mobile":
+      - "<span class='m'>React Native</span> с нуля: проект и архитектура приложения развивались от greenfield"
+      - "Инвентаризация и учёт <span class='m'>срезанных цветов</span> в цветочных магазинах сети"
+      - "Подключение <span class='m'>кассы (POS)</span> к мобильному контуру продаж и фискальных сценариев"
+      - "Модуль <span class='m'>заказов</span> в связке с операционными процессами партнёров"
+      - "<span class='m'>−40%</span> времени синка для магазинов 50 000+ SKU (дельта, офлайн-очереди)"
+      - "Offline-first: локальная БД + синк при нестабильной сети в магазине / на складе"
+      - "Сканеры, ТСД, чековые принтеры; устойчивость на <span class='m'>бюджетных Android</span>"
+      - "<span class='m'>CI/CD</span>: пайплайн сборки React Native под Android (воспроизводимые артефакты,
+        релизный контур)"
+      - "<span class='m'>3–4 production-релиза</span> в Google Play; оформление карточки, графика и тексты"
+      - "<span class='m'>Ключи подписи</span>, публикации в Play Console, версионирование и дисциплина выкладки"
+      - "<span class='m'>Лендинг</span> под продукт / историю для партнёров"
+      - "<span class='m'>React Navigation</span> и нативный стек экранов (<span class='m'>react-native-screens</span>),
+        без лишних JS-оверлеев для критичных POS-сценариев"
+      - "<span class='m'>Clean Architecture</span>: разделение domain / data / presentation; use-case слои вокруг операций
+        склада и кассы"
+      - "Файловая структура <span class='m'>по фичам</span> (folder-by-feature / feature-sliced в духе «фича — папка»)"
+      - "<span class='m'>Redux Toolkit</span> + <span class='m'>RTK Query</span> для запросов и кэша; <span class='m'>Axios</span>
+        для части HTTP и нестандартных клиентов"
+      - "<span class='m'>Ramda</span> для чистых преобразований коллекций и DTO→view-моделей"
+      - "Модули <span class='m'>k-store</span> и <span class='m'>k-chain</span>: композиция Redux-слоя и цепочек эффектов /
+        асинхронных шагов"
+      - "<span class='m'>Нативные модалки</span> (platform RN Modal); отказ от <span class='m'>@gorhom/bottom-sheet</span>
+        из‑за гонок жестов и нестабильности на части девайсов"
+      - "<span class='m'>TestFlight</span> для iOS-бет; <span class='m'>Firebase</span> + <span class='m'>Amplitude</span> для
+        продуктовой аналитики и воронок"
+    "backend":
+      - "Firebase (FCM, аналитика) вместе с кастомным REST к ядру"
+      - "Amplitude как отдельный контур продуктовой аналитики"
+      - "Идемпотентный синк, ретраи, предсказуемая обработка ошибок при «рваном» интернете"
+"stackByArea":
+  "front":
+    - "Material Design"
+    - "Atomic Design"
+    - "Tablet layouts"
+    - "Dashboards"
+  "mobile":
+    - "React Native"
+    - "React Navigation"
+    - "react-native-screens"
+    - "Redux Toolkit"
+    - "RTK Query"
+    - "Axios"
+    - "Ramda"
+    - "Android SDK"
+    - "SQLite"
+    - "POS integration"
+    - "TestFlight"
+    - "CI/CD"
+    - "Google Play"
+    - "Crashlytics"
+    - "Cypress"
+    - "E2E"
+    - "Firebase Analytics"
+    - "Jest"
+    - "Maestro"
+    - "Push notifications"
+    - "React Cosmos"
+    - "Sentry"
+    - "Storybook"
+  "backend":
+    - "Firebase"
+    - "Amplitude"
+    - "REST"
+"cvAchievements":
+  "en":
+    - "Built Flowwow partner ERP greenfield on React Native: flower inventory, stocktaking, orders"
+    - "POS / cash-register integration; tablet + phone layouts; animations reduced for POS stability"
+    - "Sync time −40% for 50k+ SKU stores; −20% receiving errors via client validation (offline-first)"
+    - "CI/CD for Android builds; ~3–4 Play releases; landing page; store listing + signing-key publishing"
+    - "Clean Architecture + feature folders; RTK/RTK Query + Axios + Ramda; Firebase + Amplitude; native modals
+      (dropped Gorhom sheets)"
+  "ru":
+    - "Развитие ERP для партнёров Flowwow с нуля на React Native: инвентаризация цветов, заказы, учёт"
+    - "Интеграция кассы; планшет и телефон; снижение анимаций ради стабильности на торговой точке"
+    - "Синк −40% для 50k+ SKU; ошибки приёмки −20% за счёт валидации; offline-first в магазине"
+    - "CI/CD сборок Android; 3–4 релиза в Google Play; лендинг; оформление стора и публикации с ключами"
+    - "Clean Architecture и структура по фичам; RTK/RTK Query + Axios + Ramda; k-store/k-chain; Firebase + Amplitude;
+      нативные модалки вместо @gorhom/bottom-sheet"
+"cvTags":
+  - "React Native"
+  - "React Navigation"
+  - "Redux Toolkit"
+  - "RTK Query"
+  - "Axios"
+  - "Ramda"
+  - "Firebase"
+  - "Amplitude"
+  - "Android SDK"
+  - "SQLite"
+  - "REST"
+  - "CI/CD"
+  - "Google Play"
+  - "TestFlight"
+  - "Crashlytics"
+  - "Cypress"
+  - "E2E"
+  - "Firebase Analytics"
+  - "Jest"
+  - "Maestro"
+  - "Push notifications"
+  - "React Cosmos"
+  - "Sentry"
+  - "Storybook"
+"portfolio":
+  "catalogOrderKey": "flowwowErp"
+  "live": true
+  "variant": "rich"
+  "catalogFilters":
+    - "Mobile"
+    - "Enterprise"
+  "stack":
+    - "React Native"
+    - "React"
+    - "React Navigation"
+    - "react-native-screens"
+    - "Redux Toolkit"
+    - "RTK Query"
+    - "Axios"
+    - "Ramda"
+    - "Firebase"
+    - "Amplitude"
+    - "Android SDK"
+    - "SQLite"
+    - "Bluetooth"
+    - "REST"
+    - "CI/CD"
+    - "Google Play"
+    - "TestFlight"
+    - "Crashlytics"
+    - "Cypress"
+    - "E2E"
+    - "Firebase Analytics"
+    - "Jest"
+    - "Maestro"
+    - "Push notifications"
+    - "React Cosmos"
+    - "Sentry"
+    - "Storybook"
+  "i18n":
+    "ru":
+      "name": "Flowwow ERP"
+      "type": "Ритейл · цветы · ERP"
+      "tagline": "Мобильный ERP с нуля для сети цветочных магазинов: учёт, касса, заказы, аналитика."
+      "role": "Middle Mobile Developer (React Native)"
+      "links":
+        - "label": "Google Play"
+          "href": "https://play.google.com/store/apps/details?id=com.hoog.prod"
+          "primary": true
+        - "label": "flowwow.com"
+          "href": "https://flowwow.com/"
+      "metrics":
+        - "val": "-40%"
+          "lbl": "Синк"
+        - "val": "-20%"
+          "lbl": "Ошибки ввода"
+        - "val": "3–4"
+          "lbl": "Релиза"
+      "blocks":
+        - "type": "heroImage"
+          "src": "/projects/flowwow-erp.svg"
+          "alt": "Flowwow ERP"
+        - "type": "section"
+          "sectionKey": "overview"
+        - "type": "prose"
+          "text": "[Flowwow](https://flowwow.com/) — маркетплейс для клиентов и продавцов в сегменте цветов и
+            подарков; внутренняя линейка продуктов покрывает операции партнёрских магазинов. Я участвовал в
+            **мобильном ERP с нуля на React Native** для **инвентаризации и учёта срезанных цветов** в торговых
+            точках: приход, пересчёты, остатки, контроль расхождений. Параллельно закрывал **бизнес-контуры
+            продаж** — подключение **кассы (POS)**, оформление **заказов**, сценарии, где важны скорость и
+            отсутствие сюрпризов в UI.\n\nОтдельно прорабатывал **планшетную и телефонную вёрстку**: одни и те же
+            сценарии должны быть удобны и на кассе в зале, и в подсобке. Для «железа» уровня кассы сознательно
+            **ослаблял или отключал анимации**, чтобы не тратить кадры и не вводить пользователя в заблуждение при
+            ошибках сети. В продукте также был упор на **аналитику и отчётность по сети** — директорам и операционным
+            ролям нужны сводки по остаткам, персоналу и узким местам. Работал плотно и аккуратно: упор на
+            предсказуемые сценарии, валидацию на клиенте и ясную обработку ошибок.\n\nПараллельно закрывал
+            **доставку в прод**: собрал **CI/CD** под сборки React Native (Android), провёл **3–4 релиза** в
+            **Google Play**, оформил карточку приложения (тексты, графика), выстроил процесс **публикаций с ключами
+            подписи** и аккуратным версионированием. Отдельно сделал **лендинг** — витрина продукта и понятное
+            описание ценности для партнёров.\n"
+        - "type": "keyResults"
+          "items":
+            - "val": "0→1"
+              "lbl": "Greenfield RN"
+            - "val": "POS"
+              "lbl": "Касса в контуре"
+            - "val": "CI/CD"
+              "lbl": "Сборка и релизы"
+            - "val": "Play"
+              "lbl": "Листинг и ключи"
+        - "type": "prose"
+          "text": "### Идея и бизнес-контекст\n\n[Flowwow](https://flowwow.com/) — маркетплейс цветов и подарков; партнёрская сеть
+            магазинов нуждается в **одном операционном контуре**: быстрый учёт **срезанных цветов**, приёмка, инвентаризация,
+            продажи на кассе и понятная аналитика для **сети**, а не разрозненные таблицы. **Идея ERP** — вынести склад и торговый зал
+            в мобильное приложение, которое работает **в офлайне** на плохом Wi‑Fi и не ломается на бюджетных Android.\n\nМоя роль —
+            **greenfield React Native**: спроектировать клиент так, чтобы кассир и директор сети получали **одни и те же данные**,
+            но с разной плотностью UI (планшет vs телефон), и чтобы доставка в **Google Play** была **воспроизводимой**.\n"
+        - "type": "prose"
+          "text": "### Итог и эффект\n\n- **Операции:** закрыты циклы **инвентаризации**, **POS/касса**, **заказы** и отчётность по сети —
+            меньше ручных расхождений между торговой точкой и бэк-офисом.\n- **Надёжность:** **offline-first** + SQLite-синк — работа в
+            магазине не останавливается из‑за обрыва сети; **NetInfo** и **retry** делают сценарии предсказуемыми.\n- **Масштаб
+            каталога:** дельта-синк и дисциплина данных дали ориентир **−40%** времени синхронизации справочников для магазинов с
+            **50k+ SKU**; валидация на клиенте — ориентир **−20%** типовых ошибок приёмки.\n- **UX на железе:** планшет и телефон,
+            ослабленные **анимации** на кассе, **нативные модалки** вместо спорных bottom-sheet — меньше инцидентов «зависла касса».\n-
+            **Доставка:** **CI/CD**, **Fastlane**, **3–4** релиза, оформление **Play**-листинга и **ключей подписи**, **лендинг** для
+            партнёров.\n- **Инженерная культура:** **Clean Architecture**, структура **по фичам**, **Atomic Design**, **Cosmos/Storybook** —
+            проще онбординг и развитие ERP без «монолитного» UI.\n"
+        - "type": "section"
+          "sectionKey": "technical"
+        - "type": "prose"
+          "text": "### Архитектура клиента\n\n**Структура кода:** <span class='m'>Clean Architecture</span> с явными
+            границами presentation / domain / data; сценарии «приёмка — инвентаризация — касса» оформлялись как
+            прикладные слои с тестируемой бизнес-логикой. Файлы и модули шли <span class='m'>по фичам</span>
+            (folder-by-feature / «фича — папка»), чтобы не превратить ERP в «комбайн» из поперечных зависимостей.\n\n**UI:**
+            <span class='m'>Atomic Design</span> (атомы → организмы) для повторяемых контролов в таблицах и формах.
+            **Навигация:** <span class='m'>React Navigation</span> + <span class='m'>react-native-screens</span> —
+            максимально «нативный» стек экранов и жизненный цикл, без лишних JS-оверлеев там, где важна стабильность POS.\n\n**Состояние и данные:**
+            <span class='m'>Redux Toolkit</span> как база стора; серверное состояние через <span class='m'>RTK Query</span>;
+            часть запросов и кастомных клиентов — на <span class='m'>Axios</span>. Для функциональных преобразований и
+            нормализации ответов использовал <span class='m'>Ramda</span>. Отдельно оформлены внутренние модули
+            <span class='m'>k-store</span> и <span class='m'>k-chain</span> — композиция Redux-слоя и цепочек сайд-эффектов
+            / пошаговых асинхронных операций (так проще сопровождать сложные склады с 50k+ SKU).\n\n**Модалки и жесты:**
+            перешёл на <span class='m'>нативные модалки</span> платформы; отказался от <span class='m'>@gorhom/bottom-sheet</span>
+            из‑за коллизий жестов и нестабильности на части бюджетных Android в сценариях кассы.\n\n### Данные, железо и аналитика\n\n**Offline-first:**
+            локальный <span class='m'>SQLite</span>, протокол синка — идемпотентность, очереди, ретраи при обрывах Wi‑Fi;
+            дельта-сжатие ускоряло справочники **приблизительно на 40%** для магазинов с **50k+ SKU**. **Железо:**
+            Bluetooth-сканеры (Symbol/Zebra), чековые принтеры Epson. **Интеграции:** REST к доменному ядру,
+            <span class='m'>Firebase</span> (FCM + analytics) и отдельно <span class='m'>Amplitude</span> для продуктовых воронок
+            и событий в приложении. **iOS-бета:** <span class='m'>TestFlight</span>.\n\n### Доставка\n\n**CI/CD** для Android-сборок,
+            **Play Console**, **keystore**, **3–4 релиза**, лендинг. Маркетплейс: [flowwow.com](https://flowwow.com/).\n"
+        - "type": "techStack"
+          "tags":
+            - "React Native"
+            - "React"
+            - "React Navigation"
+            - "react-native-screens"
+            - "Android"
+            - "Redux Toolkit"
+            - "RTK Query"
+            - "Axios"
+            - "Ramda"
+            - "SQLite"
+            - "Offline-first"
+            - "REST"
+            - "Firebase"
+            - "Amplitude"
+            - "POS"
+            - "Bluetooth"
+            - "Barcode scanners"
+            - "Clean Architecture"
+            - "Atomic Design"
+            - "CI/CD"
+            - "Google Play"
+            - "TestFlight"
+            - "Crashlytics"
+            - "Cypress"
+            - "E2E"
+            - "Firebase Analytics"
+            - "Jest"
+            - "Maestro"
+            - "Push notifications"
+            - "React Cosmos"
+            - "Sentry"
+            - "Storybook"
+    "en":
+      "name": "Flowwow ERP"
+      "type": "Retail · floristry · ERP"
+      "tagline": "Greenfield React Native ERP for florist stores — inventory, POS, orders, chain analytics."
+      "role": "Middle Mobile Developer (React Native)"
+      "links":
+        - "label": "Google Play"
+          "href": "https://play.google.com/store/apps/details?id=com.hoog.prod"
+          "primary": true
+        - "label": "flowwow.com"
+          "href": "https://flowwow.com/"
+      "metrics":
+        - "val": "-40%"
+          "lbl": "Sync time"
+        - "val": "-20%"
+          "lbl": "Input errors"
+        - "val": "3–4"
+          "lbl": "Releases"
+      "blocks":
+        - "type": "heroImage"
+          "src": "/projects/flowwow-erp.svg"
+          "alt": "Flowwow ERP"
+        - "type": "section"
+          "sectionKey": "overview"
+        - "type": "prose"
+          "text": "[Flowwow](https://flowwow.com/) is an online marketplace for customers and sellers in flowers &
+            gifts; partner tooling covers day-to-day retail operations. I worked on a **greenfield React Native ERP**
+            used to **inventory and stocktake cut flowers** in partner stores — receiving, recounts, stock control and
+            discrepancy handling. I also owned key **sales-side flows**: **POS / cash register integration**,
+            **order creation**, and UX where speed and reliability matter more than visual flair.\n\nI implemented
+            **tablet and phone layouts** so the same workflows feel natural both at the counter and in the back room.
+            For POS-class devices I **disabled or reduced animations** to keep the UI responsive and unambiguous when
+            the network flakes. The product also emphasized **analytics across the store network** — directors need
+            roll-ups on inventory, staffing and operational bottlenecks. I worked in a disciplined way: strong
+            validation, predictable error handling, and careful attention to edge cases on the floor.\n\nOn the
+            **shipping** side I built a **CI/CD** setup for React Native **Android** builds, ran **~3–4 production
+            releases** to **Google Play**, curated the **store listing** (copy + visuals), and kept a clean
+            **signing-key / publishing** workflow with sane versioning. I also delivered a small **landing page** as a
+            product / partner-facing showcase.\n"
+        - "type": "keyResults"
+          "items":
+            - "val": "0→1"
+              "lbl": "Greenfield RN"
+            - "val": "POS"
+              "lbl": "In-store register"
+            - "val": "CI/CD"
+              "lbl": "Build & release"
+            - "val": "Play"
+              "lbl": "Listing & keys"
+        - "type": "prose"
+          "text": "### Idea & business context\n\n[Flowwow](https://flowwow.com/) connects buyers and florist merchants; the partner
+            network needed **one operational backbone**: accurate **cut-flower** inventory, receiving, stocktakes, in-store POS, and
+            roll-up analytics for **multi-store** operators — not a patchwork of spreadsheets. The ERP vision was a **mobile-first**
+            client that survives **offline** work on poor Wi‑Fi and stays dependable on **budget Android** hardware.\n\nI owned the
+            **greenfield React Native** effort: shape the app so cashiers and regional directors read **the same facts** through tablet-
+            vs phone-dense layouts, and make **Google Play** shipping **repeatable**.\n"
+        - "type": "prose"
+          "text": "### Outcomes\n\n- **Operations:** closed the loop on **inventory**, **POS**, **orders**, and network-level reporting —
+            fewer reconciliation gaps between the shop floor and back office.\n- **Reliability:** **offline-first** + SQLite sync keeps
+            stores running during network drops; **NetInfo** + **retry** policies make failures understandable.\n- **Catalog scale:**
+            delta sync + data discipline targeted **~40% faster** reference sync for **50k+ SKU** stores; client-side validation targeted
+            **~20% fewer** receiving mistakes.\n- **Hardware UX:** dual form factors, toned-down **animations** on POS paths, **native
+            modals** instead of fragile bottom sheets — fewer “frozen register” incidents.\n- **Delivery:** **CI/CD** + **Fastlane**,
+            **~3–4** Play releases, polished **store listing** + **signing** hygiene, and a partner-facing **landing**.\n- **Engineering
+            culture:** **Clean Architecture**, **folder-by-feature**, **Atomic Design**, and **Cosmos/Storybook** made the ERP easier to
+            evolve without a monolithic UI trap.\n"
+        - "type": "section"
+          "sectionKey": "technical"
+        - "type": "prose"
+          "text": "### Client architecture\n\n**Code organization:** <span class='m'>Clean Architecture</span> with
+            explicit presentation / domain / data boundaries; warehouse / receiving / POS workflows were modeled as
+            cohesive use-cases rather than “mega-screens”. The repository followed a <span class='m'>folder-by-feature</span>
+            layout to keep cross-feature coupling low in a large ERP codebase.\n\n**UI:** <span class='m'>Atomic Design</span>
+            (atoms → organisms) for reusable controls in dense tables and forms. **Navigation:** <span class='m'>React Navigation</span>
+            + <span class='m'>react-native-screens</span> for native-ish stacks and lifecycle behaviour — fewer JS overlays in
+            POS-critical paths.\n\n**State & networking:** <span class='m'>Redux Toolkit</span> as the store foundation;
+            <span class='m'>RTK Query</span> for server cache & generated request flows; <span class='m'>Axios</span> for
+            bespoke HTTP clients and edge integrations. Data shaping used <span class='m'>Ramda</span>. I also kept internal
+            composition modules <span class='m'>k-store</span> / <span class='m'>k-chain</span> to structure the Redux layer and
+            stepwise async pipelines (helpful at **50k+ SKU** scale).\n\n**Modals:** moved to <span class='m'>native RN Modals</span>
+            and away from <span class='m'>@gorhom/bottom-sheet</span> due to gesture races and instability on several budget
+            Android devices used at the counter.\n\n### Data, hardware & analytics\n\n**Offline-first:** on-device
+            <span class='m'>SQLite</span>, sync with idempotency, offline queues & retries; delta compression cut reference sync
+            time by roughly **40%** for **50k+ SKU** stores. **Hardware:** Bluetooth scanners (Symbol/Zebra), Epson thermal
+            printers. **Integrations:** REST to core services, <span class='m'>Firebase</span> (FCM + analytics) +
+            <span class='m'>Amplitude</span> for product funnels & event analytics. **iOS beta:** <span class='m'>TestFlight</span>.
+            Client validation reduced receiving/input mistakes (**about −20%** on typical human errors).\n\n### Delivery\n\n**CI/CD**
+            for **Android** builds, **Play Console**, **keystore** hygiene, **~3–4 releases**, lightweight **landing**.
+            Marketplace: [flowwow.com](https://flowwow.com/).\n"
+        - "type": "techStack"
+          "tags":
+            - "React Native"
+            - "React"
+            - "React Navigation"
+            - "react-native-screens"
+            - "Android"
+            - "Redux Toolkit"
+            - "RTK Query"
+            - "Axios"
+            - "Ramda"
+            - "SQLite"
+            - "Offline-first"
+            - "REST"
+            - "Firebase"
+            - "Amplitude"
+            - "POS"
+            - "Bluetooth"
+            - "Barcode scanners"
+            - "Clean Architecture"
+            - "Atomic Design"
+            - "CI/CD"
+            - "Google Play"
+            - "TestFlight"
+            - "Crashlytics"
+            - "Cypress"
+            - "E2E"
+            - "Firebase Analytics"
+            - "Jest"
+            - "Maestro"
+            - "Push notifications"
+            - "React Cosmos"
+            - "Sentry"
+            - "Storybook"
+"timelineIndex": 2

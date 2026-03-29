@@ -8,6 +8,7 @@ import { lingui } from "@lingui/vite-plugin";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
+  assetsInclude: ["**/*.yaml"],
   server: {
     warmup: {
       clientFiles: [path.resolve(__dirname, "./src/main.tsx")],

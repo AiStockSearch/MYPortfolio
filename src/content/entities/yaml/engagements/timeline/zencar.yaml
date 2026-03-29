@@ -1,0 +1,273 @@
+"id": "zencar"
+"homeTag": "ZENCAR"
+"period":
+  "en": "Feb 2020 — Feb 2022"
+  "ru": "фев 2020 — фев 2022"
+"homeCompany":
+  "en": "ZenCar · Innopolis"
+  "ru": "ZenCar · Иннополис"
+"cvCompany":
+  "en": "ZenCar (zencar.tech · Innopolis SEZ)"
+  "ru": "ZenCar (zencar.tech · ОЭЗ Иннополис)"
+"role":
+  "en": "Mobile Developer (full-time)"
+  "ru": "Mobile Developer (full-time)"
+"shortDesc":
+  "en": "ZenCar (Innopolis SEZ): **Shell Garage** for **Shell** sites (**RN CLI**) — masters’ system notebook & **work-order** flows; **ZenCar client** (**Expo**) — **car owner diary** bridging ZenCar ecosystem products — **2 releases** each; Apollo, Realm, Storybook."
+  "ru": "ZenCar (ОЭЗ Иннополис): **Shell Garage** для **сети Shell** (**RN CLI**) — системный блокнот мастера и **создание заказ-нарядов**; **клиент ZenCar** (**Expo**) — **дневник автолюбителя** и связка с системными продуктами экосистемы — по **2 релиза** на приложение; Apollo, Realm, Storybook."
+"cvShortDesc":
+  "en": "ZenCar: Shell Garage for Shell sites (RN CLI, master notebook & work orders) + ZenCar diary app (Expo, ecosystem bridge) — 2 releases each."
+  "ru": "ZenCar: Shell Garage для Shell (RN CLI, блокнот мастера, заказ-наряды) + клиент-дневник (Expo, экосистема) — по 2 релиза."
+"achByArea":
+  "en":
+    "front":
+      - "Product UI/UX in **Figma**; **Storybook** for isolated components and review with stakeholders"
+      - "Web touchpoints where the same customer journey required a desktop lane next to mobile"
+    "mobile":
+      - "**Shell Garage** (**Shell** gas-station network): **RN CLI** — masters’ **digital notebook**, **work orders / job tickets**, **2×** store releases"
+      - "**ZenCar client** (**Expo**): **car & enthusiast diary**, entry point to **ZenCar ecosystem products**, **2×** releases"
+      - "Shared: **Apollo** (GraphQL), **Realm**, **Storybook**; **Swift / Java** for native bridges when needed"
+    "backend":
+      - "GraphQL contract consumption — typed layers, cache eviction patterns, resilient loading states"
+  "ru":
+    "front":
+      - "Продуктовый UI/UX в **Figma**; **Storybook** для изолированных компонентов и согласований с заказчиком"
+      - "Веб-точки там, где один и тот же сценарий требовал настольной ветки рядом с мобилой"
+    "mobile":
+      - "**Shell Garage** (сеть **Shell**): **RN CLI** — **системный блокнот** для мастеров, **заказ-наряды**, **2** релиза в сторы"
+      - "**Клиент ZenCar** (**Expo**): **дневник автомобиля / автолюбителя**, доступ к **продуктам экосистемы ZenCar**, **2** релиза"
+      - "Общий контур: **Apollo** (GraphQL), **Realm**, **Storybook**; **Swift / Java** точечно под мосты"
+    "backend":
+      - "Потребление GraphQL-контракта — типизация, политики кеша, устойчивые состояния загрузки"
+"stackByArea":
+  "front":
+    - "Figma"
+    - "Storybook"
+  "mobile":
+    - "React Native"
+    - "Expo"
+    - "Apollo"
+    - "Realm"
+    - "GraphQL"
+    - "Amplitude"
+    - "Crashlytics"
+    - "Cypress"
+    - "E2E"
+    - "Firebase Analytics"
+    - "Jest"
+    - "Maestro"
+    - "Push notifications"
+    - "React Cosmos"
+    - "Sentry"
+  "backend":
+    - "GraphQL"
+"cvAchievements":
+  "en":
+    - "ZenCar: **Shell Garage** for **Shell** (RN CLI) — master notebook & **work orders** + **ZenCar** diary client (Expo) — **2 releases each**"
+    - "Apollo GraphQL, Realm, Storybook; B2B workshop vs B2C car-diary UX; partial Figma; Swift/Java bridges when needed"
+  "ru":
+    - "ZenCar: **Shell Garage** для **Shell** (RN CLI) — блокнот мастера, **заказ-наряды** + **дневник** на **Expo** — по **2 релиза**"
+    - "Apollo GraphQL, Realm, Storybook; B2B у мастерской и B2C «дневник любителя»; Figma частично; Swift/Java при мостах"
+"cvTags":
+  - "React Native"
+  - "Expo"
+  - "Apollo"
+  - "GraphQL"
+  - "Realm"
+  - "Storybook"
+  - "Figma"
+  - "Swift"
+  - "Java"
+  - "Amplitude"
+  - "Crashlytics"
+  - "Cypress"
+  - "E2E"
+  - "Firebase Analytics"
+  - "Jest"
+  - "Maestro"
+  - "Push notifications"
+  - "React Cosmos"
+  - "Sentry"
+"portfolio":
+  "projectId": "innopolis-zencar"
+  "catalogOrderKey": "innopolisZencar"
+  "variant": "rich"
+  "live": true
+  "catalogFilters":
+    - "Mobile"
+    - "Enterprise"
+  "stack":
+    - "React Native"
+    - "Expo"
+    - "Apollo"
+    - "GraphQL"
+    - "Realm"
+    - "Storybook"
+    - "Figma"
+    - "Swift"
+    - "Java"
+    - "Amplitude"
+    - "Crashlytics"
+    - "Cypress"
+    - "E2E"
+    - "Firebase Analytics"
+    - "Jest"
+    - "Maestro"
+    - "Push notifications"
+    - "React Cosmos"
+    - "Sentry"
+  "i18n":
+    "ru":
+      "name": "ZenCar"
+      "type": "Shell B2B · дневник автолюбителя"
+      "tagline": "Блокнот мастера Shell и клиент-дневник ZenCar (по 2 релиза)"
+      "role": "Mobile Developer (full-time)"
+      "links":
+        - "label": "zencar.tech"
+          "href": "https://zencar.tech/"
+          "primary": true
+        - "label": "О компании"
+          "href": "https://zencar.tech/about-company"
+      "metrics":
+        - "val": "2×2"
+          "lbl": "Релизы"
+        - "val": "RN+Expo"
+          "lbl": "Стек"
+        - "val": "ОЭЗ"
+          "lbl": "Иннополис"
+      "blocks":
+        - "type": "heroImage"
+          "alt": "ZenCar"
+        - "type": "section"
+          "sectionKey": "overview"
+        - "type": "prose"
+          "text": "**[ZenCar](https://zencar.tech/)** — экосистема автосервиса и цифровых продуктов вокруг машины (компания в **ОЭЗ «Иннополис»**, см.
+            [о компании](https://zencar.tech/about-company)). Я развивал **два разных по роли приложения**. **Shell Garage** — партнёрский **B2B**-проект
+            для **сети автозаправок Shell**: у мастеров на точках — **системный блокнот** вместо «бумажки», ведение работ и **оформление заказ-нарядов**
+            в едином контуре. **Клиент ZenCar** на **Expo** — **потребительская** сторона: по сути **дневник автомобиля и
+            автолюбителя**, который **связывает** пользователя с **системными продуктами**, уже доступными в экосистеме (сервис, обслуживание,
+            партнёрские сценарии). Первое приложение — **React Native CLI**, второе — **Expo**; на **каждом** — **по два релиза** в **App Store** и
+            **Google Play**. Данные и UI: **Apollo** (GraphQL), **Realm**, **Storybook**; частично **Figma**.\n"
+        - "type": "keyResults"
+          "items":
+            - "val": "2"
+              "lbl": "Shell Garage"
+            - "val": "2"
+              "lbl": "ZenCar (Expo)"
+            - "val": "GQL"
+              "lbl": "Apollo"
+        - "type": "prose"
+          "text": "### Идея и контекст\n\n**Shell Garage** решал прикладную задачу **бренда Shell** на автозаправках: дать мастерам **единый
+            цифровой блокнот** — учёт работ, понятный поток **заказ-наряда** (создание и ведение **нарядов**), без разрыва между «полем» и бэкофисом. Технически это
+            потребовало **React Native CLI** — привычный нативно-связанный контур под интеграции и стор. **Клиент ZenCar** — другая плоскость:
+            не пост, а **человек с машиной** — **дневник ТО**, заметок, истории обслуживания и **точка входа** в то, что экосистема ZenCar уже
+            предлагает как **системные продукты** (скрещивание «мастерской» и «личного» контура для пользователя). Здесь уместен **Expo** — быстрее
+            итерации при том же стеке **Apollo** / **Realm**. В обоих случаях важны **слабая сеть** на объекте, ясные состояния загрузки и согласованный
+            GraphQL-контракт.\n"
+        - "type": "prose"
+          "text": "### Итог и эффект\n\n- **Shell Garage:** **B2B** для **Shell** — блокнот мастера и **заказ-наряды**; **RN CLI**, **2** релиза.\n- **Клиент ZenCar:** **дневник автолюбителя** и связка с **продуктами экосистемы**; **Expo**, **2** релиза.\n- **Платформа ZenCar / ОЭЗ Иннополис:** участие в линейке продуктов вокруг авто и сервиса.\n- **Данные:** **Apollo** + **Realm** на обеих базах.\n- **Дизайн:** **Storybook**, частично **Figma**; **Swift / Java** точечно.\n"
+        - "type": "section"
+          "sectionKey": "technical"
+        - "type": "prose"
+          "text": "### Техническая реализация\n\n**Shell Garage (RN CLI):** сценарии **мастера на АЗС Shell** — списки работ, статусы, **заказ-наряды**
+            (оформление и сопровождение **нарядов**); нативные **iOS / Android** + JS, **два** релиза в сторы.\n\n**Клиент ZenCar (Expo):** экраны **дневника авто**,
+            навигация к **продуктам экосистемы**; тот же **Apollo** / **Realm**, **Expo**-сборки — **два** релиза.\n\n**Общее:** GraphQL,
+            **Realm** под офлайн-чувствительный UX, **Storybook**, **Figma**.\n\nСайт: [zencar.tech](https://zencar.tech/).\n"
+        - "type": "techStack"
+          "tags":
+            - "React Native"
+            - "Expo"
+            - "Apollo"
+            - "GraphQL"
+            - "Realm"
+            - "Storybook"
+            - "Figma"
+            - "Swift"
+            - "Java"
+            - "Amplitude"
+            - "Crashlytics"
+            - "Cypress"
+            - "E2E"
+            - "Firebase Analytics"
+            - "Jest"
+            - "Maestro"
+            - "Push notifications"
+            - "React Cosmos"
+            - "Sentry"
+    "en":
+      "name": "ZenCar"
+      "type": "Shell B2B · car owner diary"
+      "tagline": "Shell master notebook & ZenCar diary app (two releases each)"
+      "role": "Mobile Developer (full-time)"
+      "links":
+        - "label": "zencar.tech"
+          "href": "https://zencar.tech/en"
+          "primary": true
+        - "label": "About"
+          "href": "https://zencar.tech/about-company"
+      "metrics":
+        - "val": "2×2"
+          "lbl": "Releases"
+        - "val": "RN+Expo"
+          "lbl": "Stack"
+        - "val": "SEZ"
+          "lbl": "Innopolis"
+      "blocks":
+        - "type": "heroImage"
+          "alt": "ZenCar"
+        - "type": "section"
+          "sectionKey": "overview"
+        - "type": "prose"
+          "text": "**[ZenCar](https://zencar.tech/en)** is an automotive / service **product ecosystem** anchored in the **Innopolis** SEZ (see
+            [about the company](https://zencar.tech/about-company)). I owned **two apps with different jobs**. **Shell Garage** — a **B2B** delivery for
+            the **Shell** forecourt / auto-care network: a **system notebook** for on-site **technicians** — structured jobs and **work-order** flows
+            (**заказ-наряд**) in one place instead of ad-hoc paper. **ZenCar client** on **Expo** targets **car owners**: essentially a **vehicle & enthusiast diary** that
+            also acts as the **bridge** into ZenCar’s **existing ecosystem products** (service journeys and partner flows). **Shell Garage** shipped on
+            **React Native CLI**, the consumer client on **Expo** — **two store releases each** for **iOS & Android**. Shared stack: **Apollo**
+            (GraphQL), **Realm**, **Storybook**, partial **Figma**.\n"
+        - "type": "keyResults"
+          "items":
+            - "val": "2"
+              "lbl": "Shell Garage"
+            - "val": "2"
+              "lbl": "ZenCar (Expo)"
+            - "val": "GQL"
+              "lbl": "Apollo"
+        - "type": "prose"
+          "text": "### Idea & context\n\n**Shell Garage** was anchored in **Shell**’s operational reality: **masters** at service points needed a
+            **single digital notebook** — track work, create and progress **work orders** (**заказ-наряд**), stay aligned with back-office expectations. That
+            pushed us toward **React Native CLI** for native parity and integrations. **ZenCar client** is the **consumer** complement: a **car owner’s
+            diary** (maintenance notes, vehicle memory) that **connects** people to the **system products** the ZenCar stack already runs — one UX layer
+            tying **“workshop-side”** and **“owner-side”** structures for the user. **Expo** fit faster iteration there while **Apollo** / **Realm**
+            stayed the common backbone; **shaky forecourt Wi‑Fi** and clear loading states mattered in both worlds.\n"
+        - "type": "prose"
+          "text": "### Outcomes\n\n- **Shell Garage:** **B2B** app for **Shell** — technician notebook + **work orders**; **RN CLI**; **two** releases.\n- **ZenCar client:** **car / enthusiast diary** + **ecosystem entry**; **Expo**; **two** releases.\n- **ZenCar / Innopolis:** contributions across the broader auto-service product line.\n- **Data:** **Apollo** + **Realm** on both apps.\n- **Design & platform:** **Storybook**, **Figma** where I co-owned UI; **Swift / Java** only for unavoidable bridges.\n"
+        - "type": "section"
+          "sectionKey": "technical"
+        - "type": "prose"
+          "text": "### Engineering notes\n\n**Shell Garage (RN CLI):** technician workflows at **Shell** sites — job lists, statuses, **work orders**;
+            native shells + JS, **two** store submissions.\n\n**ZenCar client (Expo):** diary / vehicle memory surfaces and routing into **ecosystem**
+            modules; **Expo** pipeline, **two** releases.\n\n**Shared:** **Apollo Client**, **Realm** for connectivity-sensitive UX, **Storybook**,
+            **Figma** where applicable.\n\nProduct site: [zencar.tech](https://zencar.tech/en).\n"
+        - "type": "techStack"
+          "tags":
+            - "React Native"
+            - "Expo"
+            - "Apollo"
+            - "GraphQL"
+            - "Realm"
+            - "Storybook"
+            - "Figma"
+            - "Swift"
+            - "Java"
+            - "Amplitude"
+            - "Crashlytics"
+            - "Cypress"
+            - "E2E"
+            - "Firebase Analytics"
+            - "Jest"
+            - "Maestro"
+            - "Push notifications"
+            - "React Cosmos"
+            - "Sentry"
+"timelineIndex": 6

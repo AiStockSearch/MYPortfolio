@@ -1,0 +1,223 @@
+"id": "mirapolis-lms"
+"homeTag": "MIRAPOLIS"
+"period":
+  "en": "Aug 2024 — Jul 2025"
+  "ru": "авг 2024 — июл 2025"
+"homeCompany":
+  "en": "mirapolis.ru"
+  "ru": "mirapolis.ru"
+"cvCompany":
+  "en": "Mirapolis (mirapolis.ru)"
+  "ru": "Mirapolis (mirapolis.ru)"
+"role":
+  "en": "Senior Mobile Engineer / Lead"
+  "ru": "Senior Mobile Engineer / Lead"
+"shortDesc":
+  "en": "Mirapolis HCM/LMS mobile ecosystem for 100k+ corporate users (Moscow, HR tech)."
+  "ru": "Мобильная HCM/LMS-экосистема Mirapolis для 100k+ корпоративных пользователей (Москва, HR tech)."
+"achByArea":
+  "en":
+    "mobile":
+      - "<span class='m'>-40%</span> memory via Virtual Lists for employee & course lists"
+      - "React <span class='m'>18+</span> migration & TypeScript adoption on legacy areas"
+      - "With designers: adaptive layouts for <span class='m'>iPad / Android tablets</span> for managers in the field"
+      - "Course player, assessments, news feed, media library — core LMS modules"
+      - "<span class='m'>DAU +15%</span> in mobile learning after offline-mode overhaul"
+      - "Code review, standards, mentoring Middle/Junior developers"
+      - "REST & real-time touchpoints with HCM/LMS core; enterprise SSO edge cases"
+  "ru":
+    "mobile":
+      - "<span class='m'>-40%</span> памяти за счёт Virtual Lists для списков сотрудников и курсов"
+      - "Миграция на React <span class='m'>18+</span> и типизация легаси на TypeScript"
+      - "С дизайнерами: адаптив под <span class='m'>iPad / Android-планшеты</span> для руководителей «в полях»"
+      - "Плеер курсов, тестирование, лента новостей, медиатека — ключевые модули LMS"
+      - "<span class='m'>DAU +15%</span> в мобильном обучении после переработки offline"
+      - "Code review, стандарты, наставничество Middle/Junior"
+      - "REST и real-time к ядру HCM/LMS; граничные кейсы enterprise SSO"
+"stackByArea":
+  "mobile":
+    - "TypeScript"
+    - "React 18"
+    - "Redux"
+    - "Virtual Lists"
+    - "Offline-first"
+    - "React Native"
+    - "REST"
+    - "Amplitude"
+    - "Crashlytics"
+    - "Cypress"
+    - "E2E"
+    - "Firebase Analytics"
+    - "Jest"
+    - "Maestro"
+    - "Push notifications"
+    - "React Cosmos"
+    - "Sentry"
+    - "Storybook"
+"cvAchievements":
+  "en":
+    - "DAU +15% after offline overhaul; memory -40% with Virtual Lists"
+    - "Tablet layouts for field managers; dynamic white-label modules"
+    - "Code review, standards, mentoring Middle/Junior"
+    - "REST & real-time integration with HCM/LMS core; enterprise SSO edge cases"
+    - "Sync pipelines and conflict resolution at large data volumes"
+  "ru":
+    - "DAU +15% после переработки offline; память −40% за счёт Virtual Lists"
+    - "Адаптив под планшеты для руководителей; динамические white-label модули"
+    - "Code review, стандарты, наставничество Middle/Junior"
+    - "REST и real-time к ядру HCM/LMS; граничные кейсы enterprise SSO"
+    - "Пайплайны синка и конфликты на больших объёмах данных"
+"cvTags":
+  - "React Native"
+  - "TypeScript"
+  - "React 18"
+  - "Redux"
+  - "SQLite"
+  - "Offline-first"
+  - "Socket.io"
+  - "Amplitude"
+  - "Crashlytics"
+  - "Cypress"
+  - "E2E"
+  - "Firebase Analytics"
+  - "Jest"
+  - "Maestro"
+  - "Push notifications"
+  - "React Cosmos"
+  - "Sentry"
+  - "Storybook"
+"portfolio":
+  "catalogOrderKey": "mirapolisLms"
+  "live": true
+  "variant": "rich"
+  "catalogFilters":
+    - "Mobile"
+    - "Enterprise"
+    - "HR-tech"
+  "stack":
+    - "React Native"
+    - "TypeScript"
+    - "Virtual Lists"
+    - "Redux"
+    - "Offline-first"
+    - "SQLite"
+    - "Amplitude"
+    - "Crashlytics"
+    - "Cypress"
+    - "E2E"
+    - "Firebase Analytics"
+    - "Jest"
+    - "Maestro"
+    - "Push notifications"
+    - "React Cosmos"
+    - "Sentry"
+    - "Storybook"
+  "i18n":
+    "ru":
+      "name": "Mirapolis LMS"
+      "type": "HR-tech · Enterprise"
+      "tagline": "Корпоративное обучение и HR в мобильном приложении"
+      "role": "Senior Mobile Engineer / Lead"
+      "links":
+        - "label": "mirapolis.ru"
+          "href": "https://www.mirapolis.ru/"
+          "primary": true
+        - "label": "Google Play"
+          "href": "https://play.google.com/store/apps/details?id=ru.mirapolis.lms2"
+      "metrics":
+        - "val": "+15%"
+          "lbl": "DAU"
+        - "val": "-40%"
+          "lbl": "Память"
+        - "val": "iPad+"
+          "lbl": "Планшет"
+      "blocks":
+        - "type": "heroImage"
+          "src": "/projects/mirapolis-lms.svg"
+          "alt": "Mirapolis LMS"
+        - "type": "section"
+          "sectionKey": "overview"
+        - "type": "prose"
+          "text": "Мобильная HCM/LMS для Mirapolis: плеер курсов, офлайн-обучение, тестирование, лента и медиатека —
+            адаптивный UI в том числе для **планшетов**, на которых удобно работать руководителям **в полях**. Приложение
+            обслуживает **100k+** корпоративных пользователей в России в модели **enterprise** (SSO, white-label модули,
+            большие списки сотрудников и курсов).\n"
+        - "type": "keyResults"
+          "items":
+            - "val": "+15%"
+              "lbl": "DAU обучения"
+            - "val": "-40%"
+              "lbl": "Память списков"
+            - "val": "100k+"
+              "lbl": "Аудитория"
+        - "type": "prose"
+          "text": "### Идея и контекст\n\n[Mirapolis](https://www.mirapolis.ru/) — HCM/LMS-платформа для крупных организаций:
+            обучение, оценки, коммуникации и HR-процессы в одном контуре. **Идея мобильного клиента** — дать сотруднику **тот же
+            учебный контракт**, что и в вебе, но в дороге и **без гарантированной сети**: курсы должны **докачиваться**, проходиться
+            офлайн и **корректно синхронизироваться** при возвращении связи.\n\nВторая оверлейная задача — **enterprise-реальность**:
+            **SSO** и граничные кейсы входа, **white-label** для разных заказчиков, **тяжёлые списки** людей и курсов на слабом
+            Android и **планшетный** режим для руководителей.\n"
+        - "type": "prose"
+          "text": "### Итог и эффект\n\n- **Вовлечённость:** после переработки **offline** и сценариев обучения — рост **DAU мобильного
+            обучения ~+15%**.\n- **Производительность:** виртуализированные списки (**Virtual Lists**) и дисциплина рендера — ориентир
+            **−40% потребления памяти** на типичных списках сотрудников/курсов.\n- **Масштаб:** поддержка **100k+** пользователей и корпоративных
+            сценариев без «падения» на листинге.\n- **Платформа:** миграция на **React 18+** и **TypeScript** на легаси-участках — меньше класса
+            регрессий при релизах.\n- **UX:** адаптив под **iPad / Android-планшеты** для полевых руководителей; ядро LMS — плеер, тесты,
+            новости, медиатека.\n- **Интеграции:** **REST** и **real-time** к ядру HCM/LMS; отработка **конфликтов синка** и больших объёмов
+            данных.\n- **Команда:** **code review**, стандарты, наставничество **Middle/Junior**.\n"
+        - "type": "section"
+          "sectionKey": "technical"
+        - "type": "prose"
+          "text": "Ключевая задача — offline-first: курсы без сети в полях. Кастомный движок синхронизации с разрешением конфликтов, дельта-обновления, фоновый sync. Virtual Lists снизили память на 40% на слабых Android. Модульность для white-label клиентов.\n"
+    "en":
+      "name": "Mirapolis LMS"
+      "type": "HRTech · Enterprise"
+      "tagline": "Corporate learning & HR mobile ecosystem"
+      "role": "Senior Mobile Engineer / Lead"
+      "links":
+        - "label": "mirapolis.ru"
+          "href": "https://www.mirapolis.ru/"
+          "primary": true
+        - "label": "Google Play"
+          "href": "https://play.google.com/store/apps/details?id=ru.mirapolis.lms2"
+      "metrics":
+        - "val": "+15%"
+          "lbl": "DAU"
+        - "val": "-40%"
+          "lbl": "Mem usage"
+        - "val": "iPad+"
+          "lbl": "Tablet UX"
+      "blocks":
+        - "type": "heroImage"
+          "src": "/projects/mirapolis-lms.svg"
+          "alt": "Mirapolis LMS"
+        - "type": "section"
+          "sectionKey": "overview"
+        - "type": "prose"
+          "text": "Mobile HCM/LMS for Mirapolis: course player, **offline** learning, assessments, news feed and media library —
+            with adaptive UI for **tablets** so managers **in the field** can work comfortably. The app serves **100k+** corporate
+            users across Russia under **enterprise** constraints (SSO, white-label modules, very large employee/course lists).\n"
+        - "type": "keyResults"
+          "items":
+            - "val": "+15%"
+              "lbl": "Learning DAU"
+            - "val": "-40%"
+              "lbl": "List memory"
+            - "val": "100k+"
+              "lbl": "Audience"
+        - "type": "prose"
+          "text": "### Idea & context\n\n[Mirapolis](https://www.mirapolis.ru/) is an HCM/LMS suite for large organizations — learning,
+            assessments, comms and HR workflows in one stack. The **mobile bet** was to deliver the **same learning contract** as the web,
+            including **on the move** and **without reliable connectivity**: courses must **prefetch**, run **offline**, and **reconcile
+            cleanly** when the network returns.\n\nLayer two was **enterprise reality**: **SSO** edge cases, **white-label** variance per
+            customer, **massive lists** of people/courses on low-end Android, plus a **tablet-first** lane for line managers.\n"
+        - "type": "prose"
+          "text": "### Outcomes\n\n- **Engagement:** after the **offline** / learning-flow overhaul, **mobile learning DAU ~+15%**.\n- **Performance:** **Virtual Lists** + render discipline targeted **~40% lower memory** on employee/course listings.\n- **Scale:** stable UX for **100k+** users and enterprise list sizes.\n- **Platform health:** **React 18+** migration and
+            **TypeScript** adoption on legacy areas — fewer release regressions.\n- **UX:** adaptive **iPad / Android tablet** layouts for field
+            managers; core LMS modules — player, testing, news, media.\n- **Integrations:** **REST** + **real-time** touchpoints to the HCM/LMS
+            core; **sync conflict** handling at large data volumes.\n- **Team:** **code review**, standards, mentoring **Middle/Junior**
+            engineers.\n"
+        - "type": "section"
+          "sectionKey": "technical"
+        - "type": "prose"
+          "text": "Core challenge was offline-first architecture: employees in field locations needed to download and complete courses without internet. Built a custom sync engine with conflict resolution, delta updates and background sync. Virtual Lists optimisation cut memory usage by 40% on low-end Android devices. Modular architecture allows white-label customisation per enterprise client.\n"

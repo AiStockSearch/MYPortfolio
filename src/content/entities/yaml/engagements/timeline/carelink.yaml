@@ -1,0 +1,57 @@
+"id": "carelink"
+"homeTag": "CARELINK"
+"period":
+  "en": "2024 — present"
+  "ru": "2024 — н.в."
+"homeCompany":
+  "en": "Carelink DAO"
+  "ru": "Carelink DAO"
+"cvCompany":
+  "en": "Carelink DAO (grant / OSS)"
+  "ru": "Carelink DAO (грант / OSS)"
+"role":
+  "en": "Lead — platform & GraphQL backend"
+  "ru": "Lead — платформа и GraphQL-бэкенд"
+"shortDesc":
+  "en": "**Backend** for Carelink DAO: **GraphQL** / **Apollo**, **Node.js**, **Cardano** integrations, same grant-era architecture family as sister projects."
+  "ru": "**Бэкенд** Carelink DAO: **GraphQL** / **Apollo**, **Node.js**, интеграции **Cardano**, тот же архитектурный контур грантовых инициатив."
+"achByArea":
+  "en":
+    "front": []
+    "mobile": []
+    "backend":
+      - "**GraphQL** API design for collective intelligence workflows — proposals, evidence, voting artefacts"
+      - "**Node.js** + **Apollo** stack: modular resolvers, auth, integration with persistence & external indexers"
+      - "**Cardano** / **Web3** hooks for on-chain anchors, identity constraints, treasury hooks"
+      - "Shared patterns with CosmoFusion fork: reproducible deploys, observability, AI-assisted code & content review"
+  "ru":
+    "front": []
+    "mobile": []
+    "backend":
+      - "**GraphQL**-API под коллективный интеллект — предложения, артефакты, голосование"
+      - "**Node.js** + **Apollo**: модули резолверов, авторизация, хранилище и внешние индексаторы"
+      - "Контур **Cardano** / **Web3** для якорей on-chain, ограничений идентичности, казны"
+      - "Общие паттерны с веткой CosmoFusion: воспроизводимые деплои, наблюдаемость, ИИ в ревью"
+"stackByArea":
+  "front": []
+  "mobile": []
+  "backend":
+    - "Node.js"
+    - "Apollo"
+    - "GraphQL"
+    - "Web3.js"
+    - "Cardano"
+    - "AI Tools"
+"cvAchievements":
+  "en":
+    - "Carelink DAO: Apollo/GraphQL backend, Node.js, Cardano/Web3; grant-stack parity with CosmoFusion lineage"
+  "ru":
+    - "Carelink DAO: бэкенд Apollo/GraphQL, Node.js, Cardano/Web3; единый грантовый контур с CosmoFusion"
+"cvTags":
+  - "Node.js"
+  - "Apollo"
+  - "GraphQL"
+  - "Web3.js"
+  - "Cardano"
+  - "AI Tools"
+"timelineIndex": 12

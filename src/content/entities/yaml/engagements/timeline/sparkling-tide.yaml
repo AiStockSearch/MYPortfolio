@@ -1,0 +1,172 @@
+"id": "sparkling-tide"
+"homeTag": "SPARKLING"
+"period":
+  "en": "Feb 2021 — Aug 2021"
+  "ru": "фев 2021 — авг 2021"
+"homeCompany":
+  "en": "SparklingTide · Spark Lite"
+  "ru": "SparklingTide · Spark Lite"
+"cvCompany":
+  "en": "SparklingTide (Spark Lite — services marketplace MVP)"
+  "ru": "SparklingTide (продуктовая линейка Spark Lite — маркетплейс услуг, MVP)"
+"role":
+  "en": "Mobile Engineer (MVP)"
+  "ru": "Инженер мобильного приложения (MVP)"
+"shortDesc":
+  "en": "**Spark Lite** (SparklingTide): RN **services marketplace** — listings, geo, payments; fast MVP to **stores**;
+    analytics & crash tooling; **Jest / Maestro / Cypress** E2E."
+  "ru": "**Spark Lite**: **маркетплейс услуг** на RN — объявления, гео, оплаты; быстрый MVP до **сторов**; аналитика и
+    краши; E2E (**Jest / Maestro / Cypress**)."
+"cvShortDesc":
+  "en": "Spark Lite RN marketplace: stores-fast MVP; Amplitude/Firebase/Crashlytics/Sentry; Cosmos/Storybook; Jest/Maestro/Cypress."
+  "ru": "Spark Lite, маркетплейс на RN: быстрый выход в сторы; Amplitude/Firebase/Crashlytics/Sentry; Cosmos/Storybook; Jest/Maestro/Cypress."
+"achByArea":
+  "en":
+    "front":
+      - "<span class='m'>Pixel-perfect</span> Figma execution; lists & cards tuned for **service discovery**"
+      - "<span class='m'>Storybook</span> + <span class='m'>React Cosmos</span> for catalog / auth slices —
+        faster review cycles on a short timeline"
+    "mobile":
+      - "**Why a marketplace:** shorten the path from **local demand** to a **bookable service** — MVP to prove
+        **geo discovery**, **listing quality**, and **operator lead handoff** (Yandex Services / Profi-class pattern)"
+      - "**Target lens:** readable **funnel** (view listing → contact / CTA) and **time-to-first operator
+        response** — wired to **Amplitude** + **Firebase Analytics**; stability via **Crashlytics** + **Sentry**"
+      - "<span class='m'>MVP</span> scope fast: «near you», auth, publish & edit listings, **payments** hooks,
+        **push** for lead / order signals"
+      - "**Velocity:** ship features quickly, then **rewrite hot paths** to **remove dead weight** after pivots —
+        smaller bundle, fewer branches"
+      - "<span class='m'>Google Maps</span>, <span class='m'>Redux</span>, REST; v1 freeze → support handoff;
+        **shortest practical** Play / App Store path via **release discipline**"
+      - "**Quality rail:** **Jest** unit coverage on critical mappers; **Maestro** + **Cypress** (E2E) on happy paths"
+    "backend":
+      - "<span class='m'>REST</span> for listings, auth, payment status; event shapes aligned with **analytics**
+        taxonomy"
+  "ru":
+    "front":
+      - "<span class='m'>Pixel-perfect</span> по макетам; списки и карточки под **поиск услуг**"
+      - "<span class='m'>Storybook</span> и <span class='m'>React Cosmos</span> для каталога и авторизации —
+        ускоряют согласования на коротком цикле"
+    "mobile":
+      - "**Зачем маркетплейс услуг:** сократить путь от **спроса** до **заказа услуги** — MVP проверяет **гео-поиск**,
+        качество **объявлений** и **передачу лида** исполнителю (логика в духе Яндекс Услуг / Профи)"
+      - "**Целевые метрики (продукт):** прозрачная **воронка** (просмотр → контакт / целевое действие) и **время до
+        первого ответа** оператора — события в **Amplitude** и **Firebase Analytics**; стабильность через **Crashlytics**
+        и **Sentry**"
+      - "<span class='m'>MVP</span> в сжатые сроки: «рядом с вами», вход, публикация и редактирование объявлений,
+        **платежи**, **push** под лиды и статусы"
+      - "**Скорость поставки:** быстро наращивать функциональность, затем **переписывать узкие места** и **убирать
+        лишний код** после смены приоритетов"
+      - "<span class='m'>Google Maps</span>, <span class='m'>Redux</span>, REST; заморозка v1 → поддержка;
+        **кратчайшие сроки до сторов** за счёт дисциплины релизов"
+      - "**Контур качества:** **Jest** на критичных мапперах; **Maestro** и **Cypress** на E2E-сценариях"
+    "backend":
+      - "<span class='m'>REST</span>: объявления, авторизация, статусы оплат; события согласованы с **аналитикой**"
+"stackByArea":
+  "front":
+    - "Figma"
+    - "Pixel-perfect"
+    - "Storybook"
+    - "React Cosmos"
+  "mobile":
+    - "React Native"
+    - "Redux"
+    - "Google Maps API"
+    - "Auth flows"
+    - "Payments"
+    - "Push notifications"
+    - "Amplitude"
+    - "Firebase Analytics"
+    - "Crashlytics"
+    - "Sentry"
+    - "Storybook"
+    - "React Cosmos"
+    - "Jest"
+    - "Maestro"
+    - "Cypress"
+    - "E2E"
+    - "iOS & Android"
+  "backend":
+    - "REST"
+    - "Amplitude"
+    - "Firebase Analytics"
+    - "Crashlytics"
+    - "Sentry"
+"cvAchievements":
+  "en":
+    - "Spark Lite (SparklingTide): RN **services marketplace** MVP — geo listings, auth, Maps, payments, push"
+    - "**Speed:** fast feature delivery, **targeted rewrites**, **code reduction** after scope shifts"
+    - "**Stores + analytics:** shortest practical Play / App Store cycle; **Amplitude**, **Firebase Analytics**,
+      **Crashlytics**, **Sentry** end-to-end"
+    - "**UI & QA:** **Storybook** / **React Cosmos**; **Jest**, **Maestro**, **Cypress** E2E on core journeys"
+  "ru":
+    - "Spark Lite (SparklingTide): MVP **маркетплейса услуг** на RN — гео-объявления, авторизация, карты, оплаты, push"
+    - "**Скорость:** быстрые фичи, **точечные переписки**, **сокращение кодовой базы** после изменения приоритетов"
+    - "**Сторы и аналитика:** кратчайший практичный цикл до магазинов; **Amplitude**, **Firebase Analytics**,
+      **Crashlytics**, **Sentry**"
+    - "**UI и QA:** **Storybook** / **React Cosmos**; **Jest**, **Maestro**, **Cypress** E2E на ключевых сценариях"
+"cvTags":
+  - "Amplitude"
+  - "Android"
+  - "Crashlytics"
+  - "Cypress"
+  - "E2E"
+  - "Firebase Analytics"
+  - "Google Maps API"
+  - "iOS"
+  - "Jest"
+  - "Maestro"
+  - "MVP"
+  - "Push notifications"
+  - "React Cosmos"
+  - "React Native"
+  - "Redux"
+  - "REST"
+  - "Sentry"
+  - "Storybook"
+"portfolio":
+  "catalogOrderKey": "sparklingTide"
+  "variant": "stub"
+  "catalogFilters":
+    - "Mobile"
+  "stack":
+    - "React Native"
+    - "Redux"
+    - "Google Maps API"
+    - "Payments"
+    - "Push notifications"
+    - "Amplitude"
+    - "Firebase Analytics"
+    - "Crashlytics"
+    - "Sentry"
+    - "Storybook"
+    - "React Cosmos"
+    - "Jest"
+    - "Maestro"
+    - "Cypress"
+    - "E2E"
+    - "REST"
+    - "iOS"
+    - "Android"
+  "catalogCardType":
+    "ru": "Spark Lite · услуги · MVP"
+    "en": "Spark Lite · services · MVP"
+  "stubMetrics":
+    "ru":
+      - "val": "~6 мес"
+        "lbl": "Цикл"
+      - "val": "MVP"
+        "lbl": "Формат"
+      - "val": "iOS+And"
+        "lbl": "Сторы"
+      - "val": "RN"
+        "lbl": "Клиент"
+    "en":
+      - "val": "~6 mo"
+        "lbl": "Runway"
+      - "val": "MVP"
+        "lbl": "Format"
+      - "val": "iOS+And"
+        "lbl": "Stores"
+      - "val": "RN"
+        "lbl": "Client"
+"timelineIndex": 7
