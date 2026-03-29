@@ -21,6 +21,8 @@ export default defineConfig({
     host: true,
     port: previewPort,
     strictPort: true,
+    // Иначе Vite режет Host с *.onrender.com (preview server host check)
+    allowedHosts: [".onrender.com"],
   },
   plugins: [
     react({
