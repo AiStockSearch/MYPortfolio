@@ -1,0 +1,13 @@
+# Render Blueprint — https://render.com/docs/blueprint-spec
+# Подключите репозиторий в Dashboard → New → Blueprint (или Static Site вручную с теми же командами).
+
+services:
+  - type: web
+    name: portfolio-vy
+    runtime: static
+    buildCommand: corepack enable && pnpm install --frozen-lockfile && pnpm run build
+    staticPublishPath: ./dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
