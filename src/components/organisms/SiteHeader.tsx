@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Trans } from "@lingui/macro";
 import { CONTACT_EMAIL } from "../../constants/links";
+import { trackCta } from "../../lib/firebaseAnalytics";
 import LocaleToggle from "../molecules/LocaleToggle";
 import { linkActiveClass } from "../Layout/linkActiveClass";
 
@@ -27,6 +28,9 @@ export default function SiteHeader({
                 className={[linkActiveClass(path, to), linkClass]
                   .filter(Boolean)
                   .join(" ")}
+                onClick={() =>
+                  trackCta(`nav_${to === "/" ? "home" : to.replace(/\//g, "_")}`, "header", to)
+                }
               >
                 {label}
               </Link>
@@ -44,7 +48,13 @@ export default function SiteHeader({
             {menuOpen ? "✕" : "☰"}
           </button>
           <LocaleToggle locale={locale} setLocale={setLocale} />
-          <a href={`mailto:${CONTACT_EMAIL}`} className="n-cta">
+          <a
+            href={`mailto:${CONTACT_EMAIL}`}
+            className="n-cta"
+            onClick={() =>
+              trackCta("header_mailto", "header", `mailto:${CONTACT_EMAIL}`, "contact")
+            }
+          >
             <Trans>Связаться</Trans>
           </a>
         </div>
@@ -64,7 +74,14 @@ export default function SiteHeader({
                   className={[linkActiveClass(path, to), linkClass]
                     .filter(Boolean)
                     .join(" ")}
-                  onClick={() => setMenuOpen(false)}
+                  onClick={() => {
+                    trackCta(
+                      `nav_mobile_${to === "/" ? "home" : to.replace(/\//g, "_")}`,
+                      "header_mobile",
+                      to
+                    );
+                    setMenuOpen(false);
+                  }}
                 >
                   {label}
                 </Link>

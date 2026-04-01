@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import { logAnalyticsEvent } from "../../lib/firebaseAnalytics";
 import {
   buildContactChannels,
   buildContactMailto,
@@ -25,6 +26,7 @@ export function useContactPage(ui) {
       return;
     }
     setErrors({});
+    void logAnalyticsEvent("contact_mailto", { subject: form.subject });
     window.location.href = buildContactMailto(form, ui);
   };
 

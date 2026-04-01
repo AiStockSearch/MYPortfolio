@@ -1,4 +1,5 @@
 import MediaImage from "../../../atoms/MediaImage";
+import { trackCta } from "../../../../lib/firebaseAnalytics";
 
 export default function PartnerBlock({ block }) {
   const name = block.name || "";
@@ -19,7 +20,20 @@ export default function PartnerBlock({ block }) {
   return (
     <div className="pd-partner">
       {block.href ? (
-        <a href={block.href} target="_blank" rel="noreferrer" className="pd-partner-link">
+        <a
+          href={block.href}
+          target="_blank"
+          rel="noreferrer"
+          className="pd-partner-link"
+          onClick={() =>
+            trackCta(
+              `project_partner_${(name || "partner").replace(/\s+/g, "_")}`,
+              "project_partner",
+              block.href,
+              name
+            )
+          }
+        >
           {inner}
         </a>
       ) : (

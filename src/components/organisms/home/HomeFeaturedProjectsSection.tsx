@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import MediaImage from "../../atoms/MediaImage";
+import { trackCta } from "../../../lib/firebaseAnalytics";
 import { projectCoverSrc } from "../../../utils/projectCoverSrc";
 
 export default function HomeFeaturedProjectsSection({ work, featList, addRev }) {
@@ -18,6 +19,9 @@ export default function HomeFeaturedProjectsSection({ work, featList, addRev }) 
             className="feat-card reveal"
             key={p.id}
             ref={addRev}
+            onClick={() =>
+              trackCta(`feat_project_${p.id}`, "home_featured", `/projects/${p.id}`, p.name)
+            }
           >
             <div className="fc-img-wrap">
               <MediaImage
@@ -44,7 +48,11 @@ export default function HomeFeaturedProjectsSection({ work, featList, addRev }) 
         ))}
       </div>
       <div className="feat-more">
-        <Link to="/projects" className="btn-s">
+        <Link
+          to="/projects"
+          className="btn-s"
+          onClick={() => trackCta("feat_all_projects", "home_featured", "/projects", work.more)}
+        >
           {work.more}
         </Link>
       </div>

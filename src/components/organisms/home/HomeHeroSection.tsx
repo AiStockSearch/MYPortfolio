@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { trackCta } from "../../../lib/firebaseAnalytics";
 
 export default function HomeHeroSection({
   typewriterText,
@@ -30,10 +31,18 @@ export default function HomeHeroSection({
         {hero.subAfterWeb3}
       </p>
       <div className="h-cta">
-        <Link to="/projects" className="btn-p">
+        <Link
+          to="/projects"
+          className="btn-p"
+          onClick={() => trackCta("hero_projects", "home_hero", "/projects", hero.ctaProjects)}
+        >
           {hero.ctaProjects}
         </Link>
-        <Link to="/contact" className="btn-s">
+        <Link
+          to="/contact"
+          className="btn-s"
+          onClick={() => trackCta("hero_contact", "home_hero", "/contact", hero.ctaContact)}
+        >
           {hero.ctaContact}
         </Link>
       </div>

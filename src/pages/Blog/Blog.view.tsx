@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Trans, msg } from "@lingui/macro";
+import { trackCta } from "../../lib/firebaseAnalytics";
 import { useLingui } from "@lingui/react";
 import { BLOG_PAGE_STYLES } from "../../styles/blogPageStyles";
 
@@ -53,6 +54,9 @@ export default function BlogView({
               to={`/blog/${p.id}`}
               className={`bcard${p.draft ? " draft" : ""}`}
               key={p.id}
+              onClick={() =>
+                trackCta(`blog_open_${p.id}`, "blog_list", `/blog/${p.id}`, p.title)
+              }
             >
               <div className="bc-meta">
                 <span className="bc-cat">{p.categoryDisplay}</span>

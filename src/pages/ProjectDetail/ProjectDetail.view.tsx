@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import ProjectBlockRenderer from "../../components/organisms/project/ProjectBlockRenderer";
+import { trackCta } from "../../lib/firebaseAnalytics";
 import { PROJECT_DETAIL_PAGE_STYLES } from "../../styles/projectDetailPageStyles";
 
 export default function ProjectDetailView({
@@ -14,7 +15,11 @@ export default function ProjectDetailView({
     <>
       <style>{PROJECT_DETAIL_PAGE_STYLES}</style>
       <div className="pd-wrap">
-        <Link to="/projects" className="pd-back">
+        <Link
+          to="/projects"
+          className="pd-back"
+          onClick={() => trackCta("project_back", `project_${proj.id}`, "/projects", ui.back)}
+        >
           {ui.back}
         </Link>
 
@@ -31,6 +36,14 @@ export default function ProjectDetailView({
                   target="_blank"
                   rel="noreferrer"
                   className={`pdl${l.primary ? " primary" : ""}`}
+                  onClick={() =>
+                    trackCta(
+                      `project_link_${l.label.replace(/\s+/g, "_")}`,
+                      `project_${proj.id}`,
+                      l.href,
+                      l.label
+                    )
+                  }
                 >
                   {l.label} →
                 </a>
@@ -94,11 +107,22 @@ export default function ProjectDetailView({
           <div className="pd-next">
             <div>
               <p className="pd-next-lbl">{ui.next}</p>
-              <Link to={`/projects/${next.id}`}>
+              <Link
+                to={`/projects/${next.id}`}
+                onClick={() =>
+                  trackCta(`project_next_${next.id}`, `project_${proj.id}`, `/projects/${next.id}`, next.name)
+                }
+              >
                 <p className="pd-next-name">{next.name} →</p>
               </Link>
             </div>
-            <Link to="/projects" className="btn-s">
+            <Link
+              to="/projects"
+              className="btn-s"
+              onClick={() =>
+                trackCta("project_all", `project_${proj.id}`, "/projects", ui.allProjects)
+              }
+            >
               {ui.allProjects}
             </Link>
           </div>

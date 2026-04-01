@@ -3,6 +3,9 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App";
 import { AppI18n } from "./i18n";
+import { initFirebaseAnalytics } from "./lib/firebaseAnalytics";
+
+void initFirebaseAnalytics();
 
 const rootEl = document.getElementById("root");
 if (!rootEl) {
