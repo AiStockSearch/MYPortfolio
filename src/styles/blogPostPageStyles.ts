@@ -27,9 +27,21 @@ export const BLOG_POST_PAGE_STYLES = `
 .bp-content ul,.bp-content ol{padding-left:0;margin:16px 0 24px}
 .bp-content li{list-style:none;padding-left:20px;position:relative;margin-bottom:8px;font-size:.78rem}
 .bp-content ul li::before{content:'→';position:absolute;left:0;color:var(--accent);opacity:.7}
-.bp-content ol{counter-reset:ol}
-.bp-content ol li{counter-increment:ol}
-.bp-content ol li::before{content:counter(ol)'.';position:absolute;left:0;color:var(--accent);font-size:.7rem}
+.bp-content ol{counter-reset:bp-ol}
+.bp-content ol li{counter-increment:bp-ol}
+.bp-content ol li::before{content:counter(bp-ol)'.';position:absolute;left:0;color:var(--accent);font-size:.7rem;font-weight:600;opacity:.85}
+.bp-hr{border:none;height:1px;margin:36px 0;background:linear-gradient(90deg,transparent,var(--border),transparent);opacity:.9}
+.bp-table-wrap{margin:28px 0;overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:6px;border:1px solid var(--border);background:var(--bg3)}
+.bp-md-table{width:100%;border-collapse:collapse;font-size:.72rem;line-height:1.45}
+.bp-md-table th,.bp-md-table td{padding:10px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--border)}
+.bp-md-table th{font-family:var(--font-m);font-weight:600;color:var(--text);letter-spacing:.04em;font-size:.65rem;text-transform:uppercase;background:rgba(33,160,56,.06)}
+.bp-md-table tr:last-child td{border-bottom:none}
+.bp-md-table td{color:var(--muted)}
+.bp-md-table code{font-size:.68rem}
+.bp-diagram{margin:32px 0;padding:0;border:1px solid var(--border);border-radius:8px;background:linear-gradient(165deg,rgba(33,160,56,.05),transparent 48%);overflow:hidden}
+.bp-diagram-cap{font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);padding:12px 16px 0;font-family:var(--font-m)}
+.bp-diagram-code{margin:0;border:none;border-top:1px solid var(--border);border-radius:0;max-height:min(70vh,520px);overflow:auto}
+.bp-diagram-mermaid .bp-diagram-code{background:rgba(0,0,0,.12)}
 .bp-nav{margin-top:80px;padding-top:48px;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:gap}
 .bp-nav a{text-decoration:none;color:var(--muted);font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;transition:color .2s;display:flex;align-items:center;gap:6px}
 .bp-nav a:hover{color:var(--accent)}

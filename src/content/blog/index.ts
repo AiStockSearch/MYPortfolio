@@ -2,10 +2,24 @@
 
 import { normalizeBlogDoc } from "../../lib/blog-doc-normalize";
 
-const modules = import.meta.glob(["./*.ts", "!./index.ts"], {
-  eager: true,
-  import: "default",
-});
+import post60fpsTrading from "./60fps-trading";
+import aiDevWorkflow from "./ai-dev-workflow";
+import cardanoVsEthereum from "./cardano-vs-ethereum";
+import islamicFinanceUx from "./islamic-finance-ux";
+import offlineFirstRn from "./offline-first-rn";
+import taskmcpMcpVaultBridge from "./taskmcp-mcp-vault-bridge";
+import web3ReactNative from "./web3-react-native";
+
+/** Явные импорты вместо import.meta.glob — новые посты сразу видны в dev без обязательного рестарта Vite. */
+const modules: unknown[] = [
+  post60fpsTrading,
+  aiDevWorkflow,
+  cardanoVsEthereum,
+  islamicFinanceUx,
+  offlineFirstRn,
+  taskmcpMcpVaultBridge,
+  web3ReactNative,
+];
 
 /** Display label for post category on cards (filter still uses English `category` key). */
 const CATEGORY_LABEL_RU: Record<string, string> = {
@@ -23,7 +37,7 @@ function pickLocale(doc: { i18n?: Record<string, Record<string, unknown>> }, loc
 }
 
 export function getBlogPosts(locale: "en" | "ru") {
-  const posts = Object.values(modules)
+  const posts = modules
     .map((rawDoc) => {
       const doc = normalizeBlogDoc(rawDoc);
       if (!doc) return null;

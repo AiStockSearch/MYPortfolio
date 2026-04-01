@@ -7,7 +7,7 @@ export default function ProseBlock({ block }) {
     <div
       className="pd-prose"
       dangerouslySetInnerHTML={{
-        __html: `<p>${renderMarkdown(text)}</p>`,
+        __html: renderMarkdown(text),
       }}
     />
   );

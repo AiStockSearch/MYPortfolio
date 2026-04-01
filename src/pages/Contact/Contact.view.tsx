@@ -1,4 +1,5 @@
 import { CONTACT_PAGE_STYLES } from "../../styles/contactPageStyles";
+import { trackCta } from "../../lib/firebaseAnalytics";
 
 export default function ContactView({ ui, form, errors, channels, setField, openMailto }) {
   return (
@@ -24,6 +25,14 @@ export default function ContactView({ ui, form, errors, channels, setField, open
                   {...(c.external
                     ? { target: "_blank", rel: "noreferrer" }
                     : {})}
+                  onClick={() =>
+                    trackCta(
+                      `contact_channel_${c.label.replace(/\s+/g, "_")}`,
+                      "contact_page",
+                      c.href,
+                      c.label
+                    )
+                  }
                 >
                   <span className="cc-icon">{c.icon}</span>
                   <div className="cc-body">

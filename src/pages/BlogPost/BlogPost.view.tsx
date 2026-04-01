@@ -49,7 +49,7 @@ export default function BlogPostView({ post, prev, next, dateLocale }) {
           <div
             className="bp-content"
             dangerouslySetInnerHTML={{
-              __html: `<p>${renderMarkdown(post.body)}</p>`,
+              __html: renderMarkdown(post.body),
             }}
           />
         ) : (

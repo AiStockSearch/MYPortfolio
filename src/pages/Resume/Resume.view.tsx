@@ -8,6 +8,7 @@ import {
   mergeAchBuckets,
   mergeStackBuckets,
 } from "../../utils/cvExpAreaFilter";
+import { trackCta } from "../../lib/firebaseAnalytics";
 import { renderMarkdown } from "../../utils/renderMarkdown";
 import { RESUME_PAGE_STYLES } from "../../styles/resumePageStyles";
 
@@ -22,9 +23,13 @@ function CvLink({
   className?: string;
   children: ReactNode;
 }) {
+  const onTrack = () => {
+    const slug = href.replace(/^https?:\/\//, "").replace(/[^\w.-]+/g, "_").slice(0, 40);
+    trackCta(`resume_link_${slug}`, "resume", href);
+  };
   if (href.startsWith("/")) {
     return (
-      <Link to={href} className={className}>
+      <Link to={href} className={className} onClick={onTrack}>
         {children}
       </Link>
     );
@@ -36,6 +41,7 @@ function CvLink({
       {...(href.startsWith("mailto:")
         ? {}
         : { target: "_blank", rel: "noreferrer" })}
+      onClick={onTrack}
     >
       {children}
     </a>
@@ -109,14 +115,28 @@ export default function ResumeView({
             <button
               type="button"
               className="ra-btn primary"
-              onClick={handlePrint}
+              onClick={() => {
+                trackCta("resume_print", "resume", "print");
+                handlePrint();
+              }}
             >
               {cv.printBtn}
             </button>
-            <a href="/cv.pdf" className="ra-btn" download>
+            <a
+              href="/cv.pdf"
+              className="ra-btn"
+              download
+              onClick={() => trackCta("resume_cv_pdf", "resume", "/cv.pdf", cv.downloadCv)}
+            >
               {cv.downloadCv}
             </a>
-            <a href={`mailto:${CONTACT_EMAIL}`} className="ra-btn">
+            <a
+              href={`mailto:${CONTACT_EMAIL}`}
+              className="ra-btn"
+              onClick={() =>
+                trackCta("resume_mailto", "resume", `mailto:${CONTACT_EMAIL}`, cv.contactBtn)
+              }
+            >
               {cv.contactBtn}
             </a>
           </div>
@@ -240,7 +260,7 @@ export default function ResumeView({
                     <span className="cv-exp-period">{e.period}</span>
                   </div>
                   <p className="cv-exp-company">{e.company}</p>
-                  <p
+                  <div
                     className="cv-exp-desc"
                     dangerouslySetInnerHTML={{
                       __html: renderMarkdown(e.desc || ""),
@@ -282,7 +302,7 @@ export default function ResumeView({
                   <div
                     className="cv-sg-list"
                     dangerouslySetInnerHTML={{
-                      __html: `<p>${renderMarkdown(g.list || "")}</p>`,
+                      __html: renderMarkdown(g.list || ""),
                     }}
                   />
                 </div>

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { trackCta } from "../../lib/firebaseAnalytics";
 import AccentTag from "../atoms/AccentTag";
 import MediaImage from "../atoms/MediaImage";
 import { projectCoverSrc } from "../../utils/projectCoverSrc";
@@ -13,6 +14,9 @@ export default function ProjectCard({ project, liveLabel, cta, index, to }) {
       to={to}
       className="pc"
       style={{ transitionDelay: `${(index % 3) * 0.08}s` }}
+      onClick={() =>
+        trackCta(`project_card_${p.id}`, "projects_grid", to, p.name)
+      }
     >
       <div className="pc-img-w">
         <MediaImage

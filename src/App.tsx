@@ -1,4 +1,6 @@
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import AnalyticsRouteListener from "./components/AnalyticsRouteListener";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import ProjectsPage from "./pages/ProjectsPage";
@@ -17,6 +19,7 @@ export default function App() {
         v7_relativeSplatPath: true,
       }}
     >
+      <AnalyticsRouteListener />
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -29,6 +32,7 @@ export default function App() {
           <Route path="/page/:slug" element={<SitePage />} />
         </Routes>
       </Layout>
+      <SpeedInsights />
     </BrowserRouter>
   );
 }

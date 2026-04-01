@@ -1,5 +1,6 @@
 import { Trans } from "@lingui/macro";
 import { GITHUB_URL, TELEGRAM_URL } from "../../constants/links";
+import { trackCta } from "../../lib/firebaseAnalytics";
 
 export default function SiteFooter() {
   return (
@@ -17,6 +18,7 @@ export default function SiteFooter() {
             textDecoration: "none",
             marginRight: 20,
           }}
+          onClick={() => trackCta("footer_telegram", "footer", TELEGRAM_URL, "Telegram")}
         >
           Telegram
         </a>
@@ -25,6 +27,7 @@ export default function SiteFooter() {
           target="_blank"
           rel="noreferrer"
           style={{ color: "var(--muted)", textDecoration: "none" }}
+          onClick={() => trackCta("footer_github", "footer", GITHUB_URL, "GitHub")}
         >
           GitHub
         </a>
