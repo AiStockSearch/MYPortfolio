@@ -210,13 +210,15 @@
         - "type": "section"
           "sectionKey": "overview"
         - "type": "prose"
-          "text": "### Идея и контекст\n\n[Mirapolis](https://www.mirapolis.ru/) — Enterprise-платформа мобильной экосистемы
+          "text": "### О проекте\n\n[Mirapolis](https://www.mirapolis.ru/) — Enterprise-платформа мобильной экосистемы
             **HCM & LMS** для крупных корпоративных клиентов: HR, обучение, оценка персонала, внутренние коммуникации.
             Мобильный клиент — **White-Label / Dynamic UI** под процессы заказчика. **Масштаб:** до ~**12 000** пользователей
             мобильного клиента в пике.\n\n**Роль:** **Core Module Lead** мобильного ядра. **Формат:** трудовой договор / **ГПХ ·
             совмещение · part-time**, не exclusive full-time.\n\n**Параллельные контракты:** весь срок (июл 2024 — сен 2025) —
             outstaff **haqqex**; авг — сен 2025 — дополнительно проект **Скиф Трейд** (совмещение / part-time). Перекрытие авг–сен
-            2025 — осознанное совмещение трёх договоров.\n\n### Enterprise-архитектура и монорепозиторий\n\nПроектирование и
+            2025 — осознанное совмещение трёх договоров.\n\n**Уникальный стек проекта:** SCORM / xAPI плеер (WebView JS Bridge);
+            Configuration-driven UI (JSON-схемы); FlashList / RecyclerListView; FSM тестов LMS; Tablet Master-Detail / Split View.\n\n###
+            Enterprise-архитектура и монорепозиторий\n\nПроектирование и
             развитие масштабируемого ядра на **чистом React Native CLI** + **TypeScript**, **Clean Architecture**, **SOLID**,
             **Atomic Design**. Монорепозиторий **Yarn / pnpm Workspaces** с разделением на изоморфные модули и выделением
             core-библиотек.\n\n### Core-функционал LMS и плеер курсов\n\nСоздал кроссплатформенный плеер интерактивных обучающих

@@ -179,36 +179,35 @@
         - "type": "section"
           "sectionKey": "overview"
         - "type": "prose"
-          "text": "### Идея и контекст\n\n**Транслайн Интернэшнл** (Казахстан) — мобильный клиент транспортной логистики
-            для **водителей и диспетчеров** в условиях **нестабильной связи** «в поле». Перевозки, логистика, склад, ВЭД.\n\n**Роль:**
-            **Senior Mobile / Lead Mobile Architect** — архитектурное и delivery-лидерство мобильного направления (Code Review,
-            API-контракты, релизы). **Формат:** ГПХ / Outstaff · контракт с **июня 2026**.\n\n**Уникальный стек проекта:** RN CLI +
-            **New Architecture** (TurboModules / Fabric / JSI); **KMP ↔ TypeScript**; **Tamagui**; **Offline-First**
-            (SQLite / WatermelonDB); периферия логистики (сканеры / датчики).\n\n### Где код и что публично\n\n**Основной
-            product-репозиторий** — приватный GitLab команды (`transline-mobile/mobile`), **не выкладывается целиком**.\n\n**Публично
-            доступен** технический срез модуля **TranslineGeoWorker** (KMP + RN bridge: геомониторинг / geo-точки, Notify Manager) —
-            демо/open-source витрина вклада, **не весь коммерческий клиент** и **не org работодателя**:
-            [github.com/AiStockSearch/TranslineApp](https://github.com/AiStockSearch/TranslineApp) (аккаунт `AiStockSearch` /
-            AiStockTech — **личный tech-аккаунт кандидата**; README: TranslineGeoWorker, пакет `@transline/geoworker`).\n\n###
-            За ~2 месяца (июнь — июль 2026) — фактически сделано\n\n- **Аудит** текущей кодовой базы и целевой архитектуры (слои,
-            нативные связки, offline/sync, риски Bridge).\n- Зафиксирован **целевой дизайн монорепозитория** (Yarn / pnpm Workspaces)
-            и границы изоморфных модулей; начато выделение первых shared-пакетов.\n- Подготовлен и запущен **поэтапный план миграции**
-            ключевых native-вызовов на New Architecture (TurboModules / Fabric / JSI); выполнены **первые связки Swift/Kotlin ↔ TS**
-            (не «полный перевод приложения»).\n- **Прототип / spike** интеграции KMP-бизнес-слоя с RN CLI через TurboModules
-            (сквозной путь iOS/Android → JS), с критериями для production-rollout; публичная витрина — модуль GeoWorker.\n- Заложена
-            **UI-база** на Tamagui + StyleSheet / styled-components и изоляция компонентов в **React Cosmos** для ускорения итераций.\n-
-            Спроектирована **целевая схема Offline-First** (SQLite / WatermelonDB + очереди синхронизации) и контракты для периферии
-            (сканеры / датчики); **реализация синка и железа — в работе**.\n- Выстроены **процессы**: Code Review, договорённости по API
-            с бэкендом; **черновик CI/CD** на GitHub Actions + Fastlane (сборка → signing → TestFlight / Play Internal) — пайплайн
-            **инициирован, не заявлен как полностью стабилизированный** за 2 месяца.\n- **Архитектура & KMP:** сопровождение RN CLI
-            клиента логистики + интеграция общего KMP-слоя (гео / notify и смежные домены) с TypeScript через TurboModules / JSI.\n\n###
-            В процессе / roadmap (не заявлено как завершённое)\n\n- Полный перевод монорепо и всех изоморфных библиотек.\n- Полная
-            миграция на New Architecture и снятие Bridge.\n- Production-ready KMP-слой во всех критичных доменах.\n- Стабильный Offline-First
-            sync «в поле» и полная интеграция периферии.\n- Стабильные **60 FPS** на всех тяжёлых сценариях как измеримый итог релиза
-            (**цель, не финальный KPI** за июнь–июль).\n\n### Техническое лидерство\n\n**Tech Lead:** техническое руководство мобильным
-            направлением, Code Review, проектирование API-контрактов и процесс релизов внутреннего инструментария.\n\n### UI-система\n\nПостроил
-            систему интерфейсов на **Tamagui**, styled-components и кастомных StyleSheet с изоляцией UI через **React Cosmos** и **Atomic
-            Design**.\n"
+          "text": "### О проекте\n\n**Транслайн Интернэшнл** (Казахстан) — компания в сегменте **автомобильных перевозок,
+            логистики, склада и ВЭД**. Продукт, над которым работаю: **мобильный клиент транспортной логистики** для двух ключевых
+            ролей — **водители** и **диспетчеры** — в условиях **нестабильной связи «в поле»** (слабые сети на маршрутах, офлайн-окна,
+            необходимость догонять синк при появлении канала).\n\nКлиент закрывает операционный контур логистики: геомониторинг /
+            geo-точки, уведомления, работа с периферией (сканеры / датчики), сценарии диспетчеризации. Это **не витрина и не
+            маркетинговое приложение**, а production-инструмент с жёсткими требованиями к надёжности offline/sync и нативным
+            связкам.\n\n**Моя роль:** **Senior Mobile Developer (React Native) / Lead Mobile Architect** — архитектурное и
+            delivery-лидерство мобильного направления: Code Review, API-контракты с бэкендом, релизный контур. **Формат занятости:**
+            ГПХ / Outstaff, контракт с **июня 2026** (на дату резюме ~2 месяца: июнь — июль 2026).\n\n**Уникальный стек проекта:**
+            React Native **CLI** + **New Architecture** (TurboModules / Fabric / JSI); интеграция **Kotlin Multiplatform (KMP) ↔
+            TypeScript**; UI на **Tamagui** (+ StyleSheet / styled-components); целевой **Offline-First** на SQLite / WatermelonDB;
+            периферия логистики.\n\n**Где код.** Основной product-репозиторий — **приватный GitLab** команды (`transline-mobile/mobile`),
+            целиком не публикуется. Публично доступен только технический срез **TranslineGeoWorker** (см. блок «Кастомные наработки»
+            и GitHub ниже) — это демо/open-source витрина вклада, **не весь коммерческий клиент** и **не org работодателя**. Аккаунт
+            `AiStockSearch` — **личный tech-аккаунт** кандидата.\n\n### Что сделано за ~2 месяца (июнь — июль 2026)\n\n- **Аудит**
+            кодовой базы и целевой архитектуры: слои, нативные связки, offline/sync, риски Bridge.\n- Зафиксирован **целевой дизайн
+            монорепозитория** (Yarn / pnpm Workspaces) и границы изоморфных модулей; начато выделение первых shared-пакетов.\n-
+            Запущен **поэтапный план миграции** ключевых native-вызовов на New Architecture; выполнены **первые связки Swift/Kotlin ↔
+            TS** (это не «полный перевод приложения»).\n- **Spike** интеграции KMP-бизнес-слоя с RN CLI через TurboModules (сквозной
+            путь iOS/Android → JS) с критериями для production-rollout; публичная витрина — модуль GeoWorker.\n- Заложена **UI-база**
+            на Tamagui + StyleSheet / styled-components и изоляция в **React Cosmos** (Atomic Design).\n- Спроектирована **целевая
+            схема Offline-First** (SQLite / WatermelonDB + очереди синхронизации) и контракты периферии; **реализация синка и железа —
+            в работе**.\n- Выстроены **процессы**: Code Review, договорённости по API; **черновик CI/CD** (GitHub Actions + Fastlane →
+            TestFlight / Play Internal) — пайплайн **инициирован**, не заявлен как полностью стабилизированный за 2 месяца.\n-
+            Сопровождение RN CLI клиента + интеграция общего KMP-слоя (гео / notify и смежные домены) через TurboModules / JSI.\n\n###
+            Roadmap (не заявлено как завершённое за 2 месяца)\n\n- Полный перевод монорепо и всех изоморфных библиотек.\n- Полная
+            миграция на New Architecture и снятие Bridge.\n- Production-ready KMP-слой во всех критичных доменах.\n- Стабильный
+            Offline-First sync «в поле» и полная интеграция периферии.\n- Стабильные **60 FPS** на тяжёлых сценариях как KPI релиза
+            (**цель**, не финальный итог июня–июля).\n"
         - "type": "keyResults"
           "items":
             - "val": "NA"
@@ -219,6 +218,34 @@
               "lbl": "GeoWorker OSS"
             - "val": "Lead"
               "lbl": "Tech Lead"
+        - "type": "section"
+          "sectionKey": "artifacts"
+        - "type": "artifacts"
+          "items":
+            - "title": "TranslineGeoWorker · KMP + RN bridge"
+              "href": "https://github.com/AiStockSearch/TranslineApp"
+              "badge": "GitHub · OSS демо"
+              "note": "Публичный срез: геомониторинг / geo-точки, Notify Manager, пакет @transline/geoworker. Аккаунт AiStockSearch — личный tech-аккаунт, не org «Транслайн». Это не полный product TranslineApp."
+            - "title": "Личный GitHub (основной профиль)"
+              "href": "https://github.com/Js-Nanodegree"
+              "badge": "GitHub"
+              "note": "Основной публичный профиль инженера; product Transline остаётся в приватном GitLab команды."
+        - "type": "section"
+          "sectionKey": "documents"
+        - "type": "documents"
+          "items":
+            - "title": "Договор ГПХ / Outstaff · Транслайн"
+              "kind": "Договор"
+              "meta": "Контракт с июня 2026. PDF положите в public/documents/transline/"
+              "status": "on-request"
+            - "title": "Доступ к product GitLab (NDA)"
+              "kind": "Доступ"
+              "meta": "Приватный transline-mobile/mobile — по запросу рекрутера / под NDA"
+              "status": "on-request"
+            - "title": "Как добавить подписанный PDF"
+              "kind": "Инструкция"
+              "meta": "См. public/documents/README.md — после выкладки файла укажите href и status: available"
+              "href": "/documents/README.md"
         - "type": "section"
           "sectionKey": "technical"
         - "type": "prose"
@@ -275,33 +302,32 @@
         - "type": "section"
           "sectionKey": "overview"
         - "type": "prose"
-          "text": "### Idea & context\n\n**Transline International** (Kazakhstan) — mobile client for **transport logistics**
-            serving **drivers and dispatchers** on **unreliable field connectivity**. Freight, logistics, warehouse, foreign trade.\n\n**Role:**
-            **Senior Mobile / Lead Mobile Architect** — architectural and delivery leadership of the mobile track (Code Review, API
-            contracts, releases). **Engagement:** GPH / Outstaff · contract from **June 2026**.\n\n**Unique project stack:** RN CLI +
-            **New Architecture** (TurboModules / Fabric / JSI); **KMP ↔ TypeScript**; **Tamagui**; **Offline-First**
-            (SQLite / WatermelonDB); logistics peripherals (scanners / sensors).\n\n### Where the code lives & what's public\n\n**Main
-            product repository** — private team GitLab (`transline-mobile/mobile`), **not published in full**.\n\n**Publicly available:**
-            technical slice of **TranslineGeoWorker** module (KMP + RN bridge: geo monitoring / geo points, Notify Manager) — demo/open-source
-            showcase of contribution, **not the full commercial client** and **not the employer org**:
-            [github.com/AiStockSearch/TranslineApp](https://github.com/AiStockSearch/TranslineApp) (`AiStockSearch` / AiStockTech account —
-            **candidate's personal tech account**; README: TranslineGeoWorker, package `@transline/geoworker`).\n\n### Done in ~2 months
-            (Jun — Jul 2026)\n\n- **Audit** of current codebase and target architecture (layers, native bridges, offline/sync, Bridge risks).\n-
-            Fixed **target monorepo design** (Yarn / pnpm Workspaces) and isomorphic module boundaries; started extracting first shared packages.\n-
-            Prepared and launched **staged migration plan** of key native calls to New Architecture (TurboModules / Fabric / JSI); completed
-            **first Swift/Kotlin ↔ TS bindings** (not «full app migration»).\n- **Prototype / spike** of KMP business layer integration with RN
-            CLI via TurboModules (end-to-end iOS/Android → JS path) with production-rollout criteria; public showcase — GeoWorker module.\n-
-            Laid **UI foundation** on Tamagui + StyleSheet / styled-components and component isolation in **React Cosmos** for faster iterations.\n-
-            Designed **target Offline-First schema** (SQLite / WatermelonDB + sync queues) and peripheral contracts (scanners / sensors);
-            **sync & hardware implementation in progress**.\n- Established **processes**: Code Review, backend API agreements; **CI/CD draft**
-            on GitHub Actions + Fastlane (build → signing → TestFlight / Play Internal) — pipeline **initiated, not claimed fully stabilized**
-            in 2 months.\n- **Architecture & KMP:** RN CLI logistics client + shared KMP layer (geo / notify and adjacent domains) integrated
-            with TypeScript via TurboModules / JSI.\n\n### In progress / roadmap (not claimed complete)\n\n- Full monorepo migration and all
-            isomorphic libraries.\n- Full New Architecture migration and Bridge removal.\n- Production-ready KMP layer in all critical domains.\n-
-            Stable Offline-First field sync and full peripheral integration.\n- Stable **60 FPS** on all heavy scenarios as measurable release outcome
-            (**goal, not final KPI** for Jun–Jul).\n\n### Technical leadership\n\n**Tech Lead:** mobile track leadership, Code Review, API contract
-            design and internal tooling release process.\n\n### UI system\n\nBuilt interface system on **Tamagui**, styled-components and custom
-            StyleSheet with UI isolation via **React Cosmos** and **Atomic Design**.\n"
+          "text": "### About the project\n\n**Transline International** (Kazakhstan) operates in **road freight, logistics, warehouse
+            and foreign trade**. The product I work on is a **transport-logistics mobile client** for two key roles — **drivers** and
+            **dispatchers** — under **unreliable field connectivity** (weak networks on routes, offline windows, catch-up sync when a
+            channel returns).\n\nThe client covers the operational logistics contour: geo monitoring / geo points, notifications, peripheral
+            work (scanners / sensors), dispatch scenarios. This is **not a marketing showcase app** — it is a production tool with hard
+            requirements for offline/sync reliability and native bridges.\n\n**My role:** **Senior Mobile Developer (React Native) / Lead
+            Mobile Architect** — architectural and delivery leadership of the mobile track: Code Review, backend API contracts, release
+            contour. **Engagement:** GPH / Outstaff, contract from **June 2026** (~2 months on the resume date: Jun — Jul 2026).\n\n**Unique
+            project stack:** React Native **CLI** + **New Architecture** (TurboModules / Fabric / JSI); **Kotlin Multiplatform (KMP) ↔
+            TypeScript**; UI on **Tamagui** (+ StyleSheet / styled-components); target **Offline-First** on SQLite / WatermelonDB; logistics
+            peripherals.\n\n**Where the code lives.** The main product repo is the team's **private GitLab** (`transline-mobile/mobile`) and
+            is not published in full. Publicly available is only the **TranslineGeoWorker** technical slice (see «Custom work» / GitHub below)
+            — a demo/open-source contribution showcase, **not the full commercial client** and **not the employer org**. The `AiStockSearch`
+            account is the candidate's **personal tech account**.\n\n### Done in ~2 months (Jun — Jul 2026)\n\n- **Audit** of codebase and
+            target architecture: layers, native bridges, offline/sync, Bridge risks.\n- Fixed **target monorepo design** (Yarn / pnpm Workspaces)
+            and isomorphic module boundaries; started first shared packages.\n- Launched **staged migration** of key native calls to New
+            Architecture; completed **first Swift/Kotlin ↔ TS bindings** (not a full app rewrite).\n- **Spike** of KMP business layer with RN
+            CLI via TurboModules (iOS/Android → JS) with production-rollout criteria; public showcase — GeoWorker.\n- Laid **UI foundation**
+            on Tamagui + StyleSheet / styled-components with **React Cosmos** isolation (Atomic Design).\n- Designed **target Offline-First
+            schema** (SQLite / WatermelonDB + sync queues) and peripheral contracts; **sync & hardware implementation in progress**.\n-
+            Established **processes**: Code Review, API agreements; **CI/CD draft** (GitHub Actions + Fastlane → TestFlight / Play Internal)
+            — pipeline **initiated**, not claimed fully stabilized in 2 months.\n- RN CLI client maintenance + shared KMP layer (geo / notify)
+            via TurboModules / JSI.\n\n### Roadmap (not claimed complete in 2 months)\n\n- Full monorepo migration and all isomorphic libraries.\n-
+            Full New Architecture migration and Bridge removal.\n- Production-ready KMP layer in all critical domains.\n- Stable Offline-First
+            field sync and full peripheral integration.\n- Stable **60 FPS** on heavy scenarios as a release KPI (**goal**, not final Jun–Jul
+            outcome).\n"
         - "type": "keyResults"
           "items":
             - "val": "NA"
@@ -312,6 +338,34 @@
               "lbl": "GeoWorker OSS"
             - "val": "Lead"
               "lbl": "Tech Lead"
+        - "type": "section"
+          "sectionKey": "artifacts"
+        - "type": "artifacts"
+          "items":
+            - "title": "TranslineGeoWorker · KMP + RN bridge"
+              "href": "https://github.com/AiStockSearch/TranslineApp"
+              "badge": "GitHub · OSS demo"
+              "note": "Public slice: geo monitoring / geo points, Notify Manager, package @transline/geoworker. AiStockSearch is a personal tech account, not the Transline employer org. Not the full TranslineApp product."
+            - "title": "Personal GitHub (main profile)"
+              "href": "https://github.com/Js-Nanodegree"
+              "badge": "GitHub"
+              "note": "Primary public engineering profile; Transline product stays in the team's private GitLab."
+        - "type": "section"
+          "sectionKey": "documents"
+        - "type": "documents"
+          "items":
+            - "title": "GPH / Outstaff agreement · Transline"
+              "kind": "Contract"
+              "meta": "Contract from June 2026. Place PDF under public/documents/transline/"
+              "status": "on-request"
+            - "title": "Product GitLab access (NDA)"
+              "kind": "Access"
+              "meta": "Private transline-mobile/mobile — recruiter request / NDA"
+              "status": "on-request"
+            - "title": "How to add a signed PDF"
+              "kind": "Guide"
+              "meta": "See public/documents/README.md — after upload set href and status: available"
+              "href": "/documents/README.md"
         - "type": "section"
           "sectionKey": "technical"
         - "type": "prose"

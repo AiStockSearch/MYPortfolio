@@ -256,19 +256,19 @@
         - "type": "section"
           "sectionKey": "overview"
         - "type": "prose"
-          "text": "### Идея и продуктовая задача\n\n[HAQQEX](https://haqqex.com/en/) — Web3/FinTech экосистема обмена
+          "text": "### О проекте\n\n[HAQQEX](https://haqqex.com/en/) — Web3/FinTech экосистема обмена
             цифровых активов в рамках **Shariah-compliant** стандартов для рынка **MENA** (Абу-Даби). Блокчейн
             [HAQQ Network](https://www.haqq.network/) — EVM-compatible L1 на Cosmos SDK; токены **ISLM** и
-            **Deenar Gold (DEEN)**. Релиз в **App Store** и **Google Play**.\n\nМобильный клиент — **некастодиальный**
-            (non-custodial): ключи и подписи остаются на устройстве или аппаратном кошельке, без хранения сид-фраз на
-            сервере биржи. Нужен был production-контур от онбординга до торговли и cold-sign, с банковским уровнем
-            безопасности (**OWASP MASVS**) и стабильным realtime UI на пиковых нагрузках стакана.\n\n**Масштаб:** до
-            ~**12 000** активных пользователей в пике (DAU/MAU порядка пиковой нагрузки).\n\n**Роль и формат работы:**
-            **Senior Mobile / Web3 Mobile Architect** и **Tech Lead** мобильного направления (команда до **5** инженеров
-            на пике процессов): архитектура, native-модули, релизы, координация с Backend / Web3 / DevOps. Контракт —
-            outstaff / проектный, **не exclusive full-time**. Параллельно: **Мираполис** (июл 2024 — сен 2025, ГПХ /
-            part-time); **Скиф Трейд** (авг — дек 2025, проект / part-time). В авг — сен 2025 — три договора одновременно,
-            все на условиях совмещения.\n\n### Архитектурное лидерство и монорепозиторий\n\nСпроектировал и довёл до
+            **Deenar Gold (DEEN)**. Масштаб продукта: до ~**12 000** активных пользователей в пике. Релиз в
+            **App Store** и **Google Play**. Координация с Backend / Web3 / DevOps; Tech Lead мобильного направления
+            (команда до **5** инженеров).\n\nМобильный клиент — **некастодиальный** (non-custodial): ключи и подписи
+            остаются на устройстве или аппаратном кошельке, без хранения сид-фраз на сервере биржи. Нужен был
+            production-контур от онбординга до торговли и cold-sign, с банковским уровнем безопасности
+            (**OWASP MASVS**) и стабильным realtime trading UI.\n\n**Формат:** проектный контракт / Outstaff (не exclusive
+            full-time). Параллельно: Мираполис (июл 2024 — сен 2025, ГПХ / part-time); Скиф Трейд (авг — дек 2025,
+            проект / part-time).\n\n**Уникальный стек:** WalletConnect v2, Ethers.js, Ledger BLE, NFC cold-sign;
+            TradingView WebView Bridge; OWASP MASVS; Shariah-compliant FinTech (HAQQ / ISLM / DEEN).\n\n###
+            Архитектурное лидерство и монорепозиторий\n\nСпроектировал и довёл до
             релиза масштабируемую модульную архитектуру на **чистом React Native CLI** (без Expo) + **TypeScript**:
             ООП, **SOLID**, **Atomic Design**, строгий контроль типов. Организовал **Yarn / pnpm Workspaces**
             монорепозиторий с переводом общих изоморфных модулей (криптография, точность чисел, RPC-клиенты, UI) в
@@ -391,17 +391,16 @@
         - "type": "section"
           "sectionKey": "overview"
         - "type": "prose"
-          "text": "### Product idea & problem\n\n[HAQQEX](https://haqqex.com/en/) is a Web3/FinTech digital-asset exchange
+          "text": "### About the project\n\n[HAQQEX](https://haqqex.com/en/) is a Web3/FinTech digital-asset exchange
             ecosystem under **Shariah-compliant** standards for **MENA** (Abu Dhabi). [HAQQ Network](https://www.haqq.network/)
-            is an EVM-compatible L1 on Cosmos SDK; tokens **ISLM** and **Deenar Gold (DEEN)**. Shipped to **App Store** and
-            **Google Play**.\n\nThe mobile client is **non-custodial**: keys and signing stay on device or hardware wallet, not
-            on the exchange server. The goal was a production path from onboarding to trading and cold-sign, with bank-grade
-            security (**OWASP MASVS**) and a stable realtime UI under peak order-book load.\n\n**Scale:** up to ~**12,000** peak
-            active users (DAU/MAU at peak load).\n\n**Role & engagement model:** **Senior Mobile / Web3 Mobile Architect** and
-            **Tech Lead** of mobile (team up to **5** engineers at peak): architecture, native modules, releases, coordination
-            with Backend / Web3 / DevOps. Outstaff / project contract, **not exclusive full-time**. In parallel: **Mirapolis**
-            (Jul 2024 — Sep 2025, GPH / part-time); **Skif Trade** (Aug — Dec 2025, project / part-time). Aug — Sep 2025 — three
-            concurrent contracts, all part-time / совмещение.\n\n### Architecture leadership & monorepo\n\nDesigned and shipped
+            is an EVM-compatible L1 on Cosmos SDK; tokens **ISLM** and **Deenar Gold (DEEN)**. Product scale: up to ~**12,000**
+            peak active users. Shipped to **App Store** and **Google Play**. Coordination with Backend / Web3 / DevOps; Tech Lead
+            of mobile (team up to **5**).\n\nThe mobile client is **non-custodial**: keys and signing stay on device or hardware
+            wallet, not on the exchange server. The goal was a production path from onboarding to trading and cold-sign, with
+            bank-grade security (**OWASP MASVS**) and a stable realtime trading UI.\n\n**Engagement:** project / outstaff (not
+            exclusive full-time). In parallel: Mirapolis (Jul 2024 — Sep 2025, GPH / part-time); Skif Trade (Aug — Dec 2025,
+            project / part-time).\n\n**Unique stack:** WalletConnect v2, Ethers.js, Ledger BLE, NFC cold-sign; TradingView WebView
+            Bridge; OWASP MASVS; Shariah-compliant FinTech (HAQQ / ISLM / DEEN).\n\n### Architecture leadership & monorepo\n\nDesigned and shipped
             a scalable modular architecture on pure **React Native CLI** (no Expo) + **TypeScript**: OOP, **SOLID**, **Atomic
             Design**, strict typing. Built a **Yarn / pnpm Workspaces** monorepo isolating isomorphic modules (cryptography,
             precision math, RPC clients, UI) into autonomous packages — faster parallel development and testability.\n\nCustom

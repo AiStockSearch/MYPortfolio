@@ -1,11 +1,28 @@
 import { useParams } from "react-router-dom";
 import { ProjectCatalogProvider } from "../../context/ProjectCatalogContext";
 import { projectDetailContent } from "../../content/siteContent";
+import { documentsForProject } from "../../content/documents/catalog";
 import { getProjectById, getNextProject } from "../../content/projects/index";
 import { useLocale } from "../../i18n";
 import ProjectDetailNotFoundView from "./ProjectDetailNotFound.view";
 import ProjectDetailView from "./ProjectDetail.view";
 import { splitLeadingHeroBlocks } from "./projectDetailUtils";
+
+function withCatalogDocuments(
+  blocks: Record<string, unknown>[],
+  projectId: string,
+  locale: "ru" | "en"
+) {
+  const alreadyHasDocs = blocks.some((b) => b?.type === "documents");
+  if (alreadyHasDocs) return blocks;
+  const items = documentsForProject(projectId, locale);
+  if (!items.length) return blocks;
+  return [
+    ...blocks,
+    { type: "section", sectionKey: "documents" },
+    { type: "documents", items },
+  ];
+}
 
 export default function ProjectDetailConnected() {
   const { id = "" } = useParams();
@@ -18,7 +35,12 @@ export default function ProjectDetailConnected() {
     return <ProjectDetailNotFoundView ui={ui} />;
   }
 
-  const { heroBlocks, mainBlocks } = splitLeadingHeroBlocks(proj.blocks);
+  const blocksWithDocs = withCatalogDocuments(
+    (proj.blocks || []) as Record<string, unknown>[],
+    proj.id,
+    locale
+  );
+  const { heroBlocks, mainBlocks } = splitLeadingHeroBlocks(blocksWithDocs);
   const catalogValue = { project: proj, ui, locale };
   const roleVal = proj.role?.trim() ? proj.role : ui.roleVal;
 

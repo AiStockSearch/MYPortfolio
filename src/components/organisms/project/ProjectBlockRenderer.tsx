@@ -6,6 +6,8 @@ import TechStackBlock from "./blocks/TechStackBlock";
 import PartnerBlock from "./blocks/PartnerBlock";
 import AppLinksBlock from "./blocks/AppLinksBlock";
 import ImageBlock from "./blocks/ImageBlock";
+import ArtifactsBlock from "./blocks/ArtifactsBlock";
+import DocumentsBlock from "./blocks/DocumentsBlock";
 
 const BLOCKS = {
   heroImage: HeroImageBlock,
@@ -16,6 +18,8 @@ const BLOCKS = {
   partner: PartnerBlock,
   appLinks: AppLinksBlock,
   image: ImageBlock,
+  artifacts: ArtifactsBlock,
+  documents: DocumentsBlock,
 };
 
 export default function ProjectBlockRenderer({ block }) {
