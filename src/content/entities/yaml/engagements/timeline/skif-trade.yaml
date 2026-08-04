@@ -1,0 +1,136 @@
+"id": "skif-trade"
+"homeTag": "SKIF"
+"period":
+  "en": "Aug 2025 — Dec 2025"
+  "ru": "авг 2025 — дек 2025"
+"homeCompany":
+  "en": "Skif Trade · smallmart.kz"
+  "ru": "Скиф Трейд · smallmart.kz"
+"cvCompany":
+  "en": "Skif Trade (smallmart.kz · Kazakhstan · grocery retail POS)"
+  "ru": "Скиф Трейд (smallmart.kz · Казахстан · розничная сеть)"
+"role":
+  "en": "Senior Mobile Developer (Expo / RN) / Tech Lead"
+  "ru": "Senior Mobile Developer (Expo / RN) / Tech Lead"
+"shortDesc":
+  "en": "Expo / React Native POS + Slack-like corporate messenger for grocery retail (project / part-time).
+    NativeWind / Tailwind, FSD, fiscal Z/X reports, channels & threads. Yarn/pnpm Workspaces isomorphic libs;
+    WebSockets + optimistic updates; React Cosmos; 60 FPS list virtualization."
+  "ru": "Expo / React Native POS + Slack-подобный корпоративный мессенджер для продуктовой розницы
+    (проект / part-time). NativeWind / Tailwind, FSD, фискальные Z/X-отчёты, каналы и треды.
+    Yarn/pnpm Workspaces изоморфные библиотеки; WebSockets + optimistic updates; React Cosmos;
+    виртуализация списков под 60 FPS."
+"cvShortDesc":
+  "en": "Skif Trade Expo POS + messenger: FSD, NativeWind, fiscal reports, Socket.io, Tech Lead."
+  "ru": "Скиф Трейд Expo POS + мессенджер: FSD, NativeWind, фискализация, Socket.io, Tech Lead."
+"achByArea":
+  "en":
+    "front":
+      - "Reactive UI on Expo + <span class='m'>NativeWind</span> / styled-components / StyleSheet
+        (FSD + Atomic Design)"
+      - "<span class='m'>React Cosmos</span> for isolated UI — Time-to-Market −30%, consistent interface"
+    "mobile":
+      - "Built Slack-like internal chat & staff ops: public/private channels, threads, presence,
+        file/media share, history search"
+      - "POS engine: payments via cash register, shift open/close, fiscal <span class='m'>Z/X reports</span>,
+        inventory & floor stock accounting"
+      - "Yarn / pnpm Workspaces: isomorphic libs (cash math, validation, DTOs) shared with web"
+      - "WebSockets / Socket.io + optimistic updates (React Query) for messages and cash statuses on weak nets"
+      - "Custom list virtualization for SKUs, messages, media — stable <span class='m'>60 FPS</span> scroll"
+      - "Tech Lead: Code Review, API contracts, release process"
+    "backend":
+      - "Realtime messaging & POS status channels via Socket.io contracts"
+  "ru":
+    "front":
+      - "Реактивный UI на Expo + <span class='m'>NativeWind</span> / styled-components / StyleSheet
+        (FSD + Atomic Design)"
+      - "<span class='m'>React Cosmos</span> для изолированного UI — Time-to-Market −30%, единообразие"
+    "mobile":
+      - "С нуля Slack-подобный чат и управление персоналом: каналы, треды, presence, файлы/медиа, поиск"
+      - "Кассовый модуль: платежи, смены, фискальные <span class='m'>Z/X-отчёты</span>, инвентаризация и остатки"
+      - "Yarn / pnpm Workspaces: изоморфные библиотеки (кассовая математика, валидация, DTO) с web"
+      - "WebSockets / Socket.io + optimistic updates (React Query) для сообщений и кассовых статусов"
+      - "Кастомная виртуализация номенклатуры, сообщений и медиа — стабильные <span class='m'>60 FPS</span>"
+      - "Tech Lead: Code Review, API-контракты, релизы"
+    "backend":
+      - "Realtime-каналы чата и кассовых статусов через контракты Socket.io"
+"stackByArea":
+  "front":
+    - "NativeWind / Tailwind"
+    - "styled-components"
+    - "StyleSheet"
+    - "React Cosmos"
+    - "FSD"
+    - "Atomic Design"
+  "mobile":
+    - "Expo"
+    - "React Native"
+    - "TypeScript"
+    - "TanStack Query"
+    - "Socket.io"
+    - "Optimistic Updates"
+    - "Yarn / pnpm Workspaces"
+    - "POS / fiscalization"
+  "backend":
+    - "Socket.io / WebSockets"
+    - "REST"
+"cvAchievements":
+  "en":
+    - "Greenfield corporate messenger (channels, threads, presence, media, search) for retail ops"
+    - "POS engine: shifts, fiscal Z/X reports, inventory & stock accounting"
+    - "Isomorphic monorepo (Yarn/pnpm Workspaces); Socket.io + optimistic updates; 60 FPS lists"
+    - "Tech Lead mobile track; React Cosmos cut TTM ~30%"
+  "ru":
+    - "С нуля корпоративный мессенджер (каналы, треды, presence, медиа, поиск) для ритейла"
+    - "Кассовый движок: смены, фискальные Z/X-отчёты, инвентаризация и остатки"
+    - "Изоморфный монорепо (Yarn/pnpm Workspaces); Socket.io + optimistic updates; списки 60 FPS"
+    - "Tech Lead мобильного направления; React Cosmos — TTM −30%"
+"cvTags":
+  - "Expo"
+  - "React Native"
+  - "NativeWind"
+  - "FSD"
+  - "Socket.io"
+  - "POS"
+  - "TanStack Query"
+  - "React Cosmos"
+  - "Tech Lead"
+"portfolio":
+  "catalogOrderKey": "skifTrade"
+  "variant": "stub"
+  "featured": true
+  "catalogFilters":
+    - "Mobile"
+    - "Enterprise"
+  "stack":
+    - "Expo"
+    - "React Native"
+    - "NativeWind"
+    - "FSD"
+    - "Socket.io"
+    - "TanStack Query"
+    - "POS / fiscalization"
+    - "React Cosmos"
+  "catalogCardType":
+    "ru": "Retail POS · чат · Expo"
+    "en": "Retail POS · messenger · Expo"
+  "stubMetrics":
+    "ru":
+      - "val": "5 мес"
+        "lbl": "Срок"
+      - "val": "POS"
+        "lbl": "Касса"
+      - "val": "чат"
+        "lbl": "Messenger"
+      - "val": "60 FPS"
+        "lbl": "Списки"
+    "en":
+      - "val": "5 mo"
+        "lbl": "Run"
+      - "val": "POS"
+        "lbl": "Cashier"
+      - "val": "chat"
+        "lbl": "Messenger"
+      - "val": "60 FPS"
+        "lbl": "Lists"
+"timelineIndex": -1

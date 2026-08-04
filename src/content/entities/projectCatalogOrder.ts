@@ -4,6 +4,8 @@
  * (от более нового к более старому — на `/projects` сортировка по возрастанию `order`).
  */
 export const PROJECT_CATALOG_ORDER = {
+  transline: 5,
+  skifTrade: 8,
   mirapolisLms: 10,
   mobilityTop: 15,
   haqqexWallet: 20,

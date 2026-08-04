@@ -1,9 +1,15 @@
 /** Shared profile & project links (single source of truth for UI). */
 
 export const CONTACT_EMAIL = "js-nanodegree@outlook.com";
+export const CONTACT_EMAIL_ALT = "anitalorack@yandex.ru";
+export const CONTACT_PHONE = "+7 (996) 104-93-57";
+export const CONTACT_PHONE_TEL = "tel:+79961049357";
 export const TELEGRAM_URL = "https://t.me/mustreets";
 export const GITHUB_URL = "https://github.com/Js-Nanodegree";
+export const GITLAB_URL = "https://gitlab.com/anitalorack";
 export const HABR_CAREER_URL = "https://career.habr.com/emil-reacted";
+export const VK_URL = "https://m.vk.com/fintechmustreets";
+export const TRANSLINE_GEOWORKER_URL = "https://github.com/AiStockSearch/TranslineApp";
 
 /** CosmoFusion DAO — публичный лендинг, блог и сообщество (синхронизируйте URL с `projects/cosmo-fusion-dao/project.js`). */
 export const COSMOFUSION_DAO = {

@@ -1,6 +1,12 @@
-import { CONTACT_EMAIL, GITHUB_URL, TELEGRAM_URL } from "../../constants/links";
+import {
+  CONTACT_EMAIL,
+  CONTACT_PHONE,
+  CONTACT_PHONE_TEL,
+  GITHUB_URL,
+  TELEGRAM_URL,
+} from "../../constants/links";
 
-export const CHANNEL_ORDER = ["tg", "email", "gh"];
+export const CHANNEL_ORDER = ["phone", "tg", "email", "gh"];
 
 export function validateContactForm(
   form: { name: string; email: string; message: string },
@@ -28,10 +34,19 @@ export function buildContactMailto(
 }
 
 export function buildContactChannels(ui: {
-  channels: Record<string, { label: string; val: string }>;
+  channels: Record<string, { label: string; val?: string }>;
 }) {
   return CHANNEL_ORDER.map((key) => {
     const ch = ui.channels[key];
+    if (key === "phone") {
+      return {
+        icon: "☎",
+        label: ch?.label ?? "Phone",
+        val: CONTACT_PHONE,
+        href: CONTACT_PHONE_TEL,
+        external: false,
+      };
+    }
     if (key === "tg") {
       return {
         icon: "✈",

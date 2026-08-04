@@ -2,7 +2,7 @@ import type { EngagementDefinition, EngagementLocale } from "./types";
 
 /** Год конца периода для сортировки (новее — больше). «н.в.» / present считаем как открытый конец. */
 export function periodEndYearForSort(period: string): number {
-  if (/\bn\.в\.|present|now|\(пет-проект\)|\(side project\)/i.test(period)) {
+  if (/\bn\.в\.|настоящее время|present|now|\(пет-проект\)|\(side project\)/i.test(period)) {
     return 10_000;
   }
   const years = period.match(/\b(19|20)\d{2}\b/g);

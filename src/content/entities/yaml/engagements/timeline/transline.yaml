@@ -1,0 +1,148 @@
+"id": "transline"
+"homeTag": "TRANSLINE"
+"period":
+  "en": "Jun 2026 — present"
+  "ru": "июн 2026 — н.в."
+"homeCompany":
+  "en": "Transline International · Logistics"
+  "ru": "Транслайн Интернэшнл · Логистика"
+"cvCompany":
+  "en": "Transline International (Kazakhstan · logistics / warehouse / foreign trade)"
+  "ru": "Транслайн Интернэшнл (Казахстан · перевозки, логистика, склад, ВЭД)"
+"role":
+  "en": "Senior Mobile Developer (RN) / Lead Mobile Architect"
+  "ru": "Старший мобильный разработчик (RN) / Lead Mobile Architect"
+"shortDesc":
+  "en": "Logistics mobile client (drivers / dispatchers, flaky networks): RN CLI + New Architecture
+    (TurboModules / Fabric / JSI), KMP ↔ TS, Tamagui, Offline-First (SQLite / WatermelonDB), logistics peripherals.
+    Architectural & delivery leadership — Code Review, API contracts, releases. Public demo slice:
+    TranslineGeoWorker (KMP + RN bridge)."
+  "ru": "Мобильный клиент транспортной логистики (водители / диспетчеры, нестабильная связь): RN CLI + New Architecture
+    (TurboModules / Fabric / JSI), KMP ↔ TS, Tamagui, Offline-First (SQLite / WatermelonDB), периферия логистики.
+    Архитектурное и delivery-лидерство — Code Review, API-контракты, релизы. Публичный срез:
+    TranslineGeoWorker (KMP + RN bridge)."
+"cvShortDesc":
+  "en": "Transline logistics RN: New Architecture + KMP bridge, Tamagui, Offline-First design, Tech Lead processes."
+  "ru": "RN-клиент Транслайн: New Architecture + KMP bridge, Tamagui, Offline-First, Tech Lead процессы."
+"achByArea":
+  "en":
+    "front":
+      - "<span class='m'>Tamagui</span> + StyleSheet / styled-components UI base; component isolation in
+        <span class='m'>React Cosmos</span> (Atomic Design) for faster iterations"
+    "mobile":
+      - "Audited codebase & target architecture (layers, native bridges, offline/sync, Bridge risks)"
+      - "Monorepo target design (Yarn / pnpm Workspaces) and first shared isomorphic packages"
+      - "Staged migration plan of key native calls to <span class='m'>New Architecture</span>
+        (TurboModules / Fabric / JSI); first Swift/Kotlin ↔ TS bindings"
+      - "KMP business-layer spike via TurboModules (iOS/Android → JS); public showcase —
+        <span class='m'>TranslineGeoWorker</span> (geo / notify)"
+      - "Target Offline-First schema (SQLite / WatermelonDB + sync queues) and peripheral contracts
+        (scanners / sensors) — sync & hardware in progress"
+      - "Processes: Code Review, backend API agreements; CI/CD draft on GitHub Actions + Fastlane
+        (build → signing → TestFlight / Play Internal)"
+    "backend":
+      - "API contract design with backend for logistics domains (geo / notify and adjacent)"
+  "ru":
+    "front":
+      - "UI-база на <span class='m'>Tamagui</span> + StyleSheet / styled-components; изоляция в
+        <span class='m'>React Cosmos</span> (Atomic Design) для ускорения итераций"
+    "mobile":
+      - "Аудит кодовой базы и целевой архитектуры (слои, нативные связки, offline/sync, риски Bridge)"
+      - "Целевой дизайн монорепо (Yarn / pnpm Workspaces) и первые shared изоморфные пакеты"
+      - "Поэтапный план миграции native-вызовов на <span class='m'>New Architecture</span>
+        (TurboModules / Fabric / JSI); первые связки Swift/Kotlin ↔ TS"
+      - "Spike интеграции KMP-слоя через TurboModules; публичная витрина —
+        <span class='m'>TranslineGeoWorker</span> (гео / notify)"
+      - "Целевая схема Offline-First (SQLite / WatermelonDB + очереди синка) и контракты периферии
+        (сканеры / датчики) — реализация в работе"
+      - "Процессы: Code Review, API с бэкендом; черновик CI/CD на GitHub Actions + Fastlane
+        (сборка → signing → TestFlight / Play Internal)"
+    "backend":
+      - "Проектирование API-контрактов с бэкендом (гео / notify и смежные домены)"
+"stackByArea":
+  "front":
+    - "Tamagui"
+    - "styled-components"
+    - "StyleSheet"
+    - "React Cosmos"
+    - "Atomic Design"
+  "mobile":
+    - "React Native CLI"
+    - "New Architecture"
+    - "TurboModules / Fabric / JSI"
+    - "TypeScript"
+    - "Kotlin Multiplatform"
+    - "WatermelonDB / SQLite"
+    - "Offline-First"
+    - "Yarn / pnpm Workspaces"
+    - "Fastlane"
+    - "GitHub Actions"
+  "backend":
+    - "REST API contracts"
+    - "GitLab (private product)"
+"cvAchievements":
+  "en":
+    - "Lead Mobile Architect on Transline logistics RN client (GPH / outstaff from Jun 2026)"
+    - "New Architecture migration plan + first TurboModules bindings; KMP ↔ TS GeoWorker spike"
+    - "Tamagui + React Cosmos UI system; Offline-First target design; CI/CD draft (Actions + Fastlane)"
+    - "Public demo: github.com/AiStockSearch/TranslineApp (GeoWorker only — not full product)"
+  "ru":
+    - "Lead Mobile Architect мобильного клиента Транслайн (ГПХ / outstaff с июн 2026)"
+    - "План миграции на New Architecture + первые TurboModules; spike KMP ↔ TS GeoWorker"
+    - "UI-система Tamagui + React Cosmos; целевой Offline-First; черновик CI/CD (Actions + Fastlane)"
+    - "Публичное демо: github.com/AiStockSearch/TranslineApp (только GeoWorker — не весь продукт)"
+"cvTags":
+  - "React Native CLI"
+  - "New Architecture"
+  - "TurboModules"
+  - "KMP"
+  - "Tamagui"
+  - "WatermelonDB"
+  - "Offline-First"
+  - "Fastlane"
+  - "GitHub Actions"
+  - "Tech Lead"
+"portfolio":
+  "catalogOrderKey": "transline"
+  "variant": "stub"
+  "live": false
+  "featured": true
+  "catalogFilters":
+    - "Mobile"
+    - "Enterprise"
+  "stack":
+    - "React Native CLI"
+    - "New Architecture"
+    - "TurboModules / JSI"
+    - "Kotlin Multiplatform"
+    - "Tamagui"
+    - "WatermelonDB / SQLite"
+    - "Offline-First"
+    - "Fastlane"
+    - "GitHub Actions"
+  "catalogCardType":
+    "ru": "Логистика · RN + KMP · Lead"
+    "en": "Logistics · RN + KMP · Lead"
+  "stubMetrics":
+    "ru":
+      - "val": "Lead"
+        "lbl": "Роль"
+      - "val": "KMP"
+        "lbl": "Слой"
+      - "val": "NA"
+        "lbl": "New Arch"
+      - "val": "демо"
+        "lbl": "GeoWorker"
+    "en":
+      - "val": "Lead"
+        "lbl": "Role"
+      - "val": "KMP"
+        "lbl": "Layer"
+      - "val": "NA"
+        "lbl": "New Arch"
+      - "val": "demo"
+        "lbl": "GeoWorker"
+  "stubOverviewProse":
+    "ru": "Основной product-репозиторий приватный (GitLab команды). Публично доступен технический срез модуля TranslineGeoWorker (KMP + RN bridge: геомониторинг, Notify Manager) — https://github.com/AiStockSearch/TranslineApp. Аккаунт AiStockSearch — личный tech-аккаунт, не org работодателя."
+    "en": "Main product repo is private (team GitLab). Public technical slice: TranslineGeoWorker (KMP + RN bridge: geo monitoring, Notify Manager) — https://github.com/AiStockSearch/TranslineApp. AiStockSearch is a personal tech account, not the employer org."
+"timelineIndex": -2

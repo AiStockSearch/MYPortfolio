@@ -7,35 +7,35 @@ import {
 
 export const homeHero = {
   en: {
-    avail: "Available for work · Remote / Relocation",
+    avail: "Open to Senior / Lead Mobile · Remote / Relocation / On-site",
     subPre: "Senior ",
-    subHL: "React Native",
+    subHL: "Mobile",
     subMid: " Developer",
     /** Подсветка в `HomeHeroSection` (раньше фиксировали «Web3»). */
-    subHighlight: "Fintech",
-    subAfterWeb3: " · Enterprise · 11 yrs",
+    subHighlight: "FinTech",
+    subAfterWeb3: " · Web3 · Enterprise · 8+ yrs",
     ctaProjects: "View Projects",
     ctaContact: "Get in touch",
     stats: [
-      ["11+", "Years exp"],
+      ["8+", "Years exp"],
       ["5+", "Domains"],
-      ["40%", "Perf gains"],
+      ["99.9%", "Crash-free"],
       ["🥈", "Web3 Hackathon"],
     ],
   },
   ru: {
-    avail: "Открыт к работе · Удалённо / Релокация",
+    avail: "Открыт к Senior / Lead Mobile · Удалённо / Релокация / Офис",
     subPre: "",
-    subHL: "Senior React Native",
+    subHL: "Senior Mobile",
     subMid: " Developer",
     subHighlight: "Финтех",
-    subAfterWeb3: " · Enterprise · 11 лет",
+    subAfterWeb3: " · Web3 · Enterprise · 8+ лет",
     ctaProjects: "К проектам",
     ctaContact: "Связаться",
     stats: [
-      ["11+", "Лет опыта"],
+      ["8+", "Лет опыта"],
       ["5+", "Доменов"],
-      ["40%", "Прирост perf"],
+      ["99.9%", "Crash-free"],
       ["🥈", "Web3-хакатон"],
     ],
   },
@@ -46,27 +46,27 @@ export const homeAbout = {
     sec: "about",
     title: "Engineer.\nArchitect.\nBuilder.",
     p1Html:
-      "I'm a <span class=\"hl\">Senior React Native Developer</span> (plus web/frontend where the product needs it) with <span class=\"hl\">11+ years</span> building production apps used by hundreds of thousands of people.",
+      "I'm a <span class=\"hl\">Senior Mobile Developer</span> with <span class=\"hl\">8+ years</span> in React Native and native (Swift / Kotlin / KMP). Focus: FinTech / Web3, Enterprise LMS, Offline-First and POS/hardware.",
     p2Html:
-      "My sweet spot is <span class=\"hl2\">complex real-time systems</span> — trading platforms, offline-first ERPs, LMS ecosystems — where performance, architecture and UX all matter equally.",
+      "My sweet spot is <span class=\"hl2\">complex real-time &amp; offline-first systems</span> — trading, logistics, LMS, merchant POS — where performance, architecture and UX all matter equally. Led mobile teams of up to 5; App Store &amp; Google Play shipping; crash-free &gt;99.9%.",
     p3Html:
       "<span class=\"hl2\">Crypto &amp; exchange</span> mobile work is part of my track record; 🥈 Web3 Hackathon 2023. Contributor to <code>react-hook-form</code> and <code>zustand</code>.",
-    badges: ["TDD", "Clean Code", "Agile/Scrum", "Team Lead", "Figma → Code", "AI Tools"],
+    badges: ["TDD", "Clean Code", "Agile/Scrum", "Tech Lead", "Figma → Code", "AI Tools"],
     photoPh: "photo.jpg",
-    tag: "Vyacheslav · Ufa → World",
+    tag: "Vyacheslav · Moscow · Remote / Relocation",
   },
   ru: {
     sec: "обо мне",
     title: "Инженер.\nАрхитектор.\nСоздатель.",
     p1Html:
-      "Я <span class=\"hl\">Senior React Native Developer</span> (и фронтенд там, где продукту это нужно) с <span class=\"hl\">11+ годами</span> в продакшен-приложениях для сотен тысяч пользователей.",
+      "Я <span class=\"hl\">Senior Mobile Developer</span> с <span class=\"hl\">8+ годами</span> в React Native и нативной разработке (Swift / Kotlin / KMP). Специализация: FinTech / Web3, Enterprise LMS, Offline-First, POS/hardware.",
     p2Html:
-      "Сильная сторона — <span class=\"hl2\">сложные real-time системы</span>: торговые платформы, offline-first ERP, LMS, где важны и производительность, и архитектура, и UX.",
+      "Сильная сторона — <span class=\"hl2\">сложные real-time и offline-first системы</span>: торговля, логистика, LMS, merchant POS — где важны и производительность, и архитектура, и UX. Лидировал мобильные команды до 5 человек; публикации в сторы; crash-free &gt;99.9%.",
     p3Html:
       "В кейсах — <span class=\"hl2\">крипто и биржевые</span> мобильные клиенты; 🥈 Web3 Hackathon 2023. Контрибьютор <code>react-hook-form</code> и <code>zustand</code>.",
-    badges: ["TDD", "Чистый код", "Agile/Scrum", "Тимлид", "Figma → код", "AI-инструменты"],
+    badges: ["TDD", "Чистый код", "Agile/Scrum", "Tech Lead", "Figma → код", "AI-инструменты"],
     photoPh: "photo.jpg",
-    tag: "Вячеслав · Уфа → Мир",
+    tag: "Вячеслав · Москва · Удалёнка / Релокация",
   },
 };
 
@@ -76,16 +76,16 @@ export const homeWork = {
 };
 
 export const homeSkillsBlocks = [
-  { cat: "Mobile", name: "React Native", tags: ["Expo", "CLI", "TypeScript", "Redux", "RTK-Query", "Socket.io","Reanimated"] },
-  { cat: "Frontend", name: "React / Next.js", tags: ["React 18", "Next.js 14", "SSR/SSG", "GraphQL", "Apollo", "Tailwind"] },
-  { cat: "Blockchain", name: "Web3 & DeFi", tags: ["Ethereum", "Solana", "Cardano", "Web3.js", "Ethers.js"] },
-  { cat: "Backend", name: "Node.js", tags: ["Node 20+", "Express", "NestJS", "Apollo Server","Restful API"] },
-  { cat: "Backend", name: "Golang", tags: ["GoLang", "WebSockets","Apollo Server","Restful API"] },
-  { cat: "Infra", name: "Data", tags: ["Firebase Database","SupabaseJS","Snowflake","Datalake", "PostgreSQL", "MongoDB", "Firebase"] },
-  { cat: "CICD", name: "DevOps", tags: ["GitHub Actions", "GitLab CI", "AWS", "Testflight","Fastlane","Docker"] },
-  { cat: "Analitics", name: "DevOps", tags: ["Amplitude", "Firebase Analytics", "Snowflake", "Datalake"] },
-  { cat: "Design", name: "UI/UX & Tools", tags: ["Figma", "Pixel-perfect", "Adaptive", "MUI", "React Cosmos", "Tailwind CSS"] },
-  { cat: "AI", name: "AI Tools", tags: ["Cursor", "NotebookLM","Qwen3.5","Google Stitch","Google Gemini"] },
+  { cat: "Mobile", name: "React Native", tags: ["CLI / Expo", "TypeScript", "New Architecture", "TurboModules / Fabric / JSI", "Hermes", "Reanimated", "Skia", "FlashList"] },
+  { cat: "Mobile", name: "State & Data", tags: ["Redux Toolkit / RTK Query", "TanStack Query", "Zustand", "WatermelonDB / SQLite", "MMKV", "Offline-First Sync"] },
+  { cat: "Native", name: "iOS / Android", tags: ["Swift / SwiftUI", "Kotlin / Compose", "KMP", "Keychain / Keystore", "Biometrics", "BLE / NFC", "DataWedge / ESC/POS"] },
+  { cat: "Web3", name: "FinTech / Crypto", tags: ["WalletConnect v2", "Ethers.js", "Ledger BLE", "BIP-39 / BIP-44", "OWASP MASVS", "decimal.js"] },
+  { cat: "Frontend", name: "React / Next.js", tags: ["React 18", "Next.js 14", "SSR/ISR/SSG", "GraphQL / Apollo", "Tailwind / NativeWind", "Tamagui"] },
+  { cat: "QA", name: "Testing", tags: ["Jest", "Detox / Maestro", "XCTest / Espresso", "Storybook / Cosmos", "Sentry", "Crashlytics"] },
+  { cat: "CICD", name: "DevOps", tags: ["GitHub Actions", "GitLab CI", "Bitrise", "Fastlane", "EAS / CodePush", "Docker"] },
+  { cat: "Backend", name: "Adjacent", tags: ["Node.js 20", "Go", "Express", "Socket.IO", "PostgreSQL", "MongoDB"] },
+  { cat: "Analytics", name: "Product", tags: ["Amplitude", "Mixpanel", "AppsFlyer", "Firebase Analytics", "Segment"] },
+  { cat: "Design", name: "UI/UX & Tools", tags: ["Figma", "Pixel-perfect", "Atomic Design", "FSD", "React Cosmos"] },
 ]
 
 export const homeSkills = {
@@ -143,14 +143,14 @@ export const homeCareer = {
 
 export const homeTypewriter = {
   en: [
-    "const dev = new Engineer({ yoe: 11, stack: 'RN' })",
-    "await dev.ship({ domain: 'fintech', perf: '+40%' })",
-    "// available · remote / relocation",
+    "const dev = new Engineer({ yoe: 8, stack: 'RN + native' })",
+    "await dev.ship({ domain: 'fintech', crashFree: '>99.9%' })",
+    "// open · remote / relocation / on-site · Moscow",
   ],
   ru: [
-    "const dev = new Engineer({ yoe: 11, stack: 'RN' })",
-    "await dev.ship({ domain: 'fintech', perf: '+40%' })",
-    "// доступен · удалёнка / релокация",
+    "const dev = new Engineer({ yoe: 8, stack: 'RN + native' })",
+    "await dev.ship({ domain: 'fintech', crashFree: '>99.9%' })",
+    "// открыт · удалёнка / релокация / офис · Москва",
   ],
 };
 
@@ -201,7 +201,7 @@ export const projectDetailContent = {
     dev: "🔵 In development",
     category: "Category",
     role: "Role",
-    roleVal: "Senior Mobile Engineer / Lead",
+    roleVal: "Senior Mobile Developer / Lead",
     next: "Next Project",
     allProjects: "All Projects",
     notFound: "Project not found",
@@ -218,7 +218,7 @@ export const projectDetailContent = {
     dev: "🔵 В разработке",
     category: "Категория",
     role: "Роль",
-    roleVal: "Senior Mobile Engineer / Lead",
+    roleVal: "Senior Mobile Developer / Lead",
     next: "Следующий проект",
     allProjects: "Все проекты",
     notFound: "Проект не найден",
@@ -244,20 +244,21 @@ export const contactContent = {
   en: {
     sec: "contact",
     title: "Let's talk.",
-    introLead: "I'm currently open to ",
-    introHl: "senior / lead positions",
+    introLead: "I'm open to ",
+    introHl: "Senior / Lead Mobile",
     introRest:
-      " in React Native or Frontend — remote or relocation. Response time is usually within 24 hours via Telegram.",
+      " roles (React Native / iOS / Android) — on-site, remote, hybrid. Preferred contact: phone or Telegram; usually reply within 24 hours.",
     channels: {
-      tg: { label: "Telegram (preferred)", val: "@mustreets" },
+      phone: { label: "Phone (preferred)", val: "+7 (996) 104-93-57" },
+      tg: { label: "Telegram", val: "@mustreets" },
       email: { label: "Email" },
       gh: { label: "GitHub", val: "Js-Nanodegree" },
     },
-    availTitle: "Available from March 2026.",
+    availTitle: "Based in Moscow · open to offers.",
     availBody:
-      "Open to remote work worldwide and relocation to EU / UAE / other. Work permit available for Russia, Armenia, Belarus, Kazakhstan, Uzbekistan.",
+      "Ready to relocate to Krasnodar, St. Petersburg, Tashkent, Ufa; open to business travel. Work permit: Russia, Armenia, Belarus, Kazakhstan, Uzbekistan. English C1.",
     formTitle: "Send a message",
-    formSub: "Or reach out directly via Telegram for a faster response.",
+    formSub: "Or reach out directly via Telegram / phone for a faster response.",
     mailtoNote:
       "This form does not send data over the web. It opens your email app with the fields filled in — same as a mailto link, with a preview here first.",
     labels: { name: "Your name", email: "Email", subject: "Subject", message: "Message" },
@@ -279,19 +280,20 @@ export const contactContent = {
     sec: "контакты",
     title: "Давайте обсудим.",
     introLead: "Открыт к ",
-    introHl: "senior / lead позициям",
+    introHl: "Senior / Lead Mobile",
     introRest:
-      " в React Native или фронтенде — удалённо или релокация. Обычно отвечаю в Telegram в течение суток.",
+      " (React Native / iOS / Android) — офис, удалёнка, гибрид. Предпочтительный канал: телефон или Telegram; обычно отвечаю в течение суток.",
     channels: {
-      tg: { label: "Telegram (предпочтительно)", val: "@mustreets" },
-      email: { label: "Почта", val: "fintechmustreets@gmail.com" },
+      phone: { label: "Телефон (предпочтительно)", val: "+7 (996) 104-93-57" },
+      tg: { label: "Telegram", val: "@mustreets" },
+      email: { label: "Почта", val: "js-nanodegree@outlook.com" },
       gh: { label: "GitHub", val: "Js-Nanodegree" },
     },
-    availTitle: "Доступен с марта 2026.",
+    availTitle: "Москва · открыт к предложениям.",
     availBody:
-      "Удалёнка по миру, релокация в EU / UAE и др. Оформление: Россия, Армения, Беларусь, Казахстан, Узбекистан.",
+      "Готов к переезду: Краснодар, Санкт-Петербург, Ташкент, Уфа; командировки ок. Разрешение на работу: Россия, Армения, Беларусь, Казахстан, Узбекистан. Английский C1.",
     formTitle: "Сообщение",
-    formSub: "Быстрее ответить в Telegram — ссылки слева.",
+    formSub: "Быстрее — Telegram или телефон; ссылки слева.",
     mailtoNote:
       "Форма не отправляет данные на сервер: открывается почтовый клиент с уже заполненными полями (как mailto, но с предпросмотром).",
     labels: { name: "Имя", email: "Email", subject: "Тема", message: "Сообщение" },

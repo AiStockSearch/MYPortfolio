@@ -1,8 +1,8 @@
 "id": "flowwow-erp"
 "homeTag": "FLOWWOW"
 "period":
-  "en": "Nov 2022 — Dec 2023"
-  "ru": "ноя 2022 — дек 2023"
+  "en": "Nov 2022 — Jan 2024"
+  "ru": "ноя 2022 — янв 2024"
 "homeCompany":
   "en": "flowwow.com"
   "ru": "flowwow.com"
@@ -10,8 +10,8 @@
   "en": "Flowwow (flowwow.com)"
   "ru": "Flowwow (flowwow.com)"
 "role":
-  "en": "Middle Mobile Developer (React Native)"
-  "ru": "Middle Mobile Developer (React Native)"
+  "en": "Senior Mobile Developer (React Native)"
+  "ru": "Старший мобильный разработчик (React Native)"
 "shortDesc":
   "en": "Greenfield React Native ERP for Flowwow florists: flower inventory & stocktaking in stores, POS
     integration, orders, tablet + phone layouts, chain analytics; offline-first on the floor. Architecture:

@@ -6,7 +6,7 @@ export default function SiteFooter() {
   return (
     <footer>
       <p>
-        <Trans>© 2026 Вячеслав Якимов · Senior RN инженер</Trans>
+        <Trans>© 2026 Вячеслав Якимов · Senior Mobile Developer</Trans>
       </p>
       <p>
         <a

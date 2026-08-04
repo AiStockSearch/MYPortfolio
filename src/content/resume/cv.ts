@@ -1,222 +1,264 @@
 import { cvResumeExperienceTimeline } from "../entities/experienceTimeline";
 import { homeSkillsBlocks } from "../siteContent";
-const contacts={
-  "telegram": {
-    name:"Telegram",
-    val:"https://t.me/mustreets"
-  },
-  "email": {
-    name:"Email",
-    val:"fintechmustreets@gmail.com"
-  },
-  "github": {
-    name:"GitHub",
-    val:"https://github.com/Js-Nanodegree"
-  },
-  "habr": {
-    name:"Habr",
-    val:"https://career.habr.com/emil-reacted"
-  },
-  "linkedin": {
-    name:"LinkedIn",
-    val:"https://www.linkedin.com/in/emil-reacted/"
-  }
-}
+import { CONTACT_EMAIL, GITHUB_URL, HABR_CAREER_URL, TELEGRAM_URL } from "../../constants/links";
 
-const contactLinks=[
+const contacts = {
+  telegram: {
+    name: "Telegram",
+    val: TELEGRAM_URL,
+  },
+  email: {
+    name: "Email",
+    val: CONTACT_EMAIL,
+  },
+  github: {
+    name: "GitHub",
+    val: GITHUB_URL,
+  },
+  habr: {
+    name: "Habr",
+    val: HABR_CAREER_URL,
+  },
+  phone: {
+    name: "Phone",
+    val: "+7 (996) 104-93-57",
+  },
+  gitlab: {
+    name: "GitLab",
+    val: "https://gitlab.com/anitalorack",
+  },
+};
+
+const contactLinks = [
   {
-    "label": "Telegram: @mustreets",
-    "href": contacts.telegram.val
+    label: contacts.phone.val,
+    href: "tel:+79961049357",
   },
   {
-    "label": contacts.email.val,
-    "href": `mailto:${contacts.email.val}`
+    label: "Telegram: @mustreets",
+    href: contacts.telegram.val,
   },
   {
-    "label": "github.com/Js-Nanodegree",
-    "href": contacts.github.val
-  }
-]
+    label: contacts.email.val,
+    href: `mailto:${contacts.email.val}`,
+  },
+  {
+    label: "github.com/Js-Nanodegree",
+    href: contacts.github.val,
+  },
+];
 
 /** Новее сверху (как в таймлайне опыта). */
-const education={
-  ru:[
+const education = {
+  ru: [
     {
-      "deg": "Full-Stack JavaScript Developer",
-      "inst": "Университет Иннополис",
-      "year": "2021 – 2022"
+      deg: "Кандидат наук, математические методы в экономике",
+      inst: "УГАТУ, Институт экономики и управления",
+      year: "2017",
     },
     {
-      "deg": "Nanodegree: iOS Developer",
-      "inst": "Udacity",
-      "year": "2018 – 2019"
+      deg: "Высшее, менеджмент организации",
+      inst: "УГАТУ, Институт экономики и управления",
+      year: "2015",
     },
     {
-      "deg": "Nanodegree: Professional React Developer",
-      "inst": "Udacity",
-      "year": "2017"
+      deg: "Бакалавр, налоги и налогообложение",
+      inst: "УГАТУ, Институт экономики и управления",
+      year: "2013",
     },
     {
-      "deg": "Nanodegree: Full Stack Web Developer",
-      "inst": "Udacity",
-      "year": "2017"
+      deg: "Промышленная разработка на JavaScript",
+      inst: "Университет Иннополис",
+      year: "2021",
     },
     {
-      "deg": "Специалист, экономика и управление",
-      "inst": "УГАТУ",
-      "year": "2007 – 2015"
-    }
+      deg: "Nanodegree: iOS Developer",
+      inst: "Udacity",
+      year: "2019",
+    },
+    {
+      deg: "Nanodegree: Professional React Developer",
+      inst: "Udacity",
+      year: "2017",
+    },
+    {
+      deg: "Nanodegree: Full Stack Web Developer",
+      inst: "Udacity",
+      year: "2017",
+    },
   ],
-  en:[
+  en: [
     {
-      "deg": "Full-Stack JavaScript Developer",
-      "inst": "Innopolis University",
-      "year": "2021 – 2022"
+      deg: "PhD Candidate, Mathematical Methods in Economics",
+      inst: "USATU, Institute of Economics & Management",
+      year: "2017",
     },
     {
-      "deg": "Nanodegree: iOS Developer",
-      "inst": "Udacity",
-      "year": "2018 – 2019"
+      deg: "Higher education, Organization Management",
+      inst: "USATU, Institute of Economics & Management",
+      year: "2015",
     },
     {
-      "deg": "Nanodegree: Professional React Developer",
-      "inst": "Udacity",
-      "year": "2017"
+      deg: "Bachelor, Taxation",
+      inst: "USATU, Institute of Economics & Management",
+      year: "2013",
     },
     {
-      "deg": "Nanodegree: Full Stack Web Developer",
-      "inst": "Udacity",
-      "year": "2017"
+      deg: "Industrial JavaScript Development",
+      inst: "Innopolis University",
+      year: "2021",
     },
     {
-      "deg": "Bachelor's, Economics & Management",
-      "inst": "Ufa State Aviation Technical University",
-      "year": "2007 – 2015"
-    }
-  ]
-}
+      deg: "Nanodegree: iOS Developer",
+      inst: "Udacity",
+      year: "2019",
+    },
+    {
+      deg: "Nanodegree: Professional React Developer",
+      inst: "Udacity",
+      year: "2017",
+    },
+    {
+      deg: "Nanodegree: Full Stack Web Developer",
+      inst: "Udacity",
+      year: "2017",
+    },
+  ],
+};
 
-const skillGroups=()=>{
-  const homeSkillsBlocksArray=homeSkillsBlocks.reduce<{ title: string; list: string }[]>((acc, item)=>{
-  acc.push({
-    "title": item.cat,
-    "list": item.tags.join(", ")
-  });
-  return acc;
-}, []);
+const skillGroups = () => {
+  const homeSkillsBlocksArray = homeSkillsBlocks.reduce<{ title: string; list: string }[]>(
+    (acc, item) => {
+      acc.push({
+        title: item.cat,
+        list: item.tags.join(", "),
+      });
+      return acc;
+    },
+    []
+  );
   return {
-  ru:homeSkillsBlocksArray,
-  en:homeSkillsBlocksArray
-}}
-
-
-
+    ru: homeSkillsBlocksArray,
+    en: homeSkillsBlocksArray,
+  };
+};
 
 export default {
-  "i18n": {
-    "ru": {
-      "secLabel": "резюме",
-      "title": "Резюме",
-      "printBtn": "Печать / PDF",
-      "downloadCv": "Скачать CV (PDF)",
-      "printHint": "Печать открывает диалог браузера — выберите «Сохранить как PDF». Кнопка скачивания ведёт на /cv.pdf, если файл лежит в public.",
-      "contactBtn": "Написать",
-      "cvTitle": "Senior React Native Developer · Финтех и Enterprise",
-      "location": "Уфа, Россия · Удалённо / Релокация",
-      "profileTitle": "Профиль",
-      "profileBody": "Senior React Native Developer с 11+ годами опыта: продакшен-приложения под нагрузкой — финтех, enterprise (LMS, HCM, ERP), retail и витрины на React.\nФокус на архитектуре клиентов для iOS, Android и Web, офлайн-first и real-time. Руководил командами до 5 инженеров, многократно доводил продукты от MVP до App Store и Google Play.\nОтдельный опыт — крипто- и биржевые мобильные клиенты. 2 место Web3 Hackathon 2023. Контрибьютор react-hook-form и zustand.\n",
-      "expTitle": "Опыт",
-      "expArea": {
-        "front": "Frontend",
-        "mobile": "Мобильная",
-        "backend": "Бэкенд",
-        "selfHosted": "Self-hosted",
-        "aria": "Фильтр опыта по направлению",
-        "noMatches":
+  i18n: {
+    ru: {
+      secLabel: "резюме",
+      title: "Резюме",
+      printBtn: "Печать / PDF",
+      downloadCv: "Скачать CV (PDF)",
+      printHint:
+        "Печать открывает диалог браузера — выберите «Сохранить как PDF». Кнопка скачивания ведёт на /cv.pdf, если файл лежит в public.",
+      contactBtn: "Написать",
+      cvTitle: "Senior Mobile Developer · React Native / iOS / Android",
+      location: "Москва, м. Академическая · Удалённо / Офис / Релокация",
+      profileTitle: "Профиль",
+      profileBody:
+        "Senior Mobile Developer, 8+ лет в React Native и нативной разработке (Swift / Kotlin / KMP). Специализация: FinTech / Web3, Enterprise LMS, Offline-First и POS/hardware. Опыт лидирования мобильных команд до 5 человек, публикации в App Store и Google Play, crash-free >99.9%. Фокус: Senior / Lead Mobile (RN) и Mobile Architect (RN + native iOS/Android).\nАнглийский C1. Контрибьютор react-hook-form и zustand. 2 место Web3 Hackathon 2023.\n",
+      expTitle: "Опыт",
+      expArea: {
+        front: "Frontend",
+        mobile: "Мобильная",
+        backend: "Бэкенд",
+        selfHosted: "Self-hosted",
+        aria: "Фильтр опыта по направлению",
+        noMatches:
           "Нет записей для этого направления — переключите вкладку (например, «Мобильная» или «Self-hosted»).",
-        "caseStudy": "Кейс →",
-        "selfHostedHeading": "Собственные продукты (self-hosted)",
+        caseStudy: "Кейс →",
+        selfHostedHeading: "Собственные продукты (self-hosted)",
       },
-      "skillsTitle": "Навыки",
-      "eduTitle": "Образование и сертификаты",
-      "referenceLinks": {
-        "sectionTitle": "Ссылки и материалы",
-        "items": [
+      skillsTitle: "Навыки",
+      eduTitle: "Образование и сертификаты",
+      referenceLinks: {
+        sectionTitle: "Ссылки и материалы",
+        items: [
           {
-            "label": "Блог и заметки",
-            "href": "/blog",
-            "note": "Статьи в том же контент-пайплайне, что и это резюме"
+            label: "Блог и заметки",
+            href: "/blog",
+            note: "Статьи в том же контент-пайплайне, что и это резюме",
           },
           {
-            "label": "Кейсы проектов",
-            "href": "/projects"
+            label: "Кейсы проектов",
+            href: "/projects",
           },
           {
-            "label": "GitHub",
-            "href": contacts.github.val
+            label: "GitHub",
+            href: contacts.github.val,
           },
           {
-            "label": "Telegram",
-            "href": contacts.telegram.val
-          }
-        ]
+            label: "Telegram",
+            href: contacts.telegram.val,
+          },
+          {
+            label: "Habr Career",
+            href: contacts.habr.val,
+          },
+        ],
       },
-      "contactLinks": contactLinks,
-      "skillGroups": skillGroups().ru,
-      "education": education.ru,
-      "experience": cvResumeExperienceTimeline("ru")
+      contactLinks: contactLinks,
+      skillGroups: skillGroups().ru,
+      education: education.ru,
+      experience: cvResumeExperienceTimeline("ru"),
     },
-    "en": {
-      "secLabel": "curriculum vitae",
-      "title": "Resume",
-      "printBtn": "Print / Save as PDF",
-      "downloadCv": "Download CV (PDF)",
-      "printHint": "Print opens your browser dialog — choose \"Save as PDF\" to export. The download button uses /cv.pdf when you host that file.",
-      "contactBtn": "Contact Me",
-      "cvTitle": "Senior React Native Developer | Fintech & Enterprise",
-      "location": "Ufa, Russia · Remote / Relocation",
-      "profileTitle": "Profile",
-      "profileBody": "Senior React Native Developer with 11+ years shipping production apps under load — fintech, enterprise (LMS, HCM, ERP), retail and React-powered web surfaces.\nStrong in client architecture for iOS, Android and Web, offline-first and real-time. Led teams of up to 5 engineers; repeated releases from MVP to App Store and Google Play.\nSeparate track: crypto and exchange mobile clients. 2nd place Web3 Hackathon 2023. Contributor to react-hook-form and zustand.\n",
-      "expTitle": "Experience",
-      "expArea": {
-        "front": "Front",
-        "mobile": "Mobile",
-        "backend": "Backend",
-        "selfHosted": "Self-hosted",
-        "aria": "Filter experience by track",
-        "noMatches":
-          "No entries for this track — try Mobile, Self-hosted, or another tab.",
-        "caseStudy": "Case study →",
-        "selfHostedHeading": "Own products (self-hosted)",
+    en: {
+      secLabel: "curriculum vitae",
+      title: "Resume",
+      printBtn: "Print / Save as PDF",
+      downloadCv: "Download CV (PDF)",
+      printHint:
+        'Print opens your browser dialog — choose "Save as PDF" to export. The download button uses /cv.pdf when you host that file.',
+      contactBtn: "Contact Me",
+      cvTitle: "Senior Mobile Developer · React Native / iOS / Android",
+      location: "Moscow, Akademicheskaya · Remote / On-site / Relocation",
+      profileTitle: "Profile",
+      profileBody:
+        "Senior Mobile Developer, 8+ years in React Native and native (Swift / Kotlin / KMP). Focus: FinTech / Web3, Enterprise LMS, Offline-First and POS/hardware. Led mobile teams of up to 5; App Store & Google Play shipping; crash-free >99.9%. Target roles: Senior / Lead Mobile (RN) and Mobile Architect (RN + native iOS/Android).\nEnglish C1. Contributor to react-hook-form and zustand. 2nd place Web3 Hackathon 2023.\n",
+      expTitle: "Experience",
+      expArea: {
+        front: "Front",
+        mobile: "Mobile",
+        backend: "Backend",
+        selfHosted: "Self-hosted",
+        aria: "Filter experience by track",
+        noMatches: "No entries for this track — try Mobile, Self-hosted, or another tab.",
+        caseStudy: "Case study →",
+        selfHostedHeading: "Own products (self-hosted)",
       },
-      "skillsTitle": "Technical Skills",
-      "eduTitle": "Education & Certifications",
-      "referenceLinks": {
-        "sectionTitle": "Links & writing",
-        "items": [
+      skillsTitle: "Technical Skills",
+      eduTitle: "Education & Certifications",
+      referenceLinks: {
+        sectionTitle: "Links & writing",
+        items: [
           {
-            "label": "Blog & notes (articles)",
-            "href": "/blog",
-            "note": "Long-form posts, same content pipeline as this CV"
+            label: "Blog & notes (articles)",
+            href: "/blog",
+            note: "Long-form posts, same content pipeline as this CV",
           },
           {
-            "label": "Project cases",
-            "href": "/projects"
+            label: "Project cases",
+            href: "/projects",
           },
           {
-            "label": "GitHub",
-            "href": contacts.github.val
+            label: "GitHub",
+            href: contacts.github.val,
           },
           {
-            "label": "Telegram",
-            "href": contacts.telegram.val
-          }
-        ]
+            label: "Telegram",
+            href: contacts.telegram.val,
+          },
+          {
+            label: "Habr Career",
+            href: contacts.habr.val,
+          },
+        ],
       },
-      "contactLinks": contactLinks,
-      "skillGroups": skillGroups().en,
-      "education": education.en,
-      "experience": cvResumeExperienceTimeline("en")
-    }
-  }
+      contactLinks: contactLinks,
+      skillGroups: skillGroups().en,
+      education: education.en,
+      experience: cvResumeExperienceTimeline("en"),
+    },
+  },
 };

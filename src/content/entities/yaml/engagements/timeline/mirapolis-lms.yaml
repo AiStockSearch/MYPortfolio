@@ -1,94 +1,124 @@
 "id": "mirapolis-lms"
 "homeTag": "MIRAPOLIS"
 "period":
-  "en": "Aug 2024 — Jul 2025"
-  "ru": "авг 2024 — июл 2025"
+  "en": "Jul 2024 — Sep 2025"
+  "ru": "июл 2024 — сен 2025"
 "homeCompany":
   "en": "mirapolis.ru"
   "ru": "mirapolis.ru"
 "cvCompany":
-  "en": "Mirapolis (mirapolis.ru)"
-  "ru": "Mirapolis (mirapolis.ru)"
+  "en": "Mirapolis (mirapolis.ru) · GPH / part-time"
+  "ru": "Мираполис (mirapolis.ru) · ГПХ / совмещение"
 "role":
-  "en": "Senior Mobile Engineer / Lead"
-  "ru": "Senior Mobile Engineer / Lead"
+  "en": "Senior Mobile Developer (RN) / Core Module Lead"
+  "ru": "Старший мобильный разработчик (RN) / Core Module Lead"
 "shortDesc":
-  "en": "Mirapolis HCM/LMS mobile ecosystem for 100k+ corporate users (Moscow, HR tech)."
-  "ru": "Мобильная HCM/LMS-экосистема Mirapolis для 100k+ корпоративных пользователей (Москва, HR tech)."
+  "en": "Enterprise Mirapolis HCM & LMS mobile core (~12k peak users): SCORM / xAPI player (WebView JS Bridge),
+    configuration-driven UI (JSON schemas), FlashList / RecyclerListView, FSM for assessments, Offline-First courses,
+    tablet Master-Detail / Split View. Core Module Lead; TTM −25%."
+  "ru": "Enterprise-ядро мобильной экосистемы Mirapolis HCM & LMS (~12k пользователей в пике): плеер SCORM / xAPI
+    (WebView JS Bridge), configuration-driven UI (JSON-схемы), FlashList / RecyclerListView, FSM тестов,
+    Offline-First курсы, tablet Master-Detail / Split View. Core Module Lead; TTM −25%."
+"cvShortDesc":
+  "en": "Mirapolis LMS: SCORM/xAPI player, Offline-First, FlashList 60 FPS, JSON-driven UI, tablet Split View; DAU +15%."
+  "ru": "Mirapolis LMS: плеер SCORM/xAPI, Offline-First, FlashList 60 FPS, JSON UI, планшетный Split View; DAU +15%."
 "achByArea":
   "en":
+    "front":
+      - "Configuration-driven UI from backend JSON schemas (news feed, widgets) without store releases"
+      - "styled-components + StyleSheet custom components; Storybook for contract-driven UI"
+      - "Tablet <span class='m'>Master-Detail / Split View</span> for iPad and Android tablets"
     "mobile":
-      - "<span class='m'>-40%</span> memory via Virtual Lists for employee & course lists"
-      - "React <span class='m'>18+</span> migration & TypeScript adoption on legacy areas"
-      - "With designers: adaptive layouts for <span class='m'>iPad / Android tablets</span> for managers in the field"
-      - "Course player, assessments, news feed, media library — core LMS modules"
-      - "<span class='m'>DAU +15%</span> in mobile learning after offline-mode overhaul"
-      - "Code review, standards, mentoring Middle/Junior developers"
-      - "REST & real-time touchpoints with HCM/LMS core; enterprise SSO edge cases"
+      - "Core Module Lead of Mirapolis mobile HCM & LMS ecosystem for large enterprise clients"
+      - "Cross-platform course player (<span class='m'>SCORM / xAPI</span>) on optimized RN WebView with
+        bidirectional JS Bridge; assessment logic on <span class='m'>FSM</span> with state protection on network drops"
+      - "Reworked Offline-First for courses & tests (local store + sync queues) —
+        mobile learning DAU <span class='m'>+15%</span> (team product metric)"
+      - "Catalogs of thousands of items via <span class='m'>FlashList / RecyclerListView</span> + image cache:
+        lags → stable <span class='m'>60 FPS</span> on low-end"
+      - "Yarn / pnpm Workspaces monorepo; Clean Architecture + SOLID + Atomic Design"
+      - "CI: Jest + Detox; GitLab CI + Fastlane → TestFlight / Play Internal; TTM <span class='m'>−25%</span>"
+      - "Monitoring: Firebase Crashlytics / Sentry"
+    "backend":
+      - "REST & real-time touchpoints with HCM/LMS core; JSON schema contracts for dynamic UI"
+      - "Sync queues and conflict handling for offline progress / analytics"
   "ru":
+    "front":
+      - "Configuration-driven UI по JSON-схемам с бэкенда (лента, виджеты) без релизов в сторы"
+      - "Кастомные компоненты на styled-components + StyleSheet; Storybook под контрактный UI"
+      - "Планшетный <span class='m'>Master-Detail / Split View</span> для iPad и Android"
     "mobile":
-      - "<span class='m'>-40%</span> памяти за счёт Virtual Lists для списков сотрудников и курсов"
-      - "Миграция на React <span class='m'>18+</span> и типизация легаси на TypeScript"
-      - "С дизайнерами: адаптив под <span class='m'>iPad / Android-планшеты</span> для руководителей «в полях»"
-      - "Плеер курсов, тестирование, лента новостей, медиатека — ключевые модули LMS"
-      - "<span class='m'>DAU +15%</span> в мобильном обучении после переработки offline"
-      - "Code review, стандарты, наставничество Middle/Junior"
-      - "REST и real-time к ядру HCM/LMS; граничные кейсы enterprise SSO"
+      - "Core Module Lead мобильного ядра Mirapolis HCM & LMS для крупных корпоративных клиентов"
+      - "Кроссплатформенный плеер курсов (<span class='m'>SCORM / xAPI</span>) на RN WebView с двусторонним
+        JS Bridge; логика тестов на <span class='m'>FSM</span> с защитой состояния при сбоях сети"
+      - "Переработка Offline-First для курсов и тестов (локальное хранилище + очереди синка) —
+        DAU мобильного обучения <span class='m'>+15%</span> (командная метрика)"
+      - "Каталоги тысяч элементов через <span class='m'>FlashList / RecyclerListView</span> + кэш изображений:
+        лаги → стабильные <span class='m'>60 FPS</span> на low-end"
+      - "Монорепо Yarn / pnpm Workspaces; Clean Architecture + SOLID + Atomic Design"
+      - "CI: Jest + Detox; GitLab CI + Fastlane → TestFlight / Play Internal; TTM <span class='m'>−25%</span>"
+      - "Мониторинг: Firebase Crashlytics / Sentry"
+    "backend":
+      - "REST и real-time к ядру HCM/LMS; JSON-контракты для динамического UI"
+      - "Очереди синка и разрешение конфликтов для офлайн-прогресса / аналитики"
 "stackByArea":
-  "mobile":
-    - "TypeScript"
-    - "React 18"
-    - "Redux"
-    - "Virtual Lists"
-    - "Offline-first"
-    - "React Native"
-    - "REST"
-    - "Amplitude"
-    - "Crashlytics"
-    - "Cypress"
-    - "E2E"
-    - "Firebase Analytics"
-    - "Jest"
-    - "Maestro"
-    - "Push notifications"
-    - "React Cosmos"
-    - "Sentry"
+  "front":
+    - "styled-components"
+    - "StyleSheet"
     - "Storybook"
+    - "JSON schemas"
+    - "Master-Detail / Split View"
+  "mobile":
+    - "React Native CLI"
+    - "TypeScript"
+    - "SCORM / xAPI"
+    - "WebView JS Bridge"
+    - "FlashList"
+    - "RecyclerListView"
+    - "XState / FSM"
+    - "Offline-first"
+    - "Yarn / pnpm Workspaces"
+    - "Jest"
+    - "Detox"
+    - "Fastlane"
+    - "GitLab CI"
+    - "Sentry"
+    - "Crashlytics"
+  "backend":
+    - "REST"
+    - "Sync queues"
+    - "JSON UI schemas"
 "cvAchievements":
   "en":
-    - "DAU +15% after offline overhaul; memory -40% with Virtual Lists"
-    - "Tablet layouts for field managers; dynamic white-label modules"
-    - "Code review, standards, mentoring Middle/Junior"
-    - "REST & real-time integration with HCM/LMS core; enterprise SSO edge cases"
-    - "Sync pipelines and conflict resolution at large data volumes"
+    - "SCORM / xAPI course player with bidirectional WebView JS Bridge; FSM-based assessments"
+    - "Offline-First rework → mobile learning DAU +15%; FlashList catalogs at 60 FPS on low-end"
+    - "Configuration-driven UI (JSON schemas); tablet Master-Detail / Split View"
+    - "Monorepo + GitLab CI / Fastlane; TTM −25%; Core Module Lead"
   "ru":
-    - "DAU +15% после переработки offline; память −40% за счёт Virtual Lists"
-    - "Адаптив под планшеты для руководителей; динамические white-label модули"
-    - "Code review, стандарты, наставничество Middle/Junior"
-    - "REST и real-time к ядру HCM/LMS; граничные кейсы enterprise SSO"
-    - "Пайплайны синка и конфликты на больших объёмах данных"
+    - "Плеер курсов SCORM / xAPI с двусторонним WebView JS Bridge; тесты на FSM"
+    - "Offline-First → DAU мобильного обучения +15%; каталоги FlashList на 60 FPS (low-end)"
+    - "Configuration-driven UI (JSON-схемы); планшетный Master-Detail / Split View"
+    - "Монорепо + GitLab CI / Fastlane; TTM −25%; Core Module Lead"
 "cvTags":
   - "React Native"
   - "TypeScript"
-  - "React 18"
-  - "Redux"
-  - "SQLite"
+  - "SCORM"
+  - "xAPI"
+  - "FlashList"
   - "Offline-first"
-  - "Socket.io"
-  - "Amplitude"
-  - "Crashlytics"
-  - "Cypress"
-  - "E2E"
-  - "Firebase Analytics"
+  - "XState"
+  - "WebView Bridge"
   - "Jest"
-  - "Maestro"
-  - "Push notifications"
-  - "React Cosmos"
+  - "Detox"
+  - "Fastlane"
+  - "GitLab CI"
   - "Sentry"
+  - "Crashlytics"
   - "Storybook"
 "portfolio":
   "catalogOrderKey": "mirapolisLms"
   "live": true
+  "featured": true
   "variant": "rich"
   "catalogFilters":
     - "Mobile"
@@ -97,27 +127,23 @@
   "stack":
     - "React Native"
     - "TypeScript"
-    - "Virtual Lists"
-    - "Redux"
+    - "SCORM / xAPI"
+    - "FlashList"
     - "Offline-first"
-    - "SQLite"
-    - "Amplitude"
-    - "Crashlytics"
-    - "Cypress"
-    - "E2E"
-    - "Firebase Analytics"
+    - "XState / FSM"
+    - "WebView JS Bridge"
     - "Jest"
-    - "Maestro"
-    - "Push notifications"
-    - "React Cosmos"
+    - "Detox"
+    - "Fastlane"
     - "Sentry"
+    - "Crashlytics"
     - "Storybook"
   "i18n":
     "ru":
       "name": "Mirapolis LMS"
-      "type": "HR-tech · Enterprise"
-      "tagline": "Корпоративное обучение и HR в мобильном приложении"
-      "role": "Senior Mobile Engineer / Lead"
+      "type": "HR-tech · Enterprise LMS"
+      "tagline": "HCM & LMS мобильное ядро: SCORM/xAPI, Offline-First, планшетный Split View."
+      "role": "Senior Mobile / Core Module Lead"
       "links":
         - "label": "mirapolis.ru"
           "href": "https://www.mirapolis.ru/"
@@ -126,11 +152,13 @@
           "href": "https://play.google.com/store/apps/details?id=ru.mirapolis.lms2"
       "metrics":
         - "val": "+15%"
-          "lbl": "DAU"
-        - "val": "-40%"
-          "lbl": "Память"
-        - "val": "iPad+"
-          "lbl": "Планшет"
+          "lbl": "DAU обучения"
+        - "val": "60 FPS"
+          "lbl": "Каталоги"
+        - "val": "~12k"
+          "lbl": "Пик пользователей"
+        - "val": "−25%"
+          "lbl": "TTM"
       "blocks":
         - "type": "heroImage"
           "src": "/projects/mirapolis-lms.svg"
@@ -138,42 +166,63 @@
         - "type": "section"
           "sectionKey": "overview"
         - "type": "prose"
-          "text": "Мобильная HCM/LMS для Mirapolis: плеер курсов, офлайн-обучение, тестирование, лента и медиатека —
-            адаптивный UI в том числе для **планшетов**, на которых удобно работать руководителям **в полях**. Приложение
-            обслуживает **100k+** корпоративных пользователей в России в модели **enterprise** (SSO, white-label модули,
-            большие списки сотрудников и курсов).\n"
+          "text": "### Идея и контекст\n\n[Mirapolis](https://www.mirapolis.ru/) — Enterprise HCM & LMS для крупных
+            корпоративных клиентов: HR, обучение, оценка персонала, внутренние коммуникации. Мобильный клиент —
+            White-Label / Dynamic UI под процессы заказчика. Масштаб: до ~**12 000** пользователей мобильного клиента в
+            пике.\n\nРоль — **Core Module Lead** мобильного ядра (ГПХ / совмещение, июл 2024 — сен 2025): развитие
+            флагманской платформы, плеер курсов, offline и планшетный UX.\n\n### Реализация\n\n**Плеер LMS.**
+            Кроссплатформенный плеер интерактивных курсов (**SCORM / xAPI**) на оптимизированном React Native WebView с
+            двусторонним **JS Bridge**. Логика тестов на **FSM** с защитой состояния при сбоях сети.\n\n**Offline-First.**
+            Полностью переработан автономный режим курсов и тестов (локальное хранилище + очереди синхронизации прогресса /
+            аналитики) — **DAU мобильного обучения +15%** (командная метрика продукта).\n\n**Производительность.** Тяжёлые
+            корпоративные справочники и каталоги курсов (тысячи элементов) через **FlashList / RecyclerListView**, кастомный
+            кэш изображений и минимизацию рендеров — стабильные **60 FPS** даже на low-end с жёстким лимитом RAM.\n\n**Dynamic
+            UI & планшеты.** Configuration-driven UI по JSON-схемам с бэкенда без релизов в сторы. **Master-Detail / Split
+            View** для iPad и Android Tablets — HR-опыт «в полях» для топ-менеджмента.\n\n**Платформа и поставка.** Монорепо
+            Yarn / pnpm Workspaces, Clean Architecture + SOLID + Atomic Design. Storybook, контрактное программирование,
+            Jest + Detox в CI; GitLab CI + Fastlane → TestFlight / Play Internal — **TTM −25%**. Мониторинг: Crashlytics /
+            Sentry.\n"
         - "type": "keyResults"
           "items":
             - "val": "+15%"
               "lbl": "DAU обучения"
-            - "val": "-40%"
-              "lbl": "Память списков"
-            - "val": "100k+"
-              "lbl": "Аудитория"
-        - "type": "prose"
-          "text": "### Идея и контекст\n\n[Mirapolis](https://www.mirapolis.ru/) — HCM/LMS-платформа для крупных организаций:
-            обучение, оценки, коммуникации и HR-процессы в одном контуре. **Идея мобильного клиента** — дать сотруднику **тот же
-            учебный контракт**, что и в вебе, но в дороге и **без гарантированной сети**: курсы должны **докачиваться**, проходиться
-            офлайн и **корректно синхронизироваться** при возвращении связи.\n\nВторая оверлейная задача — **enterprise-реальность**:
-            **SSO** и граничные кейсы входа, **white-label** для разных заказчиков, **тяжёлые списки** людей и курсов на слабом
-            Android и **планшетный** режим для руководителей.\n"
-        - "type": "prose"
-          "text": "### Итог и эффект\n\n- **Вовлечённость:** после переработки **offline** и сценариев обучения — рост **DAU мобильного
-            обучения ~+15%**.\n- **Производительность:** виртуализированные списки (**Virtual Lists**) и дисциплина рендера — ориентир
-            **−40% потребления памяти** на типичных списках сотрудников/курсов.\n- **Масштаб:** поддержка **100k+** пользователей и корпоративных
-            сценариев без «падения» на листинге.\n- **Платформа:** миграция на **React 18+** и **TypeScript** на легаси-участках — меньше класса
-            регрессий при релизах.\n- **UX:** адаптив под **iPad / Android-планшеты** для полевых руководителей; ядро LMS — плеер, тесты,
-            новости, медиатека.\n- **Интеграции:** **REST** и **real-time** к ядру HCM/LMS; отработка **конфликтов синка** и больших объёмов
-            данных.\n- **Команда:** **code review**, стандарты, наставничество **Middle/Junior**.\n"
+            - "val": "60 FPS"
+              "lbl": "Каталоги"
+            - "val": "−25%"
+              "lbl": "TTM"
+            - "val": "SCORM"
+              "lbl": "xAPI плеер"
         - "type": "section"
           "sectionKey": "technical"
         - "type": "prose"
-          "text": "Ключевая задача — offline-first: курсы без сети в полях. Кастомный движок синхронизации с разрешением конфликтов, дельта-обновления, фоновый sync. Virtual Lists снизили память на 40% на слабых Android. Модульность для white-label клиентов.\n"
+          "text": "### Технический контур\n\n**Уникальный стек проекта:** SCORM / xAPI плеер (WebView JS Bridge);
+            Configuration-driven UI (JSON-схемы); FlashList / RecyclerListView; FSM тестов LMS; Tablet Master-Detail /
+            Split View.\n\n**Слои:** React Native CLI + TypeScript, монорепо с изоморфными core-библиотеками, styled-components
+            + StyleSheet, синк-очереди offline-прогресса, REST к ядру HCM/LMS.\n"
+        - "type": "techStack"
+          "tags":
+            - "React Native CLI"
+            - "TypeScript"
+            - "SCORM / xAPI"
+            - "WebView JS Bridge"
+            - "FlashList"
+            - "RecyclerListView"
+            - "XState / FSM"
+            - "Offline-first"
+            - "JSON schemas"
+            - "Yarn / pnpm Workspaces"
+            - "Jest"
+            - "Detox"
+            - "Fastlane"
+            - "GitLab CI"
+            - "Sentry"
+            - "Crashlytics"
+            - "Storybook"
     "en":
       "name": "Mirapolis LMS"
-      "type": "HRTech · Enterprise"
-      "tagline": "Corporate learning & HR mobile ecosystem"
-      "role": "Senior Mobile Engineer / Lead"
+      "type": "HR-tech · Enterprise LMS"
+      "tagline": "HCM & LMS mobile core: SCORM/xAPI, Offline-First, tablet Split View."
+      "role": "Senior Mobile / Core Module Lead"
       "links":
         - "label": "mirapolis.ru"
           "href": "https://www.mirapolis.ru/"
@@ -182,11 +231,13 @@
           "href": "https://play.google.com/store/apps/details?id=ru.mirapolis.lms2"
       "metrics":
         - "val": "+15%"
-          "lbl": "DAU"
-        - "val": "-40%"
-          "lbl": "Mem usage"
-        - "val": "iPad+"
-          "lbl": "Tablet UX"
+          "lbl": "Learning DAU"
+        - "val": "60 FPS"
+          "lbl": "Catalogs"
+        - "val": "~12k"
+          "lbl": "Peak users"
+        - "val": "−25%"
+          "lbl": "TTM"
       "blocks":
         - "type": "heroImage"
           "src": "/projects/mirapolis-lms.svg"
@@ -194,30 +245,54 @@
         - "type": "section"
           "sectionKey": "overview"
         - "type": "prose"
-          "text": "Mobile HCM/LMS for Mirapolis: course player, **offline** learning, assessments, news feed and media library —
-            with adaptive UI for **tablets** so managers **in the field** can work comfortably. The app serves **100k+** corporate
-            users across Russia under **enterprise** constraints (SSO, white-label modules, very large employee/course lists).\n"
+          "text": "### Idea & context\n\n[Mirapolis](https://www.mirapolis.ru/) is an Enterprise HCM & LMS for large corporate
+            clients: HR, learning, assessments, internal communications. The mobile client is White-Label / Dynamic UI per
+            customer processes. Scale: up to ~**12,000** peak mobile users.\n\nRole: **Core Module Lead** of the mobile core
+            (GPH / part-time, Jul 2024 — Sep 2025): flagship platform, course player, offline and tablet UX.\n\n### What I
+            built\n\n**LMS player.** Cross-platform interactive course player (**SCORM / xAPI**) on an optimized React Native
+            WebView with bidirectional **JS Bridge**. Assessment logic on an **FSM** with state protection on network
+            drops.\n\n**Offline-First.** Fully reworked autonomous mode for courses and tests (local storage + sync queues for
+            progress / analytics) — **mobile learning DAU +15%** (team product metric).\n\n**Performance.** Heavy enterprise
+            directories and course catalogs (thousands of items) via **FlashList / RecyclerListView**, custom image cache and
+            render discipline — stable **60 FPS** even on low-end devices with tight RAM limits.\n\n**Dynamic UI & tablets.**
+            Configuration-driven UI from backend JSON schemas without store releases. **Master-Detail / Split View** for iPad
+            and Android tablets — field HR experience for senior managers.\n\n**Platform & delivery.** Yarn / pnpm Workspaces
+            monorepo, Clean Architecture + SOLID + Atomic Design. Storybook, contract programming, Jest + Detox in CI; GitLab
+            CI + Fastlane → TestFlight / Play Internal — **TTM −25%**. Monitoring: Crashlytics / Sentry.\n"
         - "type": "keyResults"
           "items":
             - "val": "+15%"
               "lbl": "Learning DAU"
-            - "val": "-40%"
-              "lbl": "List memory"
-            - "val": "100k+"
-              "lbl": "Audience"
-        - "type": "prose"
-          "text": "### Idea & context\n\n[Mirapolis](https://www.mirapolis.ru/) is an HCM/LMS suite for large organizations — learning,
-            assessments, comms and HR workflows in one stack. The **mobile bet** was to deliver the **same learning contract** as the web,
-            including **on the move** and **without reliable connectivity**: courses must **prefetch**, run **offline**, and **reconcile
-            cleanly** when the network returns.\n\nLayer two was **enterprise reality**: **SSO** edge cases, **white-label** variance per
-            customer, **massive lists** of people/courses on low-end Android, plus a **tablet-first** lane for line managers.\n"
-        - "type": "prose"
-          "text": "### Outcomes\n\n- **Engagement:** after the **offline** / learning-flow overhaul, **mobile learning DAU ~+15%**.\n- **Performance:** **Virtual Lists** + render discipline targeted **~40% lower memory** on employee/course listings.\n- **Scale:** stable UX for **100k+** users and enterprise list sizes.\n- **Platform health:** **React 18+** migration and
-            **TypeScript** adoption on legacy areas — fewer release regressions.\n- **UX:** adaptive **iPad / Android tablet** layouts for field
-            managers; core LMS modules — player, testing, news, media.\n- **Integrations:** **REST** + **real-time** touchpoints to the HCM/LMS
-            core; **sync conflict** handling at large data volumes.\n- **Team:** **code review**, standards, mentoring **Middle/Junior**
-            engineers.\n"
+            - "val": "60 FPS"
+              "lbl": "Catalogs"
+            - "val": "−25%"
+              "lbl": "TTM"
+            - "val": "SCORM"
+              "lbl": "xAPI player"
         - "type": "section"
           "sectionKey": "technical"
         - "type": "prose"
-          "text": "Core challenge was offline-first architecture: employees in field locations needed to download and complete courses without internet. Built a custom sync engine with conflict resolution, delta updates and background sync. Virtual Lists optimisation cut memory usage by 40% on low-end Android devices. Modular architecture allows white-label customisation per enterprise client.\n"
+          "text": "### Technical contour\n\n**Unique project stack:** SCORM / xAPI player (WebView JS Bridge);
+            configuration-driven UI (JSON schemas); FlashList / RecyclerListView; LMS assessment FSM; tablet Master-Detail /
+            Split View.\n\n**Layers:** React Native CLI + TypeScript, monorepo with isomorphic core libraries,
+            styled-components + StyleSheet, offline progress sync queues, REST to HCM/LMS core.\n"
+        - "type": "techStack"
+          "tags":
+            - "React Native CLI"
+            - "TypeScript"
+            - "SCORM / xAPI"
+            - "WebView JS Bridge"
+            - "FlashList"
+            - "RecyclerListView"
+            - "XState / FSM"
+            - "Offline-first"
+            - "JSON schemas"
+            - "Yarn / pnpm Workspaces"
+            - "Jest"
+            - "Detox"
+            - "Fastlane"
+            - "GitLab CI"
+            - "Sentry"
+            - "Crashlytics"
+            - "Storybook"
+"timelineIndex": 0
