@@ -7,79 +7,118 @@
   "en": "haqqex.com"
   "ru": "haqqex.com"
 "cvCompany":
-  "en": "haqqex (haqqex.com) · outstaff"
-  "ru": "haqqex (haqqex.com) · outstaff"
+  "en": "haqqex (haqqex.com) · outstaff / project contract (not exclusive full-time)"
+  "ru": "haqqex (haqqex.com) · outstaff / проектный контракт (не exclusive full-time)"
 "role":
   "en": "Senior Mobile Developer (RN) / Web3 Mobile Architect"
   "ru": "Старший мобильный разработчик (RN) / Web3 Mobile Architect"
 "shortDesc":
   "en": "Non-custodial Shariah-compliant digital-asset exchange for MENA (HAQQ Network, ISLM / DEEN):
-    WalletConnect v2, Ledger BLE, NFC cold-sign, TradingView WebView Bridge, OWASP MASVS. React Native CLI
-    monorepo; Tech Lead of mobile (team up to 5); ~12k peak users; App Store & Google Play; Crash Rate 2.8% → <0.1%
-    (crash-free >99.9%)."
+    WalletConnect v2, Ledger BLE, NFC cold-sign, TradingView WebView Bridge, OWASP MASVS. Pure React Native CLI
+    (no Expo) monorepo; Tech Lead of mobile (team up to 5); ~12k peak users; App Store & Google Play;
+    Crash Rate 2.8% → <0.1% (crash-free >99.9%). Parallel contracts: Mirapolis (Jul 2024 — Sep 2025),
+    Skif Trade (Aug — Dec 2025) — all part-time / совмещение."
   "ru": "Некастодиальная Shariah-compliant биржа цифровых активов для MENA (HAQQ Network, ISLM / DEEN):
-    WalletConnect v2, Ledger BLE, NFC cold-sign, TradingView WebView Bridge, OWASP MASVS. React Native CLI
-    монорепо; Tech Lead мобильного (команда до 5); ~12k пользователей в пике; App Store и Google Play;
-    Crash Rate 2.8% → <0.1% (crash-free >99.9%)."
+    WalletConnect v2, Ledger BLE, NFC cold-sign, TradingView WebView Bridge, OWASP MASVS. Чистый React Native CLI
+    (без Expo) монорепо; Tech Lead мобильного (команда до 5); ~12k пользователей в пике; App Store и Google Play;
+    Crash Rate 2.8% → <0.1% (crash-free >99.9%). Параллельные контракты: Мираполис (июл 2024 — сен 2025),
+    Скиф Трейд (авг — дек 2025) — все на условиях совмещения / part-time."
 "cvShortDesc":
-  "en": "Haqqex non-custodial exchange: WalletConnect v2, Ledger BLE, NFC, TradingView; RN CLI monorepo, OWASP MASVS, crash-free >99.9%."
-  "ru": "Некастодиальная биржа Haqqex: WalletConnect v2, Ledger BLE, NFC, TradingView; RN CLI монорепо, OWASP MASVS, crash-free >99.9%."
+  "en": "Haqqex non-custodial exchange: WalletConnect v2, Ledger BLE, NFC, TradingView; RN CLI monorepo, OWASP MASVS, crash-free >99.9%, ~12k peak users, Tech Lead."
+  "ru": "Некастодиальная биржа Haqqex: WalletConnect v2, Ledger BLE, NFC, TradingView; RN CLI монорепо, OWASP MASVS, crash-free >99.9%, ~12k пик, Tech Lead."
 "achByArea":
   "en":
     "front":
-      - "<span class='m'>60 FPS</span> candles & order book (TradingView WebView Bridge + Socket.io) —
-        custom virtualization & Reanimated after JS-thread freezes under peak load"
-      - "<span class='m'>Atomic Design</span> + styled-components / StyleSheet; Shariah UX
-        (Anti-Riba, no Gharar & Maysir)"
-      - "<span class='m'>Storybook / React Cosmos</span> for isolated UI & design-system alignment"
+      - "<span class='m'>60 FPS</span> candle charts (TradingView WebView Bridge) and order books (WebSocket /
+        Socket.io) — stabilized after JS-thread freezes at peak load via React.useMemo, custom virtualization
+        and Reanimated"
+      - "<span class='m'>Shariah-Compliant UX</span>: custom interfaces (styled-components + StyleSheet) and business
+        logic enforcing Anti-Riba mechanisms, exclusion of Gharar & Maysir"
+      - "<span class='m'>Atomic Design</span> component system; isolated prototyping via Storybook and React Cosmos"
+      - "Product Alignment: backlog grooming with product and stakeholders aligned to MENA business goals"
     "mobile":
-      - "Shipped non-custodial RN CLI app to <span class='m'>App Store & Google Play</span> (MENA, HAQQ Network)"
-      - "Yarn / pnpm Workspaces monorepo: isomorphic libs (crypto, precision math, RPC, UI)"
-      - "Custom native modules (Swift / Kotlin → TurboModules) for encryption, biometrics, device hardening"
-      - "Non-custodial wallet layer: EVM contracts, <span class='m'>WalletConnect v2</span>,
-        <span class='m'>Ledger BLE</span>, <span class='m'>NFC</span> cold-sign cards"
-      - "OWASP MASVS: Keychain / Keystore, FaceID/TouchID; external pen-test & security audit passed"
-      - "Financial precision (Zakat, fees, on-chain) via <span class='m'>decimal.js / bignumber.js</span>"
-      - "TypeScript + Zod runtime validation: Crash Rate <span class='m'>2.8% → &lt;0.1%</span>
-        (crash-free &gt;99.9%); Crashlytics + Sentry"
-      - "CI/CD: GitLab CI + Fastlane (match → TestFlight / Play Internal → stores); TTM −25%"
-      - "Tests: Jest + Detox + XCTest/Espresso; visual regressions via Storybook / Cosmos"
-      - "Tech Lead: Code Review, mentoring (team up to 5), API contracts, release process"
+      - "Designed architecture and shipped <span class='m'>non-custodial</span> RN CLI app to
+        <span class='m'>App Store & Google Play</span> for MENA (HAQQ Network EVM L1 on Cosmos SDK, ISLM / DEEN)"
+      - "Scale: up to <span class='m'>~12,000</span> peak active users (DAU/MAU at peak load); coordination with
+        Backend / Web3 / DevOps"
+      - "Yarn / pnpm Workspaces monorepo: isolated isomorphic modules (cryptography, precision math, RPC clients, UI)
+        — faster parallel development and testability"
+      - "Custom native modules on <span class='m'>Swift (iOS)</span> and <span class='m'>Kotlin (Android)</span>
+        (migration to TurboModules) for encryption, biometrics and device hardening — native where JS is insufficient
+        for security and latency"
+      - "Non-custodial wallet layer: EVM smart contracts, <span class='m'>WalletConnect v2</span>,
+        <span class='m'>Ledger BLE</span> and <span class='m'>NFC</span> smart cards for cold signing"
+      - "Security per <span class='m'>OWASP MASVS</span>: Keychain / Keystore, FaceID/TouchID; external
+        penetration test and security audit passed before release"
+      - "Financial precision (Zakat, fees, on-chain) via <span class='m'>decimal.js / bignumber.js</span> —
+        eliminated rounding errors"
+      - "<span class='m'>TypeScript + Zod</span> runtime validation: Crash Rate <span class='m'>2.8% → &lt;0.1%</span>
+        (crash-free &gt;99.9%); production monitoring via Firebase Crashlytics and Sentry (alerts, release health,
+        symbolication)"
+      - "CI/CD: GitLab CI + Fastlane (and GitHub Actions / Bitrise where needed): RN build iOS/Android, code signing
+        (match), TestFlight / Google Play Internal → store promotion; TTM <span class='m'>−25%</span> with pnpm/Yarn
+        Workspaces migration"
+      - "Test pipeline: unit (Jest) + E2E critical flows (Detox) + XCTest / Espresso for native modules; UI visual
+        regressions via Storybook / React Cosmos"
+      - "<span class='m'>Tech Lead</span> (team up to 5): Code Review standards, mentoring, API contract design with
+        backend, release process (GitHub Actions / Fastlane → TestFlight / Play Internal → stores)"
+      - "State & networking: Redux Toolkit / RTK Query, Event Emitter patterns, NetInfo for connectivity-aware UX;
+        react-native-config for environment separation"
     "backend":
-      - "Real-time order book & quotes via WebSocket / Socket.io"
-      - "RPC clients & EVM contract interaction for non-custodial flows"
+      - "Real-time order book & market quotes via WebSocket / Socket.io with reconnect and resync"
+      - "RPC clients & EVM contract interaction for non-custodial trading and on-chain flows"
+      - "REST touchpoints coordinated with Backend / Web3 teams; API contracts for trading and wallet domains"
   "ru":
     "front":
-      - "<span class='m'>60 FPS</span> свечи и стакан (TradingView WebView Bridge + Socket.io) —
-        виртуализация и Reanimated после фризов JS-потока на пиках"
-      - "<span class='m'>Atomic Design</span> + styled-components / StyleSheet; Shariah UX
-        (Anti-Riba, без Gharar & Maysir)"
-      - "<span class='m'>Storybook / React Cosmos</span> для изолированного UI и дизайн-системы"
+      - "<span class='m'>60 FPS</span> свечные графики (TradingView WebView Bridge) и торговые стаканы (WebSocket /
+        Socket.io) — стабилизация после фризов JS-потока на пиках за счёт React.useMemo, кастомной виртуализации
+        и Reanimated"
+      - "<span class='m'>Shariah-Compliant UX</span>: кастомные интерфейсы (styled-components + StyleSheet) и
+        бизнес-логика с механизмами Anti-Riba, исключением Gharar & Maysir"
+      - "<span class='m'>Atomic Design</span>; изоляция и прототипирование UI через Storybook и React Cosmos"
+      - "Product Alignment: согласование бэклога с продуктом и заказчиками с учётом бизнес-целей MENA"
     "mobile":
-      - "Довёл некастодиальный RN CLI клиент до <span class='m'>App Store и Google Play</span> (MENA, HAQQ Network)"
-      - "Монорепо Yarn / pnpm Workspaces: изоморфные модули (крипто, точность, RPC, UI)"
-      - "Кастомные native-модули (Swift / Kotlin → TurboModules): шифрование, биометрия, защита устройства"
-      - "Non-custodial слой: EVM-контракты, <span class='m'>WalletConnect v2</span>,
-        <span class='m'>Ledger BLE</span>, <span class='m'>NFC</span> cold-sign"
-      - "OWASP MASVS: Keychain / Keystore, FaceID/TouchID; внешний pen-test и аудит — пройдены"
-      - "Финансовая точность (Zakat, комиссии, on-chain) через <span class='m'>decimal.js / bignumber.js</span>"
-      - "TypeScript + Zod: Crash Rate <span class='m'>2.8% → &lt;0.1%</span>
-        (crash-free &gt;99.9%); Crashlytics + Sentry"
-      - "CI/CD: GitLab CI + Fastlane (match → TestFlight / Play Internal → сторы); TTM −25%"
-      - "Тесты: Jest + Detox + XCTest/Espresso; визуальные регрессии через Storybook / Cosmos"
-      - "Tech Lead: Code Review, менторинг (до 5 человек), API-контракты, релизы"
+      - "Спроектировал архитектуру и довёл <span class='m'>некастодиальный</span> RN CLI клиент до
+        <span class='m'>App Store и Google Play</span> (MENA, HAQQ Network EVM L1 на Cosmos SDK, ISLM / DEEN)"
+      - "Масштаб: до <span class='m'>~12 000</span> активных пользователей в пике (DAU/MAU); координация с
+        Backend / Web3 / DevOps"
+      - "Монорепо Yarn / pnpm Workspaces: изоляция изоморфных модулей (криптография, точность чисел, RPC, UI) —
+        ускорение параллельной разработки и тестируемости"
+      - "Кастомные native-модули на <span class='m'>Swift (iOS)</span> и <span class='m'>Kotlin (Android)</span>
+        (миграция на TurboModules): шифрование, биометрия, аппаратная защита — native там, где JS недостаточен
+        по безопасности и latency"
+      - "Non-custodial слой: EVM-смарт-контракты, <span class='m'>WalletConnect v2</span>,
+        <span class='m'>Ledger BLE</span> и <span class='m'>NFC</span>-смарт-карты для холодного подписания"
+      - "Безопасность по <span class='m'>OWASP MASVS</span>: Keychain / Keystore, FaceID/TouchID; внешний
+        penetration-тест и аудит безопасности перед релизом — пройдены"
+      - "Финансовая точность (Zakat, комиссии, on-chain) через <span class='m'>decimal.js / bignumber.js</span> —
+        исключены ошибки округления"
+      - "<span class='m'>TypeScript + Zod</span> runtime-валидация: Crash Rate <span class='m'>2.8% → &lt;0.1%</span>
+        (crash-free &gt;99.9%); мониторинг через Firebase Crashlytics и Sentry (алерты, release health, symbolication)"
+      - "CI/CD: GitLab CI + Fastlane (и при необходимости GitHub Actions / Bitrise): автосборка RN iOS/Android, code
+        signing (match), TestFlight / Google Play Internal → промоушен в сторы; TTM <span class='m'>−25%</span> вместе
+        с миграцией на pnpm/Yarn Workspaces"
+      - "Тестовый контур: unit (Jest) + E2E критичных флоу (Detox) + XCTest / Espresso для native-модулей; визуальные
+        регрессии UI через Storybook / React Cosmos"
+      - "<span class='m'>Tech Lead</span> (команда до 5): стандарты Code Review, менторинг, проектирование
+        API-контрактов с бэкендом, релизный процесс (GitHub Actions / Fastlane → TestFlight / Play Internal → сторы)"
+      - "Стейт и сеть: Redux Toolkit / RTK Query, Event Emitter, NetInfo для connectivity-aware UX;
+        react-native-config для разделения окружений"
     "backend":
-      - "Realtime стакан и котировки через WebSocket / Socket.io"
-      - "RPC-клиенты и взаимодействие с EVM-контрактами для non-custodial сценариев"
+      - "Realtime стакан и котировки через WebSocket / Socket.io с реконнектом и ресинхронизацией"
+      - "RPC-клиенты и взаимодействие с EVM-контрактами для non-custodial торговли и on-chain сценариев"
+      - "REST-контуры в координации с Backend / Web3; API-контракты для торговых и wallet-доменов"
 "stackByArea":
   "front":
     - "TypeScript"
     - "Atomic Design"
     - "styled-components"
+    - "StyleSheet"
     - "React Cosmos"
     - "Storybook"
     - "Reanimated"
     - "TradingView WebView"
+    - "React.useMemo"
   "mobile":
     - "React Native CLI"
     - "TurboModules"
@@ -87,14 +126,23 @@
     - "Ledger BLE"
     - "NFC"
     - "Ethers.js"
+    - "Redux Toolkit"
     - "RTK Query"
+    - "Event Emitter"
+    - "NetInfo"
+    - "react-native-config"
     - "decimal.js"
+    - "bignumber.js"
     - "Zod"
     - "OWASP MASVS"
     - "Fastlane"
     - "GitLab CI"
+    - "GitHub Actions"
+    - "Bitrise"
     - "Jest"
     - "Detox"
+    - "XCTest"
+    - "Espresso"
     - "Sentry"
     - "Crashlytics"
   "backend":
@@ -103,15 +151,31 @@
     - "EVM RPC"
 "cvAchievements":
   "en":
-    - "Non-custodial Haqqex RN app shipped to App Store & Google Play (MENA, HAQQ / ISLM / DEEN)"
-    - "WalletConnect v2 + Ledger BLE + NFC cold-sign; OWASP MASVS; external pen-test passed"
-    - "Crash Rate 2.8% → <0.1% (crash-free >99.9%) via TypeScript + Zod + Sentry/Crashlytics"
-    - "60 FPS trading UI; monorepo Workspaces; CI/CD Fastlane; TTM −25%; Tech Lead (team up to 5)"
+    - "Designed and shipped non-custodial Haqqex RN CLI app to App Store & Google Play (MENA, HAQQ / ISLM / DEEN)"
+    - "Up to ~12,000 peak active users; Tech Lead of mobile (team up to 5), coordination with Backend / Web3 / DevOps"
+    - "Yarn / pnpm Workspaces monorepo: isomorphic libs (crypto, precision math, RPC, UI) for parallel dev & testability"
+    - "Custom Swift / Kotlin native modules (TurboModules migration) for encryption, biometrics, device hardening"
+    - "Non-custodial wallet: EVM contracts, WalletConnect v2, Ledger BLE, NFC cold-sign smart cards"
+    - "OWASP MASVS security (Keychain / Keystore, biometrics); external penetration test & audit passed"
+    - "TradingView + Socket.io realtime UI at 60 FPS (useMemo, virtualization, Reanimated) after JS-thread freezes"
+    - "Financial precision (Zakat, fees, on-chain) via decimal.js / bignumber.js — no rounding errors"
+    - "Crash Rate 2.8% → <0.1% (crash-free >99.9%) via TypeScript + Zod; Crashlytics + Sentry release health"
+    - "CI/CD GitLab CI + Fastlane (+ GitHub Actions / Bitrise); TTM −25% with Workspaces migration"
+    - "Tests: Jest + Detox + XCTest/Espresso; Storybook / React Cosmos visual regressions"
+    - "Code Review standards, mentoring, API contracts, Product Alignment; parallel part-time contracts (Mirapolis, Skif Trade)"
   "ru":
-    - "Некастодиальный RN-клиент Haqqex в App Store и Google Play (MENA, HAQQ / ISLM / DEEN)"
-    - "WalletConnect v2 + Ledger BLE + NFC cold-sign; OWASP MASVS; внешний pen-test пройден"
-    - "Crash Rate 2.8% → <0.1% (crash-free >99.9%) — TypeScript + Zod + Sentry/Crashlytics"
-    - "60 FPS торговый UI; монорепо Workspaces; CI/CD Fastlane; TTM −25%; Tech Lead (до 5 человек)"
+    - "Спроектировал и довёл некастодиальный Haqqex RN CLI до App Store и Google Play (MENA, HAQQ / ISLM / DEEN)"
+    - "До ~12 000 активных пользователей в пике; Tech Lead мобильного (до 5 человек), координация с Backend / Web3 / DevOps"
+    - "Монорепо Yarn / pnpm Workspaces: изоморфные модули (крипто, точность, RPC, UI) для параллельной разработки"
+    - "Кастомные native-модули Swift / Kotlin (миграция TurboModules): шифрование, биометрия, защита устройства"
+    - "Non-custodial wallet: EVM-контракты, WalletConnect v2, Ledger BLE, NFC cold-sign"
+    - "OWASP MASVS (Keychain / Keystore, биометрия); внешний penetration-тест и аудит — пройдены"
+    - "TradingView + Socket.io realtime UI на 60 FPS (useMemo, виртуализация, Reanimated) после фризов JS-потока"
+    - "Финансовая точность (Zakat, комиссии, on-chain) через decimal.js / bignumber.js"
+    - "Crash Rate 2.8% → <0.1% (crash-free >99.9%) — TypeScript + Zod; Crashlytics + Sentry"
+    - "CI/CD GitLab CI + Fastlane (+ GitHub Actions / Bitrise); TTM −25% с миграцией Workspaces"
+    - "Тесты: Jest + Detox + XCTest/Espresso; визуальные регрессии Storybook / React Cosmos"
+    - "Code Review, менторинг, API-контракты, Product Alignment; параллельные контракты part-time (Мираполис, Скиф Трейд)"
 "cvTags":
   - "React Native CLI"
   - "TypeScript"
@@ -119,6 +183,8 @@
   - "Ledger BLE"
   - "NFC"
   - "Ethers.js"
+  - "Redux Toolkit"
+  - "RTK Query"
   - "OWASP MASVS"
   - "decimal.js"
   - "Zod"
@@ -148,6 +214,8 @@
     - "Ledger BLE"
     - "NFC"
     - "Ethers.js"
+    - "Redux Toolkit"
+    - "RTK Query"
     - "OWASP MASVS"
     - "decimal.js"
     - "Zod"
@@ -161,7 +229,7 @@
       "name": "HAQQEX Wallet"
       "type": "Финтех · MENA · non-custodial Web3"
       "tagline": "Shariah-compliant биржа цифровых активов: WalletConnect, Ledger BLE, NFC cold-sign."
-      "role": "Senior Mobile / Web3 Mobile Architect"
+      "role": "Senior Mobile / Web3 Mobile Architect · Tech Lead"
       "links":
         - "label": "haqqex.com"
           "href": "https://haqqex.com/en/"
@@ -170,6 +238,8 @@
           "href": "https://www.haqq.network/"
         - "label": "Google Play"
           "href": "https://play.google.com/store/apps/details?id=com.haqabi.mobilewallet"
+        - "label": "Хабр · haqqex"
+          "href": "https://career.habr.com/companies/haqqex"
       "metrics":
         - "val": ">99.9%"
           "lbl": "Crash-free"
@@ -186,29 +256,50 @@
         - "type": "section"
           "sectionKey": "overview"
         - "type": "prose"
-          "text": "### Идея и продуктовая задача\n\n[HAQQEX](https://haqqex.com/en/) — экосистема обмена цифровых активов
-            в рамках **Shariah-compliant** стандартов для рынка **MENA** (Абу-Даби), блокчейн
-            [HAQQ Network](https://www.haqq.network/) (EVM-compatible L1 на Cosmos SDK), токены **ISLM** и
-            **Deenar Gold (DEEN)**.\n\nМобильный клиент — **некастодиальный** (non-custodial): ключи и подписи на
-            устройстве / железе, без хранения сидов на сервере биржи. Нужен был production-контур от онбординга до
-            торговли и cold-sign, с банковским уровнем безопасности (**OWASP MASVS**) и стабильным realtime UI.\n\nРоль —
-            **Senior Mobile / Web3 Mobile Architect** и Tech Lead мобильного направления (команда до **5** инженеров):
-            архитектура, native-модули, релизы в **App Store** и **Google Play**, координация с Backend / Web3 / DevOps.\n\n###
-            Реализация\n\n**Архитектура.** Чистый **React Native CLI** + **TypeScript**; монорепозиторий **Yarn / pnpm
-            Workspaces** с изоляцией изоморфных модулей (криптография, точность чисел, RPC, UI).\n\n**Web3 & hardware.**
-            Non-custodial слой: EVM-смарт-контракты, **WalletConnect v2**, **Ledger (BLE)** и **NFC**-смарт-карты для
-            холодного подписания. Кастомные native-модули на **Swift / Kotlin** (миграция на **TurboModules**) для
-            шифрования, биометрии и аппаратной защиты.\n\n**Trading UI.** Realtime свечи через **TradingView** (WebView
-            Bridge) и стаканы через **WebSocket / Socket.io** — доведены до стабильных **60 FPS** (ранее фризы JS-потока на
-            пиках) за счёт виртуализации и **Reanimated**.\n\n**Точность и качество.** **decimal.js / bignumber.js** для
-            Zakat, комиссий и on-chain; **TypeScript + Zod** runtime-валидация — Crash Rate с **2.8%** до **&lt;0.1%**
-            (crash-free **&gt;99.9%**); мониторинг **Firebase Crashlytics** и **Sentry**.\n\n**Безопасность и доставка.**
-            Keychain / Keystore, FaceID/TouchID; внешний **penetration-тест** и аудит — пройдены. **CI/CD**: GitLab CI +
-            Fastlane (match → TestFlight / Play Internal → сторы); **TTM −25%**. Тесты: Jest + Detox + XCTest/Espresso;
-            визуальные регрессии через Storybook / React Cosmos.\n\n### Результат\n\n- Production non-custodial клиент в
-            обоих сторах для MENA.\n- ~**12 000** активных пользователей в пике.\n- Crash-free **&gt;99.9%**; торговый UI
-            **60 FPS**.\n- Ускорение поставки ключевых торговых фич (**TTM −25%**).\n- Стандарты Code Review и онбординг
-            мобильной команды.\n"
+          "text": "### Идея и продуктовая задача\n\n[HAQQEX](https://haqqex.com/en/) — Web3/FinTech экосистема обмена
+            цифровых активов в рамках **Shariah-compliant** стандартов для рынка **MENA** (Абу-Даби). Блокчейн
+            [HAQQ Network](https://www.haqq.network/) — EVM-compatible L1 на Cosmos SDK; токены **ISLM** и
+            **Deenar Gold (DEEN)**. Релиз в **App Store** и **Google Play**.\n\nМобильный клиент — **некастодиальный**
+            (non-custodial): ключи и подписи остаются на устройстве или аппаратном кошельке, без хранения сид-фраз на
+            сервере биржи. Нужен был production-контур от онбординга до торговли и cold-sign, с банковским уровнем
+            безопасности (**OWASP MASVS**) и стабильным realtime UI на пиковых нагрузках стакана.\n\n**Масштаб:** до
+            ~**12 000** активных пользователей в пике (DAU/MAU порядка пиковой нагрузки).\n\n**Роль и формат работы:**
+            **Senior Mobile / Web3 Mobile Architect** и **Tech Lead** мобильного направления (команда до **5** инженеров
+            на пике процессов): архитектура, native-модули, релизы, координация с Backend / Web3 / DevOps. Контракт —
+            outstaff / проектный, **не exclusive full-time**. Параллельно: **Мираполис** (июл 2024 — сен 2025, ГПХ /
+            part-time); **Скиф Трейд** (авг — дек 2025, проект / part-time). В авг — сен 2025 — три договора одновременно,
+            все на условиях совмещения.\n\n### Архитектурное лидерство и монорепозиторий\n\nСпроектировал и довёл до
+            релиза масштабируемую модульную архитектуру на **чистом React Native CLI** (без Expo) + **TypeScript**:
+            ООП, **SOLID**, **Atomic Design**, строгий контроль типов. Организовал **Yarn / pnpm Workspaces**
+            монорепозиторий с переводом общих изоморфных модулей (криптография, точность чисел, RPC-клиенты, UI) в
+            автономные пакеты — ускорила параллельную разработку и тестируемость.\n\nНаписал кастомные native-модули на
+            **Swift (iOS)** и **Kotlin (Android)** (миграция на **TurboModules**) для шифрования, биометрии и аппаратной
+            защиты устройства — осознанный выбор native там, где JS-слой недостаточен по безопасности и latency.\n\n###
+            Shariah-Compliant логика и UI/UX\n\nРазработал кастомные интерфейсы (**styled-components** + **StyleSheet**)
+            и бизнес-логику для строгого соблюдения этических стандартов: **Anti-Riba** механизмы, исключение
+            **Gharar** и **Maysir**. Изоляция и прототипирование UI-компонентов через **Storybook** и **React Cosmos**.\n\n###
+            Финансовая точность (Math & BigInt)\n\nОбеспечил абсолютную точность при работе со сложными исламскими
+            финансовыми потоками, расчётом **Zakat** и блокчейн-транзакциями за счёт **decimal.js** и **bignumber.js** —
+            исключены ошибки округления в комиссиях и on-chain операциях.\n\n### Real-time Trading и графики\n\nИнтегрировал
+            высокопроизводительные модули котировок и динамических торговых стаканов (Order Book) через **WebSockets /
+            Socket.io**. Бесшовное взаимодействие с интерактивными графиками через **TradingView API** (WebView Bridge).
+            Оптимизировал до стабильных **60 FPS** (ранее — фризы JS-потока при пиковой нагрузке стакана) за счёт
+            **React.useMemo**, кастомной виртуализации и **Reanimated**.\n\n### Web3, WalletConnect и Hardware Wallets\n\nРеализовал
+            интерфейсы и криптографический слой для **non-custodial mobile wallet**: EVM-смарт-контракты, **WalletConnect v2**,
+            **Ledger (BLE)** и **NFC**-смарт-карты для холодного подписания.\n\n### Security и мобильный комплаенс\n\nАрхитектура
+            безопасности в соответствии с **OWASP MASVS**: iOS Keychain, Android Keystore, FaceID/TouchID. Внешний
+            **penetration-тест** и аудит безопасности перед релизом — пройдены успешно.\n\n### Качество, CI/CD и лидерство\n\n**TypeScript
+            + Zod** runtime-валидация: Crash Rate с **2.8%** до **&lt;0.1%** (Crash-Free Sessions **&gt;99.9%**); мониторинг
+            **Firebase Crashlytics** и **Sentry** (алерты, release health, symbolication). Тестовый контур: **Jest** (unit) +
+            **Detox** (E2E критичных флоу) + **XCTest / Espresso** (native-модули); визуальные регрессии через Storybook /
+            React Cosmos.\n\n**CI/CD** на базе **GitLab CI + Fastlane** (и при необходимости **GitHub Actions / Bitrise**):
+            автосборка RN iOS/Android, code signing (match), TestFlight / Google Play Internal → промоушен в сторы. Вместе с
+            миграцией на Workspaces — **TTM −25%** ключевых торговых фич.\n\n**Tech Lead:** Code Review и гигиена Git,
+            менторинг, проектирование API-контрактов с бэкендом, релизный процесс. **Product Alignment:** бэклог с продуктом
+            и заказчиками с учётом бизнес-целей.\n\n### Результат\n\n- Production **non-custodial** клиент в обоих сторах для
+            MENA.\n- ~**12 000** активных пользователей в пике.\n- Crash-free **&gt;99.9%**; торговый UI **60 FPS**.\n- Ускорение
+            поставки ключевых торговых фич (**TTM −25%**).\n- Стандарты Code Review, онбординг мобильной команды, успешный
+            security audit.\n"
         - "type": "keyResults"
           "items":
             - "val": ">99.9%"
@@ -222,12 +313,20 @@
         - "type": "section"
           "sectionKey": "technical"
         - "type": "prose"
-          "text": "### Технический контур\n\n**Стек:** React Native CLI, TypeScript, Yarn/pnpm Workspaces, RTK Query /
-            REST, Socket.io, Reanimated, TradingView WebView Bridge, Ethers.js, WalletConnect v2, Ledger BLE, NFC,
-            decimal.js, Zod, Fastlane, GitLab CI, Jest, Detox, XCTest/Espresso, Sentry, Crashlytics.\n\n**Безопасность:**
-            OWASP MASVS (Keychain / Keystore, биометрия); native TurboModules для крипто и device hardening; успешный
-            внешний security audit.\n\n**Shariah UX:** Anti-Riba механизмы, исключение Gharar & Maysir в клиентской логике
-            и интерфейсах (styled-components + StyleSheet).\n"
+          "text": "### Архитектура и монорепозиторий\n\n**React Native CLI** (чистый RN, без Expo) + **TypeScript**;
+            **Yarn / pnpm Workspaces** с изоморфными пакетами (crypto, precision math, RPC, UI). **SOLID**, **Atomic Design**,
+            **TurboModules** (Swift / Kotlin native modules для шифрования, биометрии, device hardening).\n\n### Shariah UX
+            и интерфейсы\n\n**styled-components** + **StyleSheet**; **Anti-Riba**, исключение **Gharar & Maysir** в клиентской
+            логике. **Storybook / React Cosmos** для изолированного UI и дизайн-системы.\n\n### Финансовая точность\n\n**decimal.js
+            / bignumber.js** для Zakat, комиссий, on-chain транзакций — без ошибок округления.\n\n### Real-time Trading\n\n**TradingView**
+            WebView Bridge + **Socket.io** / WebSockets для стаканов и котировок. **React.useMemo**, кастомная виртуализация,
+            **Reanimated** → **60 FPS** на пиках.\n\n### Web3 и hardware wallets\n\n**Ethers.js**, **WalletConnect v2**, **Ledger BLE**,
+            **NFC** cold-sign. Non-custodial EVM-смарт-контракты на HAQQ Network.\n\n### Security (OWASP MASVS)\n\nKeychain /
+            Keystore, FaceID/TouchID; external pen-test и security audit passed. Native TurboModules для крипто-операций.\n\n###
+            State, networking, config\n\n**Redux Toolkit / RTK Query**, **Event Emitter**, **NetInfo**, **react-native-config**;
+            REST + Socket.io + EVM RPC.\n\n### Quality, CI/CD, testing\n\n**TypeScript + Zod** runtime validation; **Jest** +
+            **Detox** + **XCTest/Espresso**; **GitLab CI + Fastlane** (+ GitHub Actions / Bitrise); **Sentry** + **Crashlytics**.
+            TTM **−25%**.\n"
         - "type": "techStack"
           "tags":
             - "React Native CLI"
@@ -236,17 +335,27 @@
             - "Ledger BLE"
             - "NFC"
             - "Ethers.js"
+            - "Redux Toolkit"
+            - "RTK Query"
+            - "Event Emitter"
+            - "NetInfo"
+            - "react-native-config"
             - "TurboModules"
             - "OWASP MASVS"
             - "decimal.js"
+            - "bignumber.js"
             - "Zod"
             - "Reanimated"
             - "TradingView"
             - "Socket.io"
             - "Fastlane"
             - "GitLab CI"
+            - "GitHub Actions"
+            - "Bitrise"
             - "Jest"
             - "Detox"
+            - "XCTest"
+            - "Espresso"
             - "Sentry"
             - "Crashlytics"
             - "Storybook"
@@ -255,7 +364,7 @@
       "name": "HAQQEX Wallet"
       "type": "FinTech · MENA · non-custodial Web3"
       "tagline": "Shariah-compliant digital-asset exchange: WalletConnect, Ledger BLE, NFC cold-sign."
-      "role": "Senior Mobile / Web3 Mobile Architect"
+      "role": "Senior Mobile / Web3 Mobile Architect · Tech Lead"
       "links":
         - "label": "haqqex.com"
           "href": "https://haqqex.com/en/"
@@ -264,6 +373,8 @@
           "href": "https://www.haqq.network/"
         - "label": "Google Play"
           "href": "https://play.google.com/store/apps/details?id=com.haqabi.mobilewallet"
+        - "label": "Habr · haqqex"
+          "href": "https://career.habr.com/companies/haqqex"
       "metrics":
         - "val": ">99.9%"
           "lbl": "Crash-free"
@@ -280,26 +391,43 @@
         - "type": "section"
           "sectionKey": "overview"
         - "type": "prose"
-          "text": "### Product idea & problem\n\n[HAQQEX](https://haqqex.com/en/) is a **Shariah-compliant** digital-asset
-            exchange for **MENA** (Abu Dhabi) on [HAQQ Network](https://www.haqq.network/) (EVM-compatible L1 on Cosmos SDK)
-            with **ISLM** and **Deenar Gold (DEEN)**.\n\nThe mobile client is **non-custodial**: keys and signing stay on
-            device / hardware, not on the exchange server. The goal was a production path from onboarding to trading and
-            cold-sign, with bank-grade security (**OWASP MASVS**) and a stable realtime trading UI.\n\nRole: **Senior Mobile /
-            Web3 Mobile Architect** and Tech Lead of mobile (team up to **5**): architecture, native modules, App Store &
-            Google Play releases, coordination with Backend / Web3 / DevOps.\n\n### What I built\n\n**Architecture.** Pure
-            **React Native CLI** + **TypeScript**; **Yarn / pnpm Workspaces** monorepo isolating isomorphic modules (crypto,
-            precision math, RPC, UI).\n\n**Web3 & hardware.** Non-custodial layer: EVM contracts, **WalletConnect v2**,
-            **Ledger (BLE)** and **NFC** smart cards for cold signing. Custom **Swift / Kotlin** native modules (TurboModules
-            migration) for encryption, biometrics and device hardening.\n\n**Trading UI.** Realtime candles via **TradingView**
-            (WebView Bridge) and order books via **WebSocket / Socket.io** — stabilized at **60 FPS** (previously JS-thread
-            freezes at peak) with custom virtualization and **Reanimated**.\n\n**Precision & quality.** **decimal.js /
-            bignumber.js** for Zakat, fees and on-chain math; **TypeScript + Zod** runtime validation cut Crash Rate from
-            **2.8%** to **&lt;0.1%** (crash-free **&gt;99.9%**); **Crashlytics** + **Sentry**.\n\n**Security & delivery.**
-            Keychain / Keystore, FaceID/TouchID; external **penetration test** and audit passed. **CI/CD**: GitLab CI +
-            Fastlane (match → TestFlight / Play Internal → stores); **TTM −25%**. Tests: Jest + Detox + XCTest/Espresso;
-            visual regressions via Storybook / React Cosmos.\n\n### Outcomes\n\n- Production non-custodial client in both
-            stores for MENA.\n- ~**12,000** peak active users.\n- Crash-free **&gt;99.9%**; trading UI at **60 FPS**.\n-
-            Faster delivery of key trading features (**TTM −25%**).\n- Code Review standards and mobile team onboarding.\n"
+          "text": "### Product idea & problem\n\n[HAQQEX](https://haqqex.com/en/) is a Web3/FinTech digital-asset exchange
+            ecosystem under **Shariah-compliant** standards for **MENA** (Abu Dhabi). [HAQQ Network](https://www.haqq.network/)
+            is an EVM-compatible L1 on Cosmos SDK; tokens **ISLM** and **Deenar Gold (DEEN)**. Shipped to **App Store** and
+            **Google Play**.\n\nThe mobile client is **non-custodial**: keys and signing stay on device or hardware wallet, not
+            on the exchange server. The goal was a production path from onboarding to trading and cold-sign, with bank-grade
+            security (**OWASP MASVS**) and a stable realtime UI under peak order-book load.\n\n**Scale:** up to ~**12,000** peak
+            active users (DAU/MAU at peak load).\n\n**Role & engagement model:** **Senior Mobile / Web3 Mobile Architect** and
+            **Tech Lead** of mobile (team up to **5** engineers at peak): architecture, native modules, releases, coordination
+            with Backend / Web3 / DevOps. Outstaff / project contract, **not exclusive full-time**. In parallel: **Mirapolis**
+            (Jul 2024 — Sep 2025, GPH / part-time); **Skif Trade** (Aug — Dec 2025, project / part-time). Aug — Sep 2025 — three
+            concurrent contracts, all part-time / совмещение.\n\n### Architecture leadership & monorepo\n\nDesigned and shipped
+            a scalable modular architecture on pure **React Native CLI** (no Expo) + **TypeScript**: OOP, **SOLID**, **Atomic
+            Design**, strict typing. Built a **Yarn / pnpm Workspaces** monorepo isolating isomorphic modules (cryptography,
+            precision math, RPC clients, UI) into autonomous packages — faster parallel development and testability.\n\nCustom
+            native modules in **Swift (iOS)** and **Kotlin (Android)** (TurboModules migration) for encryption, biometrics and
+            device hardening — native where the JS layer is insufficient for security and latency.\n\n### Shariah-Compliant logic
+            & UI/UX\n\nCustom interfaces (**styled-components** + **StyleSheet**) and business logic enforcing **Anti-Riba**
+            mechanisms and exclusion of **Gharar** & **Maysir**. UI isolation and prototyping via **Storybook** and **React
+            Cosmos**.\n\n### Financial precision (Math & BigInt)\n\nAbsolute precision for Islamic financial flows, **Zakat**
+            calculation and on-chain transactions via **decimal.js** and **bignumber.js** — eliminated rounding errors in fees
+            and on-chain operations.\n\n### Real-time trading & charts\n\nHigh-performance quote modules and dynamic order books
+            via **WebSockets / Socket.io**. Seamless integration with **TradingView API** (WebView Bridge). Optimized to stable
+            **60 FPS** (previously JS-thread freezes at peak order-book load) with **React.useMemo**, custom virtualization and
+            **Reanimated**.\n\n### Web3, WalletConnect & hardware wallets\n\nInterfaces and cryptographic layer for a **non-custodial
+            mobile wallet**: EVM smart contracts, **WalletConnect v2**, **Ledger (BLE)** and **NFC** smart cards for cold signing.\n\n###
+            Security & mobile compliance\n\nSecurity architecture per **OWASP MASVS**: iOS Keychain, Android Keystore, FaceID/TouchID.
+            External **penetration test** and security audit before release — passed.\n\n### Quality, CI/CD & leadership\n\n**TypeScript
+            + Zod** runtime validation: Crash Rate from **2.8%** to **&lt;0.1%** (Crash-Free Sessions **&gt;99.9%**); **Firebase
+            Crashlytics** and **Sentry** (alerts, release health, symbolication). Test contour: **Jest** (unit) + **Detox** (E2E
+            critical flows) + **XCTest / Espresso** (native modules); visual regressions via Storybook / React Cosmos.\n\n**CI/CD**
+            on **GitLab CI + Fastlane** (and **GitHub Actions / Bitrise** where needed): RN iOS/Android build, code signing (match),
+            TestFlight / Google Play Internal → store promotion. With Workspaces migration — **TTM −25%** for key trading features.\n\n**Tech
+            Lead:** Code Review standards and Git hygiene, mentoring, API contract design with backend, release process. **Product
+            Alignment:** backlog with product and stakeholders aligned to business goals.\n\n### Outcomes\n\n- Production **non-custodial**
+            client in both stores for MENA.\n- ~**12,000** peak active users.\n- Crash-free **&gt;99.9%**; trading UI at **60 FPS**.\n-
+            Faster delivery of key trading features (**TTM −25%**).\n- Code Review standards, mobile team onboarding, successful security
+            audit.\n"
         - "type": "keyResults"
           "items":
             - "val": ">99.9%"
@@ -313,12 +441,19 @@
         - "type": "section"
           "sectionKey": "technical"
         - "type": "prose"
-          "text": "### Technical contour\n\n**Stack:** React Native CLI, TypeScript, Yarn/pnpm Workspaces, RTK Query /
-            REST, Socket.io, Reanimated, TradingView WebView Bridge, Ethers.js, WalletConnect v2, Ledger BLE, NFC,
-            decimal.js, Zod, Fastlane, GitLab CI, Jest, Detox, XCTest/Espresso, Sentry, Crashlytics.\n\n**Security:** OWASP
-            MASVS (Keychain / Keystore, biometrics); native TurboModules for crypto and device hardening; external security
-            audit passed.\n\n**Shariah UX:** Anti-Riba mechanisms, exclusion of Gharar & Maysir in client logic and UI
-            (styled-components + StyleSheet).\n"
+          "text": "### Architecture & monorepo\n\n**React Native CLI** (pure RN, no Expo) + **TypeScript**; **Yarn / pnpm Workspaces**
+            with isomorphic packages (crypto, precision math, RPC, UI). **SOLID**, **Atomic Design**, **TurboModules** (Swift / Kotlin
+            native modules for encryption, biometrics, device hardening).\n\n### Shariah UX & interfaces\n\n**styled-components** +
+            **StyleSheet**; **Anti-Riba**, exclusion of **Gharar & Maysir** in client logic. **Storybook / React Cosmos** for isolated
+            UI and design system.\n\n### Financial precision\n\n**decimal.js / bignumber.js** for Zakat, fees, on-chain transactions —
+            no rounding errors.\n\n### Real-time trading\n\n**TradingView** WebView Bridge + **Socket.io** / WebSockets for order books
+            and quotes. **React.useMemo**, custom virtualization, **Reanimated** → **60 FPS** at peak load.\n\n### Web3 & hardware wallets\n\n**Ethers.js**,
+            **WalletConnect v2**, **Ledger BLE**, **NFC** cold-sign. Non-custodial EVM smart contracts on HAQQ Network.\n\n### Security
+            (OWASP MASVS)\n\nKeychain / Keystore, FaceID/TouchID; external pen-test and security audit passed. Native TurboModules for
+            crypto operations.\n\n### State, networking, config\n\n**Redux Toolkit / RTK Query**, **Event Emitter**, **NetInfo**,
+            **react-native-config**; REST + Socket.io + EVM RPC.\n\n### Quality, CI/CD, testing\n\n**TypeScript + Zod** runtime validation;
+            **Jest** + **Detox** + **XCTest/Espresso**; **GitLab CI + Fastlane** (+ GitHub Actions / Bitrise); **Sentry** + **Crashlytics**.
+            TTM **−25%**.\n"
         - "type": "techStack"
           "tags":
             - "React Native CLI"
@@ -327,17 +462,27 @@
             - "Ledger BLE"
             - "NFC"
             - "Ethers.js"
+            - "Redux Toolkit"
+            - "RTK Query"
+            - "Event Emitter"
+            - "NetInfo"
+            - "react-native-config"
             - "TurboModules"
             - "OWASP MASVS"
             - "decimal.js"
+            - "bignumber.js"
             - "Zod"
             - "Reanimated"
             - "TradingView"
             - "Socket.io"
             - "Fastlane"
             - "GitLab CI"
+            - "GitHub Actions"
+            - "Bitrise"
             - "Jest"
             - "Detox"
+            - "XCTest"
+            - "Espresso"
             - "Sentry"
             - "Crashlytics"
             - "Storybook"

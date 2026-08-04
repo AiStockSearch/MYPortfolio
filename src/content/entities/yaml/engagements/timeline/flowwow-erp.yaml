@@ -13,15 +13,14 @@
   "en": "Senior Mobile Developer (React Native)"
   "ru": "Старший мобильный разработчик (React Native)"
 "shortDesc":
-  "en": "Greenfield React Native ERP for Flowwow florists: flower inventory & stocktaking in stores, POS
-    integration, orders, tablet + phone layouts, chain analytics; offline-first on the floor. Architecture:
-    Clean Architecture boundaries, Atomic Design, feature folders, React Navigation, Redux Toolkit + RTK Query +
-    Axios + Ramda, Firebase & Amplitude, TestFlight; native modals instead of Gorhom sheets. CI/CD, ~3–4 Play
-    releases, landing, store listing & signing keys."
-  "ru": "React Native ERP с нуля для Flowwow: инвентаризация цветов, касса, заказы, планшет/телефон, аналитика
-    сети; offline-first. Архитектура: Clean Architecture, Atomic Design, структура по фичам, React Navigation,
-    Redux Toolkit + RTK Query + Axios + Ramda, доменные модули **k-store** / **k-chain**, Firebase и Amplitude,
-    TestFlight; нативные модалки вместо @gorhom/bottom-sheet. CI/CD, 3–4 релиза, лендинг, стор и ключи подписи."
+  "en": "Merchant App Flowwow (~12k peak users): full POS cycle on phones/tablets — BLE cash registers, shifts,
+    fiscal Z/X reports, warehouse, inventory, staff chat. Offline-First Sync Engine (WatermelonDB/SQLite, delta/
+    chunking/conflict resolution) for 50 000+ SKU stores; DataWedge ТСД (Zebra/Honeywell), ESC/POS BLE printers;
+    XState warehouse FSMs; sync −40%, receiving errors −20%, 60 FPS on budget Android ТСД (2–3 GB RAM)."
+  "ru": "Merchant App Flowwow (~12k пользователей в пике): полный кассовый цикл на телефонах/планшетах — BLE-кассы,
+    смены, фискальные Z/X-отчёты, склад, инвентаризация, чат персонала. Offline-First Sync Engine (WatermelonDB/
+    SQLite, delta/chunking/conflict resolution) для точек с 50 000+ SKU; DataWedge ТСД (Zebra/Honeywell),
+    ESC/POS BLE-принтеры; XState складские FSM; синк −40%, ошибки приёмки −20%, 60 FPS на бюджетных ТСД (2–3 ГБ RAM)."
 "achByArea":
   "en":
     "front":
@@ -30,13 +29,23 @@
       - "Reduced UI motion: disabled or toned down <span class='m'>animations</span> for POS-grade stability"
       - "Store network <span class='m'>dashboards</span> & reporting (stock, staff, operations signals)"
     "mobile":
-      - "Greenfield <span class='m'>React Native</span> app from scratch for florist retail workflows"
-      - "<span class='m'>Flower inventory</span> & stocktaking flows tied to live catalog / SKU reality"
-      - "<span class='m'>POS / cash register</span> integration for in-store sales & receipts"
-      - "Order creation & fulfilment loops aligned with marketplace ops"
-      - "<span class='m'>-40%</span> sync time for stores with 50 000+ SKUs (delta sync, offline queues)"
-      - "Offline-first: local SQLite + sync engine on unstable warehouse / shop Wi‑Fi"
-      - "Barcode scanners, handhelds (ТСД), receipt printers; solid on <span class='m'>budget Android</span>"
+      - "Merchant App for sellers/partners (~<span class='m'>12k</span> peak): phones + tablets, full cashier cycle"
+      - "<span class='m'>POS & Cashier Engine</span>: BLE external cash register, shift open/close, fiscal
+        <span class='m'>Z/X reports</span>, inventory & floor stock"
+      - "Internal <span class='m'>chat & staff ops</span> (shifts, statuses, floor coordination)"
+      - "Yarn / pnpm Workspaces: isomorphic libs (order validators, discount/commission math, UI kit)"
+      - "Offline-First <span class='m'>Sync Engine</span> on WatermelonDB / SQLite — delta, chunking,
+        conflict resolution for <span class='m'>50 000+ SKU</span> stores (<span class='m'>−40%</span> sync time;
+        binary serialization + lazy relation loading)"
+      - "Native bridges: <span class='m'>DataWedge</span> / Broadcast Receivers for ТСД Zebra/Honeywell;
+        <span class='m'>ESC/POS</span> BLE receipt/label printers"
+      - "Warehouse FSM on <span class='m'>XState</span> — no illegal UI states under high-intensity scanning"
+      - "Client <span class='m'>Zod</span> validation aligned with TS specs — receiving errors
+        <span class='m'>−20%</span> at scan time"
+      - "Stable <span class='m'>60 FPS</span> document lists (thousands of rows) on budget Android ТСД
+        (2–3 GB RAM): custom virtualization, memo, scanner memory discipline"
+      - "Engineering standards from Flowwow onward: Atomic Design, SOLID, Triple-Layer, ESLint/Stylelint,
+        Sentry / Performance / Crash Rate"
       - "<span class='m'>CI/CD</span> pipeline for React Native Android builds (repeatable artifacts, release path)"
       - "<span class='m'>~3–4 production releases</span> to Google Play; store listing, graphics & copy"
       - "<span class='m'>Signing keys</span>, Play Console publishing flow, versioning & rollout discipline"
@@ -65,13 +74,23 @@
       - "Анимации <span class='m'>отключены или ослаблены</span> — приоритет стабильности и скорости на кассе"
       - "<span class='m'>Дашборды</span> и отчётность для сети магазинов (остатки, персонал, операционные метрики)"
     "mobile":
-      - "<span class='m'>React Native</span> с нуля: проект и архитектура приложения развивались от greenfield"
-      - "Инвентаризация и учёт <span class='m'>срезанных цветов</span> в цветочных магазинах сети"
-      - "Подключение <span class='m'>кассы (POS)</span> к мобильному контуру продаж и фискальных сценариев"
-      - "Модуль <span class='m'>заказов</span> в связке с операционными процессами партнёров"
-      - "<span class='m'>−40%</span> времени синка для магазинов 50 000+ SKU (дельта, офлайн-очереди)"
-      - "Offline-first: локальная БД + синк при нестабильной сети в магазине / на складе"
-      - "Сканеры, ТСД, чековые принтеры; устойчивость на <span class='m'>бюджетных Android</span>"
+      - "Merchant App для продавцов/партнёров (~<span class='m'>12k</span> в пике): телефоны + планшеты, полный кассовый цикл"
+      - "<span class='m'>POS & Cashier Engine</span>: внешняя касса по BLE, смены, фискальные
+        <span class='m'>Z/X-отчёты</span>, инвентаризация и остатки в зале/на складе"
+      - "Внутренний <span class='m'>чат и управление персоналом</span> (смены, статусы, координация на точке)"
+      - "Yarn / pnpm Workspaces: изоморфные библиотеки (валидаторы заказа, математика скидок/комиссий, UI-кит)"
+      - "Offline-First <span class='m'>Sync Engine</span> на WatermelonDB / SQLite — delta, chunking,
+        conflict resolution для точек с <span class='m'>50 000+ SKU</span> (<span class='m'>−40%</span> времени синка;
+        бинарная сериализация + lazy loading связей)"
+      - "Native-мосты: <span class='m'>DataWedge</span> / Broadcast Receivers для ТСД Zebra/Honeywell;
+        печать чеков/ценников по <span class='m'>ESC/POS</span> BLE"
+      - "Складские цепочки на <span class='m'>XState</span> (FSM) — без некорректных UI-состояний при интенсивном сканировании"
+      - "Клиентская валидация <span class='m'>Zod</span> ↔ TypeScript — ошибки приёмки
+        <span class='m'>−20%</span> в момент скана"
+      - "Стабильные <span class='m'>60 FPS</span> списков документов (тысячи позиций) на бюджетных Android ТСД
+        (2–3 ГБ RAM): виртуализация, memo, контроль утечек при работе со сканерами"
+      - "Инженерные стандарты с Flowwow: Atomic Design, SOLID, Triple-Layer, ESLint/Stylelint,
+        Sentry / Performance / Crash Rate"
       - "<span class='m'>CI/CD</span>: пайплайн сборки React Native под Android (воспроизводимые артефакты,
         релизный контур)"
       - "<span class='m'>3–4 production-релиза</span> в Google Play; оформление карточки, графика и тексты"

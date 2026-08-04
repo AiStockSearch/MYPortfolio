@@ -7,55 +7,81 @@
   "en": "Skif Trade · smallmart.kz"
   "ru": "Скиф Трейд · smallmart.kz"
 "cvCompany":
-  "en": "Skif Trade (smallmart.kz · Kazakhstan · grocery retail POS)"
-  "ru": "Скиф Трейд (smallmart.kz · Казахстан · розничная сеть)"
+  "en": "Skif Trade (smallmart.kz · Kazakhstan · grocery retail POS) · project / part-time"
+  "ru": "Скиф Трейд (smallmart.kz · Казахстан · розничная сеть) · проект / part-time"
 "role":
   "en": "Senior Mobile Developer (Expo / RN) / Tech Lead"
   "ru": "Senior Mobile Developer (Expo / RN) / Tech Lead"
 "shortDesc":
-  "en": "Expo / React Native POS + Slack-like corporate messenger for grocery retail (project / part-time).
-    NativeWind / Tailwind, FSD, fiscal Z/X reports, channels & threads. Yarn/pnpm Workspaces isomorphic libs;
-    WebSockets + optimistic updates; React Cosmos; 60 FPS list virtualization."
+  "en": "Expo / React Native POS + Slack-like corporate messenger for grocery retail (project / part-time, not full-time).
+    NativeWind / Tailwind, FSD, fiscal Z/X reports, channels & threads. Yarn/pnpm Workspaces isomorphic libs shared with web;
+    Socket.io + optimistic updates (TanStack Query); React Cosmos TTM −30%; 60 FPS list virtualization. Tech Lead.
+    Parallel: haqqex (outstaff); Mirapolis overlap Aug — Sep 2025."
   "ru": "Expo / React Native POS + Slack-подобный корпоративный мессенджер для продуктовой розницы
-    (проект / part-time). NativeWind / Tailwind, FSD, фискальные Z/X-отчёты, каналы и треды.
-    Yarn/pnpm Workspaces изоморфные библиотеки; WebSockets + optimistic updates; React Cosmos;
-    виртуализация списков под 60 FPS."
+    (проект / part-time, не full-time). NativeWind / Tailwind, FSD, фискальные Z/X-отчёты, каналы и треды.
+    Yarn/pnpm Workspaces изоморфные библиотеки с web; Socket.io + optimistic updates (TanStack Query);
+    React Cosmos TTM −30%; виртуализация списков 60 FPS. Tech Lead. Параллельно: haqqex (outstaff);
+    пересечение с Мираполис авг — сен 2025."
 "cvShortDesc":
-  "en": "Skif Trade Expo POS + messenger: FSD, NativeWind, fiscal reports, Socket.io, Tech Lead."
-  "ru": "Скиф Трейд Expo POS + мессенджер: FSD, NativeWind, фискализация, Socket.io, Tech Lead."
+  "en": "Skif Trade Expo POS + messenger: FSD, NativeWind, fiscal Z/X reports, Socket.io optimistic updates, Tech Lead, TTM −30%."
+  "ru": "Скиф Трейд Expo POS + мессенджер: FSD, NativeWind, фискализация Z/X, Socket.io optimistic updates, Tech Lead, TTM −30%."
 "achByArea":
   "en":
     "front":
-      - "Reactive UI on Expo + <span class='m'>NativeWind</span> / styled-components / StyleSheet
-        (FSD + Atomic Design)"
-      - "<span class='m'>React Cosmos</span> for isolated UI — Time-to-Market −30%, consistent interface"
+      - "Reactive UI architecture on <span class='m'>Expo</span> + <span class='m'>NativeWind</span> (Tailwind CSS),
+        styled-components and StyleSheet per <span class='m'>FSD</span> and Atomic Design methodology"
+      - "<span class='m'>React Cosmos</span> for isolated UI component development — Time-to-Market
+        <span class='m'>−30%</span>, consistent interface across POS and messenger modules"
+      - "Custom list virtualization for product nomenclature, messages and media — stable
+        <span class='m'>60 FPS</span> scroll on heavy channels and catalogs (no freezes)"
     "mobile":
-      - "Built Slack-like internal chat & staff ops: public/private channels, threads, presence,
-        file/media share, history search"
-      - "POS engine: payments via cash register, shift open/close, fiscal <span class='m'>Z/X reports</span>,
-        inventory & floor stock accounting"
-      - "Yarn / pnpm Workspaces: isomorphic libs (cash math, validation, DTOs) shared with web"
-      - "WebSockets / Socket.io + optimistic updates (React Query) for messages and cash statuses on weak nets"
-      - "Custom list virtualization for SKUs, messages, media — stable <span class='m'>60 FPS</span> scroll"
-      - "Tech Lead: Code Review, API contracts, release process"
+      - "Greenfield <span class='m'>corporate messenger & staff ops</span>: Slack-like internal chat and employee
+        management — public/private channels, message threads, presence statuses, file/media sharing, fast dialog
+        history search for operational staff questions"
+      - "<span class='m'>POS engine & trade operations</span>: payments via cash register, shift open/close,
+        fiscal <span class='m'>Z-reports</span> and <span class='m'>X-reports</span>, inventory and floor stock
+        accounting in store and warehouse"
+      - "<span class='m'>Monorepo & isomorphic libraries</span>: Yarn / pnpm Workspaces isolating shared business
+        logic (cash math, validation utilities, DTOs) in independent internal libs reusable between mobile and web
+        frontend clients"
+      - "Real-time architecture: <span class='m'>WebSockets / Socket.io</span> + optimistic UI updates via
+        <span class='m'>TanStack Query</span> — instant message delivery and cash statuses even on weak connectivity"
+      - "<span class='m'>Tech Lead</span>: mobile track leadership, Code Review, API contract design, release process"
+      - "Project / part-time (not exclusive full-time). Parallel contracts: Aug — Sep 2025 overlap with
+        <span class='m'>Mirapolis</span> (GPH) and <span class='m'>haqqex</span> (outstaff); Oct — Dec 2025 parallel
+        with haqqex only"
     "backend":
-      - "Realtime messaging & POS status channels via Socket.io contracts"
+      - "Realtime messaging & POS status channels via <span class='m'>Socket.io</span> contracts"
+      - "REST touchpoints for staff management, inventory and fiscal operations"
   "ru":
     "front":
-      - "Реактивный UI на Expo + <span class='m'>NativeWind</span> / styled-components / StyleSheet
-        (FSD + Atomic Design)"
-      - "<span class='m'>React Cosmos</span> для изолированного UI — Time-to-Market −30%, единообразие"
+      - "Реактивная UI-архитектура на <span class='m'>Expo</span> + <span class='m'>NativeWind</span> (Tailwind CSS),
+        styled-components и StyleSheet по методологии <span class='m'>FSD</span> и Atomic Design"
+      - "<span class='m'>React Cosmos</span> для изолированной разработки UI — Time-to-Market
+        <span class='m'>−30%</span>, единообразие интерфейса POS и мессенджера"
+      - "Кастомная виртуализация номенклатуры, сообщений и медиа — стабильные
+        <span class='m'>60 FPS</span> на тяжёлых каналах и каталогах (без фризов)"
     "mobile":
-      - "С нуля Slack-подобный чат и управление персоналом: каналы, треды, presence, файлы/медиа, поиск"
-      - "Кассовый модуль: платежи, смены, фискальные <span class='m'>Z/X-отчёты</span>, инвентаризация и остатки"
-      - "Yarn / pnpm Workspaces: изоморфные библиотеки (кассовая математика, валидация, DTO) с web"
-      - "WebSockets / Socket.io + optimistic updates (React Query) для сообщений и кассовых статусов"
-      - "Кастомная виртуализация номенклатуры, сообщений и медиа — стабильные <span class='m'>60 FPS</span>"
-      - "Tech Lead: Code Review, API-контракты, релизы"
+      - "С нуля <span class='m'>корпоративный мессенджер & управление персоналом</span>: Slack-подобный внутренний чат
+        — публичные/приватные каналы, треды сообщений, статусы присутствия, обмен файлами/медиа, быстрый поиск по
+        истории диалогов для оперативного решения рабочих вопросов персонала"
+      - "<span class='m'>Кассовый модуль & торговые операции (POS Engine)</span>: приём и обработка платежей через
+        кассовый аппарат, открытие/закрытие рабочих смен, снятие фискальных <span class='m'>Z-отчётов</span> и
+        <span class='m'>X-отчётов</span>, инвентаризация и учёт товарных остатков на складах и в торговом зале"
+      - "<span class='m'>Монорепозиторий & изоморфные библиотеки</span>: Yarn / pnpm Workspaces — изоляция общего
+        бизнес-функционала (кассовая математика, утилиты валидации, DTO) в независимые внутренние библиотеки,
+        переиспользуемые между мобильным и web-клиентами"
+      - "Real-Time: <span class='m'>WebSockets / Socket.io</span> + optimistic updates через
+        <span class='m'>TanStack Query</span> — мгновенная доставка сообщений и кассовых статусов при слабом интернете"
+      - "<span class='m'>Tech Lead</span>: руководство мобильным направлением, Code Review, API-контракты, релизы"
+      - "Проект / part-time (не full-time). Параллельные контракты: авг — сен 2025 — пересечение с
+        <span class='m'>Мираполис</span> (ГПХ) и <span class='m'>haqqex</span> (outstaff); окт — дек 2025 — только haqqex"
     "backend":
-      - "Realtime-каналы чата и кассовых статусов через контракты Socket.io"
+      - "Realtime-каналы чата и кассовых статусов через контракты <span class='m'>Socket.io</span>"
+      - "REST для управления персоналом, инвентаризации и фискальных операций"
 "stackByArea":
   "front":
+    - "Expo"
     - "NativeWind / Tailwind"
     - "styled-components"
     - "StyleSheet"
@@ -63,7 +89,6 @@
     - "FSD"
     - "Atomic Design"
   "mobile":
-    - "Expo"
     - "React Native"
     - "TypeScript"
     - "TanStack Query"
@@ -71,33 +96,44 @@
     - "Optimistic Updates"
     - "Yarn / pnpm Workspaces"
     - "POS / fiscalization"
+    - "Z-reports / X-reports"
   "backend":
     - "Socket.io / WebSockets"
     - "REST"
 "cvAchievements":
   "en":
-    - "Greenfield corporate messenger (channels, threads, presence, media, search) for retail ops"
-    - "POS engine: shifts, fiscal Z/X reports, inventory & stock accounting"
-    - "Isomorphic monorepo (Yarn/pnpm Workspaces); Socket.io + optimistic updates; 60 FPS lists"
-    - "Tech Lead mobile track; React Cosmos cut TTM ~30%"
+    - "Greenfield Slack-like corporate messenger: public/private channels, threads, presence, file/media share, history search"
+    - "POS engine from scratch: cash register payments, shift open/close, fiscal Z-reports and X-reports, inventory & stock accounting"
+    - "Isomorphic monorepo (Yarn/pnpm Workspaces): cash math, validation, DTOs shared between mobile and web clients"
+    - "Reactive UI on Expo + NativeWind + FSD + Atomic Design; real-time via Socket.io + TanStack Query optimistic updates"
+    - "React Cosmos isolated UI — TTM −30%, consistent interface across modules"
+    - "Custom list virtualization (SKUs, messages, media) — stable 60 FPS on heavy channels and catalogs"
+    - "Tech Lead: Code Review, API contracts, release process for mobile track"
+    - "Project / part-time; parallel haqqex (outstaff entire period) and Mirapolis overlap (Aug — Sep 2025)"
   "ru":
-    - "С нуля корпоративный мессенджер (каналы, треды, presence, медиа, поиск) для ритейла"
-    - "Кассовый движок: смены, фискальные Z/X-отчёты, инвентаризация и остатки"
-    - "Изоморфный монорепо (Yarn/pnpm Workspaces); Socket.io + optimistic updates; списки 60 FPS"
-    - "Tech Lead мобильного направления; React Cosmos — TTM −30%"
+    - "С нуля Slack-подобный корпоративный мессенджер: каналы, треды, presence, файлы/медиа, поиск по истории"
+    - "Кассовый движок: платежи через кассу, смены, фискальные Z/X-отчёты, инвентаризация и учёт остатков"
+    - "Изоморфный монорепо (Yarn/pnpm Workspaces): кассовая математика, валидация, DTO — shared с web"
+    - "Реактивный UI на Expo + NativeWind + FSD + Atomic Design; Socket.io + TanStack Query optimistic updates"
+    - "React Cosmos — TTM −30%, единообразие интерфейса модулей"
+    - "Кастомная виртуализация (номенклатура, сообщения, медиа) — 60 FPS на тяжёлых каналах и каталогах"
+    - "Tech Lead: Code Review, API-контракты, релизный процесс мобильного направления"
+    - "Проект / part-time; параллельно haqqex (outstaff весь период) и Мираполис (авг — сен 2025)"
 "cvTags":
   - "Expo"
   - "React Native"
   - "NativeWind"
   - "FSD"
   - "Socket.io"
-  - "POS"
   - "TanStack Query"
+  - "POS"
   - "React Cosmos"
   - "Tech Lead"
+  - "Yarn / pnpm Workspaces"
 "portfolio":
   "catalogOrderKey": "skifTrade"
-  "variant": "stub"
+  "variant": "rich"
+  "live": false
   "featured": true
   "catalogFilters":
     - "Mobile"
@@ -111,26 +147,170 @@
     - "TanStack Query"
     - "POS / fiscalization"
     - "React Cosmos"
-  "catalogCardType":
-    "ru": "Retail POS · чат · Expo"
-    "en": "Retail POS · messenger · Expo"
-  "stubMetrics":
+    - "Yarn / pnpm Workspaces"
+  "i18n":
     "ru":
-      - "val": "5 мес"
-        "lbl": "Срок"
-      - "val": "POS"
-        "lbl": "Касса"
-      - "val": "чат"
-        "lbl": "Messenger"
-      - "val": "60 FPS"
-        "lbl": "Списки"
+      "name": "Скиф Трейд POS & Messenger"
+      "type": "Retail POS · корпоративный чат · Expo"
+      "tagline": "Кассовый модуль и Slack-подобный мессенджер для продуктовой розницы."
+      "role": "Senior Mobile / Tech Lead"
+      "links":
+        - "label": "smallmart.kz"
+          "href": "https://smallmart.kz/"
+          "primary": true
+      "metrics":
+        - "val": "5 мес"
+          "lbl": "Срок"
+        - "val": "−30%"
+          "lbl": "TTM (Cosmos)"
+        - "val": "60 FPS"
+          "lbl": "Списки"
+        - "val": "POS"
+          "lbl": "Касса + чат"
+      "blocks":
+        - "type": "heroImage"
+          "src": "/projects/skif-trade.svg"
+          "alt": "Skif Trade POS & Messenger"
+        - "type": "section"
+          "sectionKey": "overview"
+        - "type": "prose"
+          "text": "### Идея и контекст\n\n**Скиф Трейд** (Казахстан, [smallmart.kz](https://smallmart.kz/)) — продуктовая
+            розничная сеть. Мобильный продукт на **Expo / React Native**: **кассовый модуль (POS)** и **корпоративный
+            мессенджер** для оперативного общения персонала внутри компании. Изоморфный слой бизнес-логики шарился с web-клиентом.\n\n**Роль:**
+            **Senior Mobile Developer / Tech Lead**. **Формат:** проектная работа / **part-time**, не exclusive full-time
+            (авг — дек 2025, 5 месяцев).\n\n**Параллельные контракты:**\n- **авг — сен 2025** — пересечение с **Мираполис**
+            (ГПХ / совмещение) и **haqqex** (outstaff);\n- **окт — дек 2025** — параллельно только с **haqqex** (outstaff).\n\n**Уникальный
+            стек:** Expo; NativeWind / Tailwind; **Feature-Sliced Design (FSD)**; POS / фискализация (Z/X-отчёты); корпоративный
+            мессенджер (каналы, треды).\n\n### Корпоративный мессенджер & управление персоналом\n\nСоздал **с нуля** модуль
+            Slack-подобного внутреннего чата и системы управления сотрудниками для оперативного общения внутри компании:
+            **публичные/приватные каналы**, **треды сообщений**, **статусы присутствия**, **обмен файлами/медиа** и **быстрый
+            поиск** по истории диалогов для оперативного решения рабочих вопросов персонала.\n\n### Кассовый модуль & торговые
+            операции (POS Engine)\n\nРазработал и спроектировал функционал для **приёма и обработки платежей** через кассовый
+            аппарат, логику **открытия/закрытия рабочих смен**, снятия фискальных **Z-отчётов** и **X-отчётов**, а также процессы
+            **проведения инвентаризации** и оперативного **учёта товарных остатков** на складах и в торговом зале.\n\n### Монорепозиторий
+            & изоморфные библиотеки\n\nВнедрил **Yarn / pnpm Workspaces** для изоморфной монорепозиторной структуры: изолировал общий
+            бизнес-функционал (**кассовая математика**, утилиты валидации, **DTO**) в независимые внутренние библиотеки,
+            **переиспользуемые между мобильным и фронтенд-клиентами**.\n\n### Архитектура и Real-Time\n\nПостроил реактивную UI-архитектуру
+            на базе **Expo**, **NativeWind** (Tailwind CSS), styled-components и StyleSheet по методологии **FSD** и **Atomic Design**.
+            Внедрил **WebSockets / Socket.io** с поддержкой **optimistic updates** интерфейса через **TanStack Query** — мгновенная
+            доставка сообщений и кассовых статусов даже при **слабом интернет-соединении**.\n\n### Компоненты и изолированное тестирование\n\n**React
+            Cosmos** для UI — **Time-to-Market −30%**, единообразие интерфейса между POS и мессенджером.\n\n### Оптимизация производительности
+            списков\n\nКастомная **виртуализация** номенклатуры, сообщений и медиа — **стабильные 60 FPS** при быстром скролле (без фризов
+            на тяжёлых каналах и каталогах).\n\n### Техническое лидерство\n\n**Tech Lead:** техническое руководство мобильным направлением,
+            Code Review, проектирование API-контрактов и процесс релизов.\n"
+        - "type": "keyResults"
+          "items":
+            - "val": "−30%"
+              "lbl": "TTM (Cosmos)"
+            - "val": "60 FPS"
+              "lbl": "Списки"
+            - "val": "POS"
+              "lbl": "Касса + чат"
+            - "val": "5 мес"
+              "lbl": "Part-time"
+        - "type": "section"
+          "sectionKey": "technical"
+        - "type": "prose"
+          "text": "### Корпоративный мессенджер\n\n**Expo / React Native**; каналы (public/private), треды, presence, файлы/медиа,
+            поиск по истории. **Socket.io** + **TanStack Query** optimistic updates для мгновенной доставки на слабой сети.\n\n### POS Engine\n\nПлатежи
+            через кассовый аппарат; смены open/close; фискальные **Z-отчёты** и **X-отчёты**; инвентаризация; учёт остатков на складе и в зале.\n\n###
+            Монорепо & изоморфные библиотеки\n\n**Yarn / pnpm Workspaces**; кассовая математика, валидация, DTO — shared между mobile и web.\n\n###
+            UI-архитектура\n\n**NativeWind / Tailwind**, styled-components, StyleSheet; **FSD** + **Atomic Design**. **React Cosmos** — изолированная
+            разработка UI, **TTM −30%**.\n\n### Real-Time & производительность\n\n**Socket.io / WebSockets** + optimistic updates. Кастомная виртуализация
+            списков → **60 FPS** на номенклатуре, сообщениях и медиа.\n\n### Tech Lead\n\nCode Review, API-контракты, релизный процесс мобильного направления.
+            Part-time параллельно с haqqex (и Мираполис авг — сен 2025).\n"
+        - "type": "techStack"
+          "tags":
+            - "Expo"
+            - "React Native"
+            - "TypeScript"
+            - "NativeWind / Tailwind"
+            - "styled-components"
+            - "FSD"
+            - "Atomic Design"
+            - "Socket.io"
+            - "TanStack Query"
+            - "Optimistic Updates"
+            - "Yarn / pnpm Workspaces"
+            - "POS / fiscalization"
+            - "Z-reports / X-reports"
+            - "React Cosmos"
     "en":
-      - "val": "5 mo"
-        "lbl": "Run"
-      - "val": "POS"
-        "lbl": "Cashier"
-      - "val": "chat"
-        "lbl": "Messenger"
-      - "val": "60 FPS"
-        "lbl": "Lists"
+      "name": "Skif Trade POS & Messenger"
+      "type": "Retail POS · corporate chat · Expo"
+      "tagline": "Cashier module and Slack-like messenger for grocery retail."
+      "role": "Senior Mobile / Tech Lead"
+      "links":
+        - "label": "smallmart.kz"
+          "href": "https://smallmart.kz/"
+          "primary": true
+      "metrics":
+        - "val": "5 mo"
+          "lbl": "Duration"
+        - "val": "−30%"
+          "lbl": "TTM (Cosmos)"
+        - "val": "60 FPS"
+          "lbl": "Lists"
+        - "val": "POS"
+          "lbl": "Cashier + chat"
+      "blocks":
+        - "type": "heroImage"
+          "src": "/projects/skif-trade.svg"
+          "alt": "Skif Trade POS & Messenger"
+        - "type": "section"
+          "sectionKey": "overview"
+        - "type": "prose"
+          "text": "### Idea & context\n\n**Skif Trade** (Kazakhstan, [smallmart.kz](https://smallmart.kz/)) — grocery retail chain.
+            Mobile product on **Expo / React Native**: **POS cashier module** and **corporate messenger** for operational staff communication.
+            Isomorphic business layer shared with the web client.\n\n**Role:** **Senior Mobile Developer / Tech Lead**. **Engagement:** project
+            work / **part-time**, not exclusive full-time (Aug — Dec 2025, 5 months).\n\n**Parallel contracts:**\n- **Aug — Sep 2025** — overlap with
+            **Mirapolis** (GPH / part-time) and **haqqex** (outstaff);\n- **Oct — Dec 2025** — parallel with **haqqex** only.\n\n**Unique stack:**
+            Expo; NativeWind / Tailwind; **Feature-Sliced Design (FSD)**; POS / fiscalization (Z/X reports); corporate messenger (channels, threads).\n\n###
+            Corporate messenger & staff ops\n\nBuilt **from scratch** a Slack-like internal chat and employee management module: **public/private channels**,
+            **message threads**, **presence statuses**, **file/media sharing** and **fast history search** for operational staff questions.\n\n### POS engine
+            & trade operations\n\nDesigned and built payment processing via cash register, **shift open/close**, fiscal **Z-reports** and **X-reports**,
+            **inventory** and **floor stock accounting** in store and warehouse.\n\n### Monorepo & isomorphic libraries\n\n**Yarn / pnpm Workspaces** monorepo
+            isolating shared business logic (**cash math**, validation utilities, **DTOs**) in independent internal libraries **reusable between mobile and web
+            frontend clients**.\n\n### Architecture & real-time\n\nReactive UI on **Expo**, **NativeWind** (Tailwind CSS), styled-components and StyleSheet per
+            **FSD** and **Atomic Design**. **WebSockets / Socket.io** with **optimistic updates** via **TanStack Query** — instant message delivery and cash
+            statuses even on **weak connectivity**.\n\n### Components & isolated UI development\n\n**React Cosmos** for UI — **Time-to-Market −30%**, consistent
+            interface across POS and messenger modules.\n\n### List performance optimization\n\nCustom **virtualization** for product nomenclature, messages and
+            media — stable **60 FPS** scroll on heavy channels and catalogs (no freezes).\n\n### Technical leadership\n\n**Tech Lead:** mobile track leadership,
+            Code Review, API contract design and release process.\n"
+        - "type": "keyResults"
+          "items":
+            - "val": "−30%"
+              "lbl": "TTM (Cosmos)"
+            - "val": "60 FPS"
+              "lbl": "Lists"
+            - "val": "POS"
+              "lbl": "Cashier + chat"
+            - "val": "5 mo"
+              "lbl": "Part-time"
+        - "type": "section"
+          "sectionKey": "technical"
+        - "type": "prose"
+          "text": "### Corporate messenger\n\n**Expo / React Native**; channels (public/private), threads, presence, files/media, history search. **Socket.io**
+            + **TanStack Query** optimistic updates for instant delivery on weak networks.\n\n### POS engine\n\nCash register payments; shift open/close; fiscal
+            **Z-reports** and **X-reports**; inventory; stock accounting on warehouse and sales floor.\n\n### Monorepo & isomorphic libraries\n\n**Yarn / pnpm
+            Workspaces**; cash math, validation, DTOs — shared between mobile and web.\n\n### UI architecture\n\n**NativeWind / Tailwind**, styled-components,
+            StyleSheet; **FSD** + **Atomic Design**. **React Cosmos** — isolated UI development, **TTM −30%**.\n\n### Real-time & performance\n\n**Socket.io /
+            WebSockets** + optimistic updates. Custom list virtualization → **60 FPS** on SKUs, messages and media.\n\n### Tech Lead\n\nCode Review, API contracts,
+            mobile release process. Part-time parallel with haqqex (and Mirapolis Aug — Sep 2025).\n"
+        - "type": "techStack"
+          "tags":
+            - "Expo"
+            - "React Native"
+            - "TypeScript"
+            - "NativeWind / Tailwind"
+            - "styled-components"
+            - "FSD"
+            - "Atomic Design"
+            - "Socket.io"
+            - "TanStack Query"
+            - "Optimistic Updates"
+            - "Yarn / pnpm Workspaces"
+            - "POS / fiscalization"
+            - "Z-reports / X-reports"
+            - "React Cosmos"
 "timelineIndex": -1

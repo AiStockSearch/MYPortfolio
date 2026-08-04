@@ -7,67 +7,97 @@
   "en": "mirapolis.ru"
   "ru": "mirapolis.ru"
 "cvCompany":
-  "en": "Mirapolis (mirapolis.ru) · GPH / part-time"
-  "ru": "Мираполис (mirapolis.ru) · ГПХ / совмещение"
+  "en": "Mirapolis (mirapolis.ru) · GPH / part-time (not exclusive full-time)"
+  "ru": "Мираполис (mirapolis.ru) · ГПХ / совмещение (не exclusive full-time)"
 "role":
   "en": "Senior Mobile Developer (RN) / Core Module Lead"
   "ru": "Старший мобильный разработчик (RN) / Core Module Lead"
 "shortDesc":
   "en": "Enterprise Mirapolis HCM & LMS mobile core (~12k peak users): SCORM / xAPI player (WebView JS Bridge),
     configuration-driven UI (JSON schemas), FlashList / RecyclerListView, FSM for assessments, Offline-First courses,
-    tablet Master-Detail / Split View. Core Module Lead; TTM −25%."
+    tablet Master-Detail / Split View. Core Module Lead; TTM −25%. GPH / part-time; parallel outstaff haqqex entire
+    tenure; Skif Trade Aug — Sep 2025."
   "ru": "Enterprise-ядро мобильной экосистемы Mirapolis HCM & LMS (~12k пользователей в пике): плеер SCORM / xAPI
     (WebView JS Bridge), configuration-driven UI (JSON-схемы), FlashList / RecyclerListView, FSM тестов,
-    Offline-First курсы, tablet Master-Detail / Split View. Core Module Lead; TTM −25%."
+    Offline-First курсы, tablet Master-Detail / Split View. Core Module Lead; TTM −25%. ГПХ / совмещение; параллельно
+    outstaff haqqex весь срок; Скиф Трейд авг — сен 2025."
 "cvShortDesc":
-  "en": "Mirapolis LMS: SCORM/xAPI player, Offline-First, FlashList 60 FPS, JSON-driven UI, tablet Split View; DAU +15%."
-  "ru": "Mirapolis LMS: плеер SCORM/xAPI, Offline-First, FlashList 60 FPS, JSON UI, планшетный Split View; DAU +15%."
+  "en": "Mirapolis LMS: SCORM/xAPI player, Offline-First DAU +15%, FlashList 60 FPS, JSON-driven UI, tablet Split View; ~12k peak; Core Module Lead."
+  "ru": "Mirapolis LMS: плеер SCORM/xAPI, Offline-First DAU +15%, FlashList 60 FPS, JSON UI, планшетный Split View; ~12k пик; Core Module Lead."
 "achByArea":
   "en":
     "front":
-      - "Configuration-driven UI from backend JSON schemas (news feed, widgets) without store releases"
-      - "styled-components + StyleSheet custom components; Storybook for contract-driven UI"
-      - "Tablet <span class='m'>Master-Detail / Split View</span> for iPad and Android tablets"
+      - "Configuration-driven UI engine: corporate news feed and widgets from backend <span class='m'>JSON schemas</span>
+        without store releases"
+      - "Custom components on <span class='m'>styled-components</span> + StyleSheet; Storybook for contract-driven UI
+        and design-system alignment"
+      - "Adaptive tablet <span class='m'>Master-Detail / Split View</span> for iPad and Android tablets — full HR
+        experience in the field for senior management"
+      - "White-Label / Dynamic UI per customer processes without per-client store builds"
     "mobile":
-      - "Core Module Lead of Mirapolis mobile HCM & LMS ecosystem for large enterprise clients"
-      - "Cross-platform course player (<span class='m'>SCORM / xAPI</span>) on optimized RN WebView with
-        bidirectional JS Bridge; assessment logic on <span class='m'>FSM</span> with state protection on network drops"
-      - "Reworked Offline-First for courses & tests (local store + sync queues) —
-        mobile learning DAU <span class='m'>+15%</span> (team product metric)"
-      - "Catalogs of thousands of items via <span class='m'>FlashList / RecyclerListView</span> + image cache:
-        lags → stable <span class='m'>60 FPS</span> on low-end"
-      - "Yarn / pnpm Workspaces monorepo; Clean Architecture + SOLID + Atomic Design"
-      - "CI: Jest + Detox; GitLab CI + Fastlane → TestFlight / Play Internal; TTM <span class='m'>−25%</span>"
-      - "Monitoring: Firebase Crashlytics / Sentry"
+      - "<span class='m'>Core Module Lead</span> of Mirapolis Enterprise HCM & LMS mobile ecosystem for large
+        corporate clients — HR, learning, assessments, internal comms"
+      - "Scale: up to <span class='m'>~12,000</span> peak mobile client users"
+      - "Cross-platform interactive course player (<span class='m'>SCORM / xAPI</span>) on optimized RN WebView with
+        bidirectional <span class='m'>JS Bridge</span>; assessment logic on <span class='m'>FSM</span> (XState) with
+        state protection on network drops"
+      - "Fully reworked <span class='m'>Offline-First</span> for courses & tests (local storage + sync queues for
+        progress / analytics) — mobile learning DAU <span class='m'>+15%</span> (team product metric)"
+      - "Zero-lag list optimization: enterprise directories and course catalogs (thousands of items with complex hierarchy)
+        via <span class='m'>FlashList / RecyclerListView</span>, custom image cache and render discipline —
+        stable <span class='m'>60 FPS</span> on low-end devices with tight RAM"
+      - "Enterprise architecture & monorepo: pure <span class='m'>React Native CLI</span> + TypeScript, Clean Architecture,
+        SOLID, Atomic Design; <span class='m'>Yarn / pnpm Workspaces</span> with isomorphic core libraries"
+      - "Delivery: Storybook, contract programming, <span class='m'>Jest + Detox</span> in CI; GitLab CI + Fastlane
+        (auto-build, signing, TestFlight / Play Internal) — <span class='m'>TTM −25%</span>, fewer manual releases"
+      - "Monitoring: Firebase Crashlytics / Sentry for release health and field stability"
+      - "Parallel contracts: outstaff <span class='m'>haqqex</span> entire tenure (Jul 2024 — Sep 2025); additionally
+        <span class='m'>Skif Trade</span> Aug — Sep 2025 (part-time / совмещение)"
     "backend":
-      - "REST & real-time touchpoints with HCM/LMS core; JSON schema contracts for dynamic UI"
-      - "Sync queues and conflict handling for offline progress / analytics"
+      - "REST & real-time touchpoints with HCM/LMS core; JSON schema contracts for dynamic UI feeds and widgets"
+      - "Sync queues and conflict handling for offline course progress, test state and analytics"
+      - "Backend-driven configuration schemas — no store release for corporate UI changes"
   "ru":
     "front":
-      - "Configuration-driven UI по JSON-схемам с бэкенда (лента, виджеты) без релизов в сторы"
-      - "Кастомные компоненты на styled-components + StyleSheet; Storybook под контрактный UI"
-      - "Планшетный <span class='m'>Master-Detail / Split View</span> для iPad и Android"
+      - "Configuration-driven UI: лента корпоративных новостей и виджеты по <span class='m'>JSON-схемам</span> с бэкенда
+        без релизов в сторы"
+      - "Кастомные компоненты на <span class='m'>styled-components</span> + StyleSheet; Storybook под контрактный UI
+        и дизайн-систему"
+      - "Адаптивный планшетный <span class='m'>Master-Detail / Split View</span> для iPad и Android — полноценный HR-опыт
+        «в полях» для топ-менеджмента"
+      - "White-Label / Dynamic UI под процессы заказчика без per-client сборок в сторы"
     "mobile":
-      - "Core Module Lead мобильного ядра Mirapolis HCM & LMS для крупных корпоративных клиентов"
-      - "Кроссплатформенный плеер курсов (<span class='m'>SCORM / xAPI</span>) на RN WebView с двусторонним
-        JS Bridge; логика тестов на <span class='m'>FSM</span> с защитой состояния при сбоях сети"
-      - "Переработка Offline-First для курсов и тестов (локальное хранилище + очереди синка) —
-        DAU мобильного обучения <span class='m'>+15%</span> (командная метрика)"
-      - "Каталоги тысяч элементов через <span class='m'>FlashList / RecyclerListView</span> + кэш изображений:
-        лаги → стабильные <span class='m'>60 FPS</span> на low-end"
-      - "Монорепо Yarn / pnpm Workspaces; Clean Architecture + SOLID + Atomic Design"
-      - "CI: Jest + Detox; GitLab CI + Fastlane → TestFlight / Play Internal; TTM <span class='m'>−25%</span>"
+      - "<span class='m'>Core Module Lead</span> Enterprise HCM & LMS мобильной экосистемы Mirapolis для крупных
+        корпоративных клиентов — HR, обучение, оценка, внутренние коммуникации"
+      - "Масштаб: до <span class='m'>~12 000</span> пользователей мобильного клиента в пике"
+      - "Кроссплатформенный плеер интерактивных курсов (<span class='m'>SCORM / xAPI</span>) на оптимизированном RN WebView
+        с двусторонним <span class='m'>JS Bridge</span>; логика тестов на <span class='m'>FSM</span> (XState) с защитой
+        состояния при сбоях сети"
+      - "Полностью переработан <span class='m'>Offline-First</span> для курсов и тестов (локальное хранилище + очереди
+        синхронизации прогресса / аналитики) — DAU мобильного обучения <span class='m'>+15%</span> (командная метрика)"
+      - "Zero Lag оптимизация списков: корпоративные справочники и каталоги курсов (тысячи элементов со сложной иерархией)
+        через <span class='m'>FlashList / RecyclerListView</span>, кастомный кэш изображений и минимизация рендеров —
+        стабильные <span class='m'>60 FPS</span> на low-end с жёстким лимитом RAM"
+      - "Enterprise-архитектура и монорепо: чистый <span class='m'>React Native CLI</span> + TypeScript, Clean Architecture,
+        SOLID, Atomic Design; <span class='m'>Yarn / pnpm Workspaces</span> с изоморфными core-библиотеками"
+      - "Поставка: Storybook, контрактное программирование, <span class='m'>Jest + Detox</span> в CI; GitLab CI + Fastlane
+        (автосборка, подпись, TestFlight / Play Internal) — <span class='m'>TTM −25%</span>, меньше ручных релизов"
       - "Мониторинг: Firebase Crashlytics / Sentry"
+      - "Параллельные контракты: outstaff <span class='m'>haqqex</span> весь срок (июл 2024 — сен 2025); дополнительно
+        <span class='m'>Скиф Трейд</span> авг — сен 2025 (part-time / совмещение)"
     "backend":
-      - "REST и real-time к ядру HCM/LMS; JSON-контракты для динамического UI"
-      - "Очереди синка и разрешение конфликтов для офлайн-прогресса / аналитики"
+      - "REST и real-time к ядру HCM/LMS; JSON-контракты для динамического UI (ленты, виджеты)"
+      - "Очереди синка и разрешение конфликтов для офлайн-прогресса курсов, состояния тестов и аналитики"
+      - "Configuration-driven UI по схемам с бэкенда — без релиза в сторы при смене корпоративного UI"
 "stackByArea":
   "front":
     - "styled-components"
     - "StyleSheet"
     - "Storybook"
     - "JSON schemas"
+    - "Configuration-driven UI"
     - "Master-Detail / Split View"
+    - "White-Label UI"
   "mobile":
     - "React Native CLI"
     - "TypeScript"
@@ -78,6 +108,7 @@
     - "XState / FSM"
     - "Offline-first"
     - "Yarn / pnpm Workspaces"
+    - "Clean Architecture"
     - "Jest"
     - "Detox"
     - "Fastlane"
@@ -88,19 +119,32 @@
     - "REST"
     - "Sync queues"
     - "JSON UI schemas"
+    - "Conflict resolution"
 "cvAchievements":
   "en":
-    - "SCORM / xAPI course player with bidirectional WebView JS Bridge; FSM-based assessments"
-    - "Offline-First rework → mobile learning DAU +15%; FlashList catalogs at 60 FPS on low-end"
-    - "Configuration-driven UI (JSON schemas); tablet Master-Detail / Split View"
-    - "Monorepo + GitLab CI / Fastlane; TTM −25%; Core Module Lead"
+    - "Core Module Lead of Mirapolis Enterprise HCM & LMS mobile core for large corporate clients (~12k peak users)"
+    - "Cross-platform SCORM / xAPI course player with bidirectional WebView JS Bridge; FSM-based assessments with network-drop protection"
+    - "Offline-First rework (local storage + sync queues) → mobile learning DAU +15% (team product metric)"
+    - "FlashList / RecyclerListView + image cache: heavy catalogs (thousands of items) at stable 60 FPS on low-end RAM"
+    - "Configuration-driven UI from backend JSON schemas (news feed, widgets) without store releases"
+    - "Tablet Master-Detail / Split View for iPad/Android — field HR experience for senior management"
+    - "Enterprise monorepo (Yarn/pnpm Workspaces), Clean Architecture + SOLID + Atomic Design on RN CLI + TypeScript"
+    - "Storybook, contract programming, Jest + Detox in CI; GitLab CI + Fastlane → TestFlight / Play Internal; TTM −25%"
+    - "Firebase Crashlytics / Sentry monitoring; fewer manual releases and regressions"
+    - "GPH / part-time; parallel outstaff haqqex (entire tenure) and Skif Trade (Aug — Sep 2025)"
   "ru":
-    - "Плеер курсов SCORM / xAPI с двусторонним WebView JS Bridge; тесты на FSM"
-    - "Offline-First → DAU мобильного обучения +15%; каталоги FlashList на 60 FPS (low-end)"
-    - "Configuration-driven UI (JSON-схемы); планшетный Master-Detail / Split View"
-    - "Монорепо + GitLab CI / Fastlane; TTM −25%; Core Module Lead"
+    - "Core Module Lead Enterprise HCM & LMS мобильного ядра Mirapolis для крупных клиентов (~12k пик)"
+    - "Кроссплатформенный плеер SCORM / xAPI с двусторонним WebView JS Bridge; тесты на FSM с защитой при сбоях сети"
+    - "Переработка Offline-First (локальное хранилище + очереди синка) → DAU мобильного обучения +15% (командная метрика)"
+    - "FlashList / RecyclerListView + кэш изображений: тяжёлые каталоги (тысячи элементов) на стабильных 60 FPS (low-end RAM)"
+    - "Configuration-driven UI по JSON-схемам с бэкенда (лента, виджеты) без релизов в сторы"
+    - "Планшетный Master-Detail / Split View для iPad/Android — HR-опыт «в полях» для топ-менеджмента"
+    - "Enterprise-монорепо (Yarn/pnpm Workspaces), Clean Architecture + SOLID + Atomic Design на RN CLI + TypeScript"
+    - "Storybook, контрактное программирование, Jest + Detox в CI; GitLab CI + Fastlane → TestFlight / Play Internal; TTM −25%"
+    - "Мониторинг Crashlytics / Sentry; меньше ручных релизов и регрессий"
+    - "ГПХ / совмещение; параллельно outstaff haqqex (весь срок) и Скиф Трейд (авг — сен 2025)"
 "cvTags":
-  - "React Native"
+  - "React Native CLI"
   - "TypeScript"
   - "SCORM"
   - "xAPI"
@@ -125,7 +169,7 @@
     - "Enterprise"
     - "HR-tech"
   "stack":
-    - "React Native"
+    - "React Native CLI"
     - "TypeScript"
     - "SCORM / xAPI"
     - "FlashList"
@@ -166,22 +210,33 @@
         - "type": "section"
           "sectionKey": "overview"
         - "type": "prose"
-          "text": "### Идея и контекст\n\n[Mirapolis](https://www.mirapolis.ru/) — Enterprise HCM & LMS для крупных
-            корпоративных клиентов: HR, обучение, оценка персонала, внутренние коммуникации. Мобильный клиент —
-            White-Label / Dynamic UI под процессы заказчика. Масштаб: до ~**12 000** пользователей мобильного клиента в
-            пике.\n\nРоль — **Core Module Lead** мобильного ядра (ГПХ / совмещение, июл 2024 — сен 2025): развитие
-            флагманской платформы, плеер курсов, offline и планшетный UX.\n\n### Реализация\n\n**Плеер LMS.**
-            Кроссплатформенный плеер интерактивных курсов (**SCORM / xAPI**) на оптимизированном React Native WebView с
-            двусторонним **JS Bridge**. Логика тестов на **FSM** с защитой состояния при сбоях сети.\n\n**Offline-First.**
-            Полностью переработан автономный режим курсов и тестов (локальное хранилище + очереди синхронизации прогресса /
-            аналитики) — **DAU мобильного обучения +15%** (командная метрика продукта).\n\n**Производительность.** Тяжёлые
-            корпоративные справочники и каталоги курсов (тысячи элементов) через **FlashList / RecyclerListView**, кастомный
-            кэш изображений и минимизацию рендеров — стабильные **60 FPS** даже на low-end с жёстким лимитом RAM.\n\n**Dynamic
-            UI & планшеты.** Configuration-driven UI по JSON-схемам с бэкенда без релизов в сторы. **Master-Detail / Split
-            View** для iPad и Android Tablets — HR-опыт «в полях» для топ-менеджмента.\n\n**Платформа и поставка.** Монорепо
-            Yarn / pnpm Workspaces, Clean Architecture + SOLID + Atomic Design. Storybook, контрактное программирование,
-            Jest + Detox в CI; GitLab CI + Fastlane → TestFlight / Play Internal — **TTM −25%**. Мониторинг: Crashlytics /
-            Sentry.\n"
+          "text": "### Идея и контекст\n\n[Mirapolis](https://www.mirapolis.ru/) — Enterprise-платформа мобильной экосистемы
+            **HCM & LMS** для крупных корпоративных клиентов: HR, обучение, оценка персонала, внутренние коммуникации.
+            Мобильный клиент — **White-Label / Dynamic UI** под процессы заказчика. **Масштаб:** до ~**12 000** пользователей
+            мобильного клиента в пике.\n\n**Роль:** **Core Module Lead** мобильного ядра. **Формат:** трудовой договор / **ГПХ ·
+            совмещение · part-time**, не exclusive full-time.\n\n**Параллельные контракты:** весь срок (июл 2024 — сен 2025) —
+            outstaff **haqqex**; авг — сен 2025 — дополнительно проект **Скиф Трейд** (совмещение / part-time). Перекрытие авг–сен
+            2025 — осознанное совмещение трёх договоров.\n\n### Enterprise-архитектура и монорепозиторий\n\nПроектирование и
+            развитие масштабируемого ядра на **чистом React Native CLI** + **TypeScript**, **Clean Architecture**, **SOLID**,
+            **Atomic Design**. Монорепозиторий **Yarn / pnpm Workspaces** с разделением на изоморфные модули и выделением
+            core-библиотек.\n\n### Core-функционал LMS и плеер курсов\n\nСоздал кроссплатформенный плеер интерактивных обучающих
+            курсов (**SCORM / xAPI**) на глубоко оптимизированном React Native **WebView** с двусторонним **JS Bridge**. Логика
+            тестов на **FSM** (конечные автоматы) с защитой состояния при сбоях сети — прогресс и ответы не теряются при обрыве
+            связи.\n\n### Configuration-driven UI и стилизация\n\nКастомные компоненты на **styled-components** и **StyleSheet**.
+            Движок, который на основе конфигурационных **JSON-схем** с бэкенда динамически формирует ленту корпоративных новостей
+            и виджеты — **без релизов в App Store / Google Play** при смене корпоративного UI.\n\n### Offline-First движок\n\nПолностью
+            переработал автономный режим курсов и тестов: локальное хранилище + очереди синхронизации прогресса и аналитики.
+            **DAU мобильного обучения +15%** — командная метрика продукта.\n\n### Zero Lag — оптимизация списков\n\nОптимизировал
+            отрисовку тяжёлых корпоративных справочников и каталогов курсов (тысячи элементов со сложной иерархией). Переход на
+            **FlashList / RecyclerListView**, кастомное кэширование изображений, минимизация избыточных рендеров — стабильные
+            **60 FPS** даже на low-end устройствах с жёстким ограничением RAM.\n\n### Tablet UX (Split View)\n\n**Master-Detail
+            (Split View)** для iPad и Android Tablets — полноценный HR-опыт «в полях» для топ-менеджмента без компромиссов
+            мобильной версии.\n\n### Поставка и качество\n\n**Storybook**, контрактное программирование, **Jest + Detox** в CI.
+            Релизный контур **GitLab CI + Fastlane** (автосборка, подпись, доставка в TestFlight / Google Play Internal) —
+            **TTM −25%**, меньше ручных релизов и регрессий. Мониторинг: **Firebase Crashlytics / Sentry**.\n\n### Результат\n\n-
+            Флагманская Enterprise-платформа Mirapolis с production mobile core.\n- **DAU мобильного обучения +15%** после Offline-First.\n-
+            Каталоги и справочники на **60 FPS** (low-end).\n- Dynamic UI без store releases; планшетный Split View.\n- **TTM −25%**
+            за счёт CI/CD и контрактного UI.\n"
         - "type": "keyResults"
           "items":
             - "val": "+15%"
@@ -195,10 +250,16 @@
         - "type": "section"
           "sectionKey": "technical"
         - "type": "prose"
-          "text": "### Технический контур\n\n**Уникальный стек проекта:** SCORM / xAPI плеер (WebView JS Bridge);
-            Configuration-driven UI (JSON-схемы); FlashList / RecyclerListView; FSM тестов LMS; Tablet Master-Detail /
-            Split View.\n\n**Слои:** React Native CLI + TypeScript, монорепо с изоморфными core-библиотеками, styled-components
-            + StyleSheet, синк-очереди offline-прогресса, REST к ядру HCM/LMS.\n"
+          "text": "### Enterprise-архитектура и монорепозиторий\n\n**React Native CLI** + **TypeScript**; **Clean Architecture**,
+            **SOLID**, **Atomic Design**. **Yarn / pnpm Workspaces** с изоморфными core-библиотеками.\n\n### LMS-плеер (SCORM / xAPI)\n\nОптимизированный
+            **React Native WebView** с двусторонним **JS Bridge**; стандарты SCORM / xAPI. **FSM** (XState) для логики тестов с
+            защитой состояния при network drops.\n\n### Configuration-driven UI\n\n**JSON-схемы** с бэкенда → динамическая лента
+            новостей и виджеты. **styled-components** + **StyleSheet**; **Storybook** для контрактного UI.\n\n### Offline-First\n\nЛокальное
+            хранилище + очереди синхронизации прогресса / аналитики; conflict resolution для офлайн-сценариев. REST к ядру HCM/LMS.\n\n###
+            Производительность списков\n\n**FlashList / RecyclerListView**, кастомный кэш изображений, дисциплина рендеров → **60 FPS**
+            на каталогах тысяч элементов (low-end RAM).\n\n### Tablet Split View\n\n**Master-Detail / Split View** для iPad и Android
+            Tablets — адаптивная tablet-архитектура.\n\n### CI/CD, тесты, мониторинг\n\n**Jest + Detox** в CI; **GitLab CI + Fastlane**
+            → TestFlight / Play Internal; **TTM −25%**. **Crashlytics / Sentry**.\n"
         - "type": "techStack"
           "tags":
             - "React Native CLI"
@@ -210,14 +271,18 @@
             - "XState / FSM"
             - "Offline-first"
             - "JSON schemas"
+            - "Configuration-driven UI"
             - "Yarn / pnpm Workspaces"
+            - "Clean Architecture"
+            - "styled-components"
+            - "Storybook"
             - "Jest"
             - "Detox"
             - "Fastlane"
             - "GitLab CI"
             - "Sentry"
             - "Crashlytics"
-            - "Storybook"
+            - "Master-Detail / Split View"
     "en":
       "name": "Mirapolis LMS"
       "type": "HR-tech · Enterprise LMS"
@@ -245,20 +310,29 @@
         - "type": "section"
           "sectionKey": "overview"
         - "type": "prose"
-          "text": "### Idea & context\n\n[Mirapolis](https://www.mirapolis.ru/) is an Enterprise HCM & LMS for large corporate
-            clients: HR, learning, assessments, internal communications. The mobile client is White-Label / Dynamic UI per
-            customer processes. Scale: up to ~**12,000** peak mobile users.\n\nRole: **Core Module Lead** of the mobile core
-            (GPH / part-time, Jul 2024 — Sep 2025): flagship platform, course player, offline and tablet UX.\n\n### What I
-            built\n\n**LMS player.** Cross-platform interactive course player (**SCORM / xAPI**) on an optimized React Native
-            WebView with bidirectional **JS Bridge**. Assessment logic on an **FSM** with state protection on network
-            drops.\n\n**Offline-First.** Fully reworked autonomous mode for courses and tests (local storage + sync queues for
-            progress / analytics) — **mobile learning DAU +15%** (team product metric).\n\n**Performance.** Heavy enterprise
-            directories and course catalogs (thousands of items) via **FlashList / RecyclerListView**, custom image cache and
-            render discipline — stable **60 FPS** even on low-end devices with tight RAM limits.\n\n**Dynamic UI & tablets.**
-            Configuration-driven UI from backend JSON schemas without store releases. **Master-Detail / Split View** for iPad
-            and Android tablets — field HR experience for senior managers.\n\n**Platform & delivery.** Yarn / pnpm Workspaces
-            monorepo, Clean Architecture + SOLID + Atomic Design. Storybook, contract programming, Jest + Detox in CI; GitLab
-            CI + Fastlane → TestFlight / Play Internal — **TTM −25%**. Monitoring: Crashlytics / Sentry.\n"
+          "text": "### Idea & context\n\n[Mirapolis](https://www.mirapolis.ru/) is an Enterprise **HCM & LMS** mobile ecosystem
+            for large corporate clients: HR, learning, personnel assessment, internal communications. The mobile client is
+            **White-Label / Dynamic UI** per customer processes. **Scale:** up to ~**12,000** peak mobile users.\n\n**Role:**
+            **Core Module Lead** of the mobile core. **Engagement:** employment contract / **GPH · part-time**, not exclusive
+            full-time.\n\n**Parallel contracts:** entire tenure (Jul 2024 — Sep 2025) — outstaff **haqqex**; Aug — Sep 2025 —
+            additionally **Skif Trade** project (part-time / совмещение). Aug–Sep 2025 overlap — three concurrent part-time
+            contracts.\n\n### Enterprise architecture & monorepo\n\nDesigned and evolved a scalable mobile core on pure **React Native
+            CLI** + **TypeScript**, **Clean Architecture**, **SOLID**, **Atomic Design**. **Yarn / pnpm Workspaces** monorepo with
+            isomorphic modules and extracted core libraries.\n\n### LMS core & course player\n\nBuilt a cross-platform interactive
+            course player (**SCORM / xAPI**) on a deeply optimized React Native **WebView** with bidirectional **JS Bridge**. Assessment
+            logic on an **FSM** with state protection on network drops — progress and answers survive connectivity loss.\n\n### Configuration-driven
+            UI & styling\n\nCustom components on **styled-components** and **StyleSheet**. An engine that dynamically builds corporate
+            news feeds and widgets from backend **JSON schemas** — **no App Store / Google Play releases** when corporate UI changes.\n\n###
+            Offline-First engine\n\nFully reworked autonomous mode for courses and tests: local storage + sync queues for progress and
+            analytics. **Mobile learning DAU +15%** — team product metric.\n\n### Zero Lag — list optimization\n\nOptimized rendering of
+            heavy enterprise directories and course catalogs (thousands of items with complex hierarchy). **FlashList / RecyclerListView**,
+            custom image caching, render discipline — stable **60 FPS** even on low-end devices with tight RAM.\n\n### Tablet UX (Split View)\n\n**Master-Detail
+            (Split View)** for iPad and Android tablets — full field HR experience for senior management without mobile compromises.\n\n###
+            Delivery & quality\n\n**Storybook**, contract programming, **Jest + Detox** in CI. Release path **GitLab CI + Fastlane** (auto-build,
+            signing, TestFlight / Google Play Internal) — **TTM −25%**, fewer manual releases and regressions. Monitoring: **Firebase Crashlytics
+            / Sentry**.\n\n### Outcomes\n\n- Flagship Mirapolis Enterprise platform with production mobile core.\n- **Mobile learning DAU +15%**
+            after Offline-First rework.\n- Catalogs and directories at **60 FPS** (low-end).\n- Dynamic UI without store releases; tablet Split View.\n-
+            **TTM −25%** via CI/CD and contract-driven UI.\n"
         - "type": "keyResults"
           "items":
             - "val": "+15%"
@@ -272,10 +346,16 @@
         - "type": "section"
           "sectionKey": "technical"
         - "type": "prose"
-          "text": "### Technical contour\n\n**Unique project stack:** SCORM / xAPI player (WebView JS Bridge);
-            configuration-driven UI (JSON schemas); FlashList / RecyclerListView; LMS assessment FSM; tablet Master-Detail /
-            Split View.\n\n**Layers:** React Native CLI + TypeScript, monorepo with isomorphic core libraries,
-            styled-components + StyleSheet, offline progress sync queues, REST to HCM/LMS core.\n"
+          "text": "### Enterprise architecture & monorepo\n\n**React Native CLI** + **TypeScript**; **Clean Architecture**, **SOLID**,
+            **Atomic Design**. **Yarn / pnpm Workspaces** with isomorphic core libraries.\n\n### LMS player (SCORM / xAPI)\n\nOptimized
+            **React Native WebView** with bidirectional **JS Bridge**; SCORM / xAPI standards. **FSM** (XState) for assessments with
+            state protection on network drops.\n\n### Configuration-driven UI\n\nBackend **JSON schemas** → dynamic news feed and widgets.
+            **styled-components** + **StyleSheet**; **Storybook** for contract UI.\n\n### Offline-First\n\nLocal storage + sync queues for
+            progress / analytics; conflict resolution for offline scenarios. REST to HCM/LMS core.\n\n### List performance\n\n**FlashList /
+            RecyclerListView**, custom image cache, render discipline → **60 FPS** on catalogs of thousands of items (low-end RAM).\n\n###
+            Tablet Split View\n\n**Master-Detail / Split View** for iPad and Android tablets — adaptive tablet architecture.\n\n### CI/CD,
+            tests, monitoring\n\n**Jest + Detox** in CI; **GitLab CI + Fastlane** → TestFlight / Play Internal; **TTM −25%**. **Crashlytics
+            / Sentry**.\n"
         - "type": "techStack"
           "tags":
             - "React Native CLI"
@@ -287,12 +367,16 @@
             - "XState / FSM"
             - "Offline-first"
             - "JSON schemas"
+            - "Configuration-driven UI"
             - "Yarn / pnpm Workspaces"
+            - "Clean Architecture"
+            - "styled-components"
+            - "Storybook"
             - "Jest"
             - "Detox"
             - "Fastlane"
             - "GitLab CI"
             - "Sentry"
             - "Crashlytics"
-            - "Storybook"
+            - "Master-Detail / Split View"
 "timelineIndex": 0
