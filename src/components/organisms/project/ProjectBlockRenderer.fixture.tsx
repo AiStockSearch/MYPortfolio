@@ -61,5 +61,20 @@ export default {
       }}
     />
   ),
+  gallery: wrap(
+    <ProjectBlockRenderer
+      block={{
+        type: "gallery",
+        title: "App Store",
+        icon: "/favicon.svg",
+        caption: "Store screenshots",
+        items: [
+          { src: "/favicon.svg", alt: "One" },
+          { src: "/favicon.svg", alt: "Two" },
+          { src: "/favicon.svg", alt: "Three" },
+        ],
+      }}
+    />
+  ),
   unknownType: wrap(<ProjectBlockRenderer block={{ type: "unknown" }} />),
 };
