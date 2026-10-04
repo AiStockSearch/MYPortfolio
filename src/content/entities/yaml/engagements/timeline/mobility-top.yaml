@@ -213,4 +213,41 @@
 
       **Путь покупки:** **корзина** из ассортимента Дом Еды, **заказ**, **оплата**, **подтверждение покупки** — UX при
       слабой сети. **GitLab**: MR, ревью, CI с командой партнёра."
+  "stubGallery":
+    "ru":
+      "title": "«Дом Еды» · экраны приложения"
+      "caption": "Каталог · Карточка товара · Выбор адреса доставки · Текущие заказы · История заказов · Детали покупки"
+      "items":
+        - "src": "/projects/mobility-top/store-screen-1.webp"
+          "alt": "«Дом Еды» — Каталог: сортировка, фильтр и категории"
+        - "src": "/projects/mobility-top/store-screen-2.webp"
+          "alt": "«Дом Еды» — Карточка товара с предзаказом"
+        - "src": "/projects/mobility-top/store-screen-3.webp"
+          "alt": "«Дом Еды» — Выбор адреса доставки на карте"
+        - "src": "/projects/mobility-top/store-screen-4.webp"
+          "alt": "«Дом Еды» — Выбор адреса доставки: история адресов"
+        - "src": "/projects/mobility-top/store-screen-5.webp"
+          "alt": "«Дом Еды» — Текущие заказы со статусом доставки"
+        - "src": "/projects/mobility-top/store-screen-6.webp"
+          "alt": "«Дом Еды» — История покупок с бонусными баллами"
+        - "src": "/projects/mobility-top/store-screen-7.webp"
+          "alt": "«Дом Еды» — Детали покупки и повтор заказа"
+    "en":
+      "title": "Dom Edy · app screens"
+      "caption": "Catalog · Product card · Delivery address · Current orders · Order history · Purchase details"
+      "items":
+        - "src": "/projects/mobility-top/store-screen-1.webp"
+          "alt": "Dom Edy — Catalog: sorting, filter and categories"
+        - "src": "/projects/mobility-top/store-screen-2.webp"
+          "alt": "Dom Edy — Product card with pre-order"
+        - "src": "/projects/mobility-top/store-screen-3.webp"
+          "alt": "Dom Edy — Choosing a delivery address on the map"
+        - "src": "/projects/mobility-top/store-screen-4.webp"
+          "alt": "Dom Edy — Choosing a delivery address: address history"
+        - "src": "/projects/mobility-top/store-screen-5.webp"
+          "alt": "Dom Edy — Current orders with delivery status"
+        - "src": "/projects/mobility-top/store-screen-6.webp"
+          "alt": "Dom Edy — Purchase history with bonus points"
+        - "src": "/projects/mobility-top/store-screen-7.webp"
+          "alt": "Dom Edy — Purchase details and repeat order"
 "timelineIndex": 0
