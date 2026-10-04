@@ -1,0 +1,145 @@
+"catalogOrderKey": "greenApiChat"
+"id": "green-api-chat"
+"live": true
+"featured": true
+"catalogFilters":
+  - "Personal"
+"stack":
+  - "React"
+  - "TypeScript"
+  - "Vite"
+  - "PWA"
+  - "Vitest"
+  - "Cypress"
+  - "Docker"
+  - "GitHub Actions"
+  - "REST API"
+"i18n":
+  "ru":
+    "name": "GREEN-API Chat"
+    "type": "Тестовое задание · GREEN-API"
+    "tagline": "Веб-клиент WhatsApp, Telegram и MAX через GREEN-API: несколько инстансов, общий список чатов, PWA"
+    "role": "Автор (тестовое задание для GREEN-API)"
+    "links":
+      - "label": "Демо"
+        "href": "https://aistocksearch.github.io/green-api-max-chat/?demo=dashboard"
+        "primary": true
+      - "label": "Код"
+        "href": "https://github.com/AiStockSearch/green-api-max-chat"
+      - "label": "Руководство"
+        "href": "https://aistocksearch.github.io/green-api-max-chat/guide.html"
+    "metrics":
+      - "val": "октябрь 2026"
+        "lbl": "Период"
+      - "val": "145"
+        "lbl": "Тесты"
+      - "val": "3"
+        "lbl": "Мессенджеры"
+    "blocks":
+      - "type": "heroImage"
+        "src": "/projects/green-api-chat/instances-dashboard.webp"
+        "alt": "GREEN-API Chat — экран «Инстансы» со статусами"
+      - "type": "section"
+        "sectionKey": "overview"
+      - "type": "prose"
+        "text": |
+          **GREEN-API Chat** — веб-клиент мессенджеров на **React + TypeScript (Vite)** через GREEN-API: **WhatsApp**, **Telegram** и **MAX**. Тестовое задание для GREEN-API; период — октябрь 2026.
+
+          - Несколько инстансов одновременно: экран «Инстансы» со статусами авторизации.
+          - Общий список чатов с фильтром по инстансу и параллельным опросом очередей уведомлений.
+          - Вход по ключам инстанса и режим партнёра: создание инстанса, авторизация по QR или коду.
+          - Проверено вживую на WhatsApp — отправка и приём сообщений.
+      - "type": "image"
+        "src": "/projects/green-api-chat/active-chat.webp"
+        "alt": "Открытый чат в GREEN-API Chat (демо-данные)"
+        "caption": "Активный чат (демо-режим)"
+      - "type": "image"
+        "src": "/projects/green-api-chat/chat-filter.webp"
+        "alt": "Фильтр списка чатов по инстансу"
+        "caption": "Общий список чатов с фильтром по инстансу"
+      - "type": "section"
+        "sectionKey": "technical"
+      - "type": "prose"
+        "text": |
+          - **PWA** без кэширования токенов и ответов API.
+          - **Docker + nginx** с CORS-прокси.
+          - **CI/CD на GitHub Actions**: lint, Vitest, Cypress, публикация образа в GHCR и деплой на GitHub Pages.
+          - **145 тестов**.
+      - "type": "image"
+        "src": "/projects/green-api-chat/pwa-standalone.webp"
+        "alt": "GREEN-API Chat, установленный как PWA"
+        "caption": "Установленное PWA в отдельном окне"
+      - "type": "section"
+        "title": "Ссылки"
+      - "type": "appLinks"
+        "items":
+          - "label": "Демо (GitHub Pages)"
+            "href": "https://aistocksearch.github.io/green-api-max-chat/?demo=dashboard"
+          - "label": "Код на GitHub"
+            "href": "https://github.com/AiStockSearch/green-api-max-chat"
+          - "label": "Руководство пользователя"
+            "href": "https://aistocksearch.github.io/green-api-max-chat/guide.html"
+  "en":
+    "name": "GREEN-API Chat"
+    "type": "Test assignment · GREEN-API"
+    "tagline": "Web client for WhatsApp, Telegram and MAX via GREEN-API: multiple instances, unified chat list, PWA"
+    "role": "Author (test assignment for GREEN-API)"
+    "links":
+      - "label": "Demo"
+        "href": "https://aistocksearch.github.io/green-api-max-chat/?demo=dashboard"
+        "primary": true
+      - "label": "Code"
+        "href": "https://github.com/AiStockSearch/green-api-max-chat"
+      - "label": "Guide"
+        "href": "https://aistocksearch.github.io/green-api-max-chat/guide.html"
+    "metrics":
+      - "val": "Oct 2026"
+        "lbl": "Period"
+      - "val": "145"
+        "lbl": "Tests"
+      - "val": "3"
+        "lbl": "Messengers"
+    "blocks":
+      - "type": "heroImage"
+        "src": "/projects/green-api-chat/instances-dashboard.webp"
+        "alt": "GREEN-API Chat — Instances screen with statuses"
+      - "type": "section"
+        "sectionKey": "overview"
+      - "type": "prose"
+        "text": |
+          **GREEN-API Chat** is a messenger web client built with **React + TypeScript (Vite)** on top of GREEN-API: **WhatsApp**, **Telegram** and **MAX**. Test assignment for GREEN-API; October 2026.
+
+          - Multiple instances at once: an “Instances” screen with authorization statuses.
+          - Unified chat list with a per-instance filter and parallel polling of notification queues.
+          - Sign-in with instance keys plus a partner mode: create an instance, authorize via QR or code.
+          - Verified live on WhatsApp — sending and receiving messages.
+      - "type": "image"
+        "src": "/projects/green-api-chat/active-chat.webp"
+        "alt": "An open chat in GREEN-API Chat (demo data)"
+        "caption": "Active chat (demo mode)"
+      - "type": "image"
+        "src": "/projects/green-api-chat/chat-filter.webp"
+        "alt": "Chat list filtered by instance"
+        "caption": "Unified chat list with a per-instance filter"
+      - "type": "section"
+        "sectionKey": "technical"
+      - "type": "prose"
+        "text": |
+          - **PWA** that never caches tokens or API responses.
+          - **Docker + nginx** with a CORS proxy.
+          - **CI/CD on GitHub Actions**: lint, Vitest, Cypress, image publishing to GHCR and deployment to GitHub Pages.
+          - **145 tests**.
+      - "type": "image"
+        "src": "/projects/green-api-chat/pwa-standalone.webp"
+        "alt": "GREEN-API Chat installed as a PWA"
+        "caption": "Installed PWA in a standalone window"
+      - "type": "section"
+        "title": "Links"
+      - "type": "appLinks"
+        "items":
+          - "label": "Demo (GitHub Pages)"
+            "href": "https://aistocksearch.github.io/green-api-max-chat/?demo=dashboard"
+          - "label": "Source on GitHub"
+            "href": "https://github.com/AiStockSearch/green-api-max-chat"
+          - "label": "User guide"
+            "href": "https://aistocksearch.github.io/green-api-max-chat/guide.html"
