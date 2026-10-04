@@ -163,6 +163,8 @@
         - "label": "GeoWorker (демо)"
           "href": "https://github.com/AiStockSearch/TranslineApp"
           "primary": true
+        - "label": "Код"
+          "href": "https://github.com/AiStockSearch/TranslineApp"
         - "label": "App Store"
           "href": "https://apps.apple.com/ru/app/id6747975799"
         - "label": "Google Play"
@@ -301,6 +303,8 @@
         - "label": "GeoWorker (demo)"
           "href": "https://github.com/AiStockSearch/TranslineApp"
           "primary": true
+        - "label": "Code"
+          "href": "https://github.com/AiStockSearch/TranslineApp"
         - "label": "App Store"
           "href": "https://apps.apple.com/ru/app/id6747975799"
         - "label": "Google Play"
