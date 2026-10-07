@@ -4,6 +4,8 @@
  * (от более нового к более старому — на `/projects` сортировка по возрастанию `order`).
  */
 export const PROJECT_CATALOG_ORDER = {
+  /** Свежий собственный кейс (тестовое задание) — первым в каталоге. */
+  greenApiChat: 1,
   transline: 5,
   skifTrade: 8,
   mirapolisLms: 10,

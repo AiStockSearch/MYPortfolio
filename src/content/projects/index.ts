@@ -15,6 +15,7 @@
  * - partner: { name, href?, logoSrc?, logoAlt? }
  * - appLinks: { items: [{ label, href }] }
  * - image: { src, alt?, caption? }
+ * - gallery: { title?, icon?, caption?, items: [{ src, alt? }] } — скриншоты из сторов (телефонные кадры сеткой)
  * - artifacts: { items: [{ title, href, note?, badge? }] } — кастомные наработки / OSS
  * - documents: { items: [{ title, href?, kind?, meta?, status?: 'available'|'on-request' }] }
  */

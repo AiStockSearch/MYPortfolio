@@ -235,6 +235,8 @@
           "primary": true
         - "label": "flowwow.com"
           "href": "https://flowwow.com/"
+        - "label": "App Store"
+          "href": "https://apps.apple.com/ru/app/id1670351411"
       "metrics":
         - "val": "-40%"
           "lbl": "Синк"
@@ -274,6 +276,19 @@
               "lbl": "Сборка и релизы"
             - "val": "Play"
               "lbl": "Листинг и ключи"
+        - "type": "gallery"
+          "title": "Hoog · Google Play"
+          "icon": "/projects/flowwow-erp/store-icon.webp"
+          "caption": "Скриншоты из карточки Hoog (LLC FLOWWOW) в Google Play"
+          "items":
+            - "src": "/projects/flowwow-erp/store-inventory.webp"
+              "alt": "Ведите учет всех товаров"
+            - "src": "/projects/flowwow-erp/store-receiving.webp"
+              "alt": "Быстро принимайте поставки"
+            - "src": "/projects/flowwow-erp/store-stocktake.webp"
+              "alt": "Проводите инвентаризацию"
+            - "src": "/projects/flowwow-erp/store-analytics.webp"
+              "alt": "Отслеживайте аналитику"
         - "type": "prose"
           "text": "### Идея и бизнес-контекст\n\n[Flowwow](https://flowwow.com/) — маркетплейс цветов и подарков; партнёрская сеть
             магазинов нуждается в **одном операционном контуре**: быстрый учёт **срезанных цветов**, приёмка, инвентаризация,
@@ -359,6 +374,8 @@
           "primary": true
         - "label": "flowwow.com"
           "href": "https://flowwow.com/"
+        - "label": "App Store"
+          "href": "https://apps.apple.com/ru/app/id1670351411"
       "metrics":
         - "val": "-40%"
           "lbl": "Sync time"
@@ -397,6 +414,19 @@
               "lbl": "Build & release"
             - "val": "Play"
               "lbl": "Listing & keys"
+        - "type": "gallery"
+          "title": "Hoog · Google Play"
+          "icon": "/projects/flowwow-erp/store-icon.webp"
+          "caption": "Screenshots from the Hoog (LLC FLOWWOW) Google Play listing"
+          "items":
+            - "src": "/projects/flowwow-erp/store-inventory.webp"
+              "alt": "Track all your products"
+            - "src": "/projects/flowwow-erp/store-receiving.webp"
+              "alt": "Receive deliveries quickly"
+            - "src": "/projects/flowwow-erp/store-stocktake.webp"
+              "alt": "Run stocktakes"
+            - "src": "/projects/flowwow-erp/store-analytics.webp"
+              "alt": "Track analytics"
         - "type": "prose"
           "text": "### Idea & business context\n\n[Flowwow](https://flowwow.com/) connects buyers and florist merchants; the partner
             network needed **one operational backbone**: accurate **cut-flower** inventory, receiving, stocktakes, in-store POS, and

@@ -2,6 +2,7 @@ import { PROJECT_CATALOG_ORDER } from "./projectCatalogOrder";
 import type {
   EngagementDefinition,
   EngagementLocale,
+  PortfolioGalleryBlock,
   PortfolioRichLocale,
 } from "./types";
 
@@ -31,7 +32,8 @@ function stubLocaleBlocks(
   withStubNote: boolean,
   cardType: string,
   metrics: Array<{ val: string; lbl: string }>,
-  overviewProseExtra?: string
+  overviewProseExtra?: string,
+  gallery?: PortfolioGalleryBlock
 ) {
   const note = withStubNote ? (locale === "ru" ? STUB_RU : STUB_EN) : "";
   const techPlaceholder =
@@ -49,6 +51,9 @@ function stubLocaleBlocks(
   }
   if (metrics.length > 0) {
     overviewBlocks.push({ type: "keyResults", items: metrics });
+  }
+  if (gallery && Array.isArray(gallery.items) && gallery.items.length > 0) {
+    overviewBlocks.push({ type: "gallery", ...gallery });
   }
   return {
     name: def.homeCompany[locale],
@@ -106,6 +111,8 @@ export function buildPortfolioDocumentFromEngagement(
   const metricsEn = p.stubMetrics?.en ?? [];
   const proseRu = p.stubOverviewProse?.ru;
   const proseEn = p.stubOverviewProse?.en;
+  const galleryRu = p.stubGallery?.ru;
+  const galleryEn = p.stubGallery?.en;
   return {
     id,
     order,
@@ -114,8 +121,8 @@ export function buildPortfolioDocumentFromEngagement(
     stack,
     ...(catalogFilters ? { catalogFilters } : {}),
     i18n: {
-      ru: stubLocaleBlocks(def, "ru", stack, withNote, cardRu, metricsRu, proseRu),
-      en: stubLocaleBlocks(def, "en", stack, withNote, cardEn, metricsEn, proseEn),
+      ru: stubLocaleBlocks(def, "ru", stack, withNote, cardRu, metricsRu, proseRu, galleryRu),
+      en: stubLocaleBlocks(def, "en", stack, withNote, cardEn, metricsEn, proseEn, galleryEn),
     },
   };
 }

@@ -125,6 +125,10 @@
           "primary": true
         - "label": "Hawex (LinkedIn)"
           "href": "https://ru.linkedin.com/company/hawex?trk=ppro_cprof"
+        - "label": "Google Play"
+          "href": "https://play.google.com/store/apps/details?id=com.hawex.wallet"
+        - "label": "App Store"
+          "href": "https://apps.apple.com/us/app/hawex-btc-crypto-wallet/id1660970455"
       "metrics":
         - "val": "+40%"
           "lbl": "Perf"
@@ -150,6 +154,17 @@
               "lbl": "Хакатон"
             - "val": "RN"
               "lbl": "iOS + Android"
+        - "type": "gallery"
+          "title": "HAWEX Wallet · Google Play"
+          "icon": "/projects/hawex-crypto/store-icon.webp"
+          "caption": "Скриншоты из карточки HAWEX Wallet в Google Play"
+          "items":
+            - "src": "/projects/hawex-crypto/store-screen-1.webp"
+              "alt": "HAWEX Wallet — экран приложения"
+            - "src": "/projects/hawex-crypto/store-screen-2.webp"
+              "alt": "HAWEX Wallet — управление криптоактивами"
+            - "src": "/projects/hawex-crypto/store-screen-3.webp"
+              "alt": "HAWEX Wallet — отправка и получение криптовалюты"
         - "type": "prose"
           "text": "### Идея и контекст\n\n**Hawex** позиционируется как финансовая/платёжная компания: обработка платежей, счета, KYC/AML,
             сопровождение финансового бизнеса — в том числе **крипто-обработка** в линейке услуг (см.
@@ -206,6 +221,10 @@
           "primary": true
         - "label": "Hawex (LinkedIn)"
           "href": "https://ru.linkedin.com/company/hawex?trk=ppro_cprof"
+        - "label": "Google Play"
+          "href": "https://play.google.com/store/apps/details?id=com.hawex.wallet"
+        - "label": "App Store"
+          "href": "https://apps.apple.com/us/app/hawex-btc-crypto-wallet/id1660970455"
       "metrics":
         - "val": "+40%"
           "lbl": "Performance"
@@ -230,6 +249,17 @@
               "lbl": "Hackathon"
             - "val": "RN"
               "lbl": "iOS + Android"
+        - "type": "gallery"
+          "title": "HAWEX Wallet · Google Play"
+          "icon": "/projects/hawex-crypto/store-icon.webp"
+          "caption": "Screenshots from the HAWEX Wallet listing on Google Play"
+          "items":
+            - "src": "/projects/hawex-crypto/store-screen-1.webp"
+              "alt": "HAWEX Wallet — app overview"
+            - "src": "/projects/hawex-crypto/store-screen-2.webp"
+              "alt": "HAWEX Wallet — crypto asset management"
+            - "src": "/projects/hawex-crypto/store-screen-3.webp"
+              "alt": "HAWEX Wallet — send and receive crypto"
         - "type": "prose"
           "text": "### Idea & context\n\n**Hawex** is positioned as a financial / payments company: payment processing, accounts, KYC/AML,
             and operational support for finance teams — including **crypto processing** among their offerings (see
