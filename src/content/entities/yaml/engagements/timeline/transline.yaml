@@ -48,6 +48,7 @@
         (build → signing → TestFlight / Play Internal) — pipeline initiated, not fully stabilized in ~2 months"
       - "<span class='m'>Tech Lead</span>: mobile track leadership, Code Review, API contract design, internal tooling
         release process"
+      - "React Native upgrade <span class='m'>0.79.2 → 0.84.2</span> (New Architecture) — build and release pipeline owned personally"
     "backend":
       - "API contract design with backend for logistics domains (geo / notify and adjacent)"
       - "Main product repo private: GitLab <span class='m'>transline-mobile/mobile</span> — not public"
@@ -74,6 +75,7 @@
         инициирован, не стабилизирован полностью за ~2 месяца"
       - "<span class='m'>Tech Lead</span>: руководство мобильным направлением, Code Review, API-контракты, релизы
         внутреннего инструментария"
+      - "Апгрейд React Native <span class='m'>0.79.2 → 0.84.2</span> (New Architecture) — сборку и релизы веду лично"
     "backend":
       - "Проектирование API-контрактов с бэкендом (гео / notify и смежные домены)"
       - "Основной product-репозиторий приватный: GitLab <span class='m'>transline-mobile/mobile</span>"

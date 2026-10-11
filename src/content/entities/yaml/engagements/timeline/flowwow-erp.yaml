@@ -63,6 +63,7 @@
         стабильности и предсказуемого UX на кассе"
       - "<span class='m'>TestFlight</span> для iOS-дистрибуции бета-сборок; <span class='m'>Firebase</span> + <span class='m'>Amplitude</span>
         для аналитики событий"
+      - "Since Flowwow I personally own mobile <span class='m'>builds &amp; releases</span>: build.gradle, productFlavors / buildTypes dev / stage / prod, AAB signing (keystore + Play App Signing); Xcode targets, schemes, xcconfig, certificates and provisioning via fastlane match; dev / stage / prod environments via react-native-config with Sentry and Firebase per environment"
     "backend":
       - "Firebase (FCM, analytics) with custom REST to the core"
       - "Amplitude product analytics in addition to Firebase funnels"
@@ -110,6 +111,7 @@
         из‑за гонок жестов и нестабильности на части девайсов"
       - "<span class='m'>TestFlight</span> для iOS-бет; <span class='m'>Firebase</span> + <span class='m'>Amplitude</span> для
         продуктовой аналитики и воронок"
+      - "С Flowwow лично веду мобильную <span class='m'>сборку и релизы</span>: build.gradle, productFlavors / buildTypes dev / stage / prod, подпись AAB (keystore + Play App Signing); Xcode targets, schemes, xcconfig, сертификаты и provisioning через fastlane match; окружения dev / stage / prod через react-native-config с Sentry и Firebase на окружение"
     "backend":
       - "Firebase (FCM, аналитика) вместе с кастомным REST к ядру"
       - "Amplitude как отдельный контур продуктовой аналитики"

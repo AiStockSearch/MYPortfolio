@@ -48,9 +48,9 @@ export const homeAbout = {
     p1Html:
       "I'm a <span class=\"hl\">Senior Mobile Developer</span> with <span class=\"hl\">8+ years</span> in React Native and native (Swift / Kotlin / KMP). Focus: FinTech / Web3, Enterprise LMS, Offline-First and POS/hardware.",
     p2Html:
-      "My sweet spot is <span class=\"hl2\">complex real-time &amp; offline-first systems</span> — trading, logistics, LMS, merchant POS — where performance, architecture and UX all matter equally. Led mobile teams of up to 5; App Store &amp; Google Play shipping; crash-free &gt;99.9%.",
+      "My sweet spot is <span class=\"hl2\">complex real-time &amp; offline-first systems</span> — trading, logistics, LMS, merchant POS — where performance, architecture and UX all matter equally. Led teams of up to 5; I personally own mobile builds &amp; releases since Flowwow (RN upgrades 0.74 → 0.79.2 at haqqex, 0.79.2 → 0.84.2 at Transline); App Store &amp; Google Play shipping; crash-free &gt;99.9%.",
     p3Html:
-      "<span class=\"hl2\">Crypto &amp; exchange</span> mobile work is part of my track record; 🥈 Web3 Hackathon 2023. Contributor to <code>react-hook-form</code> and <code>zustand</code>.",
+      "<span class=\"hl2\">Crypto &amp; exchange</span> mobile work is part of my track record; 🥈 Web3 Hackathon 2023. Contributor to <code>react-hook-form</code> and <code>zustand</code>. Also: voice / TTS and on-device ML (TensorFlow Lite, Core ML, ML Kit), KMP modules for RN, Reanimated / Skia / Lottie, Sentry with a custom HOC.",
     badges: ["TDD", "Clean Code", "Agile/Scrum", "Tech Lead", "Figma → Code", "AI Tools"],
     photoPh: "photo.jpg",
     tag: "Vyacheslav · Moscow · Remote / Relocation",
@@ -61,9 +61,9 @@ export const homeAbout = {
     p1Html:
       "Я <span class=\"hl\">Senior Mobile Developer</span> с <span class=\"hl\">8+ годами</span> в React Native и нативной разработке (Swift / Kotlin / KMP). Специализация: FinTech / Web3, Enterprise LMS, Offline-First, POS/hardware.",
     p2Html:
-      "Сильная сторона — <span class=\"hl2\">сложные real-time и offline-first системы</span>: торговля, логистика, LMS, merchant POS — где важны и производительность, и архитектура, и UX. Лидировал мобильные команды до 5 человек; публикации в сторы; crash-free &gt;99.9%.",
+      "Сильная сторона — <span class=\"hl2\">сложные real-time и offline-first системы</span>: торговля, логистика, LMS, merchant POS — где важны и производительность, и архитектура, и UX. Лидировал команды до 5 человек; с Flowwow лично веду мобильную сборку и релизы (апгрейды RN 0.74 → 0.79.2 в haqqex, 0.79.2 → 0.84.2 в Транслайне); публикации в сторы; crash-free &gt;99.9%.",
     p3Html:
-      "В кейсах — <span class=\"hl2\">крипто и биржевые</span> мобильные клиенты; 🥈 Web3 Hackathon 2023. Контрибьютор <code>react-hook-form</code> и <code>zustand</code>.",
+      "В кейсах — <span class=\"hl2\">крипто и биржевые</span> мобильные клиенты; 🥈 Web3 Hackathon 2023. Контрибьютор <code>react-hook-form</code> и <code>zustand</code>. Также: голос / TTS и ML на устройстве (TensorFlow Lite, Core ML, ML Kit), KMP-модули для RN, Reanimated / Skia / Lottie, Sentry с собственным HOC.",
     badges: ["TDD", "Чистый код", "Agile/Scrum", "Tech Lead", "Figma → код", "AI-инструменты"],
     photoPh: "photo.jpg",
     tag: "Вячеслав · Москва · Удалёнка / Релокация",
@@ -76,16 +76,18 @@ export const homeWork = {
 };
 
 export const homeSkillsBlocks = [
-  { cat: "Mobile", name: "React Native", tags: ["CLI / Expo", "TypeScript", "New Architecture", "TurboModules / Fabric / JSI", "Hermes", "Reanimated", "Skia", "FlashList"] },
-  { cat: "Mobile", name: "State & Data", tags: ["Redux Toolkit / RTK Query", "TanStack Query", "Zustand", "WatermelonDB / SQLite", "MMKV", "Offline-First Sync"] },
-  { cat: "Native", name: "iOS / Android", tags: ["Swift / SwiftUI", "Kotlin / Compose", "KMP", "Keychain / Keystore", "Biometrics", "BLE / NFC", "DataWedge / ESC/POS"] },
+  { cat: "Mobile", name: "React Native", tags: ["CLI / Expo", "TypeScript", "New Architecture", "TurboModules / Fabric / JSI", "Hermes", "Reanimated", "Skia", "Lottie", "Gesture Handler", "FlashList"] },
+  { cat: "Mobile", name: "State & Data", tags: ["Redux Toolkit / RTK Query", "Redux-Saga", "TanStack Query", "Zustand", "WatermelonDB / SQLite", "MMKV", "Offline-First Sync"] },
+  { cat: "Native", name: "iOS / Android", tags: ["Swift / SwiftUI", "Kotlin / Compose", "KMP (modules for RN)", "Keychain / Keystore", "Biometrics", "BLE / NFC", "DataWedge / ESC/POS"] },
+  { cat: "Mobile", name: "Voice & On-device ML", tags: ["TTS / Speech", "Audio playback & recording", "Voice commands", "TensorFlow Lite", "Core ML", "ML Kit (barcode / QR)", "PyTorch Mobile"] },
   { cat: "Web3", name: "FinTech / Crypto", tags: ["WalletConnect v2", "Ethers.js", "Ledger BLE", "BIP-39 / BIP-44", "OWASP MASVS", "decimal.js"] },
   { cat: "Frontend", name: "React / Next.js", tags: ["React 18", "Next.js 14", "SSR/ISR/SSG", "GraphQL / Apollo", "Tailwind / NativeWind", "Tamagui"] },
-  { cat: "QA", name: "Testing", tags: ["Jest", "Detox / Maestro", "XCTest / Espresso", "Storybook / Cosmos", "Sentry", "Crashlytics"] },
-  { cat: "CICD", name: "DevOps", tags: ["GitHub Actions", "GitLab CI", "Bitrise", "Fastlane", "EAS / CodePush", "Docker"] },
+  { cat: "QA", name: "Testing", tags: ["Jest", "Detox / Maestro", "XCTest / Espresso", "Storybook / Cosmos", "Sentry (source maps, custom HOC)", "Crashlytics", "Xcode Instruments", "Flipper / Reactotron"] },
+  { cat: "CICD", name: "DevOps", tags: ["GitHub Actions", "GitLab CI", "Bitrise", "Fastlane / match", "EAS / CodePush", "Docker", "RN upgrades (AGP / Kotlin / JDK)"] },
   { cat: "Backend", name: "Adjacent", tags: ["Node.js 20", "Go", "Express", "Socket.IO", "PostgreSQL", "MongoDB"] },
   { cat: "Analytics", name: "Product", tags: ["Amplitude", "Mixpanel", "AppsFlyer", "Firebase Analytics", "Segment"] },
-  { cat: "Design", name: "UI/UX & Tools", tags: ["Figma", "Pixel-perfect", "Atomic Design", "FSD", "React Cosmos"] },
+  { cat: "Design", name: "UI/UX & Tools", tags: ["Figma", "Google Stitch", "Google Mixboard", "Gemini / Nano Banana", "Linear / Jira", "Atomic Design", "FSD"] },
+  { cat: "AI", name: "AI-assisted Dev", tags: ["Cursor", "Claude", "Grok", "Ollama", "RAG", "Custom agent skill packs"] },
 ]
 
 export const homeSkills = {
