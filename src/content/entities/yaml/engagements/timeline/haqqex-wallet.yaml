@@ -64,6 +64,7 @@
         backend, release process (GitHub Actions / Fastlane → TestFlight / Play Internal → stores)"
       - "State & networking: Redux Toolkit / RTK Query, Event Emitter patterns, NetInfo for connectivity-aware UX;
         react-native-config for environment separation"
+      - "React Native upgrade <span class='m'>0.74 → 0.79.2</span> with matching Android toolchain bumps (AGP / Kotlin / JDK 17, Gradle 8) and iOS targets / schemes / xcconfig per environment"
     "backend":
       - "Real-time order book & market quotes via WebSocket / Socket.io with reconnect and resync"
       - "RPC clients & EVM contract interaction for non-custodial trading and on-chain flows"
@@ -104,6 +105,7 @@
         API-контрактов с бэкендом, релизный процесс (GitHub Actions / Fastlane → TestFlight / Play Internal → сторы)"
       - "Стейт и сеть: Redux Toolkit / RTK Query, Event Emitter, NetInfo для connectivity-aware UX;
         react-native-config для разделения окружений"
+      - "Апгрейд React Native <span class='m'>0.74 → 0.79.2</span> с обновлением Android-тулчейна (AGP / Kotlin / JDK 17, Gradle 8) и iOS targets / schemes / xcconfig под окружения"
     "backend":
       - "Realtime стакан и котировки через WebSocket / Socket.io с реконнектом и ресинхронизацией"
       - "RPC-клиенты и взаимодействие с EVM-контрактами для non-custodial торговли и on-chain сценариев"

@@ -35,7 +35,7 @@
       - "**State & API**: **RTK Query** over **RESTful** services (catalog, cart, checkout, profile); cache policies, invalidation,
         optimistic-friendly patterns where safe"
       - "**Realtime**: **WebSocket** channel for price/stock/ops signals the UI subscribed to alongside REST snapshots"
-      - "**Persistence**: **react-native-mmkv** for fast key-value (tokens, flags, lightweight prefs) next to RTK cache strategy"
+      - "**Persistence**: **react-native-mmkv** for fast key-value (cart, tokens, flags, lightweight prefs) next to RTK cache strategy"
       - "**Push**: **Pushy** for reliable notification delivery in the project’s transport choice"
       - "**Analytics**: **Amplitude** + complementary funnel/crash tooling (**Firebase Analytics**, **Crashlytics**,
         **Sentry**) in a production observability bundle"
@@ -59,7 +59,7 @@
       - "**Данные**: **RTK Query** поверх **REST** (каталог, корзина, чекаут, профиль); кэш, инвалидация, аккуратные
         оптимистичные обновления где уместно"
       - "**WebSocket** для живых сигналов (остатки, цены, операционные события) параллельно REST"
-      - "**react-native-mmkv**: быстрые KV (токены, флаги, настройки) рядом с политикой кэша RTK"
+      - "**react-native-mmkv**: быстрые KV (корзина, токены, флаги, настройки) рядом с политикой кэша RTK"
       - "**Pushy** как транспорт **push**-уведомлений в этом проекте"
       - "**Аналитика**: **Amplitude** + **Firebase Analytics**, **Crashlytics**, **Sentry** — полный контур наблюдаемости"
       - "**Биометрия** для быстрого возврата в сессию с fallback на форму входа"
