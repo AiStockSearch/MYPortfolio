@@ -128,6 +128,8 @@
           "primary": true
         - "label": "О компании"
           "href": "https://zencar.tech/about-company"
+        - "label": "RuStore"
+          "href": "https://www.rustore.ru/catalog/app/ru.zencar.mobile.app"
       "metrics":
         - "val": "2×2"
           "lbl": "Релизы"
@@ -156,6 +158,19 @@
               "lbl": "ZenCar (Expo)"
             - "val": "GQL"
               "lbl": "Apollo"
+        - "type": "gallery"
+          "title": "ZEN.CAR – «Мой Авто» · RuStore"
+          "icon": "/projects/zencar/store-icon.webp"
+          "caption": "Скриншоты из карточки ZEN.CAR – «Мой Авто» (ООО «Зенкар») в RuStore"
+          "items":
+            - "src": "/projects/zencar/store-garage.webp"
+              "alt": "Мой автомобиль: пробег и обслуживание"
+            - "src": "/projects/zencar/store-service-offers.webp"
+              "alt": "Предложения автосервисов на карте"
+            - "src": "/projects/zencar/store-fluids.webp"
+              "alt": "Рекомендации по техническим жидкостям"
+            - "src": "/projects/zencar/store-booking.webp"
+              "alt": "Форма записи на ремонт"
         - "type": "prose"
           "text": "### Идея и контекст\n\n**Shell Garage** решал прикладную задачу **бренда Shell** на автозаправках: дать мастерам **единый
             цифровой блокнот** — учёт работ, понятный поток **заказ-наряда** (создание и ведение **нарядов**), без разрыва между «полем» и бэкофисом. Технически это
@@ -205,6 +220,8 @@
           "primary": true
         - "label": "About"
           "href": "https://zencar.tech/about-company"
+        - "label": "RuStore"
+          "href": "https://www.rustore.ru/catalog/app/ru.zencar.mobile.app"
       "metrics":
         - "val": "2×2"
           "lbl": "Releases"
@@ -233,6 +250,19 @@
               "lbl": "ZenCar (Expo)"
             - "val": "GQL"
               "lbl": "Apollo"
+        - "type": "gallery"
+          "title": "ZEN.CAR – «Мой Авто» · RuStore"
+          "icon": "/projects/zencar/store-icon.webp"
+          "caption": "Screenshots from the ZEN.CAR – «Мой Авто» listing (ZENCAR LLC) on RuStore"
+          "items":
+            - "src": "/projects/zencar/store-garage.webp"
+              "alt": "My car: mileage and maintenance"
+            - "src": "/projects/zencar/store-service-offers.webp"
+              "alt": "Service offers on the map"
+            - "src": "/projects/zencar/store-fluids.webp"
+              "alt": "Manufacturer fluid recommendations"
+            - "src": "/projects/zencar/store-booking.webp"
+              "alt": "Repair booking form"
         - "type": "prose"
           "text": "### Idea & context\n\n**Shell Garage** was anchored in **Shell**’s operational reality: **masters** at service points needed a
             **single digital notebook** — track work, create and progress **work orders** (**заказ-наряд**), stay aligned with back-office expectations. That

@@ -6,6 +6,7 @@ import TechStackBlock from "./blocks/TechStackBlock";
 import PartnerBlock from "./blocks/PartnerBlock";
 import AppLinksBlock from "./blocks/AppLinksBlock";
 import ImageBlock from "./blocks/ImageBlock";
+import GalleryBlock from "./blocks/GalleryBlock";
 import ArtifactsBlock from "./blocks/ArtifactsBlock";
 import DocumentsBlock from "./blocks/DocumentsBlock";
 
@@ -18,6 +19,7 @@ const BLOCKS = {
   partner: PartnerBlock,
   appLinks: AppLinksBlock,
   image: ImageBlock,
+  gallery: GalleryBlock,
   artifacts: ArtifactsBlock,
   documents: DocumentsBlock,
 };

@@ -49,6 +49,14 @@ export type PortfolioRichLocale = {
   blocks: unknown[];
 };
 
+/** Блок `gallery` для страницы кейса: `{ title?, icon?, caption?, items: [{ src, alt? }] }`. */
+export type PortfolioGalleryBlock = {
+  title?: string;
+  icon?: string;
+  caption?: string;
+  items: Array<{ src: string; alt?: string }>;
+};
+
 /**
  * Кейс в каталоге `/projects`, собираемый из engagement одной точкой (`buildPortfolioDocumentFromEngagement`).
  * `projectId` — slug в URL, если отличается от `EngagementDefinition.id` (например zencar → innopolis-zencar).
@@ -77,6 +85,11 @@ export type EngagementPortfolio =
        * На главную и в CV не попадает — только страница кейса.
        */
       stubOverviewProse?: Record<EngagementLocale, string>;
+      /**
+       * Галерея скриншотов приложения (блок `gallery`) в разделе «Обзор» на `/projects/:id`,
+       * после `keyResults` — как у rich-кейсов (hawex, zencar).
+       */
+      stubGallery?: Record<EngagementLocale, PortfolioGalleryBlock>;
     }
   | {
       catalogOrderKey: ProjectCatalogOrderKey;

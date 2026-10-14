@@ -9,6 +9,7 @@ const ROOT = path.resolve(import.meta.dirname, "..");
 const OUT_DIR = path.join(ROOT, "public", "projects");
 
 const IDS = [
+  "green-api-chat",
   "mirapolis-lms",
   "mobility-top",
   "haqqex-wallet",
@@ -28,6 +29,7 @@ const IDS = [
 
 /** Градиенты [от, до] — по одному на проект, чтобы карточки отличались в сетке. */
 const PALETTES = {
+  "green-api-chat": ["#14532d", "#22c55e"],
   "mirapolis-lms": ["#0c4a6e", "#22d3ee"],
   "mobility-top": ["#292524", "#f97316"],
   "haqqex-wallet": ["#1e1b4b", "#a78bfa"],
@@ -53,7 +55,13 @@ function escapeXml(s) {
     .replace(/"/g, "&quot;");
 }
 
+/** Подписи, которые не выводятся из id (аббревиатуры и т.п.). */
+const LABELS = {
+  "green-api-chat": "GREEN-API Chat",
+};
+
 function titleFromId(id) {
+  if (LABELS[id]) return LABELS[id];
   return id
     .split("-")
     .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
