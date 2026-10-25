@@ -5,6 +5,7 @@ import { normalizeBlogDoc } from "../../lib/blog-doc-normalize";
 import post60fpsTrading from "./60fps-trading";
 import aiDevWorkflow from "./ai-dev-workflow";
 import cardanoVsEthereum from "./cardano-vs-ethereum";
+import geminiNotebookMcpDocker from "./gemini-notebook-mcp-docker";
 import islamicFinanceUx from "./islamic-finance-ux";
 import offlineFirstRn from "./offline-first-rn";
 import taskmcpMcpVaultBridge from "./taskmcp-mcp-vault-bridge";
@@ -15,6 +16,7 @@ const modules: unknown[] = [
   post60fpsTrading,
   aiDevWorkflow,
   cardanoVsEthereum,
+  geminiNotebookMcpDocker,
   islamicFinanceUx,
   offlineFirstRn,
   taskmcpMcpVaultBridge,
