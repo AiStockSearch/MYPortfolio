@@ -67,6 +67,12 @@ const education = {
       year: "2013",
     },
     {
+      deg: "Сертификат квалификации разработчика GREEN-API (№ 2244339)",
+      inst: "ООО «Грин-АПИ»",
+      year: "2026",
+      href: "/certificates/greenapi-certificate-2244339.pdf",
+    },
+    {
       deg: "Промышленная разработка на JavaScript",
       inst: "Университет Иннополис",
       year: "2021",
@@ -102,6 +108,12 @@ const education = {
       deg: "Bachelor, Taxation",
       inst: "USATU, Institute of Economics & Management",
       year: "2013",
+    },
+    {
+      deg: "GREEN-API Developer Qualification Certificate (No. 2244339)",
+      inst: "GREEN-API LLC",
+      year: "2026",
+      href: "/certificates/greenapi-certificate-2244339.pdf",
     },
     {
       deg: "Industrial JavaScript Development",
