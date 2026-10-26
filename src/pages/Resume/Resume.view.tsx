@@ -330,7 +330,15 @@ export default function ResumeView({
             <p className="cv-sec-title">{cv.eduTitle}</p>
             {cv.education.map((e, i) => (
               <div className="cv-edu-item" key={i}>
-                <p className="cv-edu-deg">{e.deg}</p>
+                <p className="cv-edu-deg">
+                  {"href" in e && e.href ? (
+                    <a href={e.href as string} target="_blank" rel="noopener noreferrer">
+                      {e.deg}
+                    </a>
+                  ) : (
+                    e.deg
+                  )}
+                </p>
                 <p className="cv-edu-inst">{e.inst}</p>
                 <p className="cv-edu-year">{e.year}</p>
               </div>
