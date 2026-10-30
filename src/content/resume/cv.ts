@@ -169,7 +169,7 @@ export default {
       location: "Москва, м. Академическая · Удалённо / Офис / Релокация",
       profileTitle: "Профиль",
       profileBody:
-        "Senior Mobile Developer, 8+ лет в React Native и нативной разработке (Swift / Kotlin / KMP). Специализация: FinTech / Web3, Enterprise LMS, Offline-First и POS/hardware. Опыт лидирования мобильных команд до 5 человек, публикации в App Store и Google Play, crash-free >99.9%. Фокус: Senior / Lead Mobile (RN) и Mobile Architect (RN + native iOS/Android).\nАнглийский C1. Контрибьютор react-hook-form и zustand. 2 место Web3 Hackathon 2023.\n",
+        "Senior Mobile Developer, 8+ лет в React Native и нативной разработке (Swift / Kotlin / KMP). Специализация: FinTech / Web3, Enterprise LMS, Offline-First и POS/hardware. Опыт лидирования мобильных команд до 5 человек, публикации в App Store и Google Play, crash-free >99.9%. С Flowwow лично веду мобильную сборку и релизы; апгрейды RN: haqqex 0.74 → 0.79.2, Транслайн 0.79.2 → 0.84.2 (New Architecture). Фокус: Senior / Lead Mobile (RN) и Mobile Architect (RN + native iOS/Android).\nГолос и ML на устройстве: TTS / Speech, голосовые команды, TensorFlow Lite, Core ML, ML Kit; KMP-модули для RN. Интерактивный UI: Reanimated, Skia, Lottie, Gesture Handler. Качество: Sentry с source maps и собственным HOC, поиск утечек памяти (Xcode Instruments, Flipper, Reactotron); MMKV, Redux-Saga, RTK Query. AI-инструменты: Cursor, Claude, Grok, Ollama, RAG. Дизайн: Figma, Google Stitch, Linear, Jira.\nАнглийский C1. Контрибьютор react-hook-form и zustand. 2 место Web3 Hackathon 2023.\n",
       expTitle: "Опыт",
       expArea: {
         front: "Frontend",
@@ -227,7 +227,7 @@ export default {
       location: "Moscow, Akademicheskaya · Remote / On-site / Relocation",
       profileTitle: "Profile",
       profileBody:
-        "Senior Mobile Developer, 8+ years in React Native and native (Swift / Kotlin / KMP). Focus: FinTech / Web3, Enterprise LMS, Offline-First and POS/hardware. Led mobile teams of up to 5; App Store & Google Play shipping; crash-free >99.9%. Target roles: Senior / Lead Mobile (RN) and Mobile Architect (RN + native iOS/Android).\nEnglish C1. Contributor to react-hook-form and zustand. 2nd place Web3 Hackathon 2023.\n",
+        "Senior Mobile Developer, 8+ years in React Native and native (Swift / Kotlin / KMP). Focus: FinTech / Web3, Enterprise LMS, Offline-First and POS/hardware. Led teams of up to 5; App Store & Google Play shipping; crash-free >99.9%. Personally own mobile builds & releases since Flowwow; RN upgrades: haqqex 0.74 → 0.79.2, Transline 0.79.2 → 0.84.2 (New Architecture). Target roles: Senior / Lead Mobile (RN) and Mobile Architect (RN + native iOS/Android).\nVoice & on-device ML: TTS / Speech, voice commands, TensorFlow Lite, Core ML, ML Kit; KMP modules for RN. Interactive UI: Reanimated, Skia, Lottie, Gesture Handler. Quality: Sentry with source maps and a custom HOC, memory-leak hunting (Xcode Instruments, Flipper, Reactotron); MMKV, Redux-Saga, RTK Query. AI tools: Cursor, Claude, Grok, Ollama, RAG. Design: Figma, Google Stitch, Linear, Jira.\nEnglish C1. Contributor to react-hook-form and zustand. 2nd place Web3 Hackathon 2023.\n",
       expTitle: "Experience",
       expArea: {
         front: "Front",
